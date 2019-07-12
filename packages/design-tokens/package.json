@@ -1,0 +1,51 @@
+{
+  "name": "@contactlab/ds-tokens",
+  "version": "0.4.3",
+  "description": "Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com/"
+  },
+  "contributors": [
+    "Carlo Audino <carlo.audino@contactlab.com>",
+    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
+  ],
+  "homepage": "https://github.com/contactlab/milky-way#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/contactlab/milky-way/tree/master/packages/design-tokens"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0",
+    "npm": ">=6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "./*.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "setup": "node ./scripts/setup.js",
+    "lint:css": "stylelint ./lib/**/*.{css,scss,less,svg} --fix",
+    "lint:src": "eslint . --fix",
+    "test": "run-p -clns lint:**",
+    "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
+    "build": "run-s setup build:**"
+  },
+  "devDependencies": {
+    "@giotramu/stylelint-config": "2.1.1",
+    "eslint": "6.8.0",
+    "eslint-config-contactlab": "4.2.2",
+    "eslint-config-prettier": "6.10.0",
+    "npm-run-all": "4.1.5",
+    "shelljs": "0.8.3",
+    "stylelint": "13.2.1",
+    "stylelint-scss": "3.15.0",
+    "svgo": "1.3.2"
+  }
+}

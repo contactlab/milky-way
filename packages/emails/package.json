@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "name": "@contactlab/emails",
+  "version": "1.0.0",
+  "description": "The Contactlab Marketing Cloud transactional emails.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com/"
+  },
+  "contributors": [
+    "Carlo Audino <carlo.audino@contactlab.com>",
+    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
+  ],
+  "homepage": "https://github.com/contactlab/milky-way#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/contactlab/milky-way/tree/master/packages/emails"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.18",
+    "npm": ">=6.13"
+  },
+  "scripts": {
+    "check:src": "tsc",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "run-p -clns check:** lint:**",
+    "prebuild": "rimraf ./build",
+    "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
+    "watch": "npm run build -- --watch --source-maps inline",
+    "preserve": "npm run build",
+    "serve": "nodemon --watch ./build ./build/serve.js",
+    "dev": "run-p -clns watch serve",
+    "pregenerate": "rimraf ./dist && npm run build",
+    "generate": "node ./build/generate.js",
+    "predeploy": "run-s test generate",
+    "deploy": "netlify deploy --dir ./dist --prod"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "mjml": "4.6.2",
+    "mjml-react": "1.0.57",
+    "node-polyglot": "2.4.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.7",
+    "@babel/plugin-transform-react-jsx": "7.8.3",
+    "@babel/plugin-transform-typescript": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@types/express": "4.17.3",
+    "@types/mjml-react": "1.0.3",
+    "@types/node-polyglot": "0.4.34",
+    "@types/node": "13.9.0",
+    "@types/react-dom": "16.9.5",
+    "@types/react": "16.9.23",
+    "eslint": "6.8.0",
+    "eslint-config-contactlab": "4.2.2",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-react": "7.19.0",
+    "netlify-cli": "2.40.0",
+    "nodemon": "2.0.2",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "typescript": "3.8.3"
+  }
+}
