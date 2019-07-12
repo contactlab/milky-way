@@ -1,0 +1,72 @@
+/*!
+ * Copyright (c) Contactlab UXD Team <https://ux.contactlab.com>.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* stylelint-disable declaration-no-important */
+
+@import '../../colors/index.pcss';
+
+/* ==========================================================================
+    Colors
+   ========================================================================== */
+
+/* Feedback + neutral colors and backgrounds */
+@each $type in white, black, success, warning, error {
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
+  }
+}
+
+/* Illustration colors and backgrounds */
+@each $type in info, success, warning, error, black, white {
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
+  }
+}
+
+/* Base colors and backgrounds */
+@each $type in base100, base200, base300, base400, base500, base600, base700,
+  base800, base900
+{
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
+  }
+}
+
+/* Accent colors and backgrounds */
+@each $type in accent100, accent200, accent300, accent400, accent500, accent600,
+  accent700, accent800, accent900
+{
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
+  }
+}
+
+/* Illustration colors and backgrounds */
+@each $type in base300, base600, base900, accent300, accent600, accent900 {
+  .color-fluo-$(type) {
+    color: var(--color-fluo-$(type)) !important;
+  }
+
+  .bgcolor-fluo-$(type) {
+    background-color: var(--color-fluo-$(type)) !important;
+  }
+}

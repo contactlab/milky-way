@@ -1,0 +1,23 @@
+/*!
+ * Copyright (c) Contactlab UXD Team <https://ux.contactlab.com>.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* stylelint-disable declaration-no-important */
+
+@import '../../elevations/index.pcss';
+
+.elevation-transition {
+  transition: var(--elevation-transition);
+}
+
+@each $type in z1, z2, z3, z4, z5 {
+  .elevation-$(type) {
+    box-shadow: var(--elevation-$(type));
+  }
+
+  .elevation-accent-$(type) {
+    box-shadow: var(--elevation-accent-$(type));
+  }
+}

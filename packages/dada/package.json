@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "@contactlab/dada",
+  "version": "0.0.1",
+  "description": "Named entities that store visual design info, in order to maintain a scalable, consistent system for UI development.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com/"
+  },
+  "contributors": [
+    "Carlo Audino <carlo.audino@contactlab.com>",
+    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
+  ],
+  "homepage": "https://github.com/contactlab/dada#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactlab/dada"
+  },
+  "engines": {
+    "node": ">=10.0",
+    "npm": ">=6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "./*.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "setup": "ts-node ./scripts/setup.ts",
+    "build:css": "postcss ./lib/styles/**/*.pcss --base ./lib/styles --dir ./lib/styles --ext css",
+    "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
+    "build": "run-p -ln build:**"
+  },
+  "devDependencies": {
+    "@types/node": "12.6.2",
+    "@types/shelljs": "0.8.5",
+    "netlify-cli": "2.11.23",
+    "npm-run-all": "4.1.5",
+    "shelljs": "0.8.3",
+    "svgo": "1.2.2",
+    "ts-node": "8.3.0",
+    "typescript": "3.5.3"
+  },
+  "keywords": [
+    "contactlab",
+    "design-tokens",
+    "design-patterns",
+    "ui-theme"
+  ]
+}

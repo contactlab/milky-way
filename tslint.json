@@ -1,0 +1,3 @@
+{
+  "extends": ["@contactlab/tslint-config", "tslint-config-prettier"]
+}

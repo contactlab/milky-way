@@ -1,0 +1,17 @@
+{
+  "version": "0.0.0",
+  "npmClient": "npm",
+  "packages": ["packages/*"],
+  "command": {
+    "add": {
+      "exact": true
+    },
+    "bootstrap": {
+      "hoist": false
+    },
+    "version": {
+      "allowBranch": ["master"],
+      "exact": true
+    }
+  }
+}

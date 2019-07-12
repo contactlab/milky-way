@@ -1,0 +1,52 @@
+{
+  "[javascript]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[postcss]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[less]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.tslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html"
+  ],
+  "prettier.bracketSpacing": false,
+  "prettier.singleQuote": true,
+  "typescript.reportStyleChecksAsWarnings": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.validate.enable": true,
+  "files.associations": {
+    "*.pcss": "postcss"
+  }
+}

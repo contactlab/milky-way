@@ -1,0 +1,21 @@
+{
+  "alwaysStrict": true,
+  "esModuleInterop": true,
+  "forceConsistentCasingInFileNames": true,
+  "lib": [
+    "es6",
+    "dom",
+    "es2016.array.include"
+  ],
+  "module": "commonjs",
+  "noFallthroughCasesInSwitch": true,
+  "noImplicitReturns": true,
+  "noUnusedLocals": true,
+  "noUnusedParameters": true,
+  "sourceMap": true,
+  "strict": true,
+  "target": "es6",
+  "types": [
+    "node"
+  ],
+}
