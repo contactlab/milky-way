@@ -71,6 +71,6 @@ const pages = [
 ];
 
 ReactDOM.render(
-  <Catalog title="MILKY-WAY - Contactlab Design System" pages={pages} />,
+  <Catalog title="MILKY-WAY ~ Contactlab Design System" pages={pages} />,
   document.getElementById('design-tokens')
 );
