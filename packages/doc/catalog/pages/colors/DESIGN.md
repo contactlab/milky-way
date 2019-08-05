@@ -386,6 +386,6 @@ url: /lib/resources/colors/token.ase
 ```download
 span: 2
 title: Color Palette
-subtitle: .aco (PhotoShop)
+subtitle: .aco (Photoshop)
 url: /lib/resources/colors/token.aco
 ```
