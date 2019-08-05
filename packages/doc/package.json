@@ -21,7 +21,7 @@
     "npm": ">=6.0"
   },
   "scripts": {
-    "setup": "ts-node ./scripts/setup.ts",
+    "setup": "node ./scripts/setup.js",
     "start": "catalog start",
     "build": "catalog build",
     "predeploy": "run-s -ln setup build",
@@ -35,12 +35,8 @@
     "react-dom": "16.8.6"
   },
   "devDependencies": {
-    "@types/node": "12.6.9",
-    "@types/shelljs": "0.8.5",
     "netlify-cli": "2.12.0",
     "npm-run-all": "4.1.5",
-    "shelljs": "0.8.3",
-    "ts-node": "8.3.0",
-    "typescript": "3.5.3"
+    "shelljs": "0.8.3"
   }
 }

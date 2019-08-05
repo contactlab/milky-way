@@ -30,24 +30,15 @@
     "LICENSE"
   ],
   "scripts": {
-    "setup": "ts-node ./scripts/setup.ts",
+    "setup": "node ./scripts/setup.js",
     "build:css": "postcss ./lib/styles/**/*.pcss --base ./lib/styles --dir ./lib/styles --ext css",
     "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
     "build": "run-p -ln build:**"
   },
   "devDependencies": {
-    "@types/node": "12.6.9",
-    "@types/shelljs": "0.8.5",
+    "@giotramu/postcss-config": "0.1.3",
     "npm-run-all": "4.1.5",
     "shelljs": "0.8.3",
-    "svgo": "1.3.0",
-    "ts-node": "8.3.0",
-    "typescript": "3.5.3"
-  },
-  "keywords": [
-    "contactlab",
-    "design-tokens",
-    "design-patterns",
-    "ui-theme"
-  ]
+    "svgo": "1.3.0"
+  }
 }
