@@ -29,7 +29,7 @@
     "deploy:prod": "npm run deploy -- --prod"
   },
   "dependencies": {
-    "@contactlab/milky-way": "^0",
+    "@contactlab/design-tokens": "^0",
     "catalog": "3.6.0",
     "react": "16.8.6",
     "react-dom": "16.8.6"

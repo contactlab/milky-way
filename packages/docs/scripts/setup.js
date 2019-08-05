@@ -6,7 +6,7 @@ const SRC_DIR = path.resolve(
   '../',
   'node_modules',
   '@contactlab',
-  'milky-way',
+  'design-tokens',
   'lib'
 );
 const TARGET_DIR = path.resolve(__dirname, '../', 'catalog', 'static', 'lib');
