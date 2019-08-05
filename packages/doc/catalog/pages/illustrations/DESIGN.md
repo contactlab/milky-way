@@ -1,1 +1,0 @@
-Contactlab Marketing Cloud's illustrations can both enhance the user experience and express a brand’s visual language. Illustrations help tell a story and clarify complex messages that are difficult to express with words.
