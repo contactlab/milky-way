@@ -1,3 +1,3 @@
 module.exports = {
-  extends: 'stylelint-config-pack',
+  extends: '@giotramu/stylelint-config',
 };

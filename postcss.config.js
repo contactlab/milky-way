@@ -1,1 +1,1 @@
-module.exports = require('postcss-config-pack').config;
+module.exports = require('@giotramu/postcss-config').config;
