@@ -6,10 +6,10 @@ const SRC_DIR = path.resolve(
   '../',
   'node_modules',
   '@contactlab',
-  'dada',
+  'milky-way',
   'lib'
 );
-const TARGET_DIR = path.resolve(__dirname, '../', 'catalog', 'lib');
+const TARGET_DIR = path.resolve(__dirname, '../', 'catalog', 'static', 'lib');
 
 // --- Helpers
 function __formattingList(files: string[]): string {

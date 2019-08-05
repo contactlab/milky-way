@@ -1,7 +1,6 @@
 {
   "private": true,
-  "name": "@contactlab/dada-docs",
-  "description": "Named entities that store visual design info, in order to maintain a scalable, consistent system for UI development.",
+  "name": "@contactlab/milky-way-docs",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",
@@ -11,11 +10,11 @@
     "Carlo Audino <carlo.audino@contactlab.com>",
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
-  "homepage": "https://github.com/contactlab/dada#readme",
+  "homepage": "https://github.com/contactlab/milky-way#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contactlab/dada"
+    "url": "git+https://github.com/contactlab/milky-way"
   },
   "engines": {
     "node": ">=10.0",
@@ -23,14 +22,14 @@
   },
   "scripts": {
     "setup": "ts-node ./scripts/setup.ts",
-    "start": "run-s setup \"catalog start\"",
+    "start": "catalog start",
     "build": "catalog build",
-    "predeploy": "run-s -ln lint build",
+    "predeploy": "run-s -ln setup build",
     "deploy": "netlify deploy --dir ./build",
     "deploy:prod": "npm run deploy -- --prod"
   },
   "dependencies": {
-    "@contactlab/dada": "^0",
+    "@contactlab/milky-way": "^0",
     "catalog": "3.6.0",
     "react": "16.8.6",
     "react-dom": "16.8.6"

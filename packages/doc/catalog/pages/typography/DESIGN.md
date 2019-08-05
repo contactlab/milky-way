@@ -63,14 +63,14 @@ The magic formula: **1rem = 10px; 10px / 16px = 62.5%**. [More info on this topi
 ```download
 span: 2
 title: Montserrat on Google Font
-subtitle: External Resource
+subtitle: External resource
 url: https://fonts.google.com/specimen/Montserrat
 ```
 
 ```download
 span: 2
 title: Montserrat on GitHub
-subtitle: External Resource
+subtitle: External resource
 url: https://github.com/JulietaUla/Montserrat/
 ```
 
@@ -78,5 +78,5 @@ url: https://github.com/JulietaUla/Montserrat/
 span: 2
 title: Type Scale
 subtitle: .sketch
-url: /resources/typography/type-scale.sketch
+url: /lib/resources/typography/type-scale.sketch
 ```

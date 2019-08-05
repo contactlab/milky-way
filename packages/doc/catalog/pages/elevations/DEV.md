@@ -2,16 +2,16 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 
 # Installation
 
-For most projects (and to take advantage of Contactlab Design Token's customization features), you'll want to install Contactlab Design Token via npm.
+For most projects (and to take advantage of Design System's customization features), you'll want to install Contactlab Design Token via npm.
 
 ```code
 lang: sh
 ---
 # Using npm
-npm install @contactlab/dada
+npm install @contactlab/milky-way
 
 # Using Yarn
-yarn add @contactlab/dada
+yarn add @contactlab/milky-way
 ```
 
 ---
@@ -25,10 +25,10 @@ If you're using [postcss-import](https://github.com/postcss/postcss-import) (or 
 ```code
 lang: css
 ---
-@import '@contactlab/dada/lib/styles/elevations/index.pcss';
+@import '@contactlab/milky-way/lib/styles/elevations/index.pcss';
 ```
 
-###  Using with Webpack + Less.js
+### Using with Webpack + Less.js
 
 ```hint
 Use Less.js >=v3.5.0
@@ -39,7 +39,7 @@ If you're using Webpack 4 and Less.js you can install **less-loader**. Webpack p
 ```code
 lang: less
 ---
-@import '~@contactlab/dada/lib/styles/elevations/index.less';
+@import '~@contactlab/milky-way/lib/styles/elevations/index.less';
 ```
 
 ---
@@ -53,7 +53,7 @@ lang: html
 ---
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/dada@latest/lib/styles/elevations/index.css"
+  href="https://unpkg.com/@contactlab/milky-way@latest/lib/styles/elevations/index.css"
 />
 ```
 

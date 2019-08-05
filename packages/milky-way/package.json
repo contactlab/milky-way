@@ -1,8 +1,7 @@
 {
   "private": true,
-  "name": "@contactlab/dada",
+  "name": "@contactlab/milky-way",
   "version": "0.0.1",
-  "description": "Named entities that store visual design info, in order to maintain a scalable, consistent system for UI development.",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",
@@ -12,11 +11,11 @@
     "Carlo Audino <carlo.audino@contactlab.com>",
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
-  "homepage": "https://github.com/contactlab/dada#readme",
+  "homepage": "https://github.com/contactlab/milky-way#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contactlab/dada"
+    "url": "git+https://github.com/contactlab/milky-way"
   },
   "engines": {
     "node": ">=10.0",

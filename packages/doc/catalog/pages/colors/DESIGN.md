@@ -260,7 +260,6 @@ rows:
     CMYK: '`25%, 10%, 0%, 75%`'
 ```
 
-
 ### Fluo Colors
 
 ```table|span-6
@@ -374,19 +373,19 @@ rows:
 span: 2
 title: Color Palette
 subtitle: .sketchpalette
-url: /resources/colors/token.sketchpalette
+url: /lib/resources/colors/token.sketchpalette
 ```
 
 ```download
 span: 2
 title: Color Palette
 subtitle: .ase (Illustrator)
-url: /resources/colors/token.ase
+url: /lib/resources/colors/token.ase
 ```
 
 ```download
 span: 2
 title: Color Palette
 subtitle: .aco (PhotoShop)
-url: /resources/colors/token.aco
+url: /lib/resources/colors/token.aco
 ```
