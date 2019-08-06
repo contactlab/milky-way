@@ -1,7 +1,6 @@
 {
-  "private": true,
-  "name": "@contactlab/design-tokens",
-  "version": "0.0.1",
+  "name": "@contactlab/ds-tokens",
+  "version": "0.1.0",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",

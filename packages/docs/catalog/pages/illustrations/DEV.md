@@ -8,10 +8,10 @@ For most projects (and to take advantage of Design System's customization featur
 lang: sh
 ---
 # Using npm
-npm install @contactlab/milky-way
+npm install @contactlab/ds-tokens
 
 # Using Yarn
-yarn add @contactlab/milky-way
+yarn add @contactlab/ds-tokens
 ```
 
 ---

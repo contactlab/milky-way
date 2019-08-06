@@ -8,10 +8,10 @@ For most projects (and to take advantage of Design System's customization featur
 lang: sh
 ---
 # Using npm
-npm install @contactlab/milky-way
+npm install @contactlab/ds-tokens
 
 # Using Yarn
-yarn add @contactlab/milky-way
+yarn add @contactlab/ds-tokens
 ```
 
 ---
@@ -25,7 +25,7 @@ If you're using [postcss-import](https://github.com/postcss/postcss-import) (or 
 ```code
 lang: css
 ---
-@import '@contactlab/milky-way/lib/styles/elevations/index.pcss';
+@import '@contactlab/ds-tokens/lib/styles/elevations/index.pcss';
 ```
 
 ### Using with Webpack + Less.js
@@ -39,7 +39,7 @@ If you're using Webpack 4 and Less.js you can install **less-loader**. Webpack p
 ```code
 lang: less
 ---
-@import '~@contactlab/milky-way/lib/styles/elevations/index.less';
+@import '~@contactlab/ds-tokens/lib/styles/elevations/index.less';
 ```
 
 ---
@@ -53,7 +53,7 @@ lang: html
 ---
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/milky-way@latest/lib/styles/elevations/index.css"
+  href="https://unpkg.com/@contactlab/ds-tokens@latest/lib/styles/elevations/index.css"
 />
 ```
 
