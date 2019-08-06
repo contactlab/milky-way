@@ -8,7 +8,7 @@ import {THEME} from './config/theme';
 ReactDOM.render(
   <Catalog
     title="MILKY-WAY ~ Contactlab Design System"
-    logoSrc="/theme/uxd-logo.svg"
+    logoSrc="/assets/uxd-logo.svg"
     pages={PAGES}
     theme={THEME}
   />,

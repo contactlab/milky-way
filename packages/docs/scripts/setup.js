@@ -2,13 +2,13 @@ const path = require('path');
 const shell = require('shelljs');
 
 // --- Directories
-const CATALOG_BUILD = path.resolve('../', 'catalog', 'build');
+const CATALOG_BUILD = path.resolve(__dirname, '../', 'catalog', 'build');
 const SRC_TOKEN_DIR = path.resolve(
   __dirname,
   '../',
   'node_modules',
   '@contactlab',
-  'design-tokens',
+  'ds-tokens',
   'lib'
 );
 const TARGET_TOKEN_DIR = path.resolve(
