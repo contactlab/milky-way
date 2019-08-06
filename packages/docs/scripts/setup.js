@@ -1,7 +1,9 @@
 const path = require('path');
 const shell = require('shelljs');
 
-const SRC_DIR = path.resolve(
+// --- Directories
+const CATALOG_BUILD = path.resolve('../', 'catalog', 'build');
+const SRC_TOKEN_DIR = path.resolve(
   __dirname,
   '../',
   'node_modules',
@@ -9,7 +11,13 @@ const SRC_DIR = path.resolve(
   'design-tokens',
   'lib'
 );
-const TARGET_DIR = path.resolve(__dirname, '../', 'catalog', 'static', 'lib');
+const TARGET_TOKEN_DIR = path.resolve(
+  __dirname,
+  '../',
+  'catalog',
+  'static',
+  'lib'
+);
 
 // --- Helpers
 function formattingList(files) {
@@ -43,14 +51,14 @@ function copy(from, target) {
   }
 
   shell.echo('Copy from...');
-  shell.echo(`Source: ${SRC_DIR.toString()}`);
-  shell.echo(`Target: ${TARGET_DIR.toString()}`);
+  shell.echo(`Source: ${SRC_TOKEN_DIR.toString()}`);
+  shell.echo(`Target: ${TARGET_TOKEN_DIR.toString()}`);
   shell.cp('-r', from, target);
 }
 
 // --- Program
 (function run() {
-  clean([TARGET_DIR]);
-  copy(SRC_DIR, TARGET_DIR);
+  clean([TARGET_TOKEN_DIR, CATALOG_BUILD]);
+  copy(SRC_TOKEN_DIR, TARGET_TOKEN_DIR);
   shell.exit(0);
 })();

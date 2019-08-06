@@ -1,6 +1,14 @@
+const path = require('path');
 const shell = require('shelljs');
 
-const FILE_TO_DELETE = ['styles/**/*.css', 'illustrations/min'];
+// --- Directories
+const ILLUSTRATIONS_GZIPED_DIR = path.resolve(
+  __dirname,
+  '../',
+  'lib',
+  'illustrations',
+  'min'
+);
 
 // --- Cleaner
 function formattingList(files) {
@@ -27,6 +35,6 @@ function clean(targets) {
 
 // --- Program
 (function run() {
-  clean(FILE_TO_DELETE);
+  clean(['styles/**/*.css', ILLUSTRATIONS_GZIPED_DIR]);
   shell.exit(0);
 })();

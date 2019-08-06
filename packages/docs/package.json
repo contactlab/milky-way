@@ -25,7 +25,7 @@
     "start": "catalog start",
     "build": "catalog build",
     "predeploy": "run-s -ln setup build",
-    "deploy": "netlify deploy --dir ./build",
+    "deploy": "netlify deploy --dir ./catalog/build",
     "deploy:prod": "npm run deploy -- --prod"
   },
   "dependencies": {
