@@ -20,7 +20,8 @@
     "postinstall": "run-s -ln clean bootstrap setup",
     "lint:css": "stylelint ./**/*.{pcss,less} --ignore-path .gitignore",
     "lint:js": "eslint . --ignore-path .gitignore",
-    "lint": "run-s lint:**",
+    "lint": "run-p -cln lint:**",
+    "prebuild": "npm run setup",
     "build": "lerna run build",
     "publish": "lerna publish"
   },

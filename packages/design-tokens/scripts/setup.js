@@ -2,9 +2,10 @@ const path = require('path');
 const shell = require('shelljs');
 
 // --- Directories
+const ROOT_DIR = path.resolve(__dirname, '../');
+const TOKENS_DIR = path.resolve(ROOT_DIR, 'lib');
 const ILLUSTRATIONS_GZIPED_DIR = path.resolve(
-  __dirname,
-  '../',
+  ROOT_DIR,
   'lib',
   'illustrations',
   'min'
@@ -30,6 +31,6 @@ function clean(targets) {
 
 // --- Program
 (function run() {
-  clean(['styles/**/*.css', ILLUSTRATIONS_GZIPED_DIR]);
+  clean([`${TOKENS_DIR}/styles/**/*.css`, ILLUSTRATIONS_GZIPED_DIR]);
   shell.exit(0);
 })();

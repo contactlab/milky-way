@@ -2,22 +2,16 @@ const path = require('path');
 const shell = require('shelljs');
 
 // --- Directories
-const CATALOG_BUILD = path.resolve(__dirname, '../', 'catalog', 'build');
+const ROOT_DIR = path.resolve(__dirname, '../');
+const CATALOG_DIST_DIR = path.resolve(ROOT_DIR, 'catalog', 'build');
 const SRC_TOKEN_DIR = path.resolve(
-  __dirname,
-  '../',
+  ROOT_DIR,
   'node_modules',
   '@contactlab',
   'ds-tokens',
   'lib'
 );
-const TARGET_TOKEN_DIR = path.resolve(
-  __dirname,
-  '../',
-  'catalog',
-  'static',
-  'lib'
-);
+const TARGET_TOKEN_DIR = path.resolve(ROOT_DIR, 'catalog', 'static', 'lib');
 
 // --- Helpers
 function formattingList(files) {
@@ -53,7 +47,7 @@ function copy(from, target) {
 
 // --- Program
 (function run() {
-  clean([TARGET_TOKEN_DIR, CATALOG_BUILD]);
+  clean([TARGET_TOKEN_DIR, CATALOG_DIST_DIR]);
   copy(SRC_TOKEN_DIR, TARGET_TOKEN_DIR);
   shell.exit(0);
 })();
