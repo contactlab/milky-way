@@ -1,63 +1,10 @@
 @import '../../colors/index.less';
 
-/* Base colors and backgrounds */
-@base-colors: base100, base200, base300, base400, base500, base600, base700,
-  base800, base900;
-
-each(@base-colors, {
-  .color-@{value} {
-    color: @colors[@value] !important;
+each(@colors, {
+  .color-@{key} {
+    color: @value;
   }
-  .bgcolor-@{value} {
-    background-color: @colors[@value] !important;
-  }
-});
-
-/* Accent colors and backgrounds */
-@accent-colors: accent100, accent200, accent300, accent400, accent500, accent600,
-  accent700, accent800, accent900;
-
-each(@accent-colors, {
-  .color-@{value} {
-    color: @colors[@value] !important;
-  }
-  .bgcolor-@{value} {
-    background-color: @colors[@value] !important;
-  }
-});
-
-/* Illustration colors and backgrounds */
-@illustration-colors: base300, base600, base900, accent300, accent600, accent900;
-
-each(@illustration-colors, {
-  .color-@{value} {
-    color: @colors[@value] !important;
-  }
-  .bgcolor-@{value} {
-    background-color: @colors[@value] !important;
-  }
-});
-
-/* Feedback colors and backgrounds */
-@feedback-colors: info, success, warning, error;
-
-each(@feedback-colors, {
-  .color-@{value} {
-    color: @colors[@value] !important;
-  }
-  .bgcolor-@{value} {
-    background-color: @colors[@value] !important;
-  }
-});
-
-/* Neutral colors and backgrounds */
-@neutral-colors: white, black;
-
-each(@neutral-colors, {
-  .color-@{value} {
-    color: @colors[@value] !important;
-  }
-  .bgcolor-@{value} {
-    background-color: @colors[@value] !important;
+  .bgcolor-@{key} {
+    background-color: @value;
   }
 });

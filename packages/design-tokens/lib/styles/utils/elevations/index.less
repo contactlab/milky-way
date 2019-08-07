@@ -1,16 +1,11 @@
 @import '../../elevations/index.less';
 
 .elevation-transition {
-  transition: @elevations[transition];
+  transition: @elevation-transition;
 }
 
-@selectors-elevation: z1, z2, z3, z4, z5;
-
-each(@elevation-list, {
-  .elevation-@{value} {
-    box-shadow: @elevations[@value] !important;
-  }
-  .elevation-accent-@{value} {
-    box-shadow: @elevations[@value] !important;
+each(@elevations, {
+  .elevation-@{key} {
+    box-shadow: @value;
   }
 });
