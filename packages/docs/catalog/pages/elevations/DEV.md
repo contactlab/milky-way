@@ -28,13 +28,15 @@ lang: css
 @import '@contactlab/ds-tokens/lib/styles/elevations/index.pcss';
 ```
 
+After that, you can use the **CSS Custom Properties** (or CSS variables) listed in the [Specimens section](#specimens).
+
 ### Using with Webpack + Less.js
 
 ```hint
-Use Less.js >=v3.5.0
+Use Webpack >= v4 and Less.js >=v3.5.0
 ```
 
-If you're using Webpack 4 and Less.js you can install **less-loader**. Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
+If you're using Webpack and Less.js you can install [**less-loader**](https://github.com/webpack-contrib/less-loader). Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
 
 ```code
 lang: less
@@ -42,11 +44,13 @@ lang: less
 @import '~@contactlab/ds-tokens/lib/styles/elevations/index.less';
 ```
 
+After that, you can use the **Less variables** listed in the [Specimens section](#specimens).
+
 ---
 
 ### Using via CDN
 
-To pull in Contactlab Design Tokens for quick demos or prototyping, grab the latest default configuration build via CDN:
+To pull in Contactlab Design Tokens for quick demos or prototyping, grab the latest build via CDN:
 
 ```code
 lang: html
@@ -56,6 +60,20 @@ lang: html
   href="https://unpkg.com/@contactlab/ds-tokens@latest/lib/styles/elevations/index.css"
 />
 ```
+
+After that, you can use the CSS Custom Properties (or CSS variables) listed in the [Specimens section](#specimens).
+If you wanna use CSS classes instead of variables, use the utility file (available in `css`, `pcss` and `less` extension):
+
+```code
+lang: html
+---
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@contactlab/ds-tokens@latest/lib/styles/utils/elevations/index.css"
+/>
+```
+
+The classes for the elevations are listed below.
 
 ---
 

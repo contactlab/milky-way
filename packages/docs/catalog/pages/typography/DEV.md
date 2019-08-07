@@ -34,7 +34,7 @@ lang: css
 Use Less.js >=v3.5.0
 ```
 
-If you're using Webpack 4 and Less.js you can install **less-loader**. Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
+If you're using Webpack and Less.js you can install [**less-loader**](https://github.com/webpack-contrib/less-loader). Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
 
 ```code
 lang: less
@@ -46,7 +46,7 @@ lang: less
 
 ### Using via CDN
 
-To pull in Contactlab Design Tokens for quick demos or prototyping, grab the latest default configuration build via CDN:
+To pull in Contactlab Design Tokens for quick demos or prototyping, grab the latest build via CDN:
 
 ```code
 lang: html
