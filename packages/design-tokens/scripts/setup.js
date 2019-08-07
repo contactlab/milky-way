@@ -12,11 +12,6 @@ const ILLUSTRATIONS_GZIPED_DIR = path.resolve(
 
 // --- Cleaner
 function formattingList(files) {
-  if (!Array.isArray(files)) {
-    shell.exit(1);
-    return;
-  }
-
   return files.length >= 1
     ? files.join('\n').toString()
     : 'Specifies a list of file to delete.';

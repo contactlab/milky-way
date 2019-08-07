@@ -21,11 +21,6 @@ const TARGET_TOKEN_DIR = path.resolve(
 
 // --- Helpers
 function formattingList(files) {
-  if (!Array.isArray(files)) {
-    shell.exit(1);
-    return;
-  }
-
   return files.length >= 1
     ? files.join('\n').toString()
     : 'Specifies a list of file to delete.';
