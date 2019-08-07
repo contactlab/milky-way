@@ -14,15 +14,15 @@
     "npm": ">=6.0"
   },
   "scripts": {
-    "bootstrap:pkg": "lerna bootstrap",
-    "clean:pkg": "lerna clean --yes",
-    "setup:pkg": "lerna run setup",
-    "setup": "run-s -ln clean:pkg bootstrap:pkg setup:pkg",
-    "postinstall": "npm run setup",
+    "clean": "lerna clean --yes",
+    "bootstrap": "lerna bootstrap",
+    "setup": "lerna run setup",
+    "postinstall": "run-s -ln clean bootstrap setup",
     "lint:css": "stylelint ./**/*.{pcss,less} --ignore-path .gitignore",
     "lint:js": "eslint . --ignore-path .gitignore",
     "lint": "run-s lint:**",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "0.1.0",
