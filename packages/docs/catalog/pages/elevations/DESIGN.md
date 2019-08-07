@@ -16,10 +16,10 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 95px;
+    height: 100px;
     overflow: hidden;
     padding: 25px;
-    font: bold 28px/1.4 Montserrat, sans-serif;
+    font: bold 28px/1.4 'Montserrat', sans-serif;
     color: #394e5c;
     background: #fff;
     transition: var(--elevation-transition);
@@ -138,7 +138,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 
 # Accent Elevations
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   :root {
     --elevation-accent-z1: 0 1px 3px 0 rgba(3, 145, 236, 0.12);
@@ -170,7 +170,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 </div>
 ```
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   .card--accent-z1 {
     box-shadow: var(--elevation-accent-z1);
@@ -185,7 +185,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 </div>
 ```
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   .card--accent-z2 {
     box-shadow: var(--elevation-accent-z2);
@@ -203,7 +203,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 </div>
 ```
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   .card--accent-z3 {
     box-shadow: var(--elevation-accent-z3);
@@ -221,7 +221,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 </div>
 ```
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   .card--accent-z4 {
     box-shadow: var(--elevation-accent-z4);
@@ -239,7 +239,7 @@ Elevation is the relative distance between two surfaces along the z-axis. In the
 </div>
 ```
 
-```html|span-3,no-source,plain,light
+```html|span-3,no-source,plain,dark
 <style>
   .card--accent-z5 {
     box-shadow: var(--elevation-accent-z5);

@@ -10,7 +10,7 @@ The magic formula: **1rem = 10px; 10px / 16px = 62.5%**. [More info on this topi
 ```type
 {
   "font": "Montserrat",
-  "color": "#394e5c",
+  "color": "#1d3344",
   "weight": 700,
   "headings": [
     { "label": "Hero Text | 6.4rem", "value": 64 },
@@ -31,7 +31,7 @@ The magic formula: **1rem = 10px; 10px / 16px = 62.5%**. [More info on this topi
 ```type
 {
   "font": "Montserrat",
-  "color": "#576e7d",
+  "color": "#36546d",
   "weight": 400,
   "headings": [
     { "label": "Sub-Heading 1 | 2.4rem", "value": 24 },

@@ -1,59 +1,59 @@
 export const THEME = {
   // Colors
-  background: '#F9F9F9',
-  textColor: '#333333',
-  codeColor: '#00263E',
-  linkColor: '#FF5555',
+  background: '#fff',
+  textColor: '#001420',
+  codeColor: '#025d97',
+  linkColor: '#0391ec',
 
   // NavigationBar background color, but also sometimes used as a foreground
   // or border color.
-  lightColor: '#D6D6D6',
+  lightColor: '#deebf4',
 
   // Used in PageHeader
-  pageHeadingBackground: '#003B5C',
-  pageHeadingTextColor: '#fff',
+  pageHeadingBackground: '#fff',
+  pageHeadingTextColor: '#001420',
 
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
-  pageHeadingHeight: 200,
+  pageHeadingHeight: 180,
 
   // Used for navigation bar
-  navBarBackground: '#F2F2F2',
-  navBarTextColor: '#003B5C',
+  navBarBackground: '#fff',
+  navBarTextColor: '#36546d',
 
   // Used in ResponsiveTabs (tab text), Download specimen (title text).
   // Typography: headings.
-  brandColor: '#003B5C',
+  brandColor: '#1d3344',
 
-  sidebarColor: '#FFFFFF',
-  sidebarColorText: '#003B5C',
-  sidebarColorTextActive: '#FF5555',
-  sidebarColorLine: '#EBEBEB',
-  sidebarColorHeading: '#003B5C',
+  sidebarColor: '#f7fcff',
+  sidebarColorText: '#001420',
+  sidebarColorTextActive: '#0391ec',
+  sidebarColorLine: '#f7fcff',
+  sidebarColorHeading: '#f7fcff',
 
   // Used in the html, react, and image specimens.
-  bgLight: '#F2F2F2',
-  bgDark: '#333333',
+  bgLight: '#f7fcff',
+  bgDark: '#1d3344',
 
   // Keys appear to be PrismJS token types.
   codeStyles: {
     tag: {
-      color: '#FF5555',
+      color: '#025d97',
     },
     punctuation: {
-      color: '#535353',
+      color: '#00c9bd',
     },
     script: {
-      color: '#3F7397',
+      color: '#025d97',
     },
     function: {
-      color: '#FF5555',
+      color: '#00c9bd',
     },
     keyword: {
-      color: '#3F7397',
+      color: '#025d97',
     },
     string: {
-      color: '#00263E',
+      color: '#394e5c',
     },
   },
 
@@ -64,12 +64,12 @@ export const THEME = {
     'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAFklEQVQI12NQBQF2EGAghQkmwXxSmADZJQiZ2ZZ46gAAAABJRU5ErkJggg==',
 
   // Fonts
-  fontFamily: "'Roboto', sans-serif",
-  fontHeading: "'Roboto', sans-serif",
-  fontMono: "'Roboto Mono', monospace",
+  fontFamily: "'Montserrat', sans-serif",
+  fontHeading: "'Montserrat', sans-serif",
+  fontMono: "'Fira Code', monospace",
 
   // Base font size in pixels.
-  baseFontSize: 16,
+  baseFontSize: 14,
 
   // Modular scale ratio that is used to figure out all the different font sizes
   msRatio: 1.2,
