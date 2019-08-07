@@ -23,6 +23,7 @@
     "lint": "run-p -cln lint:**",
     "prebuild": "npm run setup",
     "build": "lerna run build",
+    "prepublish": "npm run build",
     "publish": "lerna publish"
   },
   "devDependencies": {
