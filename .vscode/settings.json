@@ -1,7 +1,7 @@
 {
   "[javascript]": {
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
     "editor.formatOnPaste": true,
@@ -12,8 +12,8 @@
     "editor.formatOnSave": true
   },
   "[less]": {
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false
   },
   "[json]": {
     "editor.formatOnPaste": true,

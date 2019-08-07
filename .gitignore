@@ -1,5 +1,7 @@
 .cache/
 .DS_Store
 .idea/
-node_modules/
+build/
+dist/
 lerna-debug.log
+node_modules/

@@ -1,0 +1,19 @@
+@import '../colors/index.less';
+
+*::selection {
+  color: @colors[white];
+  background: rgba(3, 145, 236, 0.7);
+}
+
+a {
+  &:link,
+  &:visited {
+    color: @colors[accent500];
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: @colors[accent700];
+  }
+}

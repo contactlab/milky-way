@@ -264,6 +264,7 @@ columns:
   - Preview
   - Type
   - CSS Custom Property
+  - Less Variable
   - Foreground (CSS Class)
   - Background (CSS Class)
 rows:

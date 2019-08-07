@@ -4,35 +4,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-/* stylelint-disable declaration-no-important */
-
 @import '../../colors/index.pcss';
 
 /* ==========================================================================
     Colors
    ========================================================================== */
-
-/* Feedback + neutral colors and backgrounds */
-@each $type in white, black, success, warning, error {
-  .color-$(type) {
-    color: var(--color-$(type)) !important;
-  }
-
-  .bgcolor-$(type) {
-    background-color: var(--color-$(type)) !important;
-  }
-}
-
-/* Illustration colors and backgrounds */
-@each $type in info, success, warning, error, black, white {
-  .color-$(type) {
-    color: var(--color-$(type)) !important;
-  }
-
-  .bgcolor-$(type) {
-    background-color: var(--color-$(type)) !important;
-  }
-}
 
 /* Base colors and backgrounds */
 @each $type in base100, base200, base300, base400, base500, base600, base700,
@@ -41,7 +17,6 @@
   .color-$(type) {
     color: var(--color-$(type)) !important;
   }
-
   .bgcolor-$(type) {
     background-color: var(--color-$(type)) !important;
   }
@@ -54,7 +29,6 @@
   .color-$(type) {
     color: var(--color-$(type)) !important;
   }
-
   .bgcolor-$(type) {
     background-color: var(--color-$(type)) !important;
   }
@@ -65,8 +39,27 @@
   .color-fluo-$(type) {
     color: var(--color-fluo-$(type)) !important;
   }
-
   .bgcolor-fluo-$(type) {
     background-color: var(--color-fluo-$(type)) !important;
+  }
+}
+
+/* Feedback colors and backgrounds */
+@each $type in info, success, warning, error {
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
+  }
+}
+
+/* Neutral colors and backgrounds */
+@each $type in white, black {
+  .color-$(type) {
+    color: var(--color-$(type)) !important;
+  }
+  .bgcolor-$(type) {
+    background-color: var(--color-$(type)) !important;
   }
 }

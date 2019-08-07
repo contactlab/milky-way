@@ -1,0 +1,22 @@
+/*!
+ * Copyright (c) Contactlab UXD Team <https://ux.contactlab.com>.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+@import '../../elevations/index.less';
+
+.elevation-transition {
+  transition: @elevations[transition];
+}
+
+@selectors-elevation: z1, z2, z3, z4, z5;
+
+each(@elevation-list, {
+  .elevation-@{value} {
+    box-shadow: @elevations[@value] !important;
+  }
+  .elevation-accent-@{value} {
+    box-shadow: @elevations[@value] !important;
+  }
+});
