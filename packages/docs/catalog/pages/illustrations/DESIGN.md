@@ -16,6 +16,7 @@ src: "/lib/illustrations/astroboy-gasp.svg"
 
 ```download
 span: 2
+title: Astroboy Gasp
 subtitle: SVG GZip
 url: /lib/illustrations/min/astroboy-gasp.svg
 ```

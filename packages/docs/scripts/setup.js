@@ -13,6 +13,15 @@ const SRC_TOKEN_DIR = path.resolve(
 );
 const TARGET_TOKEN_DIR = path.resolve(ROOT_DIR, 'catalog', 'static', 'lib');
 
+// --- Files
+const GLOBAL_CSS = path.resolve(
+  ROOT_DIR,
+  'catalog',
+  'static',
+  'assets',
+  'global.css'
+);
+
 // --- Helpers
 function formattingList(files) {
   return files.length >= 1
@@ -47,7 +56,7 @@ function copy(from, target) {
 
 // --- Program
 (function run() {
-  clean([TARGET_TOKEN_DIR, CATALOG_DIST_DIR]);
+  clean([GLOBAL_CSS, TARGET_TOKEN_DIR, CATALOG_DIST_DIR]);
   copy(SRC_TOKEN_DIR, TARGET_TOKEN_DIR);
   shell.exit(0);
 })();

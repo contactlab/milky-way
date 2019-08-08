@@ -15,7 +15,7 @@
   },
   "scripts": {
     "clean": "lerna clean --yes",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap --hoist --force-local",
     "setup": "lerna run setup",
     "postinstall": "run-s -ln clean bootstrap setup",
     "lint:css": "stylelint ./**/*.{pcss,less} --ignore-path .gitignore",

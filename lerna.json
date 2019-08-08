@@ -1,17 +1,16 @@
 {
-  "version": "0.1.0",
+  "version": "independent",
   "npmClient": "npm",
   "packages": ["packages/*"],
   "command": {
     "add": {
       "exact": true
     },
-    "bootstrap": {
-      "hoist": false
-    },
     "version": {
-      "allowBranch": ["master"],
-      "exact": true
+      "allowBranch": ["master"]
+    },
+    "publish": {
+      "ignoreChanges": ["README.md", "package-lock.json"]
     }
   }
 }

@@ -15,7 +15,7 @@ export const THEME = {
 
   // Used in Menu and PageHeader to make sure the top parts have
   // the same height.
-  pageHeadingHeight: 180,
+  pageHeadingHeight: 150,
 
   // Used for navigation bar
   navBarBackground: '#fff',
