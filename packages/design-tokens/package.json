@@ -31,7 +31,7 @@
   ],
   "scripts": {
     "setup": "node ./scripts/setup.js",
-    "build:less": "lessc ./lib/styles/bundle/index.less ./lib/styles/bundle/index.css",
+    "build:less": "lessc ./lib/styles/utils/index.less ./lib/styles/utils/index.css",
     "build:css": "postcss ./lib/styles/**/*.pcss --base ./lib/styles --dir ./lib/styles --ext css",
     "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
     "build": "run-p build:css build:svg"
