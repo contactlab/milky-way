@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  overflow: hidden;
+  height: 90px;
+  padding: 25px;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: @colors[base700];
+  background: @colors[white];
+  font: bold 28px/1.4 @fonts[default];
+  transition: @elevation-transition;
+
+  &__spec {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: baseline;
+  }
+
+  &__code {
+    display: flex;
+    min-height: 35px;
+    color: @colors[base500];
+    font: normal 12px/1.4 @fonts[mono];
+  }
+
+  &__code > strong {
+    margin-right: 5px;
+  }
+}
+
+.card--z1 {
+  box-shadow: @elevations[z1];
+}
+
+.card--z2 {
+  box-shadow: @elevations[z2];
+}
+
+.card--z3 {
+  box-shadow: @elevations[z3];
+}
+
+.card--z4 {
+  box-shadow: @elevations[z4];
+}
+
+.card--z5 {
+  box-shadow: @elevations[z5];
+}
+
+.card--accent-z1 {
+  box-shadow: @elevations[accent-z1];
+}
+
+.card--accent-z2 {
+  box-shadow: @elevations[accent-z2];
+}
+
+.card--accent-z3 {
+  box-shadow: @elevations[accent-z3];
+}
+
+.card--accent-z4 {
+  box-shadow: @elevations[accent-z4];
+}
+
+.card--accent-z5 {
+  box-shadow: @elevations[accent-z5];
+}
+
+div[class*='card--accent'] {
+  color: @colors[base100];
+  background-image: radial-gradient(
+    ellipse at top center,
+    @colors[accent300] -10%,
+    @colors[accent500]
+  );
+}
+
+div[class*='card--accent'] .card__code {
+  color: @colors[accent100];
+}

@@ -5,7 +5,6 @@ plain: true
 light: true,
 span: 2
 src: "/lib/illustrations/astroboy-gasp.svg"
-title: "Astroboy Gasp (Light theme)"
 ```
 
 ```image
@@ -13,7 +12,6 @@ plain: true
 dark: true,
 span: 2
 src: "/lib/illustrations/astroboy-gasp.svg"
-title: "Astroboy Gasp (Dark theme)"
 ```
 
 ```download
@@ -30,7 +28,6 @@ plain: true
 light: true,
 span: 2
 src: "/lib/illustrations/astroboy-kidnapping.svg"
-title: "Astroboy Kidnapping (Light theme)"
 ```
 
 ```image
@@ -38,7 +35,6 @@ plain: true,
 dark: true,
 span: 2
 src: "/lib/illustrations/astroboy-kidnapping.svg"
-title: "Astroboy Kidnapping (Dark theme)"
 ```
 
 ```download
@@ -55,7 +51,6 @@ plain: true
 light: true
 span: 2
 src: "/lib/illustrations/astroboy-lost.svg"
-title: "Astroboy Lost (Light theme)"
 ```
 
 ```image
@@ -63,7 +58,6 @@ plain: true
 dark: true
 span: 2
 src: "/lib/illustrations/astroboy-lost.svg"
-title: "Astroboy Lost (Dark theme)"
 ```
 
 ```download
@@ -80,7 +74,6 @@ plain: true
 light: true
 span: 2
 src: "/lib/illustrations/astroboy-warning.svg"
-title: "Astroboy Warning (Light theme)"
 ```
 
 ```image
@@ -88,7 +81,6 @@ plain: true
 dark: true
 span: 2
 src: "/lib/illustrations/astroboy-warning.svg"
-title: "Astroboy Warning (Dark theme)"
 ```
 
 ```download
@@ -105,7 +97,6 @@ plain: true
 light: true
 span: 2
 src: "/lib/illustrations/empty-space.svg"
-title: "Empty Space (Light theme)"
 ```
 
 ```image
@@ -113,7 +104,6 @@ plain: true
 dark: true
 span: 2
 src: "/lib/illustrations/empty-space.svg"
-title: "Empty Space (Dark theme)"
 ```
 
 ```download
@@ -130,7 +120,6 @@ plain: true
 light: true
 span: 2
 src: "/lib/illustrations/under-construction.svg"
-title: "Under Construction (Light theme)"
 ```
 
 ```image
@@ -138,7 +127,6 @@ plain: true
 dark: true
 span: 2
 src: "/lib/illustrations/under-construction.svg"
-title: "Under Construction (Dark theme)"
 ```
 
 ```download
@@ -155,7 +143,6 @@ plain: true
 light: true
 span: 2
 src: "/lib/illustrations/shuttle-loader.svg"
-title: "Shuttle Loader (Light theme)"
 ```
 
 ```image
@@ -163,7 +150,6 @@ plain: true
 dark: true
 span: 2
 src: "/lib/illustrations/shuttle-loader.svg"
-title: "Shuttle Loader (Dark theme)"
 ```
 
 ```download

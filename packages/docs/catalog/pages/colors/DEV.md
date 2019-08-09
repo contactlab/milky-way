@@ -36,7 +36,7 @@ After that, you can use the **CSS Custom Properties** (or CSS variables) listed 
 Use Less.js >=v3.5.0
 ```
 
-If you're using Webpack and Less.js you can install [**less-loader**](https://github.com/webpack-contrib/less-loader). Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
+If you're using Webpack and Less.js you can install [less-loader](https://github.com/webpack-contrib/less-loader). Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
 
 ```code
 lang: less

@@ -20,12 +20,12 @@ value: "#0391EC"
 colors:
   - {name: "base100", value: "#f7fcff"}
   - {name: "base200", value: "#deebf4"}
-  - {name: "base300", value: "#c9d5dd"}
-  - {name: "base400", value: "#adbdc8"}
-  - {name: "base500", value: "#92a5b2"}
-  - {name: "base600", value: "#758b9a"}
-  - {name: "base700", value: "#576e7d"}
-  - {name: "base800", value: "#394e5c"}
+  - {name: "base300", value: "#c3d4e0"}
+  - {name: "base400", value: "#9cb0bf"}
+  - {name: "base500", value: "#7e96a8"}
+  - {name: "base600", value: "#5b768c"}
+  - {name: "base700", value: "#36546d"}
+  - {name: "base800", value: "#1d3344"}
   - {name: "base900", value: "#001420"}
 ```
 
