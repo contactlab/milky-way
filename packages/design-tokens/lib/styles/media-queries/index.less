@@ -5,30 +5,30 @@
 @xl: 100em; // 1600px
 
 // Mobile first
-@from-xsmall: ~"(min-width: @{xs})";
-@from-small: ~"(min-width: @{sm})";
-@from-medium: ~"(min-width: @{md})";
-@from-large: ~"(min-width: @{lg})";
-@from-xlarge: ~"(min-width: @{xl})";
+@from-xsmall: ~'(min-width: @{xs})';
+@from-small: ~'(min-width: @{sm})';
+@from-medium: ~'(min-width: @{md})';
+@from-large: ~'(min-width: @{lg})';
+@from-xlarge: ~'(min-width: @{xl})';
 
 // Desktop first
-@to-xsmall: ~"(max-width: @{xs})";
-@to-small: ~"(max-width: @{sm})";
-@to-medium: ~"(max-width: @{md})";
-@to-large: ~"(max-width: @{lg})";
-@to-xlarge: ~"(max-width: @{xl})";
+@to-xsmall: ~'(max-width: @{xs})';
+@to-small: ~'(max-width: @{sm})';
+@to-medium: ~'(max-width: @{md})';
+@to-large: ~'(max-width: @{lg})';
+@to-xlarge: ~'(max-width: @{xl})';
 
 // Orientation
-@landscape: ~"(orientation: landscape)";
-@portrait: ~"(orientation: portrait)";
+@landscape: ~'(orientation: landscape)';
+@portrait: ~'(orientation: portrait)';
 
 // a11y
-@reduced-motion: ~"(prefers-reduced-motion: reduce)";
-@light-scheme: ~"(prefers-color-scheme: light)";
-@dark-scheme: ~"(prefers-color-scheme: dark)";
+@reduced-motion: ~'(prefers-reduced-motion: reduce)';
+@light-scheme: ~'(prefers-color-scheme: light)';
+@dark-scheme: ~'(prefers-color-scheme: dark)';
 
 // Misc
-@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
-              ~"only screen and (min--moz-device-pixel-ratio: 1.5)",
-              ~"only screen and (-o-min-device-pixel-ratio: 3/2)",
-              ~"only screen and (min-device-pixel-ratio: 1.5)";
+@fine-pointer: ~'(hover: hover) and (pointer: fine)';
+@highdensity: ~'(-webkit-min-device-pixel-ratio: 1.5)',
+  ~'(min--moz-device-pixel-ratio: 1.5)', ~'(-o-min-device-pixel-ratio: 3/2)',
+  ~'(min-device-pixel-ratio: 1.5)';

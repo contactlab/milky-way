@@ -1,1 +1,5 @@
-module.exports = require('@giotramu/postcss-config').config;
+module.exports = require('@giotramu/postcss-config').expand({
+  plugins: {
+    'postcss-custom-media': {preserve: true},
+  },
+});
