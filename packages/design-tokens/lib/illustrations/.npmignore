@@ -1,0 +1,7 @@
+# -------------------------------------------------------------------------------#
+# This empty file is necessary to force the publication on NPM registry
+# of the "~/lib/illustrations/min" content folder,
+# otherwise, it would be ignored because it was inserted in the .gitignore file.
+#
+# More info: https://stackoverflow.com/a/24942436
+# -------------------------------------------------------------------------------#
