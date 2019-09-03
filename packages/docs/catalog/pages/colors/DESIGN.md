@@ -379,8 +379,8 @@ url: /lib/resources/colors/token.sketchpalette
 ```download
 span: 2
 title: Color Palette
-subtitle: .ase (Illustrator)
-url: /lib/resources/colors/token.ase
+subtitle: .ai (Illustrator)
+url: /lib/resources/colors/token.ai
 ```
 
 ```download
