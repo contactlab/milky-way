@@ -25,7 +25,7 @@ If you're using [postcss-import](https://github.com/postcss/postcss-import) (or 
 ```code
 lang: css
 ---
-@import '@contactlab/ds-tokens/lib/styles/elevations/index.pcss';
+@import '@contactlab/ds-tokens/lib/styles/elevations/index.css';
 ```
 
 After that, you can use the **CSS Custom Properties** (or CSS variables) listed in the [Specimens section](#specimens).
@@ -62,7 +62,7 @@ lang: html
 ```
 
 After that, you can use the CSS Custom Properties (or CSS variables) listed in the [Specimens section](#specimens).
-If you wanna use CSS classes instead of variables, use the utility file (available in `css`, `pcss` and `less` extension):
+If you wanna use CSS classes instead of variables, use the utility file (available in `css`, `scss` and `less` extension):
 
 ```code
 lang: html

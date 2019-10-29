@@ -1,27 +1,27 @@
 * {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
-  // 1rem = 10px; 10px/16px = 62.5%;
-  // https://snook.ca/archives/html_and_css/font-size-with-rem
-  font-size: 62.5%;
+	// 1rem = 10px; 10px/16px = 62.5%;
+	// https://snook.ca/archives/html_and_css/font-size-with-rem
+	font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 svg {
-  display: inline-block;
+	display: inline-block;
 }
 
 a,
@@ -89,14 +89,14 @@ time,
 tr,
 ul,
 video {
-  margin: 0;
-  border: 0;
-  padding: 0;
+	margin: 0;
+	border: none;
+	padding: 0;
 }
 
 a,
 a:visited {
-  color: inherit;
+	color: inherit;
 }
 
 article,
@@ -106,48 +106,49 @@ header,
 nav,
 section,
 main {
-  display: block;
+	display: block;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 img,
 video {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 img {
-  border-style: none;
+	border-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote::after,
 blockquote::before,
 q::after,
 q::before {
-  content: none;
+	content: none;
 }
 
 [hidden] {
-  display: none !important;
+	/* stylelint-disable-next-line declaration-no-important */
+	display: none !important;
 }
 
 [disabled] {
-  cursor: not-allowed;
+	cursor: not-allowed;
 }
 
 :focus:not(:focus-visible) {
-  outline: none;
+	outline: none;
 }

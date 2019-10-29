@@ -1,48 +1,48 @@
 {
-  "private": true,
-  "name": "@contactlab/ds-docs",
-  "author": {
-    "name": "Contactlab UXD Team",
-    "email": "uxd@contactlab.com",
-    "homepage": "https://ux.contactlab.com/"
-  },
-  "contributors": [
-    "Carlo Audino <carlo.audino@contactlab.com>",
-    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
-  ],
-  "homepage": "https://github.com/contactlab/milky-way#readme",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/contactlab/milky-way"
-  },
-  "engines": {
-    "node": ">=10.0",
-    "npm": ">=6.0"
-  },
-  "scripts": {
-    "setup": "node ./scripts/setup.js",
-    "start:docs": "catalog start",
-    "build:docs:": "catalog build",
-    "watch:less": "wlessc ./catalog/styles/main.less --output ./catalog/static/assets/global.css --prefix-browsers \"last 2 version, not ie <= 11, not op_mini all, not dead, not < 0.5%\"",
-    "build:less": "npm run watch:less -- --once",
-    "dev": "run-p -cln watch:less start:docs",
-    "build": "run-p -cln build:less build:docs",
-    "predeploy": "run-s -ln setup build",
-    "deploy": "netlify deploy --dir ./catalog/build",
-    "deploy:prod": "npm run deploy -- --prod"
-  },
-  "dependencies": {
-    "@contactlab/ds-tokens": "0.1.x",
-    "catalog": "3.6.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
-  },
-  "devDependencies": {
-    "@giotramu/postcss-config": "0.1.7",
-    "netlify-cli": "2.13.1",
-    "npm-run-all": "4.1.5",
-    "shelljs": "0.8.3",
-    "wlessc": "0.8.1"
-  }
+	"private": true,
+	"name": "@contactlab/ds-docs",
+	"author": {
+		"name": "Contactlab UXD Team",
+		"email": "uxd@contactlab.com",
+		"homepage": "https://ux.contactlab.com/"
+	},
+	"contributors": [
+		"Carlo Audino <carlo.audino@contactlab.com>",
+		"Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
+	],
+	"homepage": "https://github.com/contactlab/milky-way#readme",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/contactlab/milky-way"
+	},
+	"engines": {
+		"node": ">=10.0",
+		"npm": ">=6.0"
+	},
+	"scripts": {
+		"setup": "node ./scripts/setup.js",
+		"start:docs": "catalog start",
+		"build:docs:": "catalog build",
+		"watch:less": "wlessc ./catalog/styles/main.less --output ./catalog/static/assets/global.css --prefix-browsers \"last 2 version, not ie <= 11, not op_mini all, not dead, not < 0.5%\"",
+		"build:less": "npm run watch:less -- --once",
+		"dev": "run-p -cln watch:less start:docs",
+		"build": "run-p -cln build:less build:docs",
+		"predeploy": "run-s -ln setup build",
+		"deploy": "netlify deploy --dir ./catalog/build",
+		"deploy:prod": "npm run deploy -- --prod"
+	},
+	"dependencies": {
+		"@contactlab/ds-tokens": "*",
+		"catalog": "3.6.0",
+		"react": "16.11.0",
+		"react-dom": "16.11.0"
+	},
+	"devDependencies": {
+		"@giotramu/postcss-config": "1.0.1",
+		"netlify-cli": "2.20.0",
+		"npm-run-all": "4.1.5",
+		"shelljs": "0.8.3",
+		"wlessc": "0.8.1"
+	}
 }

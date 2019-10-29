@@ -25,7 +25,7 @@ If you're using [postcss-import](https://github.com/postcss/postcss-import) (or 
 ```code
 lang: css
 ---
-@import '@contactlab/ds-tokens/lib/styles/typography/index.pcss';
+@import '@contactlab/ds-tokens/lib/styles/typography/index.css';
 ```
 
 ### Using with Webpack + Less.js

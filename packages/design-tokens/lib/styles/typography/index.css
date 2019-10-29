@@ -1,10 +1,14 @@
-@import '../colors/index.less';
+@import '../colors/index.css';
 
-@font-stack: 'Montserrat', sans-serif;
+:root {
+	--font-stack: 'Montserrat', sans-serif;
+}
 
 body {
-	color: @colors[base900];
-	font: normal normal 1.4rem/1.5em @font-stack;
+	color: var(--color-base900);
+	font: normal normal 1.4rem/1.5em var(--font-stack);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -14,7 +18,7 @@ h4,
 h5,
 h6,
 .hero-text {
-	color: @colors[base800];
+	color: var(--color-base800);
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 }
@@ -64,7 +68,7 @@ h6 {
 .subheading-1,
 .subheading-2,
 .subheading-3 {
-	color: @colors[base700];
+	color: var(--color-base700);
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 	line-height: 1.3em;
@@ -95,12 +99,12 @@ p {
 mark {
 	border-radius: 2px;
 	padding: 1.5px 4px;
-	color: @colors[white];
-	background-color: @colors[accent500];
+	color: var(--color-white);
+	background-color: var(--color-accent500);
 }
 
 small {
-	color: @colors[accent600];
+	color: var(--color-base600);
 	font-size: 1.2rem;
 	line-height: 1.4em;
 }
