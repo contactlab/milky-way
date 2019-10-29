@@ -31,8 +31,8 @@
 	],
 	"scripts": {
 		"setup": "node ./scripts/setup.js",
-		"test:less": "lessc ./lib/styles/utils/index.less ./__tests__/less-build.css",
-		"test:scss": "postcss ./lib/styles/utils/index.scss ./__tests__/scss-build.css",
+		"test:less": "lessc ./lib/styles/bundle/index.less ./__tests__/less-build.css",
+		"test:scss": "postcss ./lib/styles/bundle/index.scss ./__tests__/scss-build.css",
 		"build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
 		"build": "run-p build:svg"
 	},
