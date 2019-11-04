@@ -18,13 +18,12 @@
 		"bootstrap": "lerna bootstrap --hoist --force-local",
 		"setup": "lerna run setup",
 		"postinstall": "run-s -ln clean bootstrap setup",
-		"lint:css": "stylelint ./**/*.{css,scss,less} --ignore-path .gitignore",
-		"lint:js": "eslint . --ignore-path .gitignore",
-		"lint": "run-p -cln lint:**",
+		"lint:css": "stylelint ./**/*.{css,scss,less}",
+		"lint:js": "eslint .",
+		"lint": "run-s -ln lint:**",
 		"prebuild": "npm run setup",
 		"build": "lerna run build",
-		"prepublish": "npm run build",
-		"publish": "lerna publish"
+		"publish": "npm run build && lerna publish"
 	},
 	"devDependencies": {
 		"@giotramu/stylelint-config": "1.0.2",
@@ -32,17 +31,17 @@
 		"eslint": "6.6.0",
 		"eslint-config-airbnb": "18.0.1",
 		"eslint-config-prettier": "6.5.0",
-		"eslint-config-wesbos": "0.0.19",
 		"eslint-plugin-html": "6.0.0",
 		"eslint-plugin-import": "2.18.2",
 		"eslint-plugin-jsx-a11y": "6.2.3",
-		"eslint-plugin-prettier": "3.1.0",
+		"eslint-plugin-prettier": "3.1.1",
 		"eslint-plugin-react": "7.16.0",
 		"eslint-plugin-react-hooks": "2.2.0",
 		"husky": "3.0.9",
 		"lerna": "3.18.3",
 		"npm-run-all": "4.1.5",
 		"prettier": "1.18.2",
-		"pretty-quick": "2.0.0"
+		"pretty-quick": "2.0.0",
+		"shelljs": "0.8.3"
 	}
 }
