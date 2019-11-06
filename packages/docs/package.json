@@ -14,7 +14,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/contactlab/milky-way"
+		"url": "git+https://github.com/contactlab/milky-way/tree/master/packages/docs"
 	},
 	"engines": {
 		"node": ">=10.0",
