@@ -1,9 +1,9 @@
-@import '../colors/index';
+@import './colors';
 
 $font-stack: 'Montserrat', sans-serif;
 
 body {
-	color: mag-get($colors, 'base900');
+	color: get-color('base900');
 	font: normal normal 1.4rem/1.5em $font-stack;
 }
 
@@ -14,7 +14,7 @@ h4,
 h5,
 h6,
 .hero-text {
-	color: map-get($colors, 'base800');
+	color: get-color('base800');
 	font-weight: bold;
 	text-rendering: optimizeLegibility;
 }
@@ -22,6 +22,13 @@ h6,
 .hero-text {
 	margin-bottom: 2.6rem;
 	font-size: 6.4rem;
+	line-height: 1em;
+}
+
+%hero-text {
+	margin-bottom: 2.6rem;
+	font-size: 6.4rem;
+	text-rendering: optimizeLegibility;
 	line-height: 1em;
 }
 
@@ -64,7 +71,7 @@ h6 {
 .subheading-1,
 .subheading-2,
 .subheading-3 {
-	color: map-get($colors, 'base700');
+	color: get-color('base700');
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 	line-height: 1.3em;
@@ -76,16 +83,46 @@ h6 {
 	font-size: 2.2rem;
 }
 
+%subheading-1 {
+	display: block;
+	margin-bottom: 1.6rem;
+	color: get-color('base700');
+	font-size: 2.2rem;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3em;
+}
+
 .subheading-2 {
 	display: block;
 	margin-bottom: 1.4rem;
 	font-size: 2rem;
 }
 
+%subheading-2 {
+	display: block;
+	margin-bottom: 1.4rem;
+	color: get-color('base700');
+	font-size: 2rem;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3em;
+}
+
 .subheading-3 {
 	display: block;
 	margin-bottom: 1.2rem;
 	font-size: 1.8rem;
+}
+
+%subheading-3 {
+	display: block;
+	margin-bottom: 1.2rem;
+	color: get-color('base700');
+	font-size: 1.8rem;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3em;
 }
 
 p {
@@ -95,12 +132,12 @@ p {
 mark {
 	border-radius: 2px;
 	padding: 1.5px 4px;
-	color: map-get($colors, 'white');
-	background-color: map-get($colors, 'accent500');
+	color: get-color('white');
+	background-color: get-color('accent500');
 }
 
 small {
-	color: map-get($colors, 'accent600');
+	color: get-color('accent600');
 	font-size: 1.2rem;
 	line-height: 1.4em;
 }

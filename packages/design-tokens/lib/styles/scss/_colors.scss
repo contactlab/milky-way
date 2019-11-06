@@ -30,3 +30,7 @@ $colors: (
 	'fluo-accent600': #9bebd0,
 	'fluo-accent900': #00c9bd,
 );
+
+@function get-color($color) {
+	@return map-get($colors, $color);
+}

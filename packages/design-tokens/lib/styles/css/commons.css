@@ -1,4 +1,4 @@
-@import '../colors/index.css';
+@import './colors.css';
 
 *::selection {
 	color: var(--color-white);

@@ -1,0 +1,19 @@
+@import './colors';
+
+*::selection {
+	color: get-color('white');
+	background: rgba(3, 145, 236, 0.7);
+}
+
+a {
+	&:link,
+	&:visited {
+		color: get-color('accent500');
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:active {
+		color: get-color('accent700');
+	}
+}
