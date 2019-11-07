@@ -22,3 +22,14 @@ $elevations: (
 );
 
 $elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+@function get-elevation($key) {
+	@if map-has-key($elevations, $key) {
+		@return map-get($elevations, $key);
+	} @else {
+		@warn "Unfortunately, no value could be retrieved from `#{$elevations}`. "
+				+ "Please make sure it is defined in `$elevations` map.";
+
+		@return null;
+	}
+}
