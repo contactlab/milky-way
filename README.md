@@ -6,25 +6,29 @@ The official Contactlab Design System.
 
 ---
 
-## Resources
-
-### [Design tokens](./packages/design-tokens)
+## [Design tokens](./packages/design-tokens)
 
 [![Design Tokens Package][design-tokens-badge]][design-tokens]
 
-> Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
+Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
-### [Email templates](./packages/emails)
+---
 
-> Contactlab Marketing Cloud transactional emails.
+## [Emails](./packages/emails)
 
-### [Service page templates](./packages/service-pages)
+Contactlab Marketing Cloud transactional emails.
 
-> The Contactlab Marketing Cloud service pages.
+---
+
+## [Service pages](./packages/service-pages)
+
+The Contactlab Marketing Cloud service pages.
+
+---
 
 ### License
 
 Milky-Way is [MIT licensed](./LICENSE).
 
 [design-tokens]: https://www.npmjs.com/package/@contactlab/ds-tokens
-[design-tokens-badge]: https://badgen.net/npm/v/@contactlab/ds-tokens?style=for-the-badge
+[design-tokens-badge]: https://flat.badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
