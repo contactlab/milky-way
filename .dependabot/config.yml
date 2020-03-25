@@ -1,0 +1,37 @@
+version: 1
+update_configs:
+  # root
+  - package_manager: 'javascript'
+    directory: '/'
+    update_schedule: 'live'
+    default_assignees:
+      - 'giotramu'
+    default_labels:
+      - '[milky-way] dependencies'
+
+  # design-tokens
+  - package_manager: 'javascript'
+    directory: '/packages/design-tokens'
+    update_schedule: 'live'
+    default_assignees:
+      - 'giotramu'
+    default_labels:
+      - '[design-tokens] dependencies'
+
+  # emails
+  - package_manager: 'javascript'
+    directory: '/packages/emails'
+    update_schedule: 'live'
+    default_assignees:
+      - 'giotramu'
+    default_labels:
+      - '[emails] dependencies'
+
+  # service-pages
+  - package_manager: 'javascript'
+    directory: '/packages/service-pages'
+    update_schedule: 'live'
+    default_assignees:
+      - 'giotramu'
+    default_labels:
+      - '[service-pages] dependencies'
