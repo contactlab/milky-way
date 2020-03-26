@@ -37,7 +37,7 @@
     "@contactlab/ds-tokens": "*"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.2.2",
+    "@giotramu/stylelint-config": "2.2.3",
     "eslint": "6.8.0",
     "eslint-config-contactlab": "4.2.2",
     "eslint-config-prettier": "6.10.1",
@@ -48,7 +48,7 @@
     "rimraf": "3.0.2",
     "sass": "1.26.3",
     "serve": "11.3.0",
-    "stylelint": "13.2.1",
+    "stylelint": "13.3.0",
     "stylelint-scss": "3.16.0",
     "typescript": "3.8.3"
   }
