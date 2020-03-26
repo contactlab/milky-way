@@ -1,6 +1,6 @@
+import * as React from 'react';
 import {i18nType} from '../../i18n/helpers';
 import {Text} from '../components/text';
-import * as React from 'react';
 
 interface PasswordChangedProps {
   firstName: string;

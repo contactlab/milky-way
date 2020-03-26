@@ -1,7 +1,7 @@
-import {bgColor, panelBorderLeft, panelPadding} from '../commons/attributes';
-import {Text} from './text';
 import {MjmlColumn, MjmlSection} from 'mjml-react';
 import * as React from 'react';
+import {bgColor, panelBorderLeft, panelPadding} from '../commons/attributes';
+import {Text} from './text';
 
 interface PanelProps {
   source: {

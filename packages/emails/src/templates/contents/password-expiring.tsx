@@ -1,9 +1,9 @@
+import * as React from 'react';
 import {profilePageHref} from '../../config';
 import {i18nType} from '../../i18n/helpers';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
 import {Text} from '../components/text';
-import * as React from 'react';
 
 interface PasswordExpiringProps {
   firstName: string;

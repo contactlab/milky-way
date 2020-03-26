@@ -1,7 +1,7 @@
-import {logoHref, logoSrc} from '../../config';
-import {bgColor, logoSize, logoPadding} from '../commons/attributes';
 import {MjmlSection, MjmlColumn, MjmlImage} from 'mjml-react';
 import * as React from 'react';
+import {logoHref, logoSrc} from '../../config';
+import {bgColor, logoSize, logoPadding} from '../commons/attributes';
 
 export function Logo(): JSX.Element {
   return (

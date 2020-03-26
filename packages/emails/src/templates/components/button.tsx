@@ -1,11 +1,11 @@
+import {MjmlButton} from 'mjml-react';
+import * as React from 'react';
 import {
   borderRadius,
   btnSize,
   primaryColor,
-  whiteColor
+  whiteColor,
 } from '../commons/attributes';
-import {MjmlButton} from 'mjml-react';
-import * as React from 'react';
 
 interface ButtonProps {
   align?: 'right' | 'center' | 'left';

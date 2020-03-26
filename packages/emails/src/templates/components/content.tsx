@@ -1,3 +1,5 @@
+import {MjmlColumn, MjmlSection} from 'mjml-react';
+import * as React from 'react';
 import {i18nType} from '../../i18n/helpers';
 import {cardBgColor, sectionPadding, borderRadius} from '../commons/attributes';
 import {PasswordChanged} from '../contents/password-changed';
@@ -8,8 +10,6 @@ import {PasswordReset} from '../contents/password-reset';
 import {Pin} from '../contents/pin';
 import {Welcome} from '../contents/welcome';
 import {Text} from './text';
-import {MjmlColumn, MjmlSection} from 'mjml-react';
-import * as React from 'react';
 
 export const ContentSuite = [
   'password-changed',
@@ -18,7 +18,7 @@ export const ContentSuite = [
   'password-recovery',
   'password-reset',
   'pin',
-  'welcome'
+  'welcome',
 ] as const;
 
 export type ContentTypes = typeof ContentSuite;

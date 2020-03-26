@@ -1,11 +1,11 @@
 import {readFileSync} from 'fs';
 import {resolve} from 'path';
-import {getData} from './data/helpers';
-import {i18nBehaviour, LangType} from './i18n/helpers';
-import {Mail, MailSuite, MailData, MailType, MailTypes} from './templates';
 import express from 'express';
 import {render, Mjml2HtmlOptions} from 'mjml-react';
 import * as React from 'react';
+import {getData} from './data/helpers';
+import {i18nBehaviour, LangType} from './i18n/helpers';
+import {Mail, MailSuite, MailData, MailType, MailTypes} from './templates';
 
 const root = resolve(__dirname, '..');
 
@@ -15,7 +15,7 @@ const app = express();
 const mjmlOptions: Mjml2HtmlOptions = {
   beautify: true,
   minify: false,
-  validationLevel: 'soft'
+  validationLevel: 'soft',
 };
 
 run(MailSuite, getData());

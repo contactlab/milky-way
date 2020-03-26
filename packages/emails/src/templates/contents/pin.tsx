@@ -1,8 +1,8 @@
+import * as React from 'react';
 import {i18nType} from '../../i18n/helpers';
 import {Link} from '../components/link';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
-import * as React from 'react';
 
 interface DispatchPinProps {
   firstName: string;

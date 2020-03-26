@@ -1,3 +1,5 @@
+import {Mjml, MjmlBody, MjmlWrapper} from 'mjml-react';
+import * as React from 'react';
 import {bgColor, bodyWidth} from './commons/attributes';
 import {
   Content,
@@ -5,14 +7,11 @@ import {
   ContentSuite,
   ContentData,
   ContentType,
-  ContentTypes
+  ContentTypes,
 } from './components/content';
 import {Footer} from './components/footer';
 import {Head} from './components/head';
 import {Logo} from './components/logo';
-
-import {Mjml, MjmlBody, MjmlWrapper} from 'mjml-react';
-import * as React from 'react';
 
 export const MailSuite = ContentSuite;
 

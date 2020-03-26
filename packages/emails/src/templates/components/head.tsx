@@ -1,4 +1,3 @@
-import {i18nType} from '../../i18n/helpers';
 import {
   MjmlHead,
   MjmlTitle,
@@ -7,9 +6,10 @@ import {
   MjmlFont,
   MjmlStyle,
   MjmlAll,
-  MjmlBreakpoint
+  MjmlBreakpoint,
 } from 'mjml-react';
 import * as React from 'react';
+import {i18nType} from '../../i18n/helpers';
 
 interface HeadProps {
   i18n: i18nType;

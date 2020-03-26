@@ -1,9 +1,9 @@
+import * as React from 'react';
 import {loginHref} from '../../config';
 import {i18nType} from '../../i18n/helpers';
 import {Button} from '../components/button';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
-import * as React from 'react';
 
 interface PasswordResetProps {
   firstName: string;
@@ -16,7 +16,7 @@ export function PasswordReset(props: PasswordResetProps): JSX.Element {
   const {firstName, username, password, i18n} = props;
   const userInfo: Map<string, string> = new Map([
     [i18n.t('username'), username],
-    [i18n.t('tempPassword'), password]
+    [i18n.t('tempPassword'), password],
   ]);
 
   return (

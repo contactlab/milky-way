@@ -1,11 +1,11 @@
+import {MjmlText} from 'mjml-react';
+import * as React from 'react';
 import {
   captionColor,
   labelColor,
   titleColor,
-  textColor
+  textColor,
 } from '../commons/attributes';
-import {MjmlText} from 'mjml-react';
-import * as React from 'react';
 
 type Categories = 'caption' | 'label' | 'paragraph' | 'title';
 type Padding = string | number;
@@ -34,7 +34,7 @@ export function Text(props: TextProps): JSX.Element {
     paddingRight,
     paddingBottom,
     paddingLeft,
-    type
+    type,
   } = props;
 
   const commonProps = {
@@ -44,7 +44,7 @@ export function Text(props: TextProps): JSX.Element {
     paddingTop,
     paddingRight,
     paddingBottom,
-    paddingLeft
+    paddingLeft,
   };
 
   switch (type) {

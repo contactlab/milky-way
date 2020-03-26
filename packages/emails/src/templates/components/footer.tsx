@@ -1,9 +1,9 @@
+import {MjmlSection, MjmlColumn} from 'mjml-react';
+import * as React from 'react';
 import {i18nType} from '../../i18n/helpers';
 import {bgColor, sectionPadding} from '../commons/attributes';
 import {Link} from '../components/link';
 import {Text} from '../components/text';
-import {MjmlSection, MjmlColumn} from 'mjml-react';
-import * as React from 'react';
 
 interface FooterProps {
   i18n: i18nType;
