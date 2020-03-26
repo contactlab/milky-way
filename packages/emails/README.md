@@ -2,7 +2,7 @@
 
 > The Contactlab Marketing Cloud transactional emails.
 
-**[Preview](https://clab-service-pages.netlify.com/)**
+**[Preview](https://clab-emails.netlify.com/)**
 
 ## Run dev environment
 

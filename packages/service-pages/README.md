@@ -2,7 +2,7 @@
 
 > The Contactlab Marketing Cloud service pages.
 
-**[Preview](https://clab-emails.netlify.com/)**
+**[Preview](https://clab-service-page.netlify.com/)**
 
 ## Create a new template
 
