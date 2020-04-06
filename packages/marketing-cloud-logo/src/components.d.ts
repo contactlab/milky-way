@@ -5,80 +5,88 @@
  * It contains typing information for all components that exist in this project.
  */
 import {HTMLStencilElement, JSXBase} from '@stencil/core/internal';
-import {LogoSize, LogoStyle} from './typings/props';
+import {FillColor, FillStyle, Size, Type} from './typings/props';
 export namespace Components {
-  interface GiotramuLogo {
-    column: boolean;
-    fillColor: LogoStyle;
-    size: LogoSize;
+  interface ClabLogo {
+    compact: boolean;
+    fillColor: FillColor;
+    fillStyle: FillStyle;
+    size: Size;
+    type: Type;
   }
-  interface GiotramuLogotype {
-    fillColor: LogoStyle;
-    size: LogoSize;
+  interface ClabLogotype {
+    compact: boolean;
+    fillColor: FillColor;
+    size: Size;
+    type: Type;
   }
-  interface GiotramuMonogram {
-    fillColor: LogoStyle;
-    size: LogoSize;
+  interface ClabPictogram {
+    fillColor: FillColor;
+    size: Size;
   }
 }
 declare global {
-  interface HTMLGiotramuLogoElement
-    extends Components.GiotramuLogo,
+  interface HTMLClabLogoElement
+    extends Components.ClabLogo,
       HTMLStencilElement {}
-  var HTMLGiotramuLogoElement: {
-    prototype: HTMLGiotramuLogoElement;
-    new (): HTMLGiotramuLogoElement;
+  var HTMLClabLogoElement: {
+    prototype: HTMLClabLogoElement;
+    new (): HTMLClabLogoElement;
   };
-  interface HTMLGiotramuLogotypeElement
-    extends Components.GiotramuLogotype,
+  interface HTMLClabLogotypeElement
+    extends Components.ClabLogotype,
       HTMLStencilElement {}
-  var HTMLGiotramuLogotypeElement: {
-    prototype: HTMLGiotramuLogotypeElement;
-    new (): HTMLGiotramuLogotypeElement;
+  var HTMLClabLogotypeElement: {
+    prototype: HTMLClabLogotypeElement;
+    new (): HTMLClabLogotypeElement;
   };
-  interface HTMLGiotramuMonogramElement
-    extends Components.GiotramuMonogram,
+  interface HTMLClabPictogramElement
+    extends Components.ClabPictogram,
       HTMLStencilElement {}
-  var HTMLGiotramuMonogramElement: {
-    prototype: HTMLGiotramuMonogramElement;
-    new (): HTMLGiotramuMonogramElement;
+  var HTMLClabPictogramElement: {
+    prototype: HTMLClabPictogramElement;
+    new (): HTMLClabPictogramElement;
   };
   interface HTMLElementTagNameMap {
-    'giotramu-logo': HTMLGiotramuLogoElement;
-    'giotramu-logotype': HTMLGiotramuLogotypeElement;
-    'giotramu-monogram': HTMLGiotramuMonogramElement;
+    'clab-logo': HTMLClabLogoElement;
+    'clab-logotype': HTMLClabLogotypeElement;
+    'clab-pictogram': HTMLClabPictogramElement;
   }
 }
 declare namespace LocalJSX {
-  interface GiotramuLogo {
-    column?: boolean;
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+  interface ClabLogo {
+    compact?: boolean;
+    fillColor?: FillColor;
+    fillStyle?: FillStyle;
+    size?: Size;
+    type?: Type;
   }
-  interface GiotramuLogotype {
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+  interface ClabLogotype {
+    compact?: boolean;
+    fillColor?: FillColor;
+    size?: Size;
+    type?: Type;
   }
-  interface GiotramuMonogram {
-    fillColor?: LogoStyle;
-    size?: LogoSize;
+  interface ClabPictogram {
+    fillColor?: FillColor;
+    size?: Size;
   }
   interface IntrinsicElements {
-    'giotramu-logo': GiotramuLogo;
-    'giotramu-logotype': GiotramuLogotype;
-    'giotramu-monogram': GiotramuMonogram;
+    'clab-logo': ClabLogo;
+    'clab-logotype': ClabLogotype;
+    'clab-pictogram': ClabPictogram;
   }
 }
 export {LocalJSX as JSX};
 declare module '@stencil/core' {
   export namespace JSX {
     interface IntrinsicElements {
-      'giotramu-logo': LocalJSX.GiotramuLogo &
-        JSXBase.HTMLAttributes<HTMLGiotramuLogoElement>;
-      'giotramu-logotype': LocalJSX.GiotramuLogotype &
-        JSXBase.HTMLAttributes<HTMLGiotramuLogotypeElement>;
-      'giotramu-monogram': LocalJSX.GiotramuMonogram &
-        JSXBase.HTMLAttributes<HTMLGiotramuMonogramElement>;
+      'clab-logo': LocalJSX.ClabLogo &
+        JSXBase.HTMLAttributes<HTMLClabLogoElement>;
+      'clab-logotype': LocalJSX.ClabLogotype &
+        JSXBase.HTMLAttributes<HTMLClabLogotypeElement>;
+      'clab-pictogram': LocalJSX.ClabPictogram &
+        JSXBase.HTMLAttributes<HTMLClabPictogramElement>;
     }
   }
 }

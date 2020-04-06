@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# clab-mc-logotype
+# clab-pictogram
 
 ## Install
 
@@ -27,7 +27,7 @@ Put a script tag in the head of your `index.html`:
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
-<clab-logotype size="480px" compact></clab-logotype>
+<clab-pictogram size="320px"></clab-pictogram>
 ```
 
 > [Check the browsers support](./browsers-support.md).
@@ -50,23 +50,10 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
     </tr>
     <tr>
-      <td>type</td>
-      <td><code>'mc' | 'explore' | 'developer'</code></td>
-      <td><code>'mc'</code></td>
-      <td>Change the logo content. Choose between <code>Contactactlab Marketing Cloud</code>, <code>MC Explore</code> and <code>MC Developer</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>compact</td>
-      <td><code>boolean</code></td>
-      <td><code>false</code></td>
-      <td>Use the compact version of the Contactlab Marketing Cloud logo. <u>This attribute has effect only if you set the <code>type</code> attribute to <code>'mc'</code> (the default)</u>.</td>
-    </tr>
-    <tr>
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
-      <td><code>'none'</code></td>
-      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#1d3344</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
+      <td><code>'accent'</code></td>
+      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#0391ec</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

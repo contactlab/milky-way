@@ -1,6 +1,6 @@
-# Service page templates
+# Service Page
 
-> The Contactlab Marketing Cloud service pages.
+The Contactlab Marketing Cloud service pages.
 
 **[Preview](https://clab-service-page.netlify.com/)**
 

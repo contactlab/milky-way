@@ -1,6 +1,6 @@
 # Contactlab Marketing Cloud Logo
 
-Web Components and resources related to the Contactlab Marketing Cloud logo.
+The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 ## Web Components
 
@@ -10,7 +10,7 @@ Web Components that run natively or near-natively in all widely used desktop and
 
 - [Logo](./docs/logo.md)
 - [Logotype](./docs/logotype.md)
-- [Monogram](./docs/monogram.md)
+- [Pictogram](./docs/pictogram.md)
 
 ## Resources
 
@@ -21,3 +21,13 @@ Web Components that run natively or near-natively in all widely used desktop and
 ## Thanks
 
 - [Stencil.js][stenciljs]
+
+## License
+
+[MIT License](./LICENSE)
+
+<!---
+  L I N K S
+-->
+
+[stenciljs]: https://stenciljs.com/

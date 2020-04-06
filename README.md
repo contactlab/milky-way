@@ -2,7 +2,7 @@
 
 The official Contactlab Design System.
 
-### 🚧 Unstable project. We are working on.
+### 🚧 In development stage.
 
 ---
 
@@ -16,7 +16,13 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 
 ## [Emails](./packages/emails)
 
-Contactlab Marketing Cloud transactional emails.
+The Contactlab Marketing Cloud transactional emails.
+
+---
+
+## [Marketing Cloud Logo](./packages/marketing-cloud-logo)
+
+The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 ---
 

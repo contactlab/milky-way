@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
-    <title>[DEMO] clab-mc-logo</title>
+    <title>[DEMO] clab-logo</title>
 
     <!-- demo styles -->
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
@@ -16,10 +16,13 @@
     />
     <style>
       :root {
-        --digital-color: #0c57fb;
-        --silver-color: #d3dde6;
-        --dark-color: #1d2b3b;
-        --light-color: #fff;
+        --accent-color: #0391ec;
+        --dark-color: #001420;
+        --light-color: #f7fcff;
+      }
+
+      body {
+        font-family: Montserrat;
       }
 
       .showcase {
@@ -48,81 +51,123 @@
         justify-content: center;
       }
 
-      .showcase--logo-row {
-        color: var(--light-color);
-        background-color: var(--digital-color);
-      }
-
-      .showcase--logo-column {
-        color: var(--dark-color);
-        background-color: var(--silver-color);
-      }
-
-      .showcase--monogram {
+      .showcase--light {
         color: var(--dark-color);
         background-color: var(--light-color);
       }
 
-      .showcase--logotype {
+      .showcase--dark {
         color: var(--light-color);
         background-color: var(--dark-color);
       }
     </style>
 
-    <script type="module" src="/build/clab-mc-logo.esm.js"></script>
-    <script nomodule src="/build/clab-mc-logo.js"></script>
+    <script type="module" src="/build/clab-logo.esm.js"></script>
+    <script nomodule src="/build/clab-logo.js"></script>
   </head>
   <body>
-    <section class="showcase showcase--logo-row">
-      <h1>Logo (row)</h1>
+    <section class="showcase showcase--light">
+      <h1>Contactlab Marketing Cloud</h1>
       <ul>
         <li>
-          <clab-mc-logo size="100px" fill-color="light"></clab-mc-logo>
+          <clab-logo
+            size="300px"
+            fill-style="mono"
+            fill-color="accent"
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-logo size="150px" fill-color="light"></clab-mc-logo>
+          <clab-logo
+            size="350px"
+            fill-style="mono"
+            fill-color="base"
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-logo size="300px" fill-color="light"></clab-mc-logo>
+          <clab-logo size="400px" fill-style="positive"></clab-logo>
         </li>
       </ul>
     </section>
 
-    <section class="showcase showcase--logo-column">
-      <h1>Logo (column)</h1>
+    <section class="showcase showcase--dark">
+      <h1>Marketing Cloud</h1>
       <ul>
         <li>
-          <clab-mc-logo size="100px" fill-color="digital" column></clab-mc-logo>
+          <clab-logo
+            size="300px"
+            fill-style="mono"
+            fill-color="accent"
+            short
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-logo size="150px" fill-color="digital" column></clab-mc-logo>
+          <clab-logo
+            size="350px"
+            fill-style="mono"
+            fill-color="light"
+            short
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-logo size="300px" fill-color="digital" column></clab-mc-logo>
+          <clab-logo size="400px" fill-style="negative" short></clab-logo>
         </li>
       </ul>
     </section>
 
-    <section class="showcase showcase--monogram">
-      <h1>Monogram</h1>
+    <section class="showcase showcase--light">
+      <h1>Developer</h1>
       <ul>
         <li>
-          <clab-mc-monogram size="100px" fill-color="dark"></clab-mc-monogram>
+          <clab-logo
+            size="300px"
+            type="developer"
+            fill-style="mono"
+            fill-color="accent"
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-monogram size="150px" fill-color="dark"></clab-mc-monogram>
+          <clab-logo
+            size="350px"
+            type="developer"
+            fill-style="mono"
+            fill-color="base"
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="400px"
+            type="developer"
+            fill-style="positive"
+          ></clab-logo>
         </li>
       </ul>
     </section>
 
-    <section class="showcase showcase--logotype">
-      <h1>Logotype</h1>
+    <section class="showcase showcase--dark">
+      <h1>Explore</h1>
       <ul>
         <li>
-          <clab-mc-logotype size="100px" fill-color="light"></clab-mc-logotype>
+          <clab-logo
+            size="300px"
+            type="explore"
+            fill-style="mono"
+            fill-color="accent"
+          ></clab-logo>
         </li>
         <li>
-          <clab-mc-logotype size="150px" fill-color="light"></clab-mc-logotype>
+          <clab-logo
+            size="350px"
+            type="explore"
+            fill-style="mono"
+            fill-color="light"
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="400px"
+            type="explore"
+            fill-style="negative"
+          ></clab-logo>
         </li>
       </ul>
     </section>

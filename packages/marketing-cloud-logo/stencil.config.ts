@@ -1,7 +1,7 @@
 import {Config} from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'clab-mc-logo',
+  namespace: 'clab-logo',
   outputTargets: [
     {
       type: 'dist',

@@ -1,27 +1,18 @@
-import {LogoStyle, LogoColor} from '../typings/props';
+import {ColorHex, FillColor} from '../typings/props';
 
 // --- handle component color
-export function handleColor(color: LogoStyle): LogoColor {
+export function handleColor(color: FillColor): ColorHex {
   switch (color) {
-    case 'digital':
-      return '#0C57FB';
-    case 'silver':
-      return '#D3DDE6';
+    case 'accent':
+      return '#0391EC';
+    case 'base':
+      return '#1D3344';
     case 'light':
-      return '#FFF';
-    case 'dark':
-      return '#1D2B3B';
+      return '#F7FCFF';
+    case 'none':
     default:
       return '#000';
   }
-}
-
-// --- handle component size
-export function handleSize(
-  size?: string,
-  defaultSize: string = '100%'
-): string {
-  return typeof size === 'undefined' ? defaultSize : size;
 }
 
 // --- hack svg padding for scaling

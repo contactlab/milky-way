@@ -1,4 +1,5 @@
-export type LogoSize = string;
-export type LogoAlignment = 'row' | 'column';
-export type LogoColor = '#0C57FB' | '#D3DDE6' | '#FFF' | '#1D2B3B' | '#000';
-export type LogoStyle = 'digital' | 'silver' | 'light' | 'dark' | 'none';
+export type ColorHex = '#0391EC' | '#1D3344' | '#F7FCFF' | '#000';
+export type FillColor = 'accent' | 'base' | 'light' | 'none';
+export type FillStyle = 'positive' | 'mono' | 'negative';
+export type Size = string;
+export type Type = 'mc' | 'explore' | 'developer';

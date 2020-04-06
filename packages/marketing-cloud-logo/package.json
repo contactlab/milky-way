@@ -29,7 +29,7 @@
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
-  "unpkg": "dist/clab-mc-logo/clab-mc-logo.js",
+  "unpkg": "dist/clab-logo/clab-logo.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [

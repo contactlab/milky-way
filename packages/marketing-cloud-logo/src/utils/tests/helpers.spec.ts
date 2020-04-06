@@ -1,30 +1,17 @@
-import {handleColor, handleSize, calcPercentage} from '../helpers';
+import {handleColor, calcPercentage} from '../helpers';
 
 describe('handleColor', () => {
-  it(`returns a specific hex color for the "digital", "silver", "dark" and "light" keywords`, () => {
-    expect(handleColor('digital')).toBe('#0C57FB');
-    expect(handleColor('silver')).toBe('#D3DDE6');
-    expect(handleColor('dark')).toBe('#1D2B3B');
-    expect(handleColor('light')).toBe('#FFF');
+  it(`returns a specific hex color for the "accent", "base" and "light" keywords`, () => {
+    expect(handleColor('accent')).toBe('#0391EC');
+    expect(handleColor('base')).toBe('#1D3344');
+    expect(handleColor('light')).toBe('#F7FCFF');
   });
 
-  it(`returns the black color for the the unknown keywords`, () => {
+  it(`returns the black color for the the "none" and unknown keywords`, () => {
     expect(handleColor('none')).toBe('#000');
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
     expect(handleColor('fake')).toBe('#000');
-  });
-});
-
-describe('handleSize', () => {
-  it(`returns declared size`, () => {
-    expect(handleSize('20px')).toBe('20px');
-  });
-
-  it(`returns defaultSize if size isn't declared`, () => {
-    expect(handleSize()).toBe('100%');
-    expect(handleSize(undefined)).toBe('100%');
-    expect(handleSize(undefined, '80%')).toBe('80%');
   });
 });
 

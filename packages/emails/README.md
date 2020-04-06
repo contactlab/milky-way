@@ -1,6 +1,6 @@
 # Email templates
 
-> The Contactlab Marketing Cloud transactional emails.
+The Contactlab Marketing Cloud transactional emails.
 
 **[Preview](https://clab-emails.netlify.com/)**
 

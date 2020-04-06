@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# clab-mc-logo
+# clab-logo
 
 ## Install
 
@@ -9,7 +9,7 @@
 Put a script tag in the head of your `index.html` document:
 
 ```html
-<script src="https://unpkg.com/@contactlab/marketing-cloud-logo/dist/clab-mc-logo.js"></script>
+<script src="https://unpkg.com/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
 ```
 
 - **Node Modules**
@@ -19,7 +19,7 @@ Run `npm install @contactlab/marketing-cloud-logo --save`.
 Put a script tag in the head of your `index.html`:
 
 ```html
-<script src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-mc-logo.js"></script>
+<script src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Put a script tag in the head of your `index.html`:
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
-<clab-mc-logo size="320px" fill-color="digital" column></clab-mc-logo>
+<clab-logo size="480px" compact></clab-logo>
 ```
 
 > [Check the browsers support](./browsers-support.md).
@@ -44,23 +44,35 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
     </tr>
   <tbody>
     <tr>
-      <td>column</td>
-      <td><code>boolean</code></td>
-      <td><code>false</code></td>
-      <td>Place monogram and logotype on the horizontal or vertical axis</td>
-    </tr>
-    <tr>
-      <td>fill-color</td>
-      <td><code>'dark' | 'digital' | 'light' | 'silver'</code></td>
-      <td><code>'none'</code></td>
-      <td>The color of the component. The default is <code>'none'</code>, equal to <code>#000</code> (black). <a href="./color-schema.md" title="Color schema">Explore color schema</a></td>
-    </tr>
-    <tr>
       <td>size</td>
       <td><code>string</code></td>
       <td><code>'100%'</code></td>
-      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit
-      </td>
+      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
+    </tr>
     <tr>
+      <td>type</td>
+      <td><code>'mc' | 'explore' | 'developer'</code></td>
+      <td><code>'mc'</code></td>
+      <td>Change the logo content. Choose between <code>Contactactlab Marketing Cloud</code>, <code>MC Explore</code> and <code>MC Developer</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>compact</td>
+      <td><code>boolean</code></td>
+      <td><code>false</code></td>
+      <td>Use the compact version of the Contactlab Marketing Cloud logo. <u>This attribute has effect only if you set the <code>type</code> attribute to <code>'mc'</code> (the default)</u>.</td>
+    </tr>
+    <tr>
+      <td>fill-style</td>
+      <td><code>'positive' | 'mono' | 'negative'</code></td>
+      <td><code>'positive'</code></td>
+      <td>The logo color palette combination. <a href="./color-schema.md" title="Color schema">View the styles</a>.</td>
+    </tr>
+    <tr>
+      <td>fill-color</td>
+      <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
+      <td><code>'none'</code></td>
+      <td>The color of the logo. <u>This attribute has effect only if you set <code>fill-style</code> attribute to <code>'mono'</code></u>. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
+    </tr>
   </tbody>
 </table>

@@ -1,42 +1,101 @@
 import {newE2EPage} from '@stencil/core/testing';
 
-describe('giotramu-logotype', () => {
+describe('clab-logotype', () => {
   it('renders', async () => {
     const page = await newE2EPage();
-    await page.setContent('<giotramu-logotype></giotramu-logotype>');
+    await page.setContent('<clab-logotype></clab-logotype>');
 
-    const element = await page.find('giotramu-logotype');
+    const element = await page.find('clab-logotype');
 
     expect(element).toHaveClass('hydrated');
   });
 
-  it('renders size attribute changes', async () => {
+  it('renders type attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<giotramu-logotype></giotramu-logotype>');
+    await page.setContent('<clab-logotype></clab-logotype>');
 
-    const component = await page.find('giotramu-logotype');
-    const element = await page.find('giotramu-logotype >>> .wrapper');
+    const component = await page.find('clab-logotype');
+    const svg = await page.find('clab-logotype >>> .vector');
+    const svgContent = await svg.find('g');
 
-    expect(element.getAttribute('e2e-width')).toBe('100%');
+    expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe(
+      'contactlab-marketing-cloud'
+    );
 
-    component.setProperty('size', '480px');
+    component.setProperty('type', 'explore');
     await page.waitForChanges();
 
-    expect(element.getAttribute('e2e-width')).toBe('480px');
+    expect(svg.getAttribute('viewBox')).toBe('0 0 236 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe('mc-explore');
+
+    component.setProperty('type', 'developer');
+    await page.waitForChanges();
+
+    expect(svg.getAttribute('viewBox')).toBe('0 0 295 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe('mc-developer');
+
+    component.setProperty('type', 'unknown');
+    await page.waitForChanges();
+
+    expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe(
+      'contactlab-marketing-cloud'
+    );
   });
 
   it('renders fill-color attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<giotramu-logotype></giotramu-logotype>');
+    await page.setContent('<clab-logotype></clab-logotype>');
 
-    const component = await page.find('giotramu-logotype');
-    const element = await page.find('giotramu-logotype >>> .vector');
+    const component = await page.find('clab-logotype');
+    const svg = await page.find('clab-logotype >>> .vector');
 
-    expect(element.getAttribute('fill')).toBe('#000');
+    expect(svg.getAttribute('fill')).toBe('#000');
 
-    component.setProperty('fillColor', 'digital');
+    component.setProperty('fillColor', 'accent');
     await page.waitForChanges();
 
-    expect(element.getAttribute('fill')).toBe('#0C57FB');
+    expect(svg.getAttribute('fill')).toBe('#0391EC');
+
+    component.setProperty('fillColor', 'unknown');
+    await page.waitForChanges();
+
+    expect(svg.getAttribute('fill')).toBe('#000');
+  });
+
+  it('renders compact attribute changes', async () => {
+    const page = await newE2EPage();
+    await page.setContent('<clab-logotype></clab-logotype>');
+
+    const component = await page.find('clab-logotype');
+    const svg = await page.find('clab-logotype >>> .vector');
+    const svgContent = await svg.find('g');
+
+    expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe(
+      'contactlab-marketing-cloud'
+    );
+
+    component.setProperty('compact', true);
+    await page.waitForChanges();
+
+    expect(svg.getAttribute('viewBox')).toBe('0 0 346 45');
+    expect(svgContent.getAttribute('e2e-key')).toBe('marketing-cloud');
+  });
+
+  it('renders size attribute changes', async () => {
+    const page = await newE2EPage();
+    await page.setContent('<clab-logotype></clab-logotype>');
+
+    const component = await page.find('clab-logotype');
+    const wrapper = await page.find('clab-logotype >>> .wrapper');
+
+    expect(wrapper.getAttribute('e2e-width')).toBe('100%');
+
+    component.setProperty('size', '480px');
+    await page.waitForChanges();
+
+    expect(wrapper.getAttribute('e2e-width')).toBe('480px');
   });
 });
