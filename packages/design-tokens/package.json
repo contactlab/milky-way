@@ -14,7 +14,7 @@
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/contactlab/milky-way/tree/master/packages/design-tokens"
+    "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/design-tokens"
   },
   "license": "MIT",
   "engines": {

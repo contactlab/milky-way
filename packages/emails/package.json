@@ -15,7 +15,7 @@
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/contactlab/milky-way/tree/master/packages/emails"
+    "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/emails"
   },
   "license": "MIT",
   "engines": {

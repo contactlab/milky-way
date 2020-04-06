@@ -1,3 +1,8 @@
-build
-dist
-node_modules
+.stencil/
+build/
+coverage/
+dist/
+dist/
+loader/
+node_modules/
+www/
