@@ -10,7 +10,20 @@
       "allowBranch": ["master"]
     },
     "publish": {
-      "ignoreChanges": ["README.md", "package-lock.json"]
+      "ignoreChanges": [
+        ".dependabot",
+        ".eslintignore",
+        ".eslintrc.js",
+        ".huskyrc.js",
+        ".prettierignore",
+        ".prettierrc.js",
+        ".stylelintignore",
+        ".stylelintrc.js",
+        ".vscode",
+        "LICENSE",
+        "package-lock.json",
+        "README.md"
+      ]
     }
   }
 }

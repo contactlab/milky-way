@@ -23,7 +23,7 @@
     "npm": ">=6.13"
   },
   "scripts": {
-    "check:src": "tsc",
+    "check:src": "tsc --noEmit",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "test": "run-p -clns check:** lint:**",
     "prebuild": "rimraf ./build",

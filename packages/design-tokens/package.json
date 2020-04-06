@@ -25,16 +25,15 @@
     "access": "public"
   },
   "files": [
-    "lib",
-    "./*.md",
-    "LICENSE"
+    "illustrations/",
+    "styles/"
   ],
   "scripts": {
     "setup": "node ./scripts/setup.js",
-    "lint:css": "stylelint ./lib/**/*.{css,scss,less,svg} --fix",
+    "lint:css": "stylelint ./**/*.{css,scss,less,svg} --fix",
     "lint:src": "eslint . --fix",
     "test": "run-p -clns lint:**",
-    "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
+    "build:svg": "svgo --folder ./illustrations/ --output ./illustrations/min/ --disable inlineStyles",
     "build": "run-s setup build:**"
   },
   "devDependencies": {

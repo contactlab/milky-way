@@ -3,18 +3,13 @@ const shell = require('shelljs');
 
 // --- directories
 const ROOT_DIR = path.resolve(__dirname, '../');
-const ILLUSTRATIONS_GZIPED_DIR = path.resolve(
-  ROOT_DIR,
-  'lib',
-  'illustrations',
-  'min'
-);
+const ILLUSTRATIONS_GZIPED_DIR = path.resolve(ROOT_DIR, 'artworks', 'min');
 
 // --- cleaner
 function formattingList(files) {
   return files.length
     ? files.join('\n').toString()
-    : 'Specifies a list of file to delete.';
+    : 'specifies a list of file to delete';
 }
 
 function clean(targets) {
@@ -23,7 +18,7 @@ function clean(targets) {
     return;
   }
 
-  shell.echo('Clean project...');
+  shell.echo('clean project...');
   shell.echo(formattingList(targets));
   shell.rm('-r', targets);
 }

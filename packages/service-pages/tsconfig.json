@@ -1,20 +1,26 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
     "alwaysStrict": true,
+    "baseUrl": ".",
     "declaration": false,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["es2017", "dom"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist",
+    "resolveJsonModule": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es6"
+    "target": "es2017"
   },
-  "include": ["src/**/*"]
+  "include": ["src"]
 }

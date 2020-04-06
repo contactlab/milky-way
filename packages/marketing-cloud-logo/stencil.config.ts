@@ -1,7 +1,7 @@
 import {Config} from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'giotramu-logo',
+  namespace: 'clab-mc-logo',
   outputTargets: [
     {
       type: 'dist',

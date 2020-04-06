@@ -3,9 +3,7 @@ update_configs:
   # design-tokens
   - package_manager: 'javascript'
     directory: '/packages/design-tokens'
-    update_schedule: 'live'
-    default_assignees:
-      - 'giotramu'
+    update_schedule: 'weekly'
     default_labels:
       - 'design-tokens'
       - 'dependencies'
@@ -13,19 +11,23 @@ update_configs:
   # emails
   - package_manager: 'javascript'
     directory: '/packages/emails'
-    update_schedule: 'live'
-    default_assignees:
-      - 'giotramu'
+    update_schedule: 'weekly'
     default_labels:
       - 'emails'
+      - 'dependencies'
+
+  # marketing-cloud-logo
+  - package_manager: 'javascript'
+    directory: '/packages/marketing-cloud-logo'
+    update_schedule: 'weekly'
+    default_labels:
+      - 'mc-logo'
       - 'dependencies'
 
   # service-pages
   - package_manager: 'javascript'
     directory: '/packages/service-pages'
-    update_schedule: 'live'
-    default_assignees:
-      - 'giotramu'
+    update_schedule: 'weekly'
     default_labels:
       - 'service-pages'
       - 'dependencies'

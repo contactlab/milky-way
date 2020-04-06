@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# giotramu-logotype
+# clab-mc-logotype
 
 ## Install
 
@@ -9,17 +9,17 @@
 Put a script tag in the head of your `index.html` document:
 
 ```html
-<script src="https://unpkg.com/@giotramu/logo/dist/giotramu-logo.js"></script>
+<script src="https://unpkg.com/@contactlab/marketing-cloud-logo/dist/clab-mc-logo.js"></script>
 ```
 
 - **Node Modules**
 
-Run `npm install @giotramu/logo --save`.
+Run `npm install @contactlab/marketing-cloud-logo --save`.
 
 Put a script tag in the head of your `index.html`:
 
 ```html
-<script src="node_modules/@giotramu/logo/dist/giotramu-logo.js"></script>
+<script src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-mc-logo.js"></script>
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ Put a script tag in the head of your `index.html`:
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
-<giotramu-logotype size="320px" fill-color="digital"></giotramu-logotype>
+<clab-mc-logotype size="320px" fill-color="digital"></clab-mc-logotype>
 ```
 
 > [Check the browsers support](./browsers-support.md).

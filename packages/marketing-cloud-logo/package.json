@@ -1,7 +1,7 @@
 {
   "name": "@contactlab/marketing-cloud-logo",
-  "version": "1.0.0",
-  "description": "Web Components and resources related to personal logo.",
+  "version": "0.0.1",
+  "description": "Web Components and resources related to the Contactlab Marketing Cloud logo.",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",
@@ -47,7 +47,7 @@
     "build": "stencil build --docs"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.2.2",
+    "@giotramu/stylelint-config": "2.2.3",
     "@stencil/core": "1.12.0",
     "@types/jest": "24.0.25",
     "@types/puppeteer": "2.0.1",
@@ -62,7 +62,7 @@
     "prettier": "2.0.2",
     "pretty-quick": "2.0.1",
     "puppeteer": "2.1.1",
-    "stylelint": "13.2.1"
+    "stylelint": "13.3.0"
   },
   "keywords": [
     "contactlab-marketing-cloud",

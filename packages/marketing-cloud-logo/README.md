@@ -1,6 +1,6 @@
 # Contactlab Marketing Cloud Logo
 
-Web Components and resources related to Contactlab Marketing Cloud logo.
+Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 ## Web Components
 
