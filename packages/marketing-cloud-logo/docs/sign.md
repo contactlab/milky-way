@@ -26,11 +26,17 @@ Put a script tag in the head of your `index.html`:
 
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
+[Check the browsers support](./browsers-support.md).
+
+---
+
+<img style="display:block;width:50px;margin-bottom:32px" src="../resources/svg/clab-sign.svg" />
+
 ```html
-<clab-sign size="320px"></clab-sign>
+<clab-sign size="50px"></clab-sign>
 ```
 
-> [Check the browsers support](./browsers-support.md).
+---
 
 ## Attributes
 
@@ -53,7 +59,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
       <td><code>'accent'</code></td>
-      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#0391ec</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
+      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#0391ec</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

@@ -4,9 +4,9 @@
 
 |       Color       |   Key    |    Hex    |         RGB          |
 | :---------------: | :------: | :-------: | :------------------: |
-| ![accent][accent] | `accent` | `#0391ec` |  `rgb(3, 145, 236)`  |
-|   ![base][base]   |  `base`  | `#1d3344` |   `rgb(0, 20, 32)`   |
-|  ![light][light]  | `light`  | `#f7fcff` | `rgb(247, 252, 255)` |
+| ![accent][accent] | `accent` | `#0391EC` |  `rgb(3, 145, 236)`  |
+|   ![base][base]   |  `base`  | `#1D3344` |  `rgb(29, 51, 68)`   |
+|  ![light][light]  | `light`  | `#F7FCFF` | `rgb(247, 252, 255)` |
 |   ![none][none]   |  `none`  |  `#000`   |    `rgb(0, 0, 0)`    |
 
 <!---

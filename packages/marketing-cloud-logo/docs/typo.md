@@ -26,11 +26,41 @@ Put a script tag in the head of your `index.html`:
 
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
+[Check the browsers support](./browsers-support.md).
+
+---
+
+<img style="display:block;width:300px;margin-bottom:32px" src="../resources/svg/typo-mc-full.svg" />
+
 ```html
-<clab-typo size="480px" compact></clab-typo>
+<clab-typo size="300px"></clab-typo>
 ```
 
-> [Check the browsers support](./browsers-support.md).
+---
+
+<img style="display:block;width:180px;margin-bottom:32px" src="../resources/svg/typo-mc-compact.svg" />
+
+```html
+<clab-typo size="180px" compact></clab-typo>
+```
+
+---
+
+<img style="display:block;width:120px;margin-bottom:32px" src="../resources/svg/typo-mc-explore.svg" />
+
+```html
+<clab-typo type="explore" size="120px"></clab-typo>
+```
+
+---
+
+<img style="display:block;width:150px;margin-bottom:32px" src="../resources/svg/typo-mc-developer.svg" />
+
+```html
+<clab-typo type="developer" size="150px"></clab-typo>
+```
+
+---
 
 ## Attributes
 
@@ -66,7 +96,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
       <td><code>'none'</code></td>
-      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#1d3344</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
+      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#1d3344</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

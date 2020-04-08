@@ -16,7 +16,7 @@ Web Components that run natively or near-natively in all widely used desktop and
 
 - [Color schema](./docs/color-schema.md)
 - [PNG](./resources/png)
-- [JPEG](./resources/jpeg)
+- [SVG](./resources/svg)
 
 ## Thanks
 

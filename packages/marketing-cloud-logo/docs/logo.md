@@ -26,11 +26,25 @@ Put a script tag in the head of your `index.html`:
 
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
+[Check the browsers support](./browsers-support.md).
+
+---
+
+<img style="display:block;width:380px;margin-bottom:32px" src="../resources/svg/logo-mc-full.svg" />
+
 ```html
-<clab-logo size="480px" compact></clab-logo>
+<clab-logo size="380px"></clab-logo>
 ```
 
-> [Check the browsers support](./browsers-support.md).
+---
+
+<img style="display:block;width:240px;margin-bottom:32px" src="../resources/svg/logo-mc-compact.svg" />
+
+```html
+<clab-logo size="240px" compact></clab-logo>
+```
+
+---
 
 ## Attributes
 
@@ -66,13 +80,13 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
       <td>fill-style</td>
       <td><code>'positive' | 'mono' | 'negative'</code></td>
       <td><code>'positive'</code></td>
-      <td>The logo color palette combination. <a href="./color-schema.md" title="Color schema">View the styles</a>.</td>
+      <td>The logo colors combination for usage with light or dark backgrounds.</td>
     </tr>
     <tr>
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
       <td><code>'none'</code></td>
-      <td>The color of the logo. <u>This attribute has effect only if you set <code>fill-style</code> attribute to <code>'mono'</code></u>. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">View the color schema</a>.</td>
+      <td>The color of the logo. <u>This attribute has effect only if you set <code>fill-style</code> attribute to <code>'mono'</code></u>. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>
