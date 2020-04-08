@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# clab-mc-logotype
+# \<clab-typo>
 
 ## Install
 
@@ -27,7 +27,7 @@ Put a script tag in the head of your `index.html`:
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
-<clab-logotype size="480px" compact></clab-logotype>
+<clab-typo size="480px" compact></clab-typo>
 ```
 
 > [Check the browsers support](./browsers-support.md).

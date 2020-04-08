@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
 import {Type, FillColor, FillStyle, Size} from '../../typings/props';
 
@@ -16,7 +15,7 @@ export class Logo {
 
   render(): Element {
     const width = this.size;
-    const [pictogramColor, logotypeColor] = this.getFillStyle(this.fillStyle);
+    const [signColor, typoColor] = this.getFillStyle(this.fillStyle);
 
     return (
       <div
@@ -26,12 +25,12 @@ export class Logo {
         style={{width}}
         e2e-width={width}
       >
-        <clab-pictogram class="pictogram" fill-color={pictogramColor} />
-        <clab-logotype
-          class="logotype"
+        <clab-sign class="sign" fill-color={signColor} />
+        <clab-typo
+          class="typo"
           type={this.type}
           compact={this.compact}
-          fill-color={logotypeColor}
+          fill-color={typoColor}
         />
       </div>
     );

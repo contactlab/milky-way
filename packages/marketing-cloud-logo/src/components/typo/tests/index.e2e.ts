@@ -1,21 +1,21 @@
 import {newE2EPage} from '@stencil/core/testing';
 
-describe('clab-logotype', () => {
+describe('clab-typo', () => {
   it('renders', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-logotype></clab-logotype>');
+    await page.setContent('<clab-typo></clab-typo>');
 
-    const element = await page.find('clab-logotype');
+    const element = await page.find('clab-typo');
 
     expect(element).toHaveClass('hydrated');
   });
 
   it('renders type attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-logotype></clab-logotype>');
+    await page.setContent('<clab-typo></clab-typo>');
 
-    const component = await page.find('clab-logotype');
-    const svg = await page.find('clab-logotype >>> .vector');
+    const component = await page.find('clab-typo');
+    const svg = await page.find('clab-typo >>> .vector');
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
@@ -46,12 +46,12 @@ describe('clab-logotype', () => {
 
   it('renders fill-color attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-logotype></clab-logotype>');
+    await page.setContent('<clab-typo></clab-typo>');
 
-    const component = await page.find('clab-logotype');
-    const svg = await page.find('clab-logotype >>> .vector');
+    const component = await page.find('clab-typo');
+    const svg = await page.find('clab-typo >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#000');
+    expect(svg.getAttribute('fill')).toBe('#1D3344');
 
     component.setProperty('fillColor', 'accent');
     await page.waitForChanges();
@@ -66,10 +66,10 @@ describe('clab-logotype', () => {
 
   it('renders compact attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-logotype></clab-logotype>');
+    await page.setContent('<clab-typo></clab-typo>');
 
-    const component = await page.find('clab-logotype');
-    const svg = await page.find('clab-logotype >>> .vector');
+    const component = await page.find('clab-typo');
+    const svg = await page.find('clab-typo >>> .vector');
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
@@ -86,10 +86,10 @@ describe('clab-logotype', () => {
 
   it('renders size attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-logotype></clab-logotype>');
+    await page.setContent('<clab-typo></clab-typo>');
 
-    const component = await page.find('clab-logotype');
-    const wrapper = await page.find('clab-logotype >>> .wrapper');
+    const component = await page.find('clab-typo');
+    const wrapper = await page.find('clab-typo >>> .wrapper');
 
     expect(wrapper.getAttribute('e2e-width')).toBe('100%');
 

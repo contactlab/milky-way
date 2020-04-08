@@ -25,7 +25,7 @@
   "scripts": {
     "check:src": "tsc --noEmit",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "test": "run-p -clns check:** lint:**",
+    "test": "run-p -clns check:src lint:**",
     "prebuild": "rimraf ./build",
     "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
     "watch": "npm run build -- --watch --source-maps inline",

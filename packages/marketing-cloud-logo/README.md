@@ -8,9 +8,9 @@ Web Components that run natively or near-natively in all widely used desktop and
 
 > **[Try live on CodePen!](https://codepen.io/giotramu/full/xxGBBVm)**
 
-- [Logo](./docs/logo.md)
-- [Logotype](./docs/logotype.md)
-- [Pictogram](./docs/pictogram.md)
+- [\<clab-logo>](./docs/logo.md)
+- [\<clab-sign>](./docs/sign.md)
+- [\<clab-typo>](./docs/typo.md)
 
 ## Resources
 
@@ -21,10 +21,6 @@ Web Components that run natively or near-natively in all widely used desktop and
 ## Thanks
 
 - [Stencil.js][stenciljs]
-
-## License
-
-[MIT License](./LICENSE)
 
 <!---
   L I N K S

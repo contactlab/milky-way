@@ -14,15 +14,15 @@ export namespace Components {
     size: Size;
     type: Type;
   }
-  interface ClabLogotype {
+  interface ClabSign {
+    fillColor: FillColor;
+    size: Size;
+  }
+  interface ClabTypo {
     compact: boolean;
     fillColor: FillColor;
     size: Size;
     type: Type;
-  }
-  interface ClabPictogram {
-    fillColor: FillColor;
-    size: Size;
   }
 }
 declare global {
@@ -33,24 +33,24 @@ declare global {
     prototype: HTMLClabLogoElement;
     new (): HTMLClabLogoElement;
   };
-  interface HTMLClabLogotypeElement
-    extends Components.ClabLogotype,
+  interface HTMLClabSignElement
+    extends Components.ClabSign,
       HTMLStencilElement {}
-  var HTMLClabLogotypeElement: {
-    prototype: HTMLClabLogotypeElement;
-    new (): HTMLClabLogotypeElement;
+  var HTMLClabSignElement: {
+    prototype: HTMLClabSignElement;
+    new (): HTMLClabSignElement;
   };
-  interface HTMLClabPictogramElement
-    extends Components.ClabPictogram,
+  interface HTMLClabTypoElement
+    extends Components.ClabTypo,
       HTMLStencilElement {}
-  var HTMLClabPictogramElement: {
-    prototype: HTMLClabPictogramElement;
-    new (): HTMLClabPictogramElement;
+  var HTMLClabTypoElement: {
+    prototype: HTMLClabTypoElement;
+    new (): HTMLClabTypoElement;
   };
   interface HTMLElementTagNameMap {
     'clab-logo': HTMLClabLogoElement;
-    'clab-logotype': HTMLClabLogotypeElement;
-    'clab-pictogram': HTMLClabPictogramElement;
+    'clab-sign': HTMLClabSignElement;
+    'clab-typo': HTMLClabTypoElement;
   }
 }
 declare namespace LocalJSX {
@@ -61,20 +61,20 @@ declare namespace LocalJSX {
     size?: Size;
     type?: Type;
   }
-  interface ClabLogotype {
+  interface ClabSign {
+    fillColor?: FillColor;
+    size?: Size;
+  }
+  interface ClabTypo {
     compact?: boolean;
     fillColor?: FillColor;
     size?: Size;
     type?: Type;
   }
-  interface ClabPictogram {
-    fillColor?: FillColor;
-    size?: Size;
-  }
   interface IntrinsicElements {
     'clab-logo': ClabLogo;
-    'clab-logotype': ClabLogotype;
-    'clab-pictogram': ClabPictogram;
+    'clab-sign': ClabSign;
+    'clab-typo': ClabTypo;
   }
 }
 export {LocalJSX as JSX};
@@ -83,10 +83,10 @@ declare module '@stencil/core' {
     interface IntrinsicElements {
       'clab-logo': LocalJSX.ClabLogo &
         JSXBase.HTMLAttributes<HTMLClabLogoElement>;
-      'clab-logotype': LocalJSX.ClabLogotype &
-        JSXBase.HTMLAttributes<HTMLClabLogotypeElement>;
-      'clab-pictogram': LocalJSX.ClabPictogram &
-        JSXBase.HTMLAttributes<HTMLClabPictogramElement>;
+      'clab-sign': LocalJSX.ClabSign &
+        JSXBase.HTMLAttributes<HTMLClabSignElement>;
+      'clab-typo': LocalJSX.ClabTypo &
+        JSXBase.HTMLAttributes<HTMLClabTypoElement>;
     }
   }
 }

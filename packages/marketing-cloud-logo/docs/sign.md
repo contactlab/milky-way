@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# clab-pictogram
+# \<clab-sign>
 
 ## Install
 
@@ -27,7 +27,7 @@ Put a script tag in the head of your `index.html`:
 You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ```html
-<clab-pictogram size="320px"></clab-pictogram>
+<clab-sign size="320px"></clab-sign>
 ```
 
 > [Check the browsers support](./browsers-support.md).

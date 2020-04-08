@@ -34,28 +34,28 @@ describe('clab-logo', () => {
     await page.setContent('<clab-logo></clab-logo>');
 
     const component = await page.find('clab-logo');
-    const pictogram = await page.find('clab-logo >>> .pictogram');
-    const logotype = await page.find('clab-logo >>> .logotype');
-    expect(pictogram.getAttribute('fill-color')).toBe('accent');
-    expect(logotype.getAttribute('fill-color')).toBe('base');
+    const sign = await page.find('clab-logo >>> .sign');
+    const typo = await page.find('clab-logo >>> .typo');
+    expect(sign.getAttribute('fill-color')).toBe('accent');
+    expect(typo.getAttribute('fill-color')).toBe('base');
 
     component.setProperty('fillStyle', 'mono');
     await page.waitForChanges();
 
-    expect(pictogram.getAttribute('fill-color')).toBe('none');
-    expect(logotype.getAttribute('fill-color')).toBe('none');
+    expect(sign.getAttribute('fill-color')).toBe('none');
+    expect(typo.getAttribute('fill-color')).toBe('none');
 
     component.setProperty('fillStyle', 'negative');
     await page.waitForChanges();
 
-    expect(pictogram.getAttribute('fill-color')).toBe('accent');
-    expect(logotype.getAttribute('fill-color')).toBe('light');
+    expect(sign.getAttribute('fill-color')).toBe('accent');
+    expect(typo.getAttribute('fill-color')).toBe('light');
 
     component.setProperty('fillStyle', 'positive');
     await page.waitForChanges();
 
-    expect(pictogram.getAttribute('fill-color')).toBe('accent');
-    expect(logotype.getAttribute('fill-color')).toBe('base');
+    expect(sign.getAttribute('fill-color')).toBe('accent');
+    expect(typo.getAttribute('fill-color')).toBe('base');
   });
 
   it('renders compact attribute changes', async () => {

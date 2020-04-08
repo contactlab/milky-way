@@ -1,27 +1,27 @@
 import {newE2EPage} from '@stencil/core/testing';
 
-describe('clab-pictogram', () => {
+describe('clab-sign', () => {
   it('renders', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-pictogram></clab-pictogram>');
+    await page.setContent('<clab-sign></clab-sign>');
 
-    const element = await page.find('clab-pictogram');
+    const element = await page.find('clab-sign');
     expect(element).toHaveClass('hydrated');
   });
 
   it('renders fill-color attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-pictogram></clab-pictogram>');
+    await page.setContent('<clab-sign></clab-sign>');
 
-    const component = await page.find('clab-pictogram');
-    const svg = await page.find('clab-pictogram >>> .vector');
-
-    expect(svg.getAttribute('fill')).toBe('#000');
-
-    component.setProperty('fillColor', 'accent');
-    await page.waitForChanges();
+    const component = await page.find('clab-sign');
+    const svg = await page.find('clab-sign >>> .vector');
 
     expect(svg.getAttribute('fill')).toBe('#0391EC');
+
+    component.setProperty('fillColor', 'base');
+    await page.waitForChanges();
+
+    expect(svg.getAttribute('fill')).toBe('#1D3344');
 
     component.setProperty('fillColor', 'unknown');
     await page.waitForChanges();
@@ -31,10 +31,10 @@ describe('clab-pictogram', () => {
 
   it('renders size attribute changes', async () => {
     const page = await newE2EPage();
-    await page.setContent('<clab-pictogram></clab-pictogram>');
+    await page.setContent('<clab-sign></clab-sign>');
 
-    const component = await page.find('clab-pictogram');
-    const wrapper = await page.find('clab-pictogram >>> .wrapper');
+    const component = await page.find('clab-sign');
+    const wrapper = await page.find('clab-sign >>> .wrapper');
 
     expect(wrapper.getAttribute('e2e-width')).toBe('100%');
 

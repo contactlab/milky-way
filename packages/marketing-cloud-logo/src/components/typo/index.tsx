@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Component, Prop, h} from '@stencil/core';
 import {Type, FillColor, Size} from '../../typings/props';
 import {calcPercentage, handleColor} from '../../utils/helpers';
@@ -8,10 +7,10 @@ import {McTypeFull, McTypeCompact} from './marketing-cloud';
 
 @Component({
   shadow: true,
-  tag: 'clab-logotype',
+  tag: 'clab-typo',
   styleUrl: './styles.css'
 })
-export class Logotype {
+export class Typo {
   @Prop() type: Type = 'mc';
   @Prop() fillColor: FillColor = 'base';
   @Prop() compact = false;

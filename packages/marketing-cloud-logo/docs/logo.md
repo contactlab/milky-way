@@ -1,6 +1,6 @@
 [← Back](../README.md)
 
-# clab-logo
+# \<clab-logo>
 
 ## Install
 

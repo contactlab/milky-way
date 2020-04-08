@@ -15,8 +15,9 @@
   },
   "scripts": {
     "clean": "lerna clean --yes",
-    "setup": "lerna bootstrap --hoist --strict --ignore-prepublish && lerna run setup",
-    "postinstall": "run-s -ln clean setup",
+    "bootstrap": "lerna bootstrap --ignore-prepublish --hoist --strict",
+    "setup": "lerna run setup",
+    "postinstall": "run-s -lns clean boostrap setup",
     "test": "lerna run test"
   },
   "devDependencies": {
