@@ -30,7 +30,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:300px;margin-bottom:32px" src="../resources/svg/typo-mc-full.svg" />
+<img width="300px" src="../resources/svg/typo-mc-full.svg" />
 
 ```html
 <clab-typo size="300px"></clab-typo>
@@ -38,7 +38,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:180px;margin-bottom:32px" src="../resources/svg/typo-mc-compact.svg" />
+<img width="180px" src="../resources/svg/typo-mc-compact.svg" />
 
 ```html
 <clab-typo size="180px" compact></clab-typo>
@@ -46,7 +46,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:120px;margin-bottom:32px" src="../resources/svg/typo-mc-explore.svg" />
+<img width="120px" src="../resources/svg/typo-mc-explore.svg" />
 
 ```html
 <clab-typo type="explore" size="120px"></clab-typo>
@@ -54,7 +54,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:150px;margin-bottom:32px" src="../resources/svg/typo-mc-developer.svg" />
+<img width="150px" src="../resources/svg/typo-mc-developer.svg" />
 
 ```html
 <clab-typo type="developer" size="150px"></clab-typo>

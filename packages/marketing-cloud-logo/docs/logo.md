@@ -30,7 +30,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:380px;margin-bottom:32px" src="../resources/svg/logo-mc-full.svg" />
+<img width="380px" src="../resources/svg/logo-mc-full.svg" />
 
 ```html
 <clab-logo size="380px"></clab-logo>
@@ -38,7 +38,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:240px;margin-bottom:32px" src="../resources/svg/logo-mc-compact.svg" />
+<img width="240px" src="../resources/svg/logo-mc-compact.svg" />
 
 ```html
 <clab-logo size="240px" compact></clab-logo>

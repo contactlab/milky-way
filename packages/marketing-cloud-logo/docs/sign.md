@@ -30,7 +30,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img style="display:block;width:50px;margin-bottom:32px" src="../resources/svg/clab-sign.svg" />
+<img width="50px" src="../resources/svg/clab-sign.svg" />
 
 ```html
 <clab-sign size="50px"></clab-sign>

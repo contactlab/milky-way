@@ -1,11 +1,11 @@
-/*
-  Conversion table (16px base):
-  30em  ➜ 480px
-  48em  ➜ 768px
-  60em  ➜ 960px
-  80em  ➜ 1280px
-  100em ➜ 1600px
-*/
+/**
+  * Conversion table (16px base):
+  * 30em  ➜ 480px
+  * 48em  ➜ 768px
+  * 60em  ➜ 960px
+  * 80em  ➜ 1280px
+  * 100em ➜ 1600px
+ **/
 
 /* mobile first */
 @custom-media --from-xsmall (min-width: 30em); /* 480px */
