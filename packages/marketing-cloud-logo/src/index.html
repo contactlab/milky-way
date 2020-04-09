@@ -8,22 +8,16 @@
     />
     <title>[demo] clab-logo</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/sanitize.css/typography.css"
+      href="https://unpkg.com/@contactlab/ds-tokens/styles/resets.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@contactlab/ds-tokens/styles/commons.css"
+    />
+
     <style>
-      :root {
-        --accent-color: #0391ec;
-        --dark-color: #001420;
-        --light-color: #f7fcff;
-      }
-
-      body {
-        font-family: Montserrat;
-      }
-
       .showcase {
         padding: 4.8rem 0;
         position: relative;
@@ -33,7 +27,7 @@
         position: absolute;
         top: 0;
         left: 2.4rem;
-        opacity: 0.32;
+        color: var(--color-base400);
         white-space: nowrap;
       }
 
@@ -51,13 +45,11 @@
       }
 
       .showcase--light {
-        color: var(--dark-color);
-        background-color: var(--light-color);
+        background-color: var(--color-base100);
       }
 
       .showcase--dark {
-        color: var(--light-color);
-        background-color: var(--dark-color);
+        background-color: var(--color-base900);
       }
     </style>
 
@@ -96,7 +88,7 @@
             size="300px"
             fill-style="mono"
             fill-color="accent"
-            short
+            compact
           ></clab-logo>
         </li>
         <li>
@@ -104,11 +96,11 @@
             size="350px"
             fill-style="mono"
             fill-color="light"
-            short
+            compact
           ></clab-logo>
         </li>
         <li>
-          <clab-logo size="400px" fill-style="negative" short></clab-logo>
+          <clab-logo size="400px" fill-style="negative" compact></clab-logo>
         </li>
       </ul>
     </section>
