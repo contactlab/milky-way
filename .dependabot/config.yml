@@ -1,5 +1,13 @@
 version: 1
 update_configs:
+  # marketing-cloud-logo
+  - package_manager: 'javascript'
+    directory: '/packages/marketing-cloud-logo'
+    update_schedule: 'weekly'
+    default_labels:
+      - 'mc-logo'
+      - 'dependencies'
+
   # design-tokens
   - package_manager: 'javascript'
     directory: '/packages/design-tokens'
@@ -14,14 +22,6 @@ update_configs:
     update_schedule: 'weekly'
     default_labels:
       - 'emails'
-      - 'dependencies'
-
-  # marketing-cloud-logo
-  - package_manager: 'javascript'
-    directory: '/packages/marketing-cloud-logo'
-    update_schedule: 'weekly'
-    default_labels:
-      - 'mc-logo'
       - 'dependencies'
 
   # service-pages
