@@ -1,5 +1,4 @@
 {
-  "version": "independent",
   "npmClient": "npm",
   "packages": ["packages/*"],
   "command": {
@@ -7,7 +6,8 @@
       "exact": true
     },
     "version": {
-      "allowBranch": ["master"]
+      "allowBranch": ["master"],
+      "message": "chore(release): publish %s"
     },
     "publish": {
       "ignoreChanges": [
