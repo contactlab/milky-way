@@ -2,7 +2,17 @@
 
 The official Contactlab Design System.
 
+![Dependabot][dependabot-badge]
+
 ### 🚧 In development stage.
+
+---
+
+## [Contactlab Marketing Cloud Logo](./packages/marketing-cloud-logo)
+
+The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore] & [Developer][mc-developer] websites logo.
+
+[![Marketing Cloud Logo Package][mc-logo-badge]][mc-logo]
 
 ---
 
@@ -20,12 +30,6 @@ The Contactlab Marketing Cloud transactional emails.
 
 ---
 
-## [Marketing Cloud Logo](./packages/marketing-cloud-logo)
-
-The Web Components and resources related to the Contactlab Marketing Cloud logo.
-
----
-
 ## [Service pages](./packages/service-pages)
 
 The Contactlab Marketing Cloud service pages.
@@ -36,6 +40,20 @@ The Contactlab Marketing Cloud service pages.
 
 Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab].
 
+<!---
+  B A D G E S
+-->
+
+[dependabot-badge]: https://badgen.net/dependabot/contactlab/milky-way?icon=dependabot
+[design-tokens-badge]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
+[mc-logo-badge]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
+
+<!---
+  L I N K S
+-->
+
 [contactlab]: https://contactlab.com/
 [design-tokens]: https://www.npmjs.com/package/@contactlab/ds-tokens
-[design-tokens-badge]: https://flat.badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
+[mc-developer]: http://developer.contactlab.com
+[mc-explore]: http://explore.contactlab.com
+[mc-logo]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo

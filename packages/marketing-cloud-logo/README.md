@@ -1,6 +1,6 @@
 # Contactlab Marketing Cloud Logo
 
-The Web Components and resources related to the Contactlab Marketing Cloud logo.
+The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore] & [Developer][mc-developer] websites logo.
 
 ## Web Components
 
@@ -26,4 +26,6 @@ Web Components that run natively or near-natively in all widely used desktop and
   L I N K S
 -->
 
+[mc-developer]: http://developer.contactlab.com
+[mc-explore]: http://explore.contactlab.com
 [stenciljs]: https://stenciljs.com/

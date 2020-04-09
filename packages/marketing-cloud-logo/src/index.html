@@ -51,27 +51,69 @@
       .showcase--dark {
         background-color: var(--color-base900);
       }
+
+      .showcase--grid > ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      .showcase--grid > ul > li {
+        flex: 0 0 auto;
+      }
     </style>
 
     <script type="module" src="/build/clab-logo.esm.js"></script>
     <script nomodule src="/build/clab-logo.js"></script>
   </head>
   <body>
+    <section class="showcase showcase--dark showcase--grid">
+      <h1>Atoms</h1>
+      <ul>
+        <li>
+          <clab-sign size="50px"></clab-sign>
+        </li>
+        <li>
+          <clab-sign size="50px" fill-color="light"></clab-sign>
+        </li>
+        <li>
+          <clab-typo size="300px" type="mc" fill-color="light"></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            size="160px"
+            type="mc"
+            fill-color="light"
+            compact
+          ></clab-typo>
+        </li>
+        <li>
+          <clab-typo size="100px" type="explore" fill-color="light"></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            size="120px"
+            type="developer"
+            fill-color="light"
+          ></clab-typo>
+        </li>
+      </ul>
+    </section>
+
     <section class="showcase showcase--light">
       <h1>Contactlab Marketing Cloud</h1>
       <ul>
         <li>
           <clab-logo
-            size="300px"
+            size="200px"
             fill-style="mono"
-            fill-color="accent"
+            fill-color="base"
           ></clab-logo>
         </li>
         <li>
           <clab-logo
-            size="350px"
+            size="300px"
             fill-style="mono"
-            fill-color="base"
+            fill-color="accent"
           ></clab-logo>
         </li>
         <li>
@@ -85,17 +127,17 @@
       <ul>
         <li>
           <clab-logo
-            size="300px"
+            size="200px"
             fill-style="mono"
-            fill-color="accent"
+            fill-color="light"
             compact
           ></clab-logo>
         </li>
         <li>
           <clab-logo
-            size="350px"
+            size="300px"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
             compact
           ></clab-logo>
         </li>
@@ -110,18 +152,18 @@
       <ul>
         <li>
           <clab-logo
-            size="300px"
+            size="200px"
             type="developer"
             fill-style="mono"
-            fill-color="accent"
+            fill-color="base"
           ></clab-logo>
         </li>
         <li>
           <clab-logo
-            size="350px"
+            size="300px"
             type="developer"
             fill-style="mono"
-            fill-color="base"
+            fill-color="accent"
           ></clab-logo>
         </li>
         <li>
@@ -139,18 +181,18 @@
       <ul>
         <li>
           <clab-logo
-            size="300px"
+            size="200px"
             type="explore"
             fill-style="mono"
-            fill-color="accent"
+            fill-color="light"
           ></clab-logo>
         </li>
         <li>
           <clab-logo
-            size="350px"
+            size="300px"
             type="explore"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
           ></clab-logo>
         </li>
         <li>
