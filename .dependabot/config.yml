@@ -5,7 +5,7 @@ update_configs:
     directory: '/packages/marketing-cloud-logo'
     update_schedule: 'weekly'
     default_labels:
-      - 'mc-logo'
+      - 'marketing-cloud-logo'
       - 'dependencies'
 
   # design-tokens
