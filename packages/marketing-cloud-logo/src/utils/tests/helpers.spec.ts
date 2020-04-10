@@ -2,13 +2,14 @@ import {handleColor, calcPercentage} from '../helpers';
 
 describe('handleColor', () => {
   it(`returns a specific hex color for the "accent", "base" and "light" keywords`, () => {
-    expect(handleColor('accent')).toBe('#0391EC');
-    expect(handleColor('base')).toBe('#1D3344');
-    expect(handleColor('light')).toBe('#F7FCFF');
+    expect(handleColor('accent')).toBe('#0391ec');
+    expect(handleColor('base')).toBe('#1d3344');
+    expect(handleColor('light')).toBe('#f7fcff');
+    expect(handleColor('white')).toBe('#fff');
   });
 
   it(`returns the black color for the the "none" and unknown keywords`, () => {
-    expect(handleColor('none')).toBe('#000');
+    expect(handleColor('black')).toBe('#000');
     // @ts-ignore
     expect(handleColor('fake')).toBe('#000');
   });

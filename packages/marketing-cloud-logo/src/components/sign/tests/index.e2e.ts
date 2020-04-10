@@ -16,12 +16,12 @@ describe('clab-sign', () => {
     const component = await page.find('clab-sign');
     const svg = await page.find('clab-sign >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#0391EC');
+    expect(svg.getAttribute('fill')).toBe('#0391ec');
 
     component.setProperty('fillColor', 'base');
     await page.waitForChanges();
 
-    expect(svg.getAttribute('fill')).toBe('#1D3344');
+    expect(svg.getAttribute('fill')).toBe('#1d3344');
 
     component.setProperty('fillColor', 'unknown');
     await page.waitForChanges();

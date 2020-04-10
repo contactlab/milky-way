@@ -30,10 +30,18 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img width="50px" src="../resources/svg/clab-sign.svg" />
+<img width="50px" src="../resources/svg/clab-sign-accent.svg" />
 
 ```html
 <clab-sign size="50px"></clab-sign>
+```
+
+---
+
+<img width="50px" src="../resources/svg/clab-sign-base.svg" />
+
+```html
+<clab-sign size="50px" fill-color="base"></clab-sign>
 ```
 
 ---
@@ -57,7 +65,7 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
     </tr>
     <tr>
       <td>fill-color</td>
-      <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
+      <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
       <td><code>'accent'</code></td>
       <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#0391ec</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>

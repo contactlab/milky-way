@@ -46,6 +46,22 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
+<img width="190px" src="../resources/svg/logo-explore.svg" />
+
+```html
+<clab-logo size="190px" type="explore"></clab-logo>
+```
+
+---
+
+<img width="210px" src="../resources/svg/logo-developer.svg" />
+
+```html
+<clab-logo size="210px" type="developer"></clab-logo>
+```
+
+---
+
 ## Attributes
 
 <table>
@@ -84,9 +100,9 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
     </tr>
     <tr>
       <td>fill-color</td>
-      <td><code>'accent' | 'base' | 'light' | 'none'</code></td>
-      <td><code>'none'</code></td>
-      <td>The color of the logo. <u>This attribute has effect only if you set <code>fill-style</code> attribute to <code>'mono'</code></u>. The default is <code>'none'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
+      <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
+      <td><code>'black'</code></td>
+      <td>The color of the logo. <u>This attribute has effect only if you set <code>fill-style</code> attribute to <code>'mono'</code></u>. The default is <code>'black'</code>, equal to <code>#000</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

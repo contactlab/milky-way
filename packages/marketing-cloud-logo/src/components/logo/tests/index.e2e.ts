@@ -42,8 +42,8 @@ describe('clab-logo', () => {
     component.setProperty('fillStyle', 'mono');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('none');
-    expect(typo.getAttribute('fill-color')).toBe('none');
+    expect(sign.getAttribute('fill-color')).toBe('black');
+    expect(typo.getAttribute('fill-color')).toBe('black');
 
     component.setProperty('fillStyle', 'negative');
     await page.waitForChanges();

@@ -8,7 +8,7 @@ import {Type, FillColor, FillStyle, Size} from '../../typings/props';
 })
 export class Logo {
   @Prop() compact = false;
-  @Prop() fillColor: FillColor = 'none';
+  @Prop() fillColor: FillColor = 'black';
   @Prop() fillStyle: FillStyle = 'positive';
   @Prop() size: Size = '100%';
   @Prop() type: Type = 'mc';

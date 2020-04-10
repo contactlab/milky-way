@@ -4,12 +4,14 @@ import {ColorHex, FillColor} from '../typings/props';
 export function handleColor(color: FillColor): ColorHex {
   switch (color) {
     case 'accent':
-      return '#0391EC';
+      return '#0391ec';
     case 'base':
-      return '#1D3344';
+      return '#1d3344';
     case 'light':
-      return '#F7FCFF';
-    case 'none':
+      return '#f7fcff';
+    case 'white':
+      return '#fff';
+    case 'black':
     default:
       return '#000';
   }
