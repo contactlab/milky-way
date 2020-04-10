@@ -1,7 +1,7 @@
 .logo {
   display: flex;
-  width: attr(data-width);
   align-items: center;
+  justify-content: center;
   line-height: 0;
 }
 

@@ -10,17 +10,18 @@
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@contactlab/ds-tokens/styles/resets.css"
+      href="https://unpkg.com/@contactlab/ds-tokens/styles/reset.css"
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@contactlab/ds-tokens/styles/commons.css"
+      href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
     />
 
     <style>
       body {
         background-color: var(--color-base100);
       }
+
       .showcase {
         max-width: 144rem;
         margin: 2.4rem auto;
@@ -28,33 +29,41 @@
         border-radius: 0.8rem;
         padding: 0.8rem 4rem;
       }
+
       .showcase > h1 {
         color: var(--color-base300);
       }
+
       .showcase > ul {
         margin: 0;
         padding: 1.6rem 0;
         list-style: none;
       }
+
       .showcase > ul > li {
         display: flex;
         padding: 2.4rem;
         align-items: center;
         justify-content: center;
       }
+
       .showcase--grid > ul {
         display: flex;
         justify-content: center;
       }
+
       .showcase--grid > ul > li {
         flex: 0 0 auto;
       }
+
       .showcase .light-panel {
         background-color: var(--color-base100);
       }
+
       .showcase .dark-panel {
         background-color: var(--color-base900);
       }
+
       .showcase:not(.showcase--grid) .dark-panel {
         margin-right: -4rem;
         margin-left: -4rem;
