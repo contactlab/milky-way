@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/marketing-cloud-logo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Web Components and resources related to the Contactlab Marketing Cloud logo.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -43,8 +43,8 @@
     "lint": "run-p -clns lint:**",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "stencil build --dev --watch --serve",
-    "build": "stencil build --docs",
-    "prepublish": "run-s -lns test build"
+    "build": "stencil build",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.3",
