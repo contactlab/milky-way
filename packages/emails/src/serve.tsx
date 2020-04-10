@@ -9,13 +9,13 @@ import {Mail, MailSuite, MailData, MailType, MailTypes} from './templates';
 
 const root = resolve(__dirname, '..');
 
-const port = 3000;
+const port = 3333;
 const app = express();
 
 const mjmlOptions: Mjml2HtmlOptions = {
   beautify: true,
   minify: false,
-  validationLevel: 'soft',
+  validationLevel: 'soft'
 };
 
 run(MailSuite, getData());

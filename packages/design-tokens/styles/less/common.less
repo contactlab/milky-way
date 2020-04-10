@@ -62,6 +62,12 @@
 @elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
 /**
+ * Import Montserrat from Google Font CDN.
+ * Montserrat is the font used in the Contactlab Marketing Cloud platform.
+ **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/**
  * 1. Use the official font and fallback to the default OS font.
  * 2. Use a comfortable rem measure: 1rem is equivalent to 10px (10px/16px = 62.5%)
       https://snook.ca/archives/html_and_css/font-size-with-rem
@@ -88,6 +94,26 @@ pre {
 /**
  * Set typography rules for titles, sub-titles and paragraphs.
  **/
+body {
+  color: @colors[base900];
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+a,
+a:link,
+a:visited {
+  color: @colors[accent500];
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: @colors[accent700];
+}
+
 h1,
 h2,
 h3,

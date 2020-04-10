@@ -33,7 +33,7 @@
     "lint:css": "stylelint ./**/*.{css,scss,less,svg} --fix",
     "lint:src": "eslint . --fix",
     "test": "run-p -clns lint:**",
-    "prepublish": "run-s -lns test"
+    "prepublish": "npm run test"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.3",

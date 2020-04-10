@@ -1,5 +1,6 @@
 // --- resources
-export const logoSrc = 'https://i.postimg.cc/7hzBCZBg/mc-logo.png'; // the original assets is placed inside ./public/mc-logo.png
+export const logoSrc =
+  'https://i.postimg.cc/zvdjMxkG/logo-mc-full-positive-593x60.png'; // the original assets is placed inside ./public/mc-logo.png
 
 // --- links
 export const logoHref = 'http://mc.contactlab.it';

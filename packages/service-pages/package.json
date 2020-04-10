@@ -26,7 +26,7 @@
     "lint:css": "stylelint ./src/**/*.scss --fix",
     "lint:src": "eslint . --ext .js,.ts --fix",
     "test": "run-p lint:**",
-    "dev": "parcel ./src/index.pug --port 8081 --target=browser --log-level 3",
+    "dev": "parcel ./src/index.pug --port 3333 --target=browser --log-level 3",
     "prebuild": "rimraf ./dist",
     "build": "parcel build ./src/index.pug --target=browser --no-cache --no-source-maps --log-level 3",
     "serve": "serve -l 8180 ./dist",

@@ -55,8 +55,10 @@
 }
 
 /**
- * The Contactlab Marketing Cloud offical font.
+ * Import Montserrat from Google Font CDN.
+ * Montserrat is the font used in the Contactlab Marketing Cloud platform.
  **/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /**
  * 1. Use the official font and fallback to the default OS font.
@@ -85,6 +87,26 @@ pre {
 /**
  * Set typography rules for titles, sub-titles and paragraphs.
  **/
+body {
+  color: var(--color-base900);
+  font-size: 1.4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--color-accent500);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--color-accent700);
+}
+
 h1,
 h2,
 h3,
