@@ -1,7 +1,8 @@
 .logo {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
-  justify-content: center;
+  font-size: 0;
   line-height: 0;
 }
 

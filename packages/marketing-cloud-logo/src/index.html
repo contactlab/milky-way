@@ -19,54 +19,64 @@
 
     <style>
       body {
-        background-color: var(--color-base100);
+        background-color: var(--color-base900);
       }
 
       .showcase {
-        max-width: 144rem;
-        margin: 2.4rem auto;
-        border: 1px solid var(--color-base200);
-        border-radius: 0.8rem;
-        padding: 0.8rem 4rem;
-      }
-
-      .showcase > h1 {
-        color: var(--color-base300);
+        overflow-y: hidden;
+        padding: 3.2rem;
       }
 
       .showcase > ul {
-        margin: 0;
-        padding: 1.6rem 0;
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        grid-gap: 1.6rem;
         list-style: none;
+      }
+
+      @media only screen and (min-width: 100em) {
+        .showcase > ul {
+          max-width: 80vw;
+        }
       }
 
       .showcase > ul > li {
         display: flex;
-        padding: 2.4rem;
+        height: 16rem;
+        border-radius: 1.6rem;
+        padding: 1.6rem;
         align-items: center;
         justify-content: center;
+        transition: box-shadow 0.4s ease-in-out;
       }
 
-      .showcase--grid > ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      .showcase--grid > ul > li {
-        flex: 0 0 auto;
-      }
-
-      .showcase .light-panel {
+      .showcase--light {
         background-color: var(--color-base100);
       }
 
-      .showcase .dark-panel {
+      .showcase--light ul > li:hover {
+        background-color: var(--color-base100);
+        box-shadow: 32px 32px 64px #d2d6d9, -32px -32px 64px #fff;
+      }
+
+      .showcase--accent {
+        background-color: var(--color-accent500);
+      }
+
+      .showcase--accent ul > li:hover {
+        background-color: var(--color-accent500);
+        box-shadow: 32px 32px 64px #037bc9, -32px -32px 64px #03a7ff;
+      }
+
+      .showcase--base {
         background-color: var(--color-base900);
       }
 
-      .showcase:not(.showcase--grid) .dark-panel {
-        margin-right: -4rem;
-        margin-left: -4rem;
+      .showcase--base ul > li:hover {
+        background-color: var(--color-base900);
+        box-shadow: 32px 32px 64px #00111b, -32px -32px 64px #001725;
       }
     </style>
 
@@ -74,243 +84,83 @@
     <script nomodule src="/build/clab-logo.js"></script>
   </head>
   <body>
-    <!-- Sign-->
-    <section class="showcase showcase--grid">
-      <h1>Sign</h1>
+    <section class="showcase showcase--light">
       <ul>
-        <li class="light-panel">
-          <clab-sign size="50px" fill-color="base"></clab-sign>
+        <li>
+          <clab-logo size="300px"></clab-logo>
         </li>
-        <li class="dark-panel">
-          <clab-sign size="50px" fill-color="light"></clab-sign>
+        <li>
+          <clab-logo size="200px" compact="compact"></clab-logo>
         </li>
-        <li class="light-panel">
-          <clab-sign size="50px" fill-color="accent"></clab-sign>
+        <li>
+          <clab-logo size="140px" type="explore"></clab-logo>
+        </li>
+        <li>
+          <clab-logo size="180px" type="developer"></clab-logo>
         </li>
       </ul>
     </section>
 
-    <!-- Typo-->
-    <section class="showcase showcase--grid">
-      <h1>Typo</h1>
-
-      <!-- Marketing Cloud-->
+    <section class="showcase showcase--accent">
       <ul>
-        <li class="light-panel">
-          <clab-typo size="280px" fill-color="base"></clab-typo>
-        </li>
-        <li class="dark-panel">
-          <clab-typo size="280px" fill-color="light"></clab-typo>
-        </li>
-        <li class="light-panel">
-          <clab-typo
-            size="160px"
-            fill-color="base"
-            compact="compact"
-          ></clab-typo>
-        </li>
-        <li class="dark-panel">
-          <clab-typo
-            size="160px"
-            fill-color="light"
-            compact="compact"
-          ></clab-typo>
-        </li>
-      </ul>
-
-      <!-- Explore-->
-      <ul>
-        <li class="light-panel">
-          <clab-typo size="120px" type="explore" fill-color="base"></clab-typo>
-        </li>
-        <li class="dark-panel">
-          <clab-typo size="120px" type="explore" fill-color="light"></clab-typo>
-        </li>
-      </ul>
-
-      <!-- Developer-->
-      <ul>
-        <li class="light-panel">
-          <clab-typo
-            size="160px"
-            type="developer"
-            fill-color="base"
-          ></clab-typo>
-        </li>
-        <li class="dark-panel">
-          <clab-typo
-            size="160px"
-            type="developer"
-            fill-color="light"
-          ></clab-typo>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contactlab Marketing Cloud-->
-    <section class="showcase">
-      <h1>Contactlab Marketing Cloud</h1>
-      <ul>
-        <li class="light-panel">
-          <clab-logo
-            size="200px"
-            fill-style="mono"
-            fill-color="base"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="250px"
-            fill-style="mono"
-            fill-color="light"
-          ></clab-logo>
-        </li>
-        <li class="light-panel">
+        <li>
           <clab-logo
             size="300px"
             fill-style="mono"
-            fill-color="accent"
+            fill-color="light"
           ></clab-logo>
         </li>
-        <li class="dark-panel">
-          <clab-logo size="350px" fill-style="negative"></clab-logo>
-        </li>
-        <li class="light-panel">
-          <clab-logo size="400px" fill-style="positive"></clab-logo>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Marketing Cloud-->
-    <section class="showcase">
-      <h1>Marketing Cloud</h1>
-      <ul>
-        <li class="light-panel">
+        <li>
           <clab-logo
             size="200px"
-            fill-style="mono"
-            fill-color="base"
-            compact="compact"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="250px"
             fill-style="mono"
             fill-color="light"
             compact="compact"
           ></clab-logo>
         </li>
-        <li class="light-panel">
+        <li>
           <clab-logo
-            size="300px"
+            size="140px"
+            type="explore"
             fill-style="mono"
-            fill-color="accent"
-            compact="compact"
+            fill-color="light"
           ></clab-logo>
         </li>
-        <li class="dark-panel">
+        <li>
           <clab-logo
-            size="350px"
+            size="180px"
+            type="developer"
+            fill-style="mono"
+            fill-color="light"
+          ></clab-logo>
+        </li>
+      </ul>
+    </section>
+
+    <section class="showcase showcase--base">
+      <ul>
+        <li>
+          <clab-logo size="300px" fill-style="negative"></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="200px"
             fill-style="negative"
             compact="compact"
           ></clab-logo>
         </li>
-        <li class="light-panel">
+        <li>
           <clab-logo
-            size="400px"
-            fill-style="positive"
-            compact="compact"
-          ></clab-logo>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Explore-->
-    <section class="showcase">
-      <h1>Explore</h1>
-      <ul>
-        <li class="light-panel">
-          <clab-logo
-            size="150px"
-            type="explore"
-            fill-style="mono"
-            fill-color="base"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="200px"
-            type="explore"
-            fill-style="mono"
-            fill-color="light"
-          ></clab-logo>
-        </li>
-        <li class="light-panel">
-          <clab-logo
-            size="250px"
-            type="explore"
-            fill-style="mono"
-            fill-color="accent"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="300px"
-            type="explore"
+            size="140px"
             fill-style="negative"
-          ></clab-logo>
-        </li>
-        <li class="light-panel">
-          <clab-logo
-            size="350px"
             type="explore"
-            fill-style="positive"
           ></clab-logo>
         </li>
-      </ul>
-    </section>
-
-    <!-- Developer-->
-    <section class="showcase">
-      <h1>Developer</h1>
-      <ul>
-        <li class="light-panel">
+        <li>
           <clab-logo
-            size="200px"
-            type="developer"
-            fill-style="mono"
-            fill-color="base"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="250px"
-            type="developer"
-            fill-style="mono"
-            fill-color="light"
-          ></clab-logo>
-        </li>
-        <li class="light-panel">
-          <clab-logo
-            size="300px"
-            type="developer"
-            fill-style="mono"
-            fill-color="accent"
-          ></clab-logo>
-        </li>
-        <li class="dark-panel">
-          <clab-logo
-            size="350px"
-            type="developer"
+            size="180px"
             fill-style="negative"
-          ></clab-logo>
-        </li>
-        <li class="light-panel">
-          <clab-logo
-            size="400px"
             type="developer"
-            fill-style="positive"
           ></clab-logo>
         </li>
       </ul>
