@@ -5,7 +5,7 @@
   * 60em  ➜ 960px
   * 80em  ➜ 1280px
   * 100em ➜ 1600px
- **/
+ */
 @xs: 30em;
 @sm: 48em;
 @md: 60em;
@@ -14,7 +14,7 @@
 
 /**
  * Mobile first queries
- **/
+ */
 @from-xsmall: ~'(min-width: @{xs})';
 @from-small: ~'(min-width: @{sm})';
 @from-medium: ~'(min-width: @{md})';
@@ -23,7 +23,7 @@
 
 /**
  * Desktop first queries
- **/
+ */
 @to-xsmall: ~'(max-width: @{xs})';
 @to-small: ~'(max-width: @{sm})';
 @to-medium: ~'(max-width: @{md})';
@@ -32,20 +32,20 @@
 
 /**
  * Orientation
- **/
+ */
 @landscape: ~'(orientation: landscape)';
 @portrait: ~'(orientation: portrait)';
 
 /**
  * a11y
- **/
+ */
 @reduced-motion: ~'(prefers-reduced-motion: reduce)';
 @light-scheme: ~'(prefers-color-scheme: light)';
 @dark-scheme: ~'(prefers-color-scheme: dark)';
 
 /**
  * Misc
- **/
+ */
 @fine-pointer: ~'(hover: hover) and (pointer: fine)';
 @highdensity: ~'(-webkit-min-device-pixel-ratio: 1.5)',
   ~'(min--moz-device-pixel-ratio: 1.5)', ~'(-o-min-device-pixel-ratio: 3/2)',

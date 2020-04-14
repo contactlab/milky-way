@@ -1,7 +1,7 @@
 /**
  * 1. The Contactlab Marketing Cloud official color.
  * 2. The elevations defined inside the Design System.
- **/
+ */
 :root {
   --color-accent100: #bae1f9; /* 1 */
   --color-accent200: #8ccdf6; /* 1 */
@@ -57,14 +57,14 @@
 /**
  * Import Montserrat from Google Font CDN.
  * Montserrat is the font used in the Contactlab Marketing Cloud platform.
- **/
+ */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /**
  * 1. Use the official font and fallback to the default OS font.
  * 2. Use a comfortable rem measure: 1rem is equivalent to 10px (10px/16px = 62.5%)
       https://snook.ca/archives/html_and_css/font-size-with-rem
- **/
+ */
 html {
   font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu,
     Cantarell, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -74,7 +74,7 @@ html {
 
 /**
  * Use the default monospace user interface font in all browsers.
- **/
+ */
 code,
 kbd,
 samp,
@@ -86,7 +86,7 @@ pre {
 
 /**
  * Set typography rules for titles, sub-titles and paragraphs.
- **/
+ */
 body {
   color: var(--color-base900);
   font-size: 1.4rem;
