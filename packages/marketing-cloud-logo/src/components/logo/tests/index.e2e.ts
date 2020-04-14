@@ -64,7 +64,7 @@ describe('clab-logo', () => {
 
     const component = await page.find('clab-logo');
     const wrapper = await page.find('clab-logo >>> .logo');
-    expect(wrapper).toHaveClass('logo--full');
+    expect(wrapper).toHaveClass('logo--extended');
 
     component.setProperty('compact', true);
     await page.waitForChanges();
