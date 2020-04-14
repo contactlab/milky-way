@@ -21,8 +21,8 @@ export class Typo {
     const width = this.size;
     const viewboxWidth = this.getViewboxWidth(this.type, this.compact);
     const paddingBottom = calcPercentage({
-      width: viewboxWidth,
-      height: 45
+      width: viewboxWidth, // viewbox width
+      height: 45 // viewbox height
     });
 
     return (
@@ -36,7 +36,6 @@ export class Typo {
           viewBox={`0 0 ${viewboxWidth} 45`}
           preserveAspectRatio="xMidYMin slice"
           xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
         >
           {this.getSvgContent(this.type, this.compact)}
         </svg>

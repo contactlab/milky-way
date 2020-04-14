@@ -1,6 +1,5 @@
 import {ColorHex, FillColor} from '../typings/props';
 
-// --- handle component color
 export function handleColor(color: FillColor): ColorHex {
   switch (color) {
     case 'accent':
@@ -17,13 +16,16 @@ export function handleColor(color: FillColor): ColorHex {
   }
 }
 
-// --- hack svg padding for scaling
 interface CalcPercentageProps {
   base?: number;
   width: number;
   height: number;
 }
 
+/**
+ * hack the svg padding for scaling
+ * more info on the css-tricks blog: https://css-tricks.com/scale-svg/
+ */
 export function calcPercentage({
   base = 100,
   width,

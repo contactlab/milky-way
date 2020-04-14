@@ -30,7 +30,6 @@ export class Sign {
           viewBox="0 0 65 68"
           preserveAspectRatio="xMidYMin slice"
           xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
         >
           <path
             clip-rule="evenodd"
