@@ -41,6 +41,13 @@ body {
 }
 
 /**
+ * Remove the margin-bottom in all browsers.
+ **/
+p {
+  margin-bottom: 0;
+}
+
+/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Edge, Firefox, and Safari.
  **/

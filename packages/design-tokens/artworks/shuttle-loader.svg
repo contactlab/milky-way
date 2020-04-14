@@ -4,7 +4,7 @@
  * LICENSE file in the root directory of this source tree.
 -->
 
-<svg xmlns="http://www.w3.org/2000/svg" role="img" version="1.1" viewBox="0 0 793.7 793.7">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 793.7 793.7">
   <style>
     .base-color {
       fill: #b4afff;
@@ -121,7 +121,6 @@
     }
 
     @keyframes pulsate-fwd {
-
       0%,
       100% {
         transform: translateX(0);
@@ -146,7 +145,6 @@
     }
 
     @keyframes shake-horizontal {
-
       0%,
       100% {
         transform: translateX(0);
@@ -179,7 +177,6 @@
     }
 
     @keyframes ping {
-
       0%,
       100% {
         transform-origin: top center;
@@ -227,8 +224,8 @@
         opacity: 1;
       }
     }
-
   </style>
+
   <g id="shuttle_body" class="vibrating">
     <g id="fire">
       <path id="base" d="M376 107.4h66.7v610.4H376z" class="warning" />

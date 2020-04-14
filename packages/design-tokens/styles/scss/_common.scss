@@ -243,7 +243,7 @@ small {
 }
 
 /**
- * Change the text color when the content is highlighted.
+ * Highlight the body text on selection.
  */
 *::selection {
   color: get-color('white');

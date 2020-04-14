@@ -1,4 +1,7 @@
 /**
+  * CSS Media Queries specification: https://cssdb.org/#custom-media-queries
+  * Use with a postcss plugin: https://github.com/postcss/postcss-custom-media
+  *
   * Conversion table (16px base):
   * 30em  ➜ 480px
   * 48em  ➜ 768px

@@ -4,7 +4,7 @@
  * LICENSE file in the root directory of this source tree.
 -->
 
-<svg xmlns="http://www.w3.org/2000/svg" role="img" version="1.1" viewBox="0 0 504 328">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 328">
   <style>
     .base-color {
       fill: #b4afff;
@@ -51,7 +51,6 @@
     }
 
     @keyframes pulsating {
-
       0%,
       100% {
         transform-origin: center center;
@@ -102,7 +101,6 @@
     }
 
     @keyframes wobbling {
-
       0%,
       100% {
         transform: translateY(0) rotate(0);
@@ -121,8 +119,8 @@
         transform: translateY(-2px) rotate(0.5deg);
       }
     }
-
   </style>
+
   <path id="space_blob"
     d="M171 28.8c14.3-15 38.3-20 60.4-20.8C301 5.3 372 35.6 423.9 66.1c20.9 11.9 41.5 24.9 55.8 42.5 29.2 35.9 26.2 89.6-7.1 124.2-11.3 11.8-25.4 21.3-40.1 29.9-26 15.3-54.3 28.3-84.8 33.9-21.8 4-44.1 4.3-66.2 3.2-61.7-2.9-123.1-15.8-175.9-42.5-23.2-11.7-45.4-26.9-56.4-48.1s-7.6-49.7 13.7-64.8c8.8-6.2 19.7-9.6 30.4-12.9 15.7-4.8 31.7-9.5 45.5-17.6 14.3-8.4 30.7-23.6 26.4-39-4.6-16.6-8.4-31.1 5.8-46.1z"
     class="base-color" />
