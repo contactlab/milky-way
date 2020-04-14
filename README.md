@@ -2,7 +2,7 @@
 
 The official Contactlab Design System.
 
-![Dependabot][dependabot-badge]
+[![Dependabot][dependabot-badge]][dependabot]
 
 ### 🚧 In development stage.
 
@@ -54,7 +54,8 @@ Milky-Way is [MIT licensed](./LICENSE) @ [Contactlab S.p.A][contactlab].
   L I N K S
 -->
 
-[contactlab]: https://contactlab.com/
+[contactlab]: https://contactlab.com
+[dependabot]: https://dependabot.com
 [design-tokens]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [mc-developer]: http://developer.contactlab.com
 [mc-explore]: http://explore.contactlab.com
