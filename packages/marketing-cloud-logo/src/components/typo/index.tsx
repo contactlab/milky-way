@@ -1,9 +1,9 @@
 import {Component, Prop, h} from '@stencil/core';
 import {Type, FillColor, Size} from '../../typings/props';
 import {calcPercentage, handleColor} from '../../utils/helpers';
-import {DeveloperType} from './developer';
-import {ExploreType} from './explore';
-import {McTypeFull, McTypeCompact} from './marketing-cloud';
+import {DeveloperShape} from './developer';
+import {ExploreShape} from './explore';
+import {McShape} from './marketing-cloud';
 
 @Component({
   shadow: true,
@@ -44,6 +44,10 @@ export class Typo {
     );
   }
 
+  private getFillColor(): string {
+    return handleColor(this.fillColor);
+  }
+
   private getViewboxWidth(type: Type, compact: boolean): number {
     switch (type) {
       case 'explore':
@@ -61,18 +65,14 @@ export class Typo {
   private getSvgContent(type: Type, compact: boolean): JSX.Element {
     switch (type) {
       case 'explore':
-        return ExploreType;
+        return <ExploreShape />;
 
       case 'developer':
-        return DeveloperType;
+        return <DeveloperShape />;
 
       case 'mc':
       default:
-        return compact ? McTypeCompact : McTypeFull;
+        return <McShape compact={compact} />;
     }
-  }
-
-  private getFillColor(): string {
-    return handleColor(this.fillColor);
   }
 }
