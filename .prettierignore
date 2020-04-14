@@ -1,0 +1,10 @@
+.netlify/
+build/
+coverage/
+dist/
+
+# marketing-cloud-logo
+components.d.ts
+.stencil/
+loader/
+www/
