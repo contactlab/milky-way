@@ -24,7 +24,8 @@
     "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap --ignore-prepublish --hoist --strict",
     "postinstall": "npm run clean && npm run bootstrap",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "publish:all": "lerna publish from-package"
   },
   "devDependencies": {
     "husky": "4.2.5",

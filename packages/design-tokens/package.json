@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/ds-tokens",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.",
   "author": {
     "name": "Contactlab UXD Team",
