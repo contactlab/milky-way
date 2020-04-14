@@ -23,3 +23,12 @@
 .logo--mc:not(.logo--compact) .typo {
   width: 87.5%;
 }
+
+.logo--explore .sign {
+  width: 20%;
+  margin-right: 5%;
+}
+
+.logo--explore .typo {
+  width: 75%;
+}

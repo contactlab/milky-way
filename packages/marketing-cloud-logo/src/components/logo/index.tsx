@@ -20,7 +20,7 @@ export class Logo {
     return (
       <div
         class={`logo logo--${this.type} logo--${
-          this.compact ? 'compact' : 'full'
+          this.compact ? 'compact' : 'extended'
         }`}
         style={{width}}
         e2e-width={width}
