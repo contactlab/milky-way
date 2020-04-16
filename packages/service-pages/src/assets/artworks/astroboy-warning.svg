@@ -1,9 +1,4 @@
-<!--
- * Copyright (c) Contactlab UXD Team <https://ux.contactlab.com>.
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
--->
-<svg role="img" width="504" height="328" viewBox="0 0 504 328" xmlns="http://www.w3.org/2000/svg" >
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 504 328">
   <style>
     .base-color {
       fill: #b4afff;
@@ -50,7 +45,6 @@
     }
 
     @keyframes pulsating {
-
       0%,
       100% {
         transform-origin: center center;
@@ -101,7 +95,6 @@
     }
 
     @keyframes wobbling {
-
       0%,
       100% {
         transform: translateY(0) rotate(0);

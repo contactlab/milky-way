@@ -9,7 +9,7 @@ The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 Web Components that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
 
-### [Try live on CodePen!]
+### [Try live on CodePen!][codepen-url]
 
 - [\<clab-logo>](./docs/logo.md)
 - [\<clab-sign>](./docs/sign.md)

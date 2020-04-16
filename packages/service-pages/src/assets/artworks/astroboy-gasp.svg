@@ -1,9 +1,4 @@
-<!--
- * Copyright (c) Contactlab UXD Team <https://ux.contactlab.com>.
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
--->
-<svg role="img" width="287" height="216" viewBox="0 0 287 216" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287 216">
   <style>
     .base-color {
       fill: #b4afff;
@@ -50,7 +45,6 @@
     }
 
     @keyframes shaking {
-
       0%,
       100% {
         transform: translateX(0);
@@ -76,7 +70,6 @@
     }
 
     @keyframes flickering {
-
       0%,
       50%,
       100% {

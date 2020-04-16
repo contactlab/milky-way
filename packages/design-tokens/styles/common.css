@@ -62,8 +62,8 @@
 
 /**
  * 1. Use the official font and fallback to the default OS font.
- * 2. Use a comfortable rem measure: 1rem is equivalent to 10px (10px/16px = 62.5%)
-      https://snook.ca/archives/html_and_css/font-size-with-rem
+ * 2. The base font-size is set at 62.5% for having the convenience
+ *    of sizing rems in a way that is similar to using px: 1.6rem = 16px
  */
 html {
   font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu,
@@ -89,22 +89,20 @@ pre {
  */
 body {
   color: var(--color-base900);
-  font-size: 1.4rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4em;
+  font-weight: normal;
   line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
-a,
-a:link,
-a:visited {
+a {
   color: var(--color-accent500);
   text-decoration: none;
 }
 
-a:hover,
-a:active {
-  color: var(--color-accent700);
+a:focus,
+a:hover {
+  color: var(--color-accent600);
 }
 
 h1,
@@ -114,9 +112,10 @@ h4,
 h5,
 h6,
 .hero-text {
+  margin-top: 0;
   color: var(--color-base800);
   font-weight: bold;
-  text-rendering: optimizeLegibility;
+  letter-spacing: -0.1rem;
 }
 
 .hero-text {

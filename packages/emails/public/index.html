@@ -10,69 +10,58 @@
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@contactlab/ds-tokens/styles/reset.css"
+      href="https://unpkg.com/@contactlab/ds-tokens@1.2.0/styles/reset.css"
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
+      href="https://unpkg.com/@contactlab/ds-tokens@1.2.0/styles/common.css"
     />
 
+    <script src="https://unpkg.com/@contactlab/marketing-cloud-logo@1.2.0/dist/clab-logo.js"></script>
+
     <style>
-      .logo {
-        width: 30rem;
-        margin-bottom: 3.2rem;
-      }
-
-      h1 {
-        margin-bottom: 4rem;
-        font-size: 3rem;
-        font-weight: bold;
-        line-height: 1.2em;
-        color: var(--color-base800);
-        text-rendering: optimizeLegibility;
-      }
-
       main {
         display: flex;
-        max-width: 86rem;
-        height: 100vh;
+        max-width: 124rem;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
+        padding: 4rem 3.2rem;
+      }
+
+      .logo {
+        display: inline-block;
+        width: 32rem;
+        margin-bottom: 4rem;
+      }
+
+      .title {
+        margin-bottom: 4rem;
       }
 
       section {
         display: grid;
-        grid-template-columns: repeat(2, minmax(24rem, 32rem));
-        grid-column-gap: 3.2rem;
-      }
-
-      section > ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        margin-bottom: 2.4rem;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        grid-gap: 4rem;
       }
 
       section > ul > li {
-        margin-bottom: 0.8rem;
+        margin-bottom: 1.6rem;
       }
     </style>
   </head>
   <body>
     <main>
       <a
-        href="http://mc.contactlab.it/"
+        href="http://mc.contactlab.it"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          class="logo"
-          src="https://i.postimg.cc/zvdjMxkG/logo-mc-full-positive-593x60.png"
-          alt="Contactlab Marketing Cloud"
-        />
+        <clab-logo class="logo"></clab-logo>
       </a>
-      <h1>The transactional emails</h1>
+
+      <h1 class="title">The transactional emails</h1>
+
       <section>
         <ul>
           <li>

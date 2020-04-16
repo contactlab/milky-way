@@ -10,7 +10,7 @@ The Contactlab Marketing Cloud transactional emails.
 npm run dev
 ```
 
-Open your browser and point to http://localhost:3000/.
+Open your browser and point to http://localhost:3333/.
 The http server will listen and restart upon each change inside `src` folder.
 You just need to refresh a browser window manually.
 

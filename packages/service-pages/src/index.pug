@@ -21,8 +21,9 @@ html(lang="en")
     link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png")
 
     //- styles
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap")
     link(rel="stylesheet" href="./styles/main.scss")
+
+    script(src="https://unpkg.com/@contactlab/marketing-cloud-logo@1.2.0/dist/clab-logo.js")
 
   body
     include views/current.pug
@@ -41,9 +42,8 @@ html(lang="en")
 
     .landing
       //- marketing cloud logo
-      .logo
-        a(href="https://mc.contactlab.it/" title="Contactlab Marketing Cloud")
-          img(src="./assets/images/mc-logo.svg" alt="illustration")
+      a(href="https://mc.contactlab.it/" title="Contactlab Marketing Cloud")
+        clab-logo.logo
 
       //- illustrations
       if IMG_SRC

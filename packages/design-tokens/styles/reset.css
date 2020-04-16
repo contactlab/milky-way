@@ -1,10 +1,10 @@
 /**
- * Add border box sizing in all browsers.
+ * Add border box sizing inheritance in all browsers.
  */
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /**
@@ -18,6 +18,7 @@
 }
 
 /**
+ * 1. Add border box sizing in all browsers.
  * 1. Use a 4-space tab width in all browsers.
  * 2. Change the line height in all browsers.
  * 3. Breaks words to prevent overflow in all browsers.
@@ -25,12 +26,13 @@
  * 5. Remove the grey highlight on links in iOS.
  */
 html {
-  -moz-tab-size: 4; /* 1 */
-  tab-size: 4; /* 1 */
-  line-height: 1.5; /* 2 */
-  word-break: break-word; /* 3 */
-  cursor: default; /* 4 */
-  -webkit-tap-highlight-color: transparent /* 5 */;
+  box-sizing: border-box; /* 1 */
+  -moz-tab-size: 4; /* 2 */
+  tab-size: 4; /* 2 */
+  line-height: 1.5; /* 3 */
+  word-break: break-word; /* 4 */
+  cursor: default; /* 5 */
+  -webkit-tap-highlight-color: transparent /* 6 */;
 }
 
 /**
@@ -48,12 +50,16 @@ p {
 }
 
 /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ * 1. Remove the list-style on `dl`, `ol`, `ul` in all browsers.
+ * 2. Remove the margin-top on `dl`, `ol`, `ul` in all browsers.
+ * 3. Remove the padding-left on `dl`, `ol`, `ul` in all browsers.
  */
-h1 {
-  margin: 0.67em 0;
-  font-size: 2em;
+dl,
+ol,
+ul {
+  margin-top: 0; /* 1 */
+  padding-left: 0; /* 2 */
+  list-style: none; /* 3 */
 }
 
 /**

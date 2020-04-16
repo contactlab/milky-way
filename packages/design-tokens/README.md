@@ -23,13 +23,13 @@ Put the link tags in the head of your `index.html` document:
 <!-- CSS Sanitizer -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/reset.css"
+  href="https://unpkg.com/@contactlab/ds-tokens/styles/reset.css"
 />
 
 <!-- Common Contactlab Marketing Cloud Styles -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/common.css"
+  href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
 />
 ```
 
@@ -53,20 +53,20 @@ Import css-kit in CSS:
 
 ```css
 /* CSS Sanitizer */
-@import '~@contactlab/ds-tokens/reset.css';
+@import '~@contactlab/ds-tokens/styles/reset.css';
 
 /* Common Contactlab Marketing Cloud Styles */
-@import '~@contactlab/ds-tokens/common.css';
+@import '~@contactlab/ds-tokens/styles/common.css';
 ```
 
 Alternatively, import css-kit in JS:
 
 ```js
 // CSS Sanitizer
-import '@contactlab/ds-tokens/reset.css';
+import '@contactlab/ds-tokens/styles/reset.css';
 
 // Common Contactlab Marketing Cloud Styles
-import '@contactlab/ds-tokens/common.css';
+import '@contactlab/ds-tokens/styles/common.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders:
@@ -96,13 +96,15 @@ You can consume the predefined [CSS Custom Media Queries](./docs/custom-media.md
 Import Custom Media in CSS:
 
 ```css
-@import '~@contactlab/ds-tokens/custom-media.css';
+/* Custom Media Queries */
+@import '~@contactlab/ds-tokens/styles/custom-media.css';
 ```
 
 Import Custom Media in JavaScript:
 
 ```js
-import '@contactlab/ds-tokens/custom-media.css';
+// Custom Media Queries
+import '@contactlab/ds-tokens/styles/custom-media.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders and the [postcss-custom-media][postcss-custom-media-url] plugin:

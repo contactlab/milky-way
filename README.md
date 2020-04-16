@@ -17,9 +17,10 @@ The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 ---
 
-## [Design tokens](./packages/design-tokens)
+## [Design Tokens](./packages/design-tokens)
 
 [![Design Tokens Package][design-tokens-img]][design-tokens-url]
+![Design Tokens Bundle][design-tokens-bundlesize-img]
 
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
@@ -31,7 +32,7 @@ The Contactlab Marketing Cloud transactional emails.
 
 ---
 
-## [Service pages](./packages/service-pages)
+## [Service Pages](./packages/service-pages)
 
 The Contactlab Marketing Cloud service pages.
 
@@ -47,8 +48,9 @@ Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
 
 [dependabot-img]: https://badgen.net/dependabot/contactlab/milky-way?icon=dependabot
 [design-tokens-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
-[mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
+[design-tokens-bundlesize-img]: https://badgen.net/badge/unpacked%20size/138kb/blue
 [mc-logo-bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@contactlab/marketing-cloud-logo
+[mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
 
 <!---
   L I N K S
