@@ -8,7 +8,7 @@ The official Contactlab Design System.
 
 ---
 
-## [Marketing Cloud logo](./packages/marketing-cloud-logo)
+## [Marketing Cloud Logo](./packages/marketing-cloud-logo)
 
 The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore-url] & [Developer][mc-developer-url] websites logo.
 
