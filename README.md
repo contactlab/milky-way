@@ -39,7 +39,7 @@ The Contactlab Marketing Cloud service pages.
 
 ### License
 
-Milky-Way is [MIT licensed](./LICENSE) @ [Contactlab S.p.A][contactlab-url].
+Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
 
 <!---
   B A D G E S
