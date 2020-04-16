@@ -2,15 +2,15 @@
 
 The Contactlab Marketing Cloud transactional emails.
 
-**[Preview](https://clab-emails.netlify.com/)**
+### [Preview][netlify-url]
 
 ## Run dev environment
 
-```bash
+```sh
 npm run dev
 ```
 
-Open your browser and point to [http://localhost:3000/](http://localhost:3000/).
+Open your browser and point to http://localhost:3000/.
 The http server will listen and restart upon each change inside `src` folder.
 You just need to refresh a browser window manually.
 
@@ -18,11 +18,19 @@ You just need to refresh a browser window manually.
 
 You can also run and get your email in html format inside a `dist` folder:
 
-```bash
+```sh
 npm run generate
 ```
 
 ## Thanks
 
-- [mjml](https://mjml.io/)
-- [mjml-react](https://github.com/wix-incubator/mjml-react)
+- [mjml][mjml-url]
+- [mjml-react][mjml-react-url]
+
+<!---
+  L I N K S
+-->
+
+[netlify-url]: https://clab-emails.netlify.com
+[mjml-url]: https://mjml.io
+[mjml-react-url]: https://github.com/wix-incubator/mjml-react

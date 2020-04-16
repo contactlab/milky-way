@@ -33,7 +33,6 @@
   --color-fluo-accent300: #e1f9ef; /* 1 */
   --color-fluo-accent600: #9bebd0; /* 1 */
   --color-fluo-accent900: #00c9bd; /* 1 */
-  --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 2 */
   --elevation-z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12); /* 2 */
   --elevation-z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04),
     0 3px 6px 0 rgba(0, 20, 32, 0.12); /* 2 */
@@ -52,6 +51,7 @@
     0 14px 28px 0 rgba(3, 145, 236, 0.16); /* 2 */
   --elevation-accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
     0 15px 12px 0 rgba(3, 145, 236, 0.12); /* 2 */
+  --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 2 */
 }
 
 /**

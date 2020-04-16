@@ -2,7 +2,7 @@
 
 The Contactlab Marketing Cloud service pages.
 
-**[Preview](https://clab-service-page.netlify.com/)**
+### [Preview][netlify-url]
 
 ## Create a new template
 
@@ -26,3 +26,9 @@ $ npm run serve
 # Publish demo version to Netlify
 $ npm run deploy
 ```
+
+<!---
+  L I N K S
+-->
+
+[netlify-url]: https://clab-service-page.netlify.com
