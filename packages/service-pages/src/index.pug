@@ -6,23 +6,24 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Contactlab Marketing Cloud
 
-    //- color the status bar on mobile devices
+    //--- color the status bar on mobile devices
     meta(name="theme-color" content="#001420")
 
-    //- add to homescreen for Safari on iOS
+    //--- add to homescreen for Safari on iOS
     meta(name="application-name" content="Contactlab Marketing Cloud")
     meta(name="apple-mobile-web-app-title" content="Contactlab Marketing Cloud")
     link(rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#fff")
     link(rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png")
 
-    //- favicon
+    //--- favicon
     link(rel="shortcut icon" type="image/png" href="./assets/favicon/favicon.ico")
     link(rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png")
     link(rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png")
 
-    //- styles
+    //--- styles
     link(rel="stylesheet" href="./styles/main.scss")
 
+    //--- contactlab marketing cloud logo web-component
     script(src="https://unpkg.com/@contactlab/marketing-cloud-logo@1.2.0/dist/clab-logo.js")
 
   body
@@ -41,19 +42,19 @@ html(lang="en")
         +EN_BODY
 
     .landing
-      //- marketing cloud logo
+      //--- marketing cloud logo
       a(href="https://mc.contactlab.it/" title="Contactlab Marketing Cloud")
         clab-logo.logo
 
-      //- illustrations
+      //--- illustrations
       if IMG_SRC
         .illustration
           img(src= IMG_SRC, alt="illustration")
 
-      //- content
+      //--- content
       #locale.content
 
-      //- languages
+      //--- language triggers
       .languages
         a#it.btn-lang.active(role="button") IT
         a#en.btn-lang(role="button") EN
