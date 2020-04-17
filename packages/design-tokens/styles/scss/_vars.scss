@@ -34,11 +34,11 @@ $colors: (
   'fluo-accent900': #00c9bd
 );
 
-@function get-color($key) {
+@function colors($key) {
   @if map-has-key($colors, $key) {
     @return map-get($colors, $key);
   } @else {
-    @warn 'Unfortunately, no value could be retrieved from `#{$colors}`. ' + 'Please make sure it is defined in `$colors` map.';
+    @warn 'Unfortunately, no value could be retrieved from `#{$colors}`. ' + 'Please make sure it is defined in the `$colors` map.';
 
     @return null;
   }
@@ -75,12 +75,12 @@ $elevations: (
   'accent-z5': $accent-z5
 );
 
-@function get-elevation($key) {
+@function elevations($key) {
   @if map-has-key($elevations, $key) {
     @return map-get($elevations, $key);
   } @else {
     @warn "Unfortunately, no value could be retrieved from `#{$elevations}`. "
-       + "Please make sure it is defined in `$elevations` map.";
+       + "Please make sure it is defined in the `$elevations` map.";
 
     @return null;
   }

@@ -43,9 +43,9 @@ Put the link tags in the head of your `index.html` document:
 
 - Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
-- A separate stylesheet (`common.css`) provides useful and **personal** defaults to plain HTML documents.
-- Provide the Contactlab Marketing Cloud [CSS Custom Properties (aka CSS variables)](./docs/custom-properties.md).
-- Provide the Contactlab Marketing Cloud [CSS Custom Media Queries](./docs/custom-media.md).
+- A separate stylesheet (`common.css`) provides useful defaults to plain HTML documents.
+- A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)](./docs/custom-properties.md). The SCSS, LESS and JavaScript syntaxes equivalent are provided.
+- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries](./docs/custom-media.md). The SCSS, LESS and JavaScript syntaxes equivalent are provided.
 
 ## Install
 
