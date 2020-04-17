@@ -20,10 +20,10 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 Put the link tags in the head of your `index.html` document:
 
 ```html
-<!-- CSS Sanitizer -->
+<!-- CSS Normalizer -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/styles/reset.css"
+  href="https://unpkg.com/@contactlab/ds-tokens/styles/normalizer.css"
 />
 
 <!-- Common Contactlab Marketing Cloud Styles -->
@@ -31,13 +31,21 @@ Put the link tags in the head of your `index.html` document:
   rel="stylesheet"
   href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
 />
+
+<!-- CSS Custom Properties -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@contactlab/ds-tokens/styles/vars.css"
+/>
 ```
 
 #### What does it do?
 
-- Normalizes styles for a wide range of elements.
+- Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
-- A separate stylesheet (`common.css`) provides useful and **personal** defaults to plain HTML documents. This file includes some [CSS Custom Properties (aka CSS variables)](./docs/custom-properties.md).
+- A separate stylesheet (`common.css`) provides useful and **personal** defaults to plain HTML documents.
+- Provide the Contactlab Marketing Cloud [CSS Custom Properties (aka CSS variables)](./docs/custom-properties.md).
+- Provide the Contactlab Marketing Cloud [CSS Custom Media Queries](./docs/custom-media.md).
 
 ## Install
 
@@ -52,21 +60,27 @@ npm install @contactlab/ds-tokens --save
 Import css-kit in CSS:
 
 ```css
-/* CSS Sanitizer */
-@import '~@contactlab/ds-tokens/styles/reset.css';
+/* CSS Normalizer */
+@import '~@contactlab/ds-tokens/styles/normalizer.css';
 
 /* Common Contactlab Marketing Cloud Styles */
 @import '~@contactlab/ds-tokens/styles/common.css';
+
+/* CSS Custom Properties */
+@import '~@contactlab/ds-tokens/styles/vars.css';
 ```
 
 Alternatively, import css-kit in JS:
 
 ```js
-// CSS Sanitizer
-import '@contactlab/ds-tokens/styles/reset.css';
+// CSS Normalizer
+import '@contactlab/ds-tokens/styles/normalizer.css';
 
 // Common Contactlab Marketing Cloud Styles
 import '@contactlab/ds-tokens/styles/common.css';
+
+// CSS Custom Properties
+import '@contactlab/ds-tokens/styles/vars.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders:

@@ -1,4 +1,4 @@
-# Service Page
+# Service Pages
 
 The Contactlab Marketing Cloud service pages.
 

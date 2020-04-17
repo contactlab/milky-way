@@ -1,94 +1,23 @@
 /**
- * 1. The Contactlab Marketing Cloud official color.
- * 2. The elevations defined inside the Design System.
- */
-:root {
-  --color-accent100: #bae1f9; /* 1 */
-  --color-accent200: #8ccdf6; /* 1 */
-  --color-accent300: #5eb9f2; /* 1 */
-  --color-accent400: #30a5ef; /* 1 */
-  --color-accent500: #0391ec; /* 1 */
-  --color-accent600: #0072bc; /* 1 */
-  --color-accent700: #025d97; /* 1 */
-  --color-accent800: #02426c; /* 1 */
-  --color-accent900: #012841; /* 1 */
-  --color-base100: #f7fcff; /* 1 */
-  --color-base200: #deebf4; /* 1 */
-  --color-base300: #c3d4e0; /* 1 */
-  --color-base400: #9cb0bf; /* 1 */
-  --color-base500: #7e96a8; /* 1 */
-  --color-base600: #5b768c; /* 1 */
-  --color-base700: #36546d; /* 1 */
-  --color-base800: #1d3344; /* 1 */
-  --color-base900: #001420; /* 1 */
-  --color-info: #0391ec; /* 1 */
-  --color-success: #53c518; /* 1 */
-  --color-warning: #ffb200; /* 1 */
-  --color-error: #fc192f; /* 1 */
-  --color-white: #fff; /* 1 */
-  --color-black: #000; /* 1 */
-  --color-fluo-base300: #e9e8ff; /* 1 */
-  --color-fluo-base600: #b4afff; /* 1 */
-  --color-fluo-base900: #7168ff; /* 1 */
-  --color-fluo-accent300: #e1f9ef; /* 1 */
-  --color-fluo-accent600: #9bebd0; /* 1 */
-  --color-fluo-accent900: #00c9bd; /* 1 */
-  --elevation-z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12); /* 2 */
-  --elevation-z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04),
-    0 3px 6px 0 rgba(0, 20, 32, 0.12); /* 2 */
-  --elevation-z3: 0 6px 6px 0 rgba(0, 20, 32, 0.09),
-    0 10px 20px 0 rgba(0, 20, 32, 0.13); /* 2 */
-  --elevation-z4: 0 10px 10px 0 rgba(0, 20, 32, 0.05),
-    0 14px 28px 0 rgba(0, 20, 32, 0.16); /* 2 */
-  --elevation-z5: 0 19px 38px 0 rgba(0, 20, 32, 0.16),
-    0 15px 12px 0 rgba(0, 20, 32, 0.12); /* 2 */
-  --elevation-accent-z1: 0 1px 3px 0 rgba(3, 145, 236, 0.12); /* 2 */
-  --elevation-accent-z2: 0 3px 6px 0 rgba(3, 145, 236, 0.04),
-    0 3px 6px 0 rgba(3, 145, 236, 0.12); /* 2 */
-  --elevation-accent-z3: 0 6px 6px 0 rgba(3, 145, 236, 0.09),
-    0 10px 20px 0 rgba(3, 145, 236, 0.13); /* 2 */
-  --elevation-accent-z4: 0 10px 10px 0 rgba(3, 145, 236, 0.05),
-    0 14px 28px 0 rgba(3, 145, 236, 0.16); /* 2 */
-  --elevation-accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
-    0 15px 12px 0 rgba(3, 145, 236, 0.12); /* 2 */
-  --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 2 */
-}
-
-/**
  * Import Montserrat from Google Font CDN.
- * Montserrat is the font used in the Contactlab Marketing Cloud platform.
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /**
- * 1. Use the official font and fallback to the default OS font.
+ * 1. Use the Contactlab Marketing Cloud font.
  * 2. The base font-size is set at 62.5% for having the convenience
  *    of sizing rems in a way that is similar to using px: 1.6rem = 16px
  */
 html {
-  font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu,
-    Cantarell, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji'; /* 1 */
+  font-family: Montserrat; /* 1 */
   font-size: 62.5%; /* 2 */
-}
-
-/**
- * Use the default monospace user interface font in all browsers.
- */
-code,
-kbd,
-samp,
-pre {
-  font-family: Menlo, Consolas, 'Roboto Mono', 'Ubuntu Monospace', 'Noto Mono',
-    'Oxygen Mono', 'Liberation Mono', monospace, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 /**
  * Set typography rules for titles, sub-titles and paragraphs.
  */
 body {
-  color: var(--color-base900);
+  color: #001420; /* color base900 */
   font-size: 1.4em;
   font-weight: normal;
   line-height: 1.5;
@@ -96,13 +25,13 @@ body {
 }
 
 a {
-  color: var(--color-accent500);
+  color: #0391ec; /* color accent500 */
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: var(--color-accent600);
+  color: #0072bc; /* color accent600 */
 }
 
 h1,
@@ -113,7 +42,7 @@ h5,
 h6,
 .hero-text {
   margin-top: 0;
-  color: var(--color-base800);
+  color: #1d3344; /* color base800 */
   font-weight: bold;
   letter-spacing: -0.1rem;
 }
@@ -163,7 +92,7 @@ h6 {
 .subheading-1,
 .subheading-2,
 .subheading-3 {
-  color: var(--color-base700);
+  color: #36546d; /* color base700 */
   font-weight: normal;
   text-rendering: optimizeLegibility;
   line-height: 1.3em;
@@ -194,12 +123,12 @@ p {
 mark {
   border-radius: 2px;
   padding: 1.5px 4px;
-  color: var(--color-white);
-  background-color: var(--color-accent500);
+  color: #fff;
+  background-color: #0391ec; /* color accent500 */
 }
 
 small {
-  color: var(--color-base600);
+  color: #5b768c; /* color base600 */
   font-size: 1.2rem;
   line-height: 1.4em;
 }
@@ -208,52 +137,6 @@ small {
  * Highlight the body text on selection.
  */
 *::selection {
-  color: var(--color-white);
-  background: rgba(3, 145, 236, 0.7);
-}
-
-/**
- * Restrict sizing to the page width in all browsers.
- */
-iframe,
-img,
-input,
-select,
-textarea {
-  max-width: 100%;
-  height: auto;
-}
-
-/**
- * 1. Change the inconsistent appearance in all browsers.
- * 2. Add typography inheritance in all browsers.
- */
-button,
-input,
-select,
-textarea {
-  border: 1px solid WindowFrame; /* 1 */
-  padding: 0.25em 0.375em; /* 1 */
-  color: inherit; /* 1 */
-  background-color: transparent; /* 1 */
-  font: inherit; /* 2 */
-  letter-spacing: inherit; /* 2 */
-}
-
-/**
- * Change the inconsistent appearance in all browsers.
- */
-select {
-  border-radius: none;
-  padding-right: 1em;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: no-repeat right center / 1em;
-}
-
-/**
- * Change the inconsistent appearance in all browsers.
- */
-select:not([multiple]):not([size]) {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
+  color: #fff;
+  background: rgba(3, 145, 236, 0.8);
 }

@@ -26,16 +26,22 @@
   },
   "files": [
     "artworks/",
+    "loaders/*.d.ts",
+    "loaders/*.ts",
     "styles/"
   ],
   "scripts": {
     "lint": "stylelint ./**/*.{css,scss,less,svg} --fix",
     "test": "npm run lint",
-    "prepublish": "npm run test"
+    "build": "tsc",
+    "dev": "serve ./styles -l 3333 --no-compression",
+    "prepublish": "npm run test & npm run build"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "2.2.3",
+    "serve": "11.3.0",
     "stylelint": "13.3.2",
-    "stylelint-scss": "3.17.0"
+    "stylelint-scss": "3.17.0",
+    "typescript": "3.8.3"
   }
 }

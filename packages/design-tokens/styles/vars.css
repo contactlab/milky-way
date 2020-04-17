@@ -1,0 +1,56 @@
+/**
+ * 1. The Contactlab Marketing Cloud color palette.
+ * 2. The Contactlab Marketing Cloud elevations.
+ * 3. The Contactlab Marketing Cloud transitions.
+ */
+:root {
+  --color-accent100: #bae1f9; /* 1 */
+  --color-accent200: #8ccdf6; /* 1 */
+  --color-accent300: #5eb9f2; /* 1 */
+  --color-accent400: #30a5ef; /* 1 */
+  --color-accent500: #0391ec; /* 1 */
+  --color-accent600: #0072bc; /* 1 */
+  --color-accent700: #025d97; /* 1 */
+  --color-accent800: #02426c; /* 1 */
+  --color-accent900: #012841; /* 1 */
+  --color-base100: #f7fcff; /* 1 */
+  --color-base200: #deebf4; /* 1 */
+  --color-base300: #c3d4e0; /* 1 */
+  --color-base400: #9cb0bf; /* 1 */
+  --color-base500: #7e96a8; /* 1 */
+  --color-base600: #5b768c; /* 1 */
+  --color-base700: #36546d; /* 1 */
+  --color-base800: #1d3344; /* 1 */
+  --color-base900: #001420; /* 1 */
+  --color-info: #0391ec; /* 1 */
+  --color-success: #53c518; /* 1 */
+  --color-warning: #ffb200; /* 1 */
+  --color-error: #fc192f; /* 1 */
+  --color-white: #fff; /* 1 */
+  --color-black: #000; /* 1 */
+  --color-fluo-base300: #e9e8ff; /* 1 */
+  --color-fluo-base600: #b4afff; /* 1 */
+  --color-fluo-base900: #7168ff; /* 1 */
+  --color-fluo-accent300: #e1f9ef; /* 1 */
+  --color-fluo-accent600: #9bebd0; /* 1 */
+  --color-fluo-accent900: #00c9bd; /* 1 */
+  --elevation-z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12); /* 2 */
+  --elevation-z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04),
+    0 3px 6px 0 rgba(0, 20, 32, 0.12); /* 2 */
+  --elevation-z3: 0 6px 6px 0 rgba(0, 20, 32, 0.09),
+    0 10px 20px 0 rgba(0, 20, 32, 0.13); /* 2 */
+  --elevation-z4: 0 10px 10px 0 rgba(0, 20, 32, 0.05),
+    0 14px 28px 0 rgba(0, 20, 32, 0.16); /* 2 */
+  --elevation-z5: 0 19px 38px 0 rgba(0, 20, 32, 0.16),
+    0 15px 12px 0 rgba(0, 20, 32, 0.12); /* 2 */
+  --elevation-accent-z1: 0 1px 3px 0 rgba(3, 145, 236, 0.12); /* 2 */
+  --elevation-accent-z2: 0 3px 6px 0 rgba(3, 145, 236, 0.04),
+    0 3px 6px 0 rgba(3, 145, 236, 0.12); /* 2 */
+  --elevation-accent-z3: 0 6px 6px 0 rgba(3, 145, 236, 0.09),
+    0 10px 20px 0 rgba(3, 145, 236, 0.13); /* 2 */
+  --elevation-accent-z4: 0 10px 10px 0 rgba(3, 145, 236, 0.05),
+    0 14px 28px 0 rgba(3, 145, 236, 0.16); /* 2 */
+  --elevation-accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
+    0 15px 12px 0 rgba(3, 145, 236, 0.12); /* 2 */
+  --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 3 */
+}
