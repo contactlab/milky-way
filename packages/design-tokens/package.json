@@ -28,7 +28,6 @@
     "artworks/",
     "loaders/",
     "styles/",
-    "!loaders/.gitignore",
     "!styles/index.html"
   ],
   "scripts": {
