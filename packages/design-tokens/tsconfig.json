@@ -16,5 +16,5 @@
     "target": "es5",
     "baseUrl": "."
   },
-  "include": ["bundler"]
+  "include": ["loaders"]
 }
