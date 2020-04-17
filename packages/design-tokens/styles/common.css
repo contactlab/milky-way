@@ -1,26 +1,25 @@
 /**
+ * The base font-size is set at 62.5% for having the convenience
+ * of sizing rems in a way that is similar to using px: 1.6rem = 16px
+ */
+html {
+  font-size: 62.5%;
+}
+
+/**
+ ********************
+ * Typography rules *
+ ********************
+ */
+
+/**
  * Import Montserrat from Google Font CDN.
  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-/**
- * 1. Use the Contactlab Marketing Cloud font.
- * 2. The base font-size is set at 62.5% for having the convenience
- *    of sizing rems in a way that is similar to using px: 1.6rem = 16px
- */
-html {
-  font-family: Montserrat; /* 1 */
-  font-size: 62.5%; /* 2 */
-}
-
-/**
- * Set typography rules for titles, sub-titles and paragraphs.
- */
 body {
   color: #001420; /* color base900 */
-  font-size: 1.4em;
-  font-weight: normal;
-  line-height: 1.5;
+  font: normal normal 1.4em/1.5 Montserrat;
   letter-spacing: 0.01em;
 }
 
@@ -44,7 +43,7 @@ h6,
   margin-top: 0;
   color: #1d3344; /* color base800 */
   font-weight: bold;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.04rem;
 }
 
 .hero-text {
