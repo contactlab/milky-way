@@ -26,9 +26,10 @@
   },
   "files": [
     "artworks/",
-    "loaders/*.d.ts",
-    "loaders/*.ts",
-    "styles/"
+    "loaders/",
+    "styles/",
+    "!loaders/.gitignore",
+    "!styles/index.html"
   ],
   "scripts": {
     "lint": "stylelint ./**/*.{css,scss,less,svg} --fix",
