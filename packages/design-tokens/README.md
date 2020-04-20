@@ -12,7 +12,7 @@ Named entities that store visual-design info, in order to maintain a scalable, c
   - [Install](#install)
   - [Webpack usage](#webpack-usage)
   - [CSS Custom Properties][custom-properties-url]
-  - [CSS Custom Media][custom-media-url]
+  - [CSS Custom Media][custom-mq-url]
   - [Browsers support](#browsers-support)
 
 ## CDN Usage
@@ -20,19 +20,19 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 Put the link tags in the head of your `index.html` document:
 
 ```html
-<!-- CSS Normalizer -->
+<!-- The CSS Normalizer -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/@contactlab/ds-tokens/styles/normalizer.css"
 />
 
-<!-- CSS Custom Properties -->
+<!-- The CSS Custom Properties -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/@contactlab/ds-tokens/styles/vars.css"
 />
 
-<!-- Common Contactlab Marketing Cloud Styles -->
+<!-- The Common Contactlab Marketing Cloud Styles -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
@@ -45,7 +45,7 @@ Put the link tags in the head of your `index.html` document:
 - Corrects bugs and common browser inconsistencies.
 - A separate stylesheet (`common.css`) provides useful defaults to plain HTML documents.
 - A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
-- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-media-url]. The SCSS, LESS and JavaScript version are provided.
+- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-mq-url]. The SCSS, LESS and JavaScript version are provided.
 
 ## Install
 
@@ -57,30 +57,30 @@ npm install @contactlab/ds-tokens --save
 
 ## [Webpack][webpack-url] usage
 
-Import css-kit in CSS:
+Import the Design Tokens in CSS:
 
 ```css
-/* CSS Normalizer */
+/* The CSS Normalizer */
 @import '~@contactlab/ds-tokens/styles/normalizer.css';
 
-/* Common Contactlab Marketing Cloud Styles */
-@import '~@contactlab/ds-tokens/styles/common.css';
-
-/* CSS Custom Properties */
+/* The CSS Custom Properties */
 @import '~@contactlab/ds-tokens/styles/vars.css';
+
+/* The Common Contactlab Marketing Cloud Styles */
+@import '~@contactlab/ds-tokens/styles/common.css';
 ```
 
-Alternatively, import css-kit in JS:
+Alternatively, import the Design Tokens in JavaScript:
 
 ```js
-// CSS Normalizer
+// The CSS Normalizer
 import '@contactlab/ds-tokens/styles/normalizer.css';
 
-// Common Contactlab Marketing Cloud Styles
-import '@contactlab/ds-tokens/styles/common.css';
-
-// CSS Custom Properties
+// The CSS Custom Properties
 import '@contactlab/ds-tokens/styles/vars.css';
+
+// The Common Contactlab Marketing Cloud Styles
+import '@contactlab/ds-tokens/styles/common.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders:
@@ -93,31 +93,31 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      },
-      {
-        test: /\.woff(2)?$/,
-        loader: 'url-loader?limit=100000'
       }
     ]
   }
 };
 ```
 
-#### CSS Custom Media Queries
+#### Custom Media Queries
 
-You can consume the predefined [CSS Custom Media Queries][custom-media-url]. In Webpack bundler, import the `custom-media.css` as dependency.
+> **Caution:** The Custom Media Queries are a native feature of the CSS in the process of becoming a web standard. [Read the official specification draft][custom-mq-specification-url].
+
+[![Custom Media Queries Status][cssdb-img]][cssdb-url]
+
+You can consume the predefined [Custom Media Queries][custom-mq-url]. In Webpack bundler, import the `custom-media.css` as dependency.
 
 Import Custom Media in CSS:
 
 ```css
-/* Custom Media Queries */
+/* The Custom Media Queries */
 @import '~@contactlab/ds-tokens/styles/custom-media.css';
 ```
 
 Import Custom Media in JavaScript:
 
 ```js
-// Custom Media Queries
+// The Custom Media Queries
 import '@contactlab/ds-tokens/styles/custom-media.css';
 ```
 
@@ -164,13 +164,16 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
 -->
 
 [bundle-size-img]: https://badgen.net/badge/unpacked%20size/138kb/blue
+[cssdb-img]: https://cssdb.org/badge/custom-media-queries.svg
 [npm-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
 
 <!---
   L I N K S
 -->
 
-[custom-media-url]: ./styles/custom-media.css
+[cssdb-url]: https://cssdb.org/#custom-media-queries
+[custom-mq-url]: ./styles/custom-media.css
+[custom-mq-specification-url]: http://drafts.csswg.org/mediaqueries-5/#custom-mq
 [custom-properties-url]: ./styles/vars.css
 [npm-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [postcss-config-url]: https://github.com/giotramu/postcss-config
