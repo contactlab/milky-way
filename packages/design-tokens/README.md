@@ -11,8 +11,8 @@ Named entities that store visual-design info, in order to maintain a scalable, c
   - [CDN Usage](#cdn-usage)
   - [Install](#install)
   - [Webpack usage](#webpack-usage)
-  - [CSS Custom Properties](./docs/custom-properties.md)
-  - [CSS Custom Media](./docs/custom-media.md)
+  - [CSS Custom Properties][custom-properties-url]
+  - [CSS Custom Media][custom-media-url]
   - [Browsers support](#browsers-support)
 
 ## CDN Usage
@@ -26,16 +26,16 @@ Put the link tags in the head of your `index.html` document:
   href="https://unpkg.com/@contactlab/ds-tokens/styles/normalizer.css"
 />
 
-<!-- Common Contactlab Marketing Cloud Styles -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
-/>
-
 <!-- CSS Custom Properties -->
 <link
   rel="stylesheet"
   href="https://unpkg.com/@contactlab/ds-tokens/styles/vars.css"
+/>
+
+<!-- Common Contactlab Marketing Cloud Styles -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
 />
 ```
 
@@ -44,8 +44,8 @@ Put the link tags in the head of your `index.html` document:
 - Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
 - A separate stylesheet (`common.css`) provides useful defaults to plain HTML documents.
-- A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)](./docs/custom-properties.md). The SCSS, LESS and JavaScript syntaxes equivalent are provided.
-- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries](./docs/custom-media.md). The SCSS, LESS and JavaScript syntaxes equivalent are provided.
+- A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
+- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-media-url]. The SCSS, LESS and JavaScript version are provided.
 
 ## Install
 
@@ -105,7 +105,7 @@ module.exports = {
 
 #### CSS Custom Media Queries
 
-You can consume the predefined [CSS Custom Media Queries](./docs/custom-media.md). In Webpack bundler, import the `custom-media.css` as dependency.
+You can consume the predefined [CSS Custom Media Queries][custom-media-url]. In Webpack bundler, import the `custom-media.css` as dependency.
 
 Import Custom Media in CSS:
 
@@ -170,6 +170,8 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
   L I N K S
 -->
 
+[custom-media-url]: ./styles/custom-media.css
+[custom-properties-url]: ./styles/vars.css
 [npm-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [postcss-config-url]: https://github.com/giotramu/postcss-config
 [postcss-custom-media-url]: https://github.com/postcss/postcss-custom-media

@@ -1,16 +1,27 @@
 /**
+ ************
+ * Document *
+ ************
+ */
+
+/**
  * The base font-size is set at 62.5% for having the convenience
  * of sizing rems in a way that is similar to using px: 1.6rem = 16px
  */
 html {
   font-size: 62.5%;
+  scroll-behavior: var(--mc-scroll-behavior);
+  scroll-padding: var(--mc-scroll-padding);
 }
 
-/**
- ********************
- * Typography rules *
- ********************
- */
+*::selection {
+  color: var(--mc-selection-foreground, #fff);
+  background: var(--mc-selection-background, rgba(3, 145, 236, 0.8));
+}
+
+[tabindex='-1'] {
+  outline: none;
+}
 
 /**
  * Import Montserrat from Google Font CDN.
@@ -18,21 +29,16 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-  color: #001420; /* color base900 */
-  font: normal normal 1.4em/1.5 Montserrat;
-  letter-spacing: 0.01em;
+  color: var(--mc-body-foreground, #001420);
+  background-color: var(--mc-body-background, #bae1f9);
+  font: normal normal 1.4rem/1.5 Montserrat;
 }
 
-a {
-  color: #0391ec; /* color accent500 */
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #0072bc; /* color accent600 */
-}
-
+/**
+ ********************
+ * Typography rules *
+ ********************
+ */
 h1,
 h2,
 h3,
@@ -41,101 +47,132 @@ h5,
 h6,
 .hero-text {
   margin-top: 0;
-  color: #1d3344; /* color base800 */
+  color: var(--mc-heading-foreground, #02426c);
   font-weight: bold;
-  letter-spacing: -0.04rem;
+  line-height: 1.15;
 }
 
 .hero-text {
   margin-bottom: 2.6rem;
-  font-size: 6.4rem;
-  line-height: 1em;
+  font-size: 4rem;
 }
 
 h1 {
   margin-bottom: 2.4rem;
   font-size: 3rem;
-  line-height: 1.2em;
 }
 
 h2 {
   margin-bottom: 2.2rem;
   font-size: 2.8rem;
-  line-height: 1.2em;
 }
 
 h3 {
   margin-bottom: 2rem;
   font-size: 2.6rem;
-  line-height: 1.2em;
 }
 
 h4 {
   margin-bottom: 1.8rem;
   font-size: 2.4rem;
-  line-height: 1.4em;
 }
 
 h5 {
   margin-bottom: 1.6rem;
   font-size: 2.2rem;
-  line-height: 1.4em;
 }
 
 h6 {
   margin-bottom: 1.4rem;
   font-size: 2rem;
-  line-height: 1.4em;
 }
 
 .subheading-1,
 .subheading-2,
 .subheading-3 {
-  color: #36546d; /* color base700 */
+  display: block;
+  color: var(--mc-subheading-foreground, #36546d);
   font-weight: normal;
   text-rendering: optimizeLegibility;
   line-height: 1.3em;
 }
 
 .subheading-1 {
-  display: block;
   margin-bottom: 1.6rem;
   font-size: 2.2rem;
 }
 
 .subheading-2 {
-  display: block;
   margin-bottom: 1.4rem;
   font-size: 2rem;
 }
 
 .subheading-3 {
-  display: block;
   margin-bottom: 1.2rem;
   font-size: 1.8rem;
 }
 
+/**
+ ***********************
+ * Basic HTML Elements *
+ ***********************
+ */
+a:link,
+a:visited {
+  color: var(--mc-link-foreground, #0391ec);
+  text-decoration: none;
+  transition: color 100ms linear;
+}
+
+a:hover {
+  color: var(--mc-link-active-foreground, #025d97);
+}
+
 p {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.15rem;
+}
+
+p code {
+  display: inline-block;
+  margin: 2px 0;
+  border-radius: var(--mc-code-border-radius, 2px);
+  padding: 0 4px;
+  background-color: var(--mc-code-background, #deebf4);
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: var(--mc-hr-background, #deebf4);
 }
 
 mark {
-  border-radius: 2px;
-  padding: 1.5px 4px;
-  color: #fff;
-  background-color: #0391ec; /* color accent500 */
+  color: var(--mc-mark-foreground, #fff);
+  background: var(--mc-mark-background, #0391ec);
+  box-shadow: 0 0 0 2px var(--mc-mark-background, #0391ec);
 }
 
 small {
-  color: #5b768c; /* color base600 */
+  color: var(--mc-small-foreground, #5b768c);
   font-size: 1.2rem;
   line-height: 1.4em;
-}
-
-/**
- * Highlight the body text on selection.
- */
-*::selection {
-  color: #fff;
-  background: rgba(3, 145, 236, 0.8);
 }
