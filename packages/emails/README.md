@@ -31,6 +31,6 @@ npm run generate
   L I N K S
 -->
 
-[netlify-url]: https://clab-emails.netlify.com
+[netlify-url]: https://mc-emails.netlify.com
 [mjml-url]: https://mjml.io
 [mjml-react-url]: https://github.com/wix-incubator/mjml-react

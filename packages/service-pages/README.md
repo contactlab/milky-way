@@ -31,4 +31,4 @@ $ npm run deploy
   L I N K S
 -->
 
-[netlify-url]: https://clab-service-page.netlify.com
+[netlify-url]: https://mc-service-page.netlify.com
