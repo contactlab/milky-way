@@ -39,7 +39,7 @@
     "prepublish": "npm run test & npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.2.3",
+    "@giotramu/stylelint-config": "2.3.0",
     "serve": "11.3.0",
     "stylelint": "13.3.2",
     "stylelint-scss": "3.17.0",
