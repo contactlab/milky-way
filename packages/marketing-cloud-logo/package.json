@@ -47,7 +47,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.2.3",
+    "@giotramu/stylelint-config": "2.3.0",
     "@stencil/core": "1.12.3",
     "@types/jest": "24.9.1",
     "@types/puppeteer": "2.0.1",
