@@ -46,7 +46,7 @@ h5,
 h6,
 .hero-text {
   margin-top: 0;
-  color: var(--mc-heading-foreground, #02426c);
+  color: var(--mc-heading-foreground, #1d3344);
   font-weight: bold;
   line-height: 1.15;
 }
