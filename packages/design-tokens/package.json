@@ -26,9 +26,9 @@
   },
   "files": [
     "artworks/",
-    "loaders/",
+    "loaders/*.js",
+    "loaders/*.d.ts",
     "styles/",
-    "!loaders/*.ts",
     "!styles/index.html"
   ],
   "scripts": {
