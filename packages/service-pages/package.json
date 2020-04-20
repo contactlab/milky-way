@@ -23,8 +23,8 @@
     "npm": ">=6.13"
   },
   "scripts": {
-    "lint:css": "stylelint ./src/**/*.scss --fix",
-    "lint:src": "eslint . --ext .js,.ts --fix",
+    "lint:css": "stylelint ./src/**/*.scss --ignore-path .gitignore --fix",
+    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore --fix",
     "test": "run-p lint:**",
     "dev": "parcel ./src/index.pug --port 3333 --target=browser --log-level 3",
     "prebuild": "rimraf ./dist",

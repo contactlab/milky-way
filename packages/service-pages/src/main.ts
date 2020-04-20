@@ -19,7 +19,11 @@ function run(): void {
 
   if (dom.buttons.length >= 1) {
     dom.buttons.forEach(
-      button => (button.onclick = ev => setLang(ev.target, dom))
+      button =>
+        (button.onclick = evt => {
+          evt.preventDefault();
+          setLang(evt.target, dom);
+        })
     );
   }
 }

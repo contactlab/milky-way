@@ -4,10 +4,6 @@ html {
   }
 }
 
-body {
-  background-color: get-color('base100');
-}
-
 .landing {
   display: flex;
   max-width: 68rem;
@@ -23,7 +19,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.illustration {
+.artwork {
   margin-bottom: 3.2rem;
 
   img {
@@ -39,15 +35,11 @@ body {
   margin-bottom: 4.8rem;
   text-align: center;
 
-  p {
-    margin-bottom: 0;
-  }
-
   article {
     margin-bottom: 2.8rem;
 
     &:last-of-type p {
-      color: get-color('base500');
+      color: colors('base600');
     }
   }
 }
@@ -58,7 +50,7 @@ body {
   > a {
     padding: 0 0.4rem;
     position: relative;
-    cursor: pointer;
+    color: inherit;
 
     &::after {
       content: '';
@@ -69,7 +61,7 @@ body {
       bottom: -0.32rem;
       left: 0;
       transform: scaleX(0);
-      background-color: get-color('accent500');
+      background-color: colors('accent500');
       transition: transform 0.24s ease-in;
     }
 
@@ -78,7 +70,7 @@ body {
     }
 
     &.active {
-      color: get-color('accent500');
+      color: colors('accent500');
 
       &::after {
         transform: scaleX(100%);

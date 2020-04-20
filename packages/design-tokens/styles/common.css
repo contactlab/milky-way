@@ -3,7 +3,6 @@
  * Document *
  ************
  */
-
 /**
  * The base font-size is set at 62.5% for having the convenience
  * of sizing rems in a way that is similar to using px: 1.6rem = 16px
@@ -30,7 +29,7 @@ html {
 
 body {
   color: var(--mc-body-foreground, #001420);
-  background-color: var(--mc-body-background, #bae1f9);
+  background-color: var(--mc-body-background, #f7fcff);
   font: normal normal 1.4rem/1.5 Montserrat;
 }
 
@@ -129,6 +128,7 @@ a:hover {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 1.15rem;
 }
 

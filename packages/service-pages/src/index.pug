@@ -23,7 +23,7 @@ html(lang="en")
     //--- styles
     link(rel="stylesheet" href="./styles/main.scss")
 
-    //--- contactlab marketing cloud logo web-component
+    //--- contactlab marketing cloud logo
     script(src="https://unpkg.com/@contactlab/marketing-cloud-logo@1.2.0/dist/clab-logo.js")
 
   body
@@ -46,17 +46,17 @@ html(lang="en")
       a(href="https://mc.contactlab.it/" title="Contactlab Marketing Cloud")
         clab-logo.logo
 
-      //--- illustrations
+      //--- artwork
       if IMG_SRC
-        .illustration
-          img(src= IMG_SRC, alt="illustration")
+        .artwork
+          img(src= IMG_SRC, alt="Artworks")
 
       //--- content
       #locale.content
 
       //--- language triggers
       .languages
-        a#it.btn-lang.active(role="button") IT
-        a#en.btn-lang(role="button") EN
+        a#it.btn-lang.active(href="#", role="button") IT
+        a#en.btn-lang(href="#", role="button") EN
 
     script(src="./main.ts")

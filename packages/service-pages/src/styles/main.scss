@@ -1,10 +1,4 @@
-/* CSS Sanitizer */
-@import '~@contactlab/ds-tokens/styles/scss/reset';
-
-/* Common Contactlab Marketing Cloud Styles */
-@import '~@contactlab/ds-tokens/styles/scss/common';
-
-/* Custom Media Queries */
-@import '~@contactlab/ds-tokens/styles/scss/custom-media';
+//--- the contactlab design tokens
+@import '~@contactlab/ds-tokens/styles/scss/core';
 
 @import './landing';

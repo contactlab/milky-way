@@ -32,7 +32,7 @@
     "!styles/index.html"
   ],
   "scripts": {
-    "lint": "stylelint ./**/*.{css,scss,less,svg} --fix",
+    "lint": "stylelint ./**/*.{css,scss,less,svg} --ignore-path .gitignore --fix",
     "test": "npm run lint",
     "dev": "serve ./styles -l 3333",
     "build": "tsc",
