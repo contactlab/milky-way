@@ -1,4 +1,4 @@
-import {h} from '@stencil/core';
+import {h, JSX} from '@stencil/core';
 
 export const ExploreShape = (): JSX.Element => (
   <g e2e-key="mc-explore">

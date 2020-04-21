@@ -1,4 +1,4 @@
-import {Component, Prop, h} from '@stencil/core';
+import {Component, Prop, h, JSX} from '@stencil/core';
 import {Type, FillColor, Size} from '../../typings/props';
 import {calcPercentage, handleColor} from '../../utils/helpers';
 import {DeveloperShape} from './developer';

@@ -1,4 +1,4 @@
-import {h} from '@stencil/core';
+import {h, JSX} from '@stencil/core';
 
 const ShapeExtended = (): JSX.Element => (
   <g e2e-key="contactlab-marketing-cloud">
