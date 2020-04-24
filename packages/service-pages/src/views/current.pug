@@ -1,16 +1,17 @@
 //- TIPS:
 //- 1. Artworks's path should be relative to "src" folder;
-//- 2. Alternative SVG Artworks are available in "assets/artworks".
+//- 2. Alternative SVG Artworks are available here:
+       https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/artworks
 //- 3. Use <p> html tag for split sentences;
 //- 4. Use <article> html tag for split paragraphs;
-//-----------------------------------------------------------------
+//----------------------------------------------------------------
 
 //--- artworks
-- var IMG_SRC = "./assets/artworks/astroboy-kidnapping.svg"
+- const IMG_SRC = "https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1/artworks/astroboy-kidnapping.svg"
 
 //--- titles
-- var EN_TITLE= "404, Something went wrong."
-- var IT_TITLE= "404, Qualcosa non ha funzionato..."
+- const EN_TITLE= "404, Something went wrong."
+- const IT_TITLE= "404, Qualcosa non ha funzionato..."
 
 //--- EN content
 mixin EN_BODY()
@@ -18,7 +19,7 @@ mixin EN_BODY()
     p Sorry, but the content you're looking for doesn't exist or has been moved.
 
   article
-    p For any kind of support, please contact the #[a(href="https://contactlab.com/en/contact-us/" title="Customer Care") Customer Care].
+    p For any kind of support, please contact the #[a(href="https://contactlab.com/en/contact-us" title="Customer Care") Customer Care].
 
 //--- IT content
 mixin IT_BODY()
@@ -26,4 +27,4 @@ mixin IT_BODY()
     p Siamo spiacenti, ma il contenuto che stai cercando non esiste o è stato spostato.
 
   article
-    p Per chiarimenti o esigenze specifiche, contatta il #[a(href="https://contactlab.com/it/contact-us/" title="Servizio Clienti") Servizio Clienti].
+    p Per chiarimenti o esigenze specifiche, contatta il #[a(href="https://contactlab.com/it/contact-us" title="Servizio Clienti") Servizio Clienti].
