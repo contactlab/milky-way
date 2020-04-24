@@ -2,10 +2,9 @@
 
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
-[![NPM Package][npm-img]][npm-url]
-![Bundle Size][bundle-size-img]
+[![NPM Package][npm-pkg-img]][npm-pkg-url]
 
-## Table of contents
+### Table of Contents
 
 - [Design Tokens](#design-tokens)
   - [CDN Usage](#cdn-usage)
@@ -15,7 +14,7 @@ Named entities that store visual-design info, in order to maintain a scalable, c
   - [CSS Custom Media][custom-mq-url]
   - [Browsers support](#browsers-support)
 
-## CDN Usage
+### CDN Usage
 
 Put the link tags in the head of your `index.html` document:
 
@@ -23,19 +22,19 @@ Put the link tags in the head of your `index.html` document:
 <!-- The CSS Normalizer -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/styles/normalizer.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/normalizer.css"
 />
 
 <!-- The CSS Custom Properties -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/styles/vars.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/vars.css"
 />
 
 <!-- The Common Contactlab Marketing Cloud Styles -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@contactlab/ds-tokens/styles/common.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/common.css"
 />
 ```
 
@@ -47,7 +46,7 @@ Put the link tags in the head of your `index.html` document:
 - A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
 - A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-mq-url]. The SCSS, LESS and JavaScript version are provided.
 
-## Install
+### Install
 
 Install CSS-Kit and save them to your **package.json** `dependencies`:
 
@@ -55,7 +54,7 @@ Install CSS-Kit and save them to your **package.json** `dependencies`:
 npm install @contactlab/ds-tokens --save
 ```
 
-## [Webpack][webpack-url] usage
+### [Webpack][webpack-url] usage
 
 Import the Design Tokens in CSS:
 
@@ -149,7 +148,7 @@ module.exports = {
 
 Alternatively, you can use the following [postcss-config][postcss-config-url] in conjunction with postcss-loader or postcss-cli.
 
-## Browsers support
+### Browsers support
 
 - Chrome & Chromium based browsers (last 3)
 - Firefox (last 3)
@@ -160,22 +159,21 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
 - Edge (last 3)
 
 <!---
-  B A D G E S
+  Images
 -->
 
-[bundle-size-img]: https://badgen.net/badge/unpacked%20size/138kb/blue
 [cssdb-img]: https://cssdb.org/badge/custom-media-queries.svg
-[npm-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
+[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
 
 <!---
-  L I N K S
+  Links
 -->
 
 [cssdb-url]: https://cssdb.org/#custom-media-queries
 [custom-mq-url]: ./styles/custom-media.css
 [custom-mq-specification-url]: http://drafts.csswg.org/mediaqueries-5/#custom-mq
 [custom-properties-url]: ./styles/vars.css
-[npm-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
+[npm-pkg-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [postcss-config-url]: https://github.com/giotramu/postcss-config
 [postcss-custom-media-url]: https://github.com/postcss/postcss-custom-media
 [webpack-url]: https://webpack.js.org

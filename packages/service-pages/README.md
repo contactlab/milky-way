@@ -2,13 +2,13 @@
 
 The Contactlab Marketing Cloud service pages.
 
-### [Preview][netlify-url]
+## [Preview][netlify-url]
 
-## Create a new template
+#### Create a new template
 
 Creating a new service page is easy-peasy: go to the [views](./src/views) folder and edit the [current.pug](./src/views/current.pug) file _(it is better if you copy and rename the existing one)_. Afterwards, you can start the dev-server or start a build process.
 
-## Commands
+#### Commands
 
 ```sh
 # Run linters
@@ -22,13 +22,10 @@ $ npm run build
 
 # Serve static files
 $ npm run serve
-
-# Publish demo version to Netlify
-$ npm run deploy
 ```
 
 <!---
-  L I N K S
+  Links
 -->
 
-[netlify-url]: https://mc-service-page.netlify.com
+[netlify-url]: https://clab-service-page.netlify.app

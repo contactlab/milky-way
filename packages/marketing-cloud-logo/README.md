@@ -5,35 +5,36 @@ The Web Components and resources related to the Contactlab Marketing Cloud logo.
 [![NPM Package][npm-pkg-img]][npm-pkg-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
 
-## Web Components
+### Web Components
 
 Web Components that run natively or near-natively in all widely used desktop and mobile browsers. [Check the browsers support](./docs/browsers-support.md).
 
-### [Try live on CodePen!][codepen-url]
+#### [Try live on CodePen!][codepen-url]
 
 - [\<clab-logo>](./docs/logo.md)
 - [\<clab-sign>](./docs/sign.md)
 - [\<clab-typo>](./docs/typo.md)
 
-## Resources
+### Resources
 
 - [Color schema](./docs/color-schema.md)
+- [Favicon](./resources/favicon)
 - [PNG](./resources/png)
 - [SVG](./resources/svg)
 
-## Thanks
+### Thanks
 
 - [Stencil.js][stenciljs-url]
 
 <!---
-  B A D G E S
+  Images
 -->
 
 [bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@contactlab/marketing-cloud-logo
 [npm-pkg-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
 
 <!---
-  L I N K S
+  Links
 -->
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=@contactlab/marketing-cloud-logo
