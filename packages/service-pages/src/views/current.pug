@@ -1,18 +1,18 @@
 //- TIPS:
-//- Illustration's path should be relative to "src" folder;
-//- Alternative SVG illustrations are available in "assets/artworks".
-//- Use <p> html tag for split sentences;
-//- Use <article> html tag for split paragraphs;
-//-------------------------------------------------------------------
+//- 1. Artworks's path should be relative to "src" folder;
+//- 2. Alternative SVG Artworks are available in "assets/artworks".
+//- 3. Use <p> html tag for split sentences;
+//- 4. Use <article> html tag for split paragraphs;
+//-----------------------------------------------------------------
 
-//- illustration
+//--- artworks
 - var IMG_SRC = "./assets/artworks/astroboy-kidnapping.svg"
 
-//- titles
+//--- titles
 - var EN_TITLE= "404, Something went wrong."
 - var IT_TITLE= "404, Qualcosa non ha funzionato..."
 
-//- EN content
+//--- EN content
 mixin EN_BODY()
   article
     p Sorry, but the content you're looking for doesn't exist or has been moved.
@@ -20,7 +20,7 @@ mixin EN_BODY()
   article
     p For any kind of support, please contact the #[a(href="https://contactlab.com/en/contact-us/" title="Customer Care") Customer Care].
 
-//- IT content
+//--- IT content
 mixin IT_BODY()
   article
     p Siamo spiacenti, ma il contenuto che stai cercando non esiste o è stato spostato.

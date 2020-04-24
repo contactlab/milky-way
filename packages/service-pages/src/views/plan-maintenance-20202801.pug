@@ -1,18 +1,18 @@
 //- TIPS:
-//- Illustration's path should be relative to "src" folder;
-//- Alternative SVG illustrations are available in "assets/artworks".
-//- Use <p> html tag for split sentences;
-//- Use <article> html tag for split paragraphs;
-//-------------------------------------------------------------------
+//- 1. Artworks's path should be relative to "src" folder;
+//- 2. Alternative SVG Artworks are available in "assets/artworks".
+//- 3. Use <p> html tag for split sentences;
+//- 4. Use <article> html tag for split paragraphs;
+//-----------------------------------------------------------------
 
-//- illustration
+//--- artworks
 - var IMG_SRC = "./assets/artworks/under-construction.svg"
 
-//- titles
+//--- titles
 - var EN_TITLE= "We are calibrating and polishing our systems. We will be back soon!"
 - var IT_TITLE= "Stiamo calibrando e lucidando i nostri sistemi. Torneremo a breve!"
 
-//- EN content
+//--- EN content
 mixin EN_BODY()
   article
     p We are in scheduled maintenance mode.
@@ -29,7 +29,7 @@ mixin EN_BODY()
   article
     p For any kind of support, please contact the #[a(href="https://contactlab.com/en/contact-us/" title="Customer Care") Customer Care].
 
-//- IT content
+//--- IT content
 mixin IT_BODY()
   article
     p Siamo in modalità manutenzione programmata.
