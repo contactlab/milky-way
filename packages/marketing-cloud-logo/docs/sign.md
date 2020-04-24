@@ -9,7 +9,10 @@
 Put a script tag in the head of your `index.html` document:
 
 ```html
-<script src="https://unpkg.com/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/clab-logo.js"
+  async
+></script>
 ```
 
 - **Node Modules**
@@ -19,7 +22,10 @@ Run `npm install @contactlab/marketing-cloud-logo --save`.
 Put a script tag in the head of your `index.html`:
 
 ```html
-<script src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
+<script
+  src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"
+  async
+></script>
 ```
 
 ## Usage
@@ -30,18 +36,18 @@ You can use the element anywhere in your HTML template, JSX, Pug etc.
 
 ---
 
-<img width="50px" src="../resources/svg/clab-sign-accent.svg" />
+<img width="80px" src="../resources/svg/clab-sign-accent.svg" />
 
 ```html
-<clab-sign size="50px"></clab-sign>
+<clab-sign size="60px"></clab-sign>
 ```
 
 ---
 
-<img width="50px" src="../resources/svg/clab-sign-base.svg" />
+<img width="80px" src="../resources/svg/clab-sign-base.svg" />
 
 ```html
-<clab-sign size="50px" fill-color="base"></clab-sign>
+<clab-sign size="60px" fill-color="base"></clab-sign>
 ```
 
 ---

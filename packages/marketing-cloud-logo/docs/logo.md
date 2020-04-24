@@ -9,7 +9,10 @@
 Put a script tag in the head of your `index.html` document:
 
 ```html
-<script src="https://unpkg.com/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/clab-logo.js"
+  async
+></script>
 ```
 
 - **Node Modules**
@@ -19,7 +22,10 @@ Run `npm install @contactlab/marketing-cloud-logo --save`.
 Put a script tag in the head of your `index.html`:
 
 ```html
-<script src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"></script>
+<script
+  src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"
+  async
+></script>
 ```
 
 ## Usage
