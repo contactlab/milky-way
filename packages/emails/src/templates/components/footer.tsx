@@ -35,7 +35,7 @@ export function Footer(props: FooterProps): JSX.Element {
 
         <Text type="caption" paddingBottom={0} align="center">
           {`${i18n.t('footnote')} `}
-          <Link href={i18n.t('exploreLink')} type="caption">
+          <Link href={i18n.t('contactlabLink')} type="caption">
             {i18n.t('contactlab')}
           </Link>
         </Text>
