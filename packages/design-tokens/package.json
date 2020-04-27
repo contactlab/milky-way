@@ -41,7 +41,7 @@
   "devDependencies": {
     "@giotramu/stylelint-config": "2.3.0",
     "serve": "11.3.0",
-    "stylelint": "13.3.2",
+    "stylelint": "13.3.3",
     "stylelint-scss": "3.17.0",
     "typescript": "3.8.3"
   }
