@@ -1,6 +1,6 @@
 // --- resources
 export const logoSrc =
-  'https://i.postimg.cc/zvdjMxkG/logo-mc-full-positive-593x60.png'; // the original assets is placed inside ./public/mc-logo.png
+  'https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/png/logo-mc-full-positive-593x60.png';
 
 // --- links
 export const logoHref = 'http://mc.contactlab.it';

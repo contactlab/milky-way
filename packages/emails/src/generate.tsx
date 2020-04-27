@@ -9,9 +9,9 @@ import {Mail, MailData, MailSuite, MailType, MailTypes} from './templates';
 const root = resolve(__dirname, '..');
 
 const mjmlOptions: Mjml2HtmlOptions = {
-  beautify: false,
-  minify: true,
-  validationLevel: 'soft',
+  beautify: true,
+  minify: false,
+  validationLevel: 'soft'
 };
 
 run(MailSuite, getData());
@@ -46,7 +46,7 @@ function copyIndex(target: string): void {
   const source = resolve(root, 'public', 'index.html');
   const destination = resolve(target, 'index.html');
 
-  copyFile(source, destination, (err) => {
+  copyFile(source, destination, err => {
     if (err) throw err;
 
     // eslint-disable-next-line no-console
@@ -66,7 +66,7 @@ function writeHtml(props: WriteHtmlProps): void {
   const file: string = resolve(target, `${filename}-${lang}.html`);
   const layout = grabLayout({template: filename, data, lang});
 
-  writeFile(file, layout, (err) => {
+  writeFile(file, layout, err => {
     if (err) throw err;
   });
 }
