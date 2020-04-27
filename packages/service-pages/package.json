@@ -46,7 +46,7 @@
     "pug": "2.0.4",
     "rimraf": "3.0.2",
     "sass": "1.26.5",
-    "stylelint": "13.3.2",
+    "stylelint": "13.3.3",
     "stylelint-scss": "3.17.1",
     "typescript": "3.8.3"
   }
