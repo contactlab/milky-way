@@ -30,7 +30,7 @@ html {
 body {
   color: var(--mc-body-foreground, #001420);
   background-color: var(--mc-body-background, #f7fcff);
-  font: normal normal 1.4rem/1.5 Montserrat;
+  font: 400 normal 1.4rem/1.5 Montserrat;
 }
 
 /**
@@ -47,7 +47,7 @@ h6,
 .hero-text {
   margin-top: 0;
   color: var(--mc-heading-foreground, #1d3344);
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.15;
 }
 
@@ -91,7 +91,7 @@ h6 {
 .subheading-3 {
   display: block;
   color: var(--mc-subheading-foreground, #36546d);
-  font-weight: normal;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   line-height: 1.3em;
 }
