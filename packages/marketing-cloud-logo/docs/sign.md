@@ -4,35 +4,27 @@
 
 ## Install
 
-- **Script tag**
+You can use the Web Component in your HTML template, JSX, Pug etc. [Check the browsers support](./browsers-support.md).
 
-Put a script tag in the head of your `index.html` document:
+Put the following scripts tag in the head of your document:
 
 ```html
+<!-- for browsers where JavaScript Modules run natively  -->
 <script
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/clab-logo.js"
-  async
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/giotramu-logo/giotramu-logo.esm.js"
 ></script>
-```
 
-- **Node Modules**
-
-Run `npm install @contactlab/marketing-cloud-logo --save`.
-
-Put a script tag in the head of your `index.html`:
-
-```html
+<!-- for the legacy browsers -->
 <script
-  src="node_modules/@contactlab/marketing-cloud-logo/dist/clab-logo.js"
-  async
+  nomodule
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/giotramu-logo/giotramu-logo.js"
 ></script>
 ```
 
 ## Usage
 
-You can use the element anywhere in your HTML template, JSX, Pug etc.
-
-[Check the browsers support](./browsers-support.md).
+Drop this lines into your HTML document:
 
 ---
 

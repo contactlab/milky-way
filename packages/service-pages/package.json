@@ -19,24 +19,24 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10.18",
-    "npm": ">=6.13"
+    "node": ">=10.x",
+    "npm": ">=6.x"
   },
   "scripts": {
-    "lint:css": "stylelint ./src/**/*.scss --ignore-path .gitignore --fix",
-    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore --fix",
-    "test": "run-p lint:**",
+    "lint:css": "stylelint ./src/**/*.scss --ignore-path .gitignore",
+    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "lint": "run-p -clns lint:**",
     "dev": "parcel ./src/index.pug --port 3333 --target=browser --log-level 3",
     "prebuild": "rimraf ./dist",
     "build": "parcel build ./src/index.pug --target=browser --no-cache --no-source-maps --log-level 3",
-    "predeploy": "run-s test build",
+    "predeploy": "run-s lint build",
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {
-    "@contactlab/ds-tokens": "^1.4.7"
+    "@contactlab/ds-tokens": "1.4.7"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.3.0",
+    "@giotramu/stylelint-config": "3.0.3",
     "eslint": "6.8.0",
     "eslint-config-contactlab": "4.2.2",
     "eslint-config-prettier": "6.11.0",

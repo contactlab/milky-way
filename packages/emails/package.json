@@ -19,13 +19,13 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10.18",
-    "npm": ">=6.13"
+    "node": ">=10.x",
+    "npm": ">=6.x"
   },
   "scripts": {
     "check:src": "tsc --noEmit",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --fix",
-    "test": "run-p -clns check:src lint:**",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint": "run-p -clns lint:**",
     "prebuild": "rimraf ./build",
     "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
     "watch": "npm run build -- --watch --source-maps inline",
@@ -34,7 +34,7 @@
     "dev": "run-p -clns watch serve",
     "pregenerate": "rimraf ./dist && npm run build",
     "generate": "node ./build/generate.js",
-    "predeploy": "run-s test generate",
+    "predeploy": "run-s lint generate",
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {

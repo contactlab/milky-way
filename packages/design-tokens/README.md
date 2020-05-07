@@ -42,9 +42,9 @@ Put the link tags in the head of your `index.html` document:
 
 - Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
-- A separate stylesheet (`common.css`) provides useful defaults to plain HTML documents.
-- A separate stylesheet (`vars.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
-- A separate stylesheet (`custom-media.css`) dispatches the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-mq-url]. The SCSS, LESS and JavaScript version are provided.
+- The `common.css` stylesheet provides useful defaults to plain HTML documents.
+- The `vars.css` stylesheet dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
+- The `custom-media.css` stylesheet injects the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-mq-url]. The SCSS, LESS and JavaScript version are provided.
 
 ### Install
 
@@ -69,7 +69,7 @@ Import the Design Tokens in CSS:
 @import '~@contactlab/ds-tokens/styles/common.css';
 ```
 
-Alternatively, import the Design Tokens in JavaScript:
+Import the Design Tokens in JavaScript:
 
 ```js
 // The CSS Normalizer
@@ -106,14 +106,14 @@ module.exports = {
 
 You can consume the predefined [Custom Media Queries][custom-mq-url]. In Webpack bundler, import the `custom-media.css` as dependency.
 
-Import Custom Media in CSS:
+Import Custom Media Queries in CSS:
 
 ```css
 /* The Custom Media Queries */
 @import '~@contactlab/ds-tokens/styles/custom-media.css';
 ```
 
-Import Custom Media in JavaScript:
+Import Custom Media Queries in JavaScript:
 
 ```js
 // The Custom Media Queries
@@ -163,7 +163,7 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
 -->
 
 [cssdb-img]: https://cssdb.org/badge/custom-media-queries.svg
-[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
+[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?label=npm%20package
 
 <!---
   Links

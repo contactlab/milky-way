@@ -31,7 +31,7 @@ Web Components that run natively or near-natively in all widely used desktop and
 -->
 
 [bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@contactlab/marketing-cloud-logo
-[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
+[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?label=npm%20package
 
 <!---
   Links

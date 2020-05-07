@@ -1,0 +1,9 @@
+//--- the contactlab design tokens
+@import '~@contactlab/ds-tokens/styles/scss/core';
+
+@import './landing';
+
+body {
+  overflow: hidden;
+  background: #060e1b;
+}

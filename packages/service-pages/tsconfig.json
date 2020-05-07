@@ -9,9 +9,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "lib": ["es6", "dom", "es2016.array.include"],
+    "module": "esnext",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -20,7 +19,7 @@
     "resolveJsonModule": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es2017"
+    "target": "esnext"
   },
-  "include": ["src"]
+  "include": ["./src"]
 }

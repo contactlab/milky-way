@@ -18,28 +18,27 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=10.0",
-    "npm": ">=6.0"
+    "node": ">=10.x",
+    "npm": ">=6.x"
   },
   "publishConfig": {
     "access": "public"
   },
   "files": [
     "artworks/",
-    "loaders/*.js",
-    "loaders/*.d.ts",
+    "loaders/*.{js,d.ts}",
     "styles/",
     "!styles/index.html"
   ],
   "scripts": {
-    "lint": "stylelint ./**/*.{css,scss,less,svg} --ignore-path .gitignore --fix",
-    "test": "npm run lint",
+    "lint:css": "stylelint ./**/*.{css,scss,less,svg} --ignore-path .gitignore",
+    "lint": "npm run lint:css",
     "dev": "serve ./styles -l 3333",
     "build": "tsc",
-    "prepublish": "npm run test & npm run build"
+    "prepublish": "npm run lint && npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.3.0",
+    "@giotramu/stylelint-config": "3.0.3",
     "serve": "11.3.0",
     "stylelint": "13.3.3",
     "stylelint-scss": "3.17.1",

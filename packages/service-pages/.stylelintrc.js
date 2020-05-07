@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@giotramu/stylelint-config/dist/scss'
+  extends: '@giotramu/stylelint-config/scss'
 };

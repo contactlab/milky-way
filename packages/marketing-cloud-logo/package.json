@@ -39,8 +39,8 @@
   ],
   "scripts": {
     "check:src": "tsc --noEmit",
-    "lint:css": "stylelint ./src/components/**/*.css --ignore-path .gitignore --fix",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --fix",
+    "lint:css": "stylelint ./src/components/**/*.css --ignore-path .gitignore",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "lint": "run-p -clns lint:**",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "stencil build --dev --watch --serve",
@@ -48,7 +48,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "2.3.0",
+    "@giotramu/stylelint-config": "3.0.3",
     "@stencil/core": "1.12.6",
     "@types/jest": "24.9.1",
     "@types/puppeteer": "2.0.1",
