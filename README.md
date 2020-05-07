@@ -59,8 +59,8 @@ Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
 -->
 
 [dependabot-img]: https://badgen.net/dependabot/contactlab/milky-way?icon=dependabot
-[npm-pkg-design-tokens-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?icon=npm&label=npm%20package
-[npm-pkg-mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?icon=npm&label=npm%20package
+[npm-pkg-design-tokens-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?label=npm%20package
+[npm-pkg-mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?label=npm%20package
 
 <!---
   Links
