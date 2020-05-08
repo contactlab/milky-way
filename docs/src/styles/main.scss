@@ -2,8 +2,7 @@
 @import '~@contactlab/ds-tokens/styles/scss/core';
 
 @import './landing';
-
-body {
-  overflow: hidden;
-  background: #060e1b;
-}
+@import './logo';
+@import './titles';
+@import './actions';
+@import './footer';

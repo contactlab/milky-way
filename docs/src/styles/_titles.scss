@@ -1,0 +1,17 @@
+.titles {
+  --mc-subheading-foreground: #{colors('base100')};
+  --mc-heading-foreground: #{colors('base100')};
+  grid-row: 3 / span 1;
+
+  .hero-text {
+    font-size: 6.4rem;
+  }
+
+  .subheading-1 {
+    max-width: 40%;
+
+    @media #{$to-medium} {
+      max-width: initial;
+    }
+  }
+}
