@@ -3,4 +3,13 @@
   --mc-link-active-foreground: #{colors('accent400')};
   grid-row: 6 / -1;
   color: colors('base400');
+
+  small {
+    margin-bottom: 3.2rem;
+    font-size: 12px;
+
+    @media #{$to-xsmall} {
+      padding: 11px;
+    }
+  }
 }

@@ -400,3 +400,12 @@ a.gh-link svg {
   grid-row: 6/-1;
   color: #9cb0bf;
 }
+.footer small {
+  margin-bottom: 3.2rem;
+  font-size: 12px;
+}
+@media (max-width: 30em) {
+  .footer small {
+    padding: 11px;
+  }
+}
