@@ -3,6 +3,14 @@
   width: 40rem;
   margin: 3.2rem 0;
 
+  @media #{$to-small} {
+    width: 38rem;
+  }
+
+  @media #{$to-xsmall} {
+    width: 34rem;
+  }
+
   > clab-logo {
     display: block;
   }

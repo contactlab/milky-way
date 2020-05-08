@@ -4,14 +4,14 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Contactlab Marketing Cloud
+    title Milky Way - The Contactlab Design System
 
     //--- favicon
     link(rel="apple-touch-icon", sizes="180x180", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/apple-touch-icon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/favicon-32x32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/favicon-16x16.png")
 
-    //--- contactlab marketing cloud logo
+    //--- the contactlab marketing cloud logo
     script(type="module", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/clab-logo/clab-logo.esm.js")
     script(nomodule="", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/clab-logo/clab-logo.js")
 
@@ -24,32 +24,31 @@ html(lang="en")
   body
     .landing
       .content
-        //--- the contactlab marketing cloud logo
         a.logo(href="http://explore.contactlab.com/", title="Explore the Contactlab Marketing Cloud")
           clab-logo(fill-style="negative")
 
         .titles
-          h1.hero-text Milky Way
+          h1.hero-text
+            | Milky Way
+
           span.subheading-1
-            | The official Contactlab Design System
-            | for building consistent products and experiences.
+            | The Contactlab Design System.
+            | A tool for building consistent products and experiences.
 
         .actions
-          a.button(href="https://www.notion.so/584957192e6e4e43bffc094b68925bd3?v=dfb32ec9f13042829d2d94ae6962b142/", title="Design System Documentation") Documentation
+          a.button(href="https://www.notion.so/584957192e6e4e43bffc094b68925bd3?v=dfb32ec9f13042829d2d94ae6962b142/", title="Design System Documentation")
+            | Documentation
+
           a.gh-link(href="https://github.com/contactlab/milky-way/", title="Source code")
-            svg.icon(role="img", aria-label="GitHub Icon")
+            svg.icon(role="img", aria-label="GitHub Icon", viewBox="0 0 20 20", version="1.1", xmlns="http://www.w3.org/2000/svg")
               title GitHub
-              use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#github")
+              path(fill="currentColor", d="M10 0C4.477 0 0 4.59 0 10.253c0 4.53 2.865 8.373 6.84 9.73.5.093.68-.223.68-.495 0-.243-.007-.888-.012-1.744-2.782.62-3.37-1.374-3.37-1.374-.453-1.185-1.11-1.5-1.11-1.5-.907-.636.07-.624.07-.624 1.003.073 1.53 1.057 1.53 1.057.893 1.567 2.342 1.114 2.912.852.09-.662.35-1.114.635-1.37-2.22-.26-4.555-1.14-4.555-5.068 0-1.12.39-2.035 1.03-2.75-.104-.26-.447-1.303.097-2.715 0 0 .84-.275 2.75 1.052.797-.228 1.653-.342 2.503-.346.85.004 1.705.118 2.504.346 1.91-1.327 2.747-1.052 2.747-1.052.55 1.412.21 2.455.1 2.714.65.716 1.03 1.632 1.03 2.75 0 3.94-2.34 4.807-4.56 5.06.36.317.68.943.68 1.9 0 1.37-.01 2.476-.01 2.812 0 .274.18.593.69.493 3.96-1.35 6.82-5.19 6.82-9.72C20 4.59 15.53 0 10 0")
             span Source Code
 
         .footer
-          p Copyright &copy; <a href="https://contactlab.com/", title="Contactlab S.p.A.">Contactlab S.p.A.</a>
-          small Thanks to <a href="https://codepen.io/giana/", title="Codepen">Giana</a> for the initial concept of the background image.</a>
+          small
+            | Milky-Way is <a href="https://github.com/contactlab/milky-way/blob/master/LICENSE", title="License">MIT licensed</a> &copy; <a href="https://contactlab.com/", title="Contactlab S.p.A.">Contactlab S.p.A.</a></a>
 
       canvas#canvas
-
-      svg(display="none", version="1.1", xmlns="http://www.w3.org/2000/svg")
-        symbol(id="github", viewBox="0 0 20 20")
-          path(fill="currentColor", d="M10 0C4.477 0 0 4.59 0 10.253c0 4.53 2.865 8.373 6.84 9.73.5.093.68-.223.68-.495 0-.243-.007-.888-.012-1.744-2.782.62-3.37-1.374-3.37-1.374-.453-1.185-1.11-1.5-1.11-1.5-.907-.636.07-.624.07-.624 1.003.073 1.53 1.057 1.53 1.057.893 1.567 2.342 1.114 2.912.852.09-.662.35-1.114.635-1.37-2.22-.26-4.555-1.14-4.555-5.068 0-1.12.39-2.035 1.03-2.75-.104-.26-.447-1.303.097-2.715 0 0 .84-.275 2.75 1.052.797-.228 1.653-.342 2.503-.346.85.004 1.705.118 2.504.346 1.91-1.327 2.747-1.052 2.747-1.052.55 1.412.21 2.455.1 2.714.65.716 1.03 1.632 1.03 2.75 0 3.94-2.34 4.807-4.56 5.06.36.317.68.943.68 1.9 0 1.37-.01 2.476-.01 2.812 0 .274.18.593.69.493 3.96-1.35 6.82-5.19 6.82-9.72C20 4.59 15.53 0 10 0")
 
     script(src="./scripts/main.ts")

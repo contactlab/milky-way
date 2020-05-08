@@ -6,6 +6,7 @@
 
   a {
     font-size: 16px;
+    white-space: nowrap;
 
     @media #{$to-small} {
       font-size: 14px;
@@ -13,6 +14,10 @@
 
     + a {
       margin-left: 4rem;
+
+      @media #{$to-small} {
+        margin-left: 5.6rem;
+      }
     }
 
     &:not(.button) {
@@ -26,8 +31,8 @@ a.button {
   display: inline-block;
   border: 1px solid transparent;
   border-color: #{colors('accent500')};
-  border-radius: 0.8rem;
-  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  padding: 8px 16px;
   position: relative;
   background-color: #{colors('accent500')};
   background-image: none;

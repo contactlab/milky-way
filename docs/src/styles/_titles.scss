@@ -4,7 +4,12 @@
   grid-row: 3 / span 1;
 
   .hero-text {
-    font-size: 6.4rem;
+    font-size: 6rem;
+    white-space: nowrap;
+
+    @media #{$to-xsmall} {
+      width: 5.4rem;
+    }
   }
 
   .subheading-1 {

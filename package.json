@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "milky-way",
+  "description": "The Contactlab Design System. A tool for building consistent products and experiences.",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",

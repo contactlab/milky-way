@@ -10,12 +10,12 @@
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
   "scripts": {
-    "lint:css": "stylelint ./src/**/*.scss --ignore-path .gitignore --fix",
-    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore --fix",
+    "lint:css": "stylelint ./src/**/*.scss",
+    "lint:src": "eslint . --ext .js,.ts",
     "lint": "run-p lint:**",
     "dev": "parcel ./src/index.pug --port 3333 --target=browser --log-level 3",
     "prebuild": "rimraf ./dist",
-    "build": "parcel build ./src/index.pug --target=browser --no-cache --no-source-maps --log-level 3"
+    "build": "parcel build ./src/index.pug --out-dir ./ --target=browser --no-cache --no-source-maps --log-level 3"
   },
   "dependencies": {
     "@contactlab/ds-tokens": "^1.4.7"

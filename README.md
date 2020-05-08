@@ -1,6 +1,6 @@
-# Milky-Way
+# Milky Way
 
-The official Contactlab Design System.
+The Contactlab Design System. A tool for building consistent products and experiences.
 
 [![Dependabot][dependabot-img]][dependabot-url]
 
