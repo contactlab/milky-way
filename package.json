@@ -1,7 +1,5 @@
 {
   "private": true,
-  "name": "milky-way",
-  "description": "The Contactlab Design System. A tool for building consistent products and experiences.",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",
@@ -11,35 +9,33 @@
     "Carlo Audino <carlo.audino@contactlab.com>",
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
-  "homepage": "https://github.com/contactlab/milky-way#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/contactlab/milky-way"
-  },
-  "license": "MIT",
-  "engines": {
-    "node": ">=10.x",
-    "npm": ">=6.x"
-  },
   "scripts": {
-    "clean": "lerna clean --yes",
-    "bootstrap": "lerna bootstrap --ignore-prepublish --hoist --strict",
-    "postinstall": "npm run clean && npm run bootstrap",
-    "lint": "lerna run lint",
-    "test": "lerna run test",
-    "publish:all": "lerna publish from-package"
+    "clean": "rimraf ./dist ./index.html ./main.*.{css,js}",
+    "lint:css": "stylelint ./src/**/*.scss",
+    "lint:src": "eslint . --ext .js,.ts",
+    "lint": "run-p lint:**",
+    "dev": "parcel ./src/index.pug --port 3333 --cache-dir ./.cache/parcel",
+    "prebuild": "npm run clean",
+    "build": "parcel build ./src/index.pug --out-dir ./ --no-cache --no-source-maps"
+  },
+  "dependencies": {
+    "@contactlab/ds-tokens": "^1.4.7"
   },
   "devDependencies": {
+    "@giotramu/stylelint-config": "3.1.0",
+    "eslint": "7.0.0",
+    "eslint-config-contactlab": "4.2.2",
+    "eslint-config-prettier": "6.11.0",
     "husky": "4.2.5",
-    "lerna": "3.20.2",
+    "npm-run-all": "4.1.5",
+    "parcel": "1.12.4",
     "prettier": "2.0.5",
-    "pretty-quick": "2.0.1"
-  },
-  "keywords": [
-    "css-toolkit",
-    "design-pattern",
-    "design-system",
-    "ui-kit",
-    "ux-patterns"
-  ]
+    "pretty-quick": "2.0.1",
+    "pug": "2.0.4",
+    "rimraf": "3.0.2",
+    "sass": "1.26.5",
+    "stylelint": "13.3.3",
+    "stylelint-scss": "3.17.2",
+    "typescript": "3.8.3"
+  }
 }
