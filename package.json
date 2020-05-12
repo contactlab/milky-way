@@ -25,13 +25,14 @@
     "clean": "lerna clean --yes",
     "bootstrap": "lerna bootstrap --ignore-prepublish --hoist --strict",
     "postinstall": "npm run clean && npm run bootstrap",
+    "lint": "lerna run lint",
     "test": "lerna run test",
     "publish:all": "lerna publish from-package"
   },
   "devDependencies": {
     "husky": "4.2.5",
     "lerna": "3.20.2",
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "pretty-quick": "2.0.1"
   },
   "keywords": [
