@@ -22,7 +22,7 @@ function run(): void {
       button =>
         (button.onclick = evt => {
           evt.preventDefault();
-          setLang(evt.target, dom);
+          setLang(evt.target as HTMLElement, dom);
         })
     );
   }
@@ -42,8 +42,7 @@ function loadingContent(lang: langType, collection: DomProps): void {
   wrapper.appendChild(lang === 'en' ? en : it);
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function setLang(trigger: any, collection: DomProps): void {
+function setLang(trigger: HTMLElement, collection: DomProps): void {
   const {buttons} = collection;
 
   buttons.forEach(button => button.classList.remove('active'));
