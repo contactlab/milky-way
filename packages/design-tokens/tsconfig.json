@@ -1,20 +1,27 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "baseUrl": ".",
     "declaration": true,
     "esModuleInterop": true,
+    "experimentalDecorators": false,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext"],
     "module": "commonjs",
     "moduleResolution": "node",
+    "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "sourceMap": false,
     "strict": true,
     "target": "es5",
-    "baseUrl": "."
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"]
   },
-  "include": ["loaders"]
+  "include": ["loaders/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

@@ -1,18 +1,4 @@
-import {
-  black,
-  white,
-  accent500,
-  base100,
-  base200,
-  base300,
-  base500,
-  base700,
-  base800,
-  base900,
-  error,
-  warning,
-  success
-} from './colors';
+import * as colors from './colors';
 
 /**
  * Customize the Ant UI Framework with Contactlab Marketing Cloud styles.
@@ -21,28 +7,28 @@ import {
  * More info: https://ant.design/docs/react/customize-theme#Customize-in-less-file
  */
 export = {
-  white,
-  black,
-  'heading-color': base800,
-  'highlight-color': accent500,
-  'info-color': accent500,
-  'item-hover-bg': base100,
-  'label-color': base500,
-  'link-color': accent500,
-  'normal-color': base100,
-  'primary-color': accent500,
-  'processing-color': accent500,
-  'success-color': success,
-  'text-color': base900,
-  'text-color-secondary': base700,
-  'disabled-color': base300,
-  'warning-color': warning,
-  'error-color': error,
-  'border-color-base': base200,
+  white: colors.white,
+  black: colors.black,
+  'heading-color': colors.base800,
+  'highlight-color': colors.accent500,
+  'info-color': colors.accent500,
+  'item-hover-bg': colors.base100,
+  'label-color': colors.base500,
+  'link-color': colors.accent500,
+  'normal-color': colors.base100,
+  'primary-color': colors.accent500,
+  'processing-color': colors.accent500,
+  'success-color': colors.success,
+  'text-color': colors.base900,
+  'text-color-secondary': colors.base700,
+  'disabled-color': colors.base300,
+  'warning-color': colors.warning,
+  'error-color': colors.error,
+  'border-color-base': colors.base200,
   'border-radius-base': '4px',
   'select-item-selected-font-weight': 700,
-  'select-item-selected-bg': base200,
-  'select-item-active-bg': base100,
+  'select-item-selected-bg': colors.base200,
+  'select-item-active-bg': colors.base100,
   'form-vertical-label-margin': '0',
   'form-vertical-label-padding': '0'
 };
