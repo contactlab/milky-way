@@ -21,12 +21,8 @@ import {
  * More info: https://ant.design/docs/react/customize-theme#Customize-in-less-file
  */
 export = {
-  'border-color-base': base200,
-  'border-radius-base': '4px',
-  'disabled-color': base300,
-  'error-color': error,
-  'form-vertical-label-margin': '0',
-  'form-vertical-label-padding': '0',
+  white,
+  black,
   'heading-color': base800,
   'highlight-color': accent500,
   'info-color': accent500,
@@ -37,9 +33,16 @@ export = {
   'primary-color': accent500,
   'processing-color': accent500,
   'success-color': success,
-  'text-color-secondary': base700,
   'text-color': base900,
+  'text-color-secondary': base700,
+  'disabled-color': base300,
   'warning-color': warning,
-  black,
-  white
+  'error-color': error,
+  'border-color-base': base200,
+  'border-radius-base': '4px',
+  'select-item-selected-font-weight': 700,
+  'select-item-selected-bg': base200,
+  'select-item-active-bg': base100,
+  'form-vertical-label-margin': '0',
+  'form-vertical-label-padding': '0'
 };
