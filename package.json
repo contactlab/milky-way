@@ -27,7 +27,8 @@
     "postinstall": "npm run clean && npm run bootstrap",
     "lint": "lerna run lint",
     "test": "lerna run test",
-    "publish:all": "lerna publish from-package"
+    "bump": "lerna version",
+    "publish": "lerna publish from-package"
   },
   "devDependencies": {
     "husky": "4.2.5",
