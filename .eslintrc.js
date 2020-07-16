@@ -1,3 +1,18 @@
 module.exports = {
-  extends: ['contactlab/typescript', 'prettier']
+  root: true,
+
+  extends: ['contactlab/typescript', 'prettier/@typescript-eslint'],
+
+  rules: {
+    // --- TypeScript
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          '{}': false
+        },
+        extendDefaults: true
+      }
+    ]
+  }
 };
