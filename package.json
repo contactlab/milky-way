@@ -10,6 +10,7 @@
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
   "scripts": {
+    "check:src": "tsc --noEmit",
     "clean": "rimraf ./dist ./index.html ./main.*.{css,js}",
     "lint:css": "stylelint ./src/**/*.scss",
     "lint:src": "eslint . --ext .js,.ts",
