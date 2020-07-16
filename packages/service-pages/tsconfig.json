@@ -1,24 +1,24 @@
 {
   "compilerOptions": {
-    "allowJs": false,
     "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
     "alwaysStrict": true,
     "baseUrl": ".",
     "declaration": false,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es6", "dom", "es2016.array.include"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "module": "esnext",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./dist",
-    "sourceMap": false,
     "strict": true,
-    "target": "esnext"
+    "target": "es2017",
+    "typeRoots": ["./typings", "./node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }

@@ -2,8 +2,6 @@
 
 The Contactlab Design System. A tool for building consistent products and experiences.
 
-[![Dependabot][dependabot-img]][dependabot-url]
-
 > 🚧 In the development stage.
 
 ---
@@ -58,7 +56,6 @@ Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
   Images
 -->
 
-[dependabot-img]: https://badgen.net/dependabot/contactlab/milky-way?icon=dependabot
 [npm-pkg-design-tokens-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?label=npm%20package
 [npm-pkg-mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?label=npm%20package
 
@@ -67,7 +64,6 @@ Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
 -->
 
 [contactlab-url]: https://contactlab.com
-[dependabot-url]: https://dependabot.com
 [design-specs-url]: https://www.notion.so/584957192e6e4e43bffc094b68925bd3?v=dfb32ec9f13042829d2d94ae6962b142
 [design-tokens-url]: ./packages/design-tokens
 [emails-url]: ./packages/emails
