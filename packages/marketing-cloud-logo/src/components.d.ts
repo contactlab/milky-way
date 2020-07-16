@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { FillColor, FillStyle, Size, Type, } from "./typings/props";
+import { FillColor, FillStyle, Size, Type } from "./typings/props";
 export namespace Components {
     interface ClabLogo {
         "compact": boolean;

@@ -12,17 +12,16 @@
     },
     "publish": {
       "ignoreChanges": [
-        ".dependabot",
         ".eslintignore",
         ".eslintrc.js",
+        ".github/",
         ".huskyrc.js",
         ".prettierignore",
         ".prettierrc.js",
         ".stylelintignore",
         ".stylelintrc.js",
-        ".vscode",
+        ".vscode/",
         "LICENSE",
-        "package-lock.json",
         "README.md"
       ]
     }

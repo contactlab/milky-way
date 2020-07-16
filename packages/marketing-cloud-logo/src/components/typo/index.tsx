@@ -21,8 +21,8 @@ export class Typo {
     const width = this.size;
     const viewboxWidth = this.getViewboxWidth(this.type, this.compact);
     const paddingBottom = calcPercentage({
-      width: viewboxWidth, // viewbox width
-      height: 45 // viewbox height
+      width: viewboxWidth, // Viewbox width
+      height: 45 // Viewbox height
     });
 
     return (

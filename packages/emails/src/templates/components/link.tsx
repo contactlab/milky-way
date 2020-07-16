@@ -17,7 +17,7 @@ export function Link(props: LinkProps): JSX.Element {
   const commonProps = {
     fontWeight,
     color: primaryColor,
-    textDecoration: 'none',
+    textDecoration: 'none'
   };
 
   switch (type) {
@@ -29,7 +29,7 @@ export function Link(props: LinkProps): JSX.Element {
           style={{
             ...commonProps,
             fontSize: '12px',
-            lineHeight: '16px',
+            lineHeight: '16px'
           }}
         >
           {children}
@@ -45,7 +45,7 @@ export function Link(props: LinkProps): JSX.Element {
           style={{
             ...commonProps,
             fontSize: '14px',
-            lineHeight: '21px',
+            lineHeight: '21px'
           }}
         >
           {children}

@@ -23,8 +23,8 @@ interface CalcPercentageProps {
 }
 
 /**
- * hack the svg padding for scaling
- * more info on the css-tricks blog: https://css-tricks.com/scale-svg/
+ * Hack the svg padding for scaling.
+ * More info on the CSS-Tricks blog: https://css-tricks.com/scale-svg/
  */
 export function calcPercentage({
   base = 100,

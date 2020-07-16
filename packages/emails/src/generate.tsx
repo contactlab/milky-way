@@ -34,7 +34,9 @@ function run(templates: MailTypes, data: MailData): void {
 function createDistFolder(): void {
   const dir = resolve(root, 'dist');
 
-  if (existsSync(dir)) return;
+  if (existsSync(dir)) {
+    return;
+  }
 
   mkdirSync(dir);
 
@@ -47,7 +49,9 @@ function copyIndex(target: string): void {
   const destination = resolve(target, 'index.html');
 
   copyFile(source, destination, err => {
-    if (err) throw err;
+    if (err) {
+      throw err;
+    }
 
     // eslint-disable-next-line no-console
     console.log('✔︎ index.html file copied!');
@@ -67,7 +71,9 @@ function writeHtml(props: WriteHtmlProps): void {
   const layout = grabLayout({template: filename, data, lang});
 
   writeFile(file, layout, err => {
-    if (err) throw err;
+    if (err) {
+      throw err;
+    }
   });
 }
 

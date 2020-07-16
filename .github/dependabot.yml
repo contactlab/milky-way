@@ -1,0 +1,30 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/packages/design-tokens'
+    target-branch: 'stable'
+    labels: ['update: packages 📦', 'design-tokens']
+    schedule:
+      interval: 'weekly'
+
+  - package-ecosystem: 'npm'
+    directory: '/packages/emails'
+    target-branch: 'stable'
+    labels: ['update: packages 📦', 'emails']
+    schedule:
+      interval: 'weekly'
+
+  - package-ecosystem: 'npm'
+    directory: '/packages/marketing-cloud-logo'
+    target-branch: 'stable'
+    labels: ['update: packages 📦', 'marketing-cloud-logo']
+    schedule:
+      interval: 'weekly'
+
+  - package-ecosystem: 'npm'
+    directory: '/packages/service-pages'
+    target-branch: 'stable'
+    labels: ['update: packages 📦', 'service-pages']
+    schedule:
+      interval: 'weekly'

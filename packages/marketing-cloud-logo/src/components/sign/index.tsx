@@ -15,8 +15,8 @@ export class Sign {
     const fill = this.getFillColor();
     const width = this.size;
     const paddingBottom = calcPercentage({
-      width: 65, // viewbox width
-      height: 68 // viewbox height
+      width: 65, // Viewbox width
+      height: 68 // Viewbox height
     });
 
     return (

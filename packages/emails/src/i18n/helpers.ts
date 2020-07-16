@@ -15,18 +15,8 @@ export function i18nBehaviour(lang?: LangType): Polyglot {
   });
 }
 
-function getDictionary(lang: LangType): {} {
-  switch (lang) {
-    case 'it':
-      const itDictionary = readFileSync(
-        resolve(i18nDir, 'it-IT.json')
-      ).toString();
-      return JSON.parse(itDictionary);
-
-    case 'en':
-      const enDictionary = readFileSync(
-        resolve(i18nDir, 'en-EN.json')
-      ).toString();
-      return JSON.parse(enDictionary);
-  }
+function getDictionary(lang: LangType): {[key: string]: unknown} {
+  const path = resolve(i18nDir, `${lang}-${lang.toUpperCase()}.json`);
+  const dictionary = readFileSync(path, 'utf8');
+  return JSON.parse(dictionary);
 }

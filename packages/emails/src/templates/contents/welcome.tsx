@@ -16,7 +16,7 @@ export function Welcome(props: WelcomeProps): JSX.Element {
   const {firstName, username, password, i18n} = props;
   const userInfo: Map<string, string> = new Map([
     [i18n.t('username'), username],
-    [i18n.t('tempPassword'), password],
+    [i18n.t('tempPassword'), password]
   ]);
 
   return (

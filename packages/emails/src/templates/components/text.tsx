@@ -4,7 +4,7 @@ import {
   captionColor,
   labelColor,
   titleColor,
-  textColor,
+  textColor
 } from '../commons/attributes';
 
 type Categories = 'caption' | 'label' | 'paragraph' | 'title';
@@ -34,7 +34,7 @@ export function Text(props: TextProps): JSX.Element {
     paddingRight,
     paddingBottom,
     paddingLeft,
-    type,
+    type
   } = props;
 
   const commonProps = {
@@ -44,7 +44,7 @@ export function Text(props: TextProps): JSX.Element {
     paddingTop,
     paddingRight,
     paddingBottom,
-    paddingLeft,
+    paddingLeft
   };
 
   switch (type) {

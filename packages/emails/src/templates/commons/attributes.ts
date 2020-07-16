@@ -1,15 +1,15 @@
-// --- colors
-export const whiteColor = '#FFFFFF'; // white
+// --- Colors
+export const whiteColor = '#FFFFFF'; // White
 export const cardBgColor = whiteColor;
-export const bgColor = '#F7FCFF'; // base100
-export const borderColor = '#DEEBF4'; // base200
-export const labelColor = '#5B768C'; // base600
-export const captionColor = '#5B768C'; // base600
-export const titleColor = '#1D3344'; // base800
-export const textColor = '#001420'; // base900
-export const primaryColor = '#0391EC'; // accent500
+export const bgColor = '#F7FCFF'; // Base100
+export const borderColor = '#DEEBF4'; // Base200
+export const labelColor = '#5B768C'; // Base600
+export const captionColor = '#5B768C'; // Base600
+export const titleColor = '#1D3344'; // Base800
+export const textColor = '#001420'; // Base900
+export const primaryColor = '#0391EC'; // Accent500
 
-// --- layout
+// --- Layout
 export const panelBorderLeft = `4px solid ${primaryColor}`;
 export const bodyWidth = 460;
 export const logoSize = 300;

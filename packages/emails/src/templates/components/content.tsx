@@ -18,7 +18,7 @@ export const ContentSuite = [
   'password-recovery',
   'password-reset',
   'pin',
-  'welcome',
+  'welcome'
 ] as const;
 
 export type ContentTypes = typeof ContentSuite;

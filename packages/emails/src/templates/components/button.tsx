@@ -4,7 +4,7 @@ import {
   borderRadius,
   btnSize,
   primaryColor,
-  whiteColor,
+  whiteColor
 } from '../commons/attributes';
 
 interface ButtonProps {

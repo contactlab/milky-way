@@ -7,7 +7,7 @@ import {
   ContentSuite,
   ContentData,
   ContentType,
-  ContentTypes,
+  ContentTypes
 } from './components/content';
 import {Footer} from './components/footer';
 import {Head} from './components/head';
