@@ -42,6 +42,6 @@
     "serve": "11.3.2",
     "stylelint": "13.6.1",
     "stylelint-scss": "3.18.0",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   }
 }
