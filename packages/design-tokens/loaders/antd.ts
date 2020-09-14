@@ -4,7 +4,8 @@ import * as colors from './colors';
  * Customize the Ant UI Framework with Contactlab Marketing Cloud styles.
  * Use Webpack, less-loader and pass the following object literal
  * as a value of the `modifyVars` option.
- * More info: https://ant.design/docs/react/customize-theme#Customize-in-less-file
+ * - More Info: https://ant.design/docs/react/customize-theme#Customize-in-less-file
+ * - Variables (written in Less): https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
  */
 export = {
   white: colors.white,
@@ -29,6 +30,8 @@ export = {
   'select-item-selected-font-weight': 700,
   'select-item-selected-bg': colors.base200,
   'select-item-active-bg': colors.base100,
+  'skeleton-color': colors.base200,
+  'skeleton-to-color': colors.base100,
   'form-vertical-label-margin': '0',
   'form-vertical-label-padding': '0'
 };
