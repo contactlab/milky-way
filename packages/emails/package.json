@@ -22,21 +22,6 @@
     "node": ">=10.x",
     "npm": ">=6.x"
   },
-  "scripts": {
-    "check:src": "tsc --noEmit",
-    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
-    "lint": "run-p -clns lint:**",
-    "prebuild": "rimraf ./build",
-    "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
-    "watch": "npm run build -- --watch --source-maps inline",
-    "preserve": "npm run build",
-    "serve": "nodemon --watch ./build ./build/serve.js",
-    "dev": "run-p -clns watch serve",
-    "pregenerate": "rimraf ./dist && npm run build",
-    "generate": "node ./build/generate.js",
-    "predeploy": "run-s lint generate",
-    "deploy": "netlify deploy --dir ./dist --prod"
-  },
   "dependencies": {
     "express": "4.17.1",
     "mjml": "4.6.3",
@@ -63,10 +48,10 @@
     "eslint-config-contactlab": "5.0.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-react": "7.20.6",
-    "netlify-cli": "2.62.0",
+    "netlify-cli": "2.63.0",
     "nodemon": "2.0.4",
     "npm-run-all": "4.1.5",
     "rimraf": "3.0.2",
-    "typescript": "3.9.7"
+    "typescript": "4.0.2"
   }
 }
