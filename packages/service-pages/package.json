@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "4.0.0",
-    "eslint": "7.9.0",
+    "eslint": "7.10.0",
     "eslint-config-contactlab": "5.0.0",
     "eslint-config-prettier": "6.11.0",
     "netlify-cli": "2.63.3",
