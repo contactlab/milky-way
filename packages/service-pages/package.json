@@ -37,7 +37,7 @@
     "@contactlab/ds-tokens": "^1.7.0"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "5.0.0",
+    "@giotramu/stylelint-config": "5.1.0",
     "eslint": "7.11.0",
     "eslint-config-contactlab": "5.0.0",
     "eslint-config-prettier": "6.12.0",
