@@ -13,13 +13,10 @@
     "publish": {
       "ignoreChanges": [
         ".eslintignore",
-        ".eslintrc.js",
-        ".github/",
-        ".huskyrc.js",
+        ".eslintrc.json",
         ".prettierignore",
-        ".prettierrc.js",
         ".stylelintignore",
-        ".stylelintrc.js",
+        ".stylelintrc.json",
         ".vscode/",
         "LICENSE",
         "README.md"

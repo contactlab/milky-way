@@ -30,11 +30,21 @@
     "bump": "lerna version",
     "publish": "lerna publish from-package"
   },
+  "prettier": "@giotramu/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
   "devDependencies": {
-    "husky": "4.3.0",
+    "@giotramu/prettier-config": "1.1.1",
+    "husky": "4.3.5",
     "lerna": "3.22.1",
-    "prettier": "2.1.1",
-    "pretty-quick": "3.0.2"
+    "lint-staged": "10.5.3",
+    "prettier": "2.2.1"
   },
   "keywords": [
     "css-toolkit",
