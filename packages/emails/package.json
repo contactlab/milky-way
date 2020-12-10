@@ -23,21 +23,22 @@
     "npm": ">=6.x"
   },
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "typecheck": "tsc",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
-    "lint": "run-p -clns lint:**",
+    "lint": "run-p -cln lint:**",
     "prebuild": "rimraf ./build",
     "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
     "watch": "npm run build -- --watch --source-maps inline",
     "preserve": "npm run build",
-    "serve": "nodemon --watch ./build ./build/serve.js",
-    "dev": "run-p -clns watch serve",
+    "serve": "nodemon ./build/server.js",
+    "dev": "run-p -cln watch serve",
     "pregenerate": "rimraf ./dist && npm run build",
     "generate": "node ./build/generate.js",
     "predeploy": "run-s lint generate",
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {
+    "consola": "2.15.0",
     "express": "4.17.1",
     "mjml": "4.7.1",
     "mjml-react": "1.0.59",

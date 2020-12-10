@@ -23,7 +23,7 @@
     "npm": ">=6.x"
   },
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "lint:css": "stylelint ./src/**/*.scss --ignore-path .gitignore",
     "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
     "lint": "run-p -clns lint:**",

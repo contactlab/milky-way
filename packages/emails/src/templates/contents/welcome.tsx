@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {loginHref} from '../../config';
+import {LOGIN_HREF} from '../../config';
 import {i18nType} from '../../i18n/helpers';
 import {Button} from '../components/button';
 import {Panel} from '../components/panel';
@@ -31,7 +31,7 @@ export function Welcome(props: WelcomeProps): JSX.Element {
 
       <InfoPanel collection={userInfo} />
 
-      <Button href={loginHref}>{i18n.t('btnLogin')}</Button>
+      <Button href={LOGIN_HREF}>{i18n.t('btnLogin')}</Button>
 
       <Text type="paragraph">{i18n.t('securityAdvice')}</Text>
     </React.Fragment>

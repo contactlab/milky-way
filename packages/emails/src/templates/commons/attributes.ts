@@ -1,13 +1,13 @@
 // --- Colors
-export const whiteColor = '#FFFFFF'; // White
+export const whiteColor = '#FFFFFF';
 export const cardBgColor = whiteColor;
-export const bgColor = '#F7FCFF'; // Base100
-export const borderColor = '#DEEBF4'; // Base200
-export const labelColor = '#5B768C'; // Base600
-export const captionColor = '#5B768C'; // Base600
-export const titleColor = '#1D3344'; // Base800
-export const textColor = '#001420'; // Base900
-export const primaryColor = '#0391EC'; // Accent500
+export const bgColor = '#F7FCFF';
+export const borderColor = '#DEEBF4';
+export const labelColor = '#5B768C';
+export const captionColor = '#5B768C';
+export const titleColor = '#1D3344';
+export const textColor = '#001420';
+export const primaryColor = '#0391EC';
 
 // --- Layout
 export const panelBorderLeft = `4px solid ${primaryColor}`;

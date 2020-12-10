@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {profilePageHref} from '../../config';
+import {PROFILE_PAGE_HREF} from '../../config';
 import {i18nType} from '../../i18n/helpers';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
@@ -30,7 +30,7 @@ export function PasswordExpiring(props: PasswordExpiringProps): JSX.Element {
 
       <UpdatePassword i18n={i18n} />
 
-      <Button href={profilePageHref}>{i18n.t('btnChangePassword')}</Button>
+      <Button href={PROFILE_PAGE_HREF}>{i18n.t('btnChangePassword')}</Button>
     </React.Fragment>
   );
 }

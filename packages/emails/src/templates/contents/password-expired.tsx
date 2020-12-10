@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {loginHref} from '../../config';
+import {LOGIN_HREF} from '../../config';
 import {i18nType} from '../../i18n/helpers';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
@@ -32,7 +32,7 @@ export function PasswordExpired(props: PasswordExpiredProps): JSX.Element {
         {`${i18n.t('passwordExpired.updatePassword')} `}
       </Text>
 
-      <Button href={loginHref}>{i18n.t('btnLogin')}</Button>
+      <Button href={LOGIN_HREF}>{i18n.t('btnLogin')}</Button>
 
       <Text type="paragraph" fontWeight={700}>
         {i18n.t('redemptionPeriod', {days: 30})}

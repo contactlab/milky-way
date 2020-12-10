@@ -7,12 +7,16 @@
     "baseUrl": ".",
     "declaration": false,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
+    "experimentalDecorators": false,
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
-    "lib": ["dom", "es6", "es2016.array.include"],
+    "lib": ["esnext"],
     "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -20,8 +24,10 @@
     "resolveJsonModule": true,
     "sourceMap": false,
     "strict": true,
-    "target": "es5",
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types"],
     "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }

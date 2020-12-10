@@ -1,60 +1,48 @@
 import {copyFile, existsSync, mkdirSync, writeFile} from 'fs';
-import {resolve} from 'path';
-import {render, Mjml2HtmlOptions} from 'mjml-react';
+import {join} from 'path';
+import consola from 'consola';
+import {render} from 'mjml-react';
 import * as React from 'react';
+import {ROOT_DIR, PUBLIC_DIR, MJML_OPTIONS} from './config';
 import {getData} from './data/helpers';
 import {i18nBehaviour, LangType} from './i18n/helpers';
 import {Mail, MailData, MailSuite, MailType, MailTypes} from './templates';
 
-const root = resolve(__dirname, '..');
-
-const mjmlOptions: Mjml2HtmlOptions = {
-  beautify: true,
-  minify: false,
-  validationLevel: 'soft'
-};
-
-run(MailSuite, getData());
-
-function run(templates: MailTypes, data: MailData): void {
-  const target = resolve(root, 'dist');
+(function run(templates: MailTypes, data: MailData): void {
+  const target = join(ROOT_DIR, 'dist');
 
   createDistFolder();
-  copyIndex(resolve(target));
+  copyIndex(join(target));
 
   for (const template of templates) {
     writeHtml({filename: template, data, lang: 'it', target});
     writeHtml({filename: template, data, lang: 'en', target});
   }
 
-  // eslint-disable-next-line no-console
-  console.log('✔︎ dist folder ready!');
-}
+  consola.success('Dist folder ready!');
+})(MailSuite, getData());
 
 function createDistFolder(): void {
-  const dir = resolve(root, 'dist');
+  const dir = join(ROOT_DIR, 'dist');
 
   if (existsSync(dir)) {
     return;
   }
 
   mkdirSync(dir);
-
-  // eslint-disable-next-line no-console
-  console.log('✔︎ dist folder created!');
+  consola.success('Dist folder created!');
 }
 
 function copyIndex(target: string): void {
-  const source = resolve(root, 'public', 'index.html');
-  const destination = resolve(target, 'index.html');
+  const source = join(PUBLIC_DIR, 'index.html');
+  const destination = join(target, 'index.html');
 
   copyFile(source, destination, err => {
     if (err) {
       throw err;
     }
 
-    // eslint-disable-next-line no-console
-    console.log('✔︎ index.html file copied!');
+    consola.success('"index.html" file copied!');
   });
 }
 
@@ -67,7 +55,7 @@ interface WriteHtmlProps {
 
 function writeHtml(props: WriteHtmlProps): void {
   const {filename, data, lang, target} = props;
-  const file: string = resolve(target, `${filename}-${lang}.html`);
+  const file = join(target, `${filename}-${lang}.html`);
   const layout = grabLayout({template: filename, data, lang});
 
   writeFile(file, layout, err => {
@@ -87,7 +75,7 @@ function grabLayout(props: GrabLayoutProps): string {
   const {template, data, lang} = props;
   const {html} = render(
     <Mail type={template} data={data} i18n={i18nBehaviour(lang)} />,
-    mjmlOptions
+    MJML_OPTIONS
   );
 
   return html;

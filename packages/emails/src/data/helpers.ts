@@ -1,8 +1,6 @@
 import {readFileSync} from 'fs';
-import {resolve} from 'path';
-
-const root = resolve(__dirname, '..', '..');
-const dataDir = resolve(root, 'src', 'data');
+import {join} from 'path';
+import {DATA_DIR} from '../config';
 
 interface DataProps {
   firstName: string;
@@ -12,6 +10,6 @@ interface DataProps {
 }
 
 export function getData(): DataProps {
-  const data = readFileSync(resolve(dataDir, 'mock.json')).toString();
+  const data = readFileSync(join(DATA_DIR, 'mock.json')).toString();
   return JSON.parse(data);
 }

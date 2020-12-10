@@ -1,6 +1,6 @@
 import {MjmlSection, MjmlColumn, MjmlImage} from 'mjml-react';
 import * as React from 'react';
-import {logoHref, logoSrc} from '../../config';
+import {LOGO_HREF, LOGO_SRC} from '../../config';
 import {bgColor, logoSize, logoPadding} from '../commons/attributes';
 
 export function Logo(): JSX.Element {
@@ -12,8 +12,8 @@ export function Logo(): JSX.Element {
           alt="Contactlab Marketing Cloud logo"
           title="Contactlab Marketing Cloud"
           width={logoSize}
-          href={logoHref}
-          src={logoSrc}
+          href={LOGO_HREF}
+          src={LOGO_SRC}
           fluid-on-mobile
         />
       </MjmlColumn>

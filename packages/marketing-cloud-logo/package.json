@@ -38,7 +38,7 @@
     "resources/"
   ],
   "scripts": {
-    "check:src": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "lint:css": "stylelint ./src/components/**/*.css --ignore-path .gitignore",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "lint": "run-p -clns lint:**",
