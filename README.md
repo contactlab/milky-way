@@ -24,13 +24,13 @@ The Contactlab Design System. A tool for building consistent products and experi
 
 The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore-url] & [Developer][mc-developer-url] websites logo.
 
-[![Marketing Cloud Logo Package][npm-pkg-mc-logo-img]][npm-pkg-mc-logo-url]
+[![Marketing Cloud Logo Package][npm-mc-logo-img]][npm-mc-logo-url]
 
 ---
 
 #### [Design Tokens][design-tokens-url]
 
-[![Design Tokens Package][npm-pkg-design-tokens-img]][npm-pkg-design-tokens-url]
+[![Design Tokens Package][npm-design-tokens-img]][npm-design-tokens-url]
 
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
@@ -50,17 +50,17 @@ The Contactlab Marketing Cloud service pages.
 
 #### License
 
-Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
+Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 
-<!---
-  Images
+<!--
+  I M A G E S
 -->
 
-[npm-pkg-design-tokens-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?label=npm%20package
-[npm-pkg-mc-logo-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?label=npm%20package
+[npm-design-tokens-img]: https://img.shields.io/npm/v/@contactlab/ds-tokens?style=flat-square&colorA=001420&colorB=0391ec
+[npm-mc-logo-img]: https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec
 
-<!---
-  Links
+<!--
+  L I N K S
 -->
 
 [contactlab-url]: https://contactlab.com
@@ -70,6 +70,6 @@ Milky-Way is [MIT licensed](./LICENSE) @[Contactlab S.p.A][contactlab-url].
 [marketing-cloud-logo-url]: ./packages/marketing-cloud-logo
 [mc-developer-url]: http://developer.contactlab.com
 [mc-explore-url]: http://explore.contactlab.com
-[npm-pkg-design-tokens-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
-[npm-pkg-mc-logo-url]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo
+[npm-design-tokens-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
+[npm-mc-logo-url]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo
 [service-pages-url]: ./packages/service-pages

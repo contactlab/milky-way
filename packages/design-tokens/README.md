@@ -2,16 +2,17 @@
 
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
-[![NPM Package][npm-pkg-img]][npm-pkg-url]
+[![NPM Package][npm-img]][npm-url]
 
 ### Table of Contents
 
 - [Design Tokens](#design-tokens)
+  - [Table of Contents](#table-of-contents)
   - [CDN Usage](#cdn-usage)
+    - [What does it do?](#what-does-it-do)
   - [Install](#install)
   - [Webpack usage](#webpack-usage)
-  - [CSS Custom Properties][custom-properties-url]
-  - [CSS Custom Media][custom-mq-url]
+    - [Custom Media Queries](#custom-media-queries)
   - [Browsers support](#browsers-support)
 
 ### CDN Usage
@@ -158,22 +159,22 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
 - iOS Safari (last 2)
 - Edge (last 3)
 
-<!---
-  Images
+<!--
+  I M A G E S
 -->
 
 [cssdb-img]: https://cssdb.org/badge/custom-media-queries.svg
-[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/ds-tokens?label=npm%20package
+[npm-img]: https://img.shields.io/npm/v/@contactlab/ds-tokens?style=flat-square&colorA=001420&colorB=0391ec
 
-<!---
-  Links
+<!--
+  L I N K S
 -->
 
 [cssdb-url]: https://cssdb.org/#custom-media-queries
 [custom-mq-url]: ./styles/custom-media.css
 [custom-mq-specification-url]: http://drafts.csswg.org/mediaqueries-5/#custom-mq
 [custom-properties-url]: ./styles/vars.css
-[npm-pkg-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
+[npm-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [postcss-config-url]: https://github.com/giotramu/postcss-config
 [postcss-custom-media-url]: https://github.com/postcss/postcss-custom-media
 [webpack-url]: https://webpack.js.org

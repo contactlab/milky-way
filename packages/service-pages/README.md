@@ -24,8 +24,8 @@ $ npm run build
 $ npm run serve
 ```
 
-<!---
-  Links
+<!--
+  L I N K S
 -->
 
 [netlify-url]: https://clab-service-page.netlify.app

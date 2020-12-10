@@ -27,8 +27,8 @@ npm run generate
 - [mjml][mjml-url]
 - [mjml-react][mjml-react-url]
 
-<!---
-  Links
+<!--
+  L I N K S
 -->
 
 [netlify-url]: https://clab-emails.netlify.app

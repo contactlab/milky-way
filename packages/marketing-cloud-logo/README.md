@@ -2,7 +2,7 @@
 
 The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore-url] & [Developer][mc-developer-url] websites logo.
 
-[![NPM Package][npm-pkg-img]][npm-pkg-url]
+[![NPM Package][npm-img]][npm-url]
 [![Bundlephobia][bundlephobia-img]][bundlephobia-url]
 
 ### Web Components
@@ -26,20 +26,20 @@ Web Components that run natively or near-natively in all widely used desktop and
 
 - [Stencil.js][stenciljs-url]
 
-<!---
-  Images
+<!--
+  I M A G E S
 -->
 
-[bundlephobia-img]: https://badgen.net/bundlephobia/minzip/@contactlab/marketing-cloud-logo
-[npm-pkg-img]: https://badgen.net/npm/v/@contactlab/marketing-cloud-logo?label=npm%20package
+[bundlephobia-img]: https://img.shields.io/bundlephobia/min/@contactlab/marketing-cloud-logo?label=bundle%20size&style=flat-square&colorA=001420&colorB=0391ec
+[npm-img]: https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec
 
-<!---
-  Links
+<!--
+  L I N K S
 -->
 
 [bundlephobia-url]: https://bundlephobia.com/result?p=@contactlab/marketing-cloud-logo
 [codepen-url]: https://codepen.io/giotramu/full/zYvYgdd
 [mc-developer-url]: http://developer.contactlab.com
 [mc-explore-url]: http://explore.contactlab.com
-[npm-pkg-url]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo
+[npm-url]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo
 [stenciljs-url]: https://stenciljs.com/
