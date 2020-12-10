@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "alwaysStrict": true,
