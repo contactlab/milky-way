@@ -1,10 +1,10 @@
-# Email templates
+# Email Templates
 
 The Contactlab Marketing Cloud transactional emails.
 
 ## [Preview][netlify-url]
 
-#### Run dev environment
+#### Run development environment
 
 ```sh
 npm run dev
