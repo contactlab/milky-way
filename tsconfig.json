@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
     "baseUrl": ".",
@@ -7,7 +8,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext", "dom", "dom.iterable"],
-    "module": "esnext",
+    "module": "es6",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
@@ -16,8 +17,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "target": "es2017",
-    "typeRoots": ["./typings", "./node_modules/@types"]
+    "target": "es6",
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": ["./src/scripts/**/*"],
   "exclude": ["node_modules"]
