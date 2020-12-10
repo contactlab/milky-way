@@ -23,7 +23,7 @@
   },
   "scripts": {
     "clean": "lerna clean --yes",
-    "bootstrap": "lerna bootstrap --ignore-prepublish --strict",
+    "bootstrap": "lerna bootstrap --hoist --strict --ignore-prepublish",
     "postinstall": "npm run clean && npm run bootstrap",
     "lint": "lerna run lint",
     "test": "lerna run test",
