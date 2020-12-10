@@ -30,9 +30,9 @@ The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 #### [Design Tokens][design-tokens-url]
 
-[![Design Tokens Package][npm-design-tokens-img]][npm-design-tokens-url]
-
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
+
+[![Design Tokens Package][npm-design-tokens-img]][npm-design-tokens-url]
 
 ---
 
