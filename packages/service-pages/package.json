@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@contactlab/service-pages",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "The Contactlab Marketing Cloud service pages.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -34,7 +34,7 @@
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {
-    "@contactlab/ds-tokens": "^1.7.0"
+    "@contactlab/ds-tokens": "^1.8.0"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "5.1.3",
