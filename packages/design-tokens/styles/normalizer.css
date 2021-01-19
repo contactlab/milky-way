@@ -1,8 +1,8 @@
 /**
- ************
- * Document *
- ************
- */
+************
+* Document *
+************
+*/
 
 /**
  * Use a more readable tab size.
@@ -38,8 +38,8 @@ html {
  */
 body {
   margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
+  font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
 }
 
 img {

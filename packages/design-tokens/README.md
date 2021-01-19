@@ -20,22 +20,28 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 Put the link tags in the head of your `index.html` document:
 
 ```html
+<!-- The Montserrat Font (optional, you can import it from the Google Font CDN) -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/montserrat.css"
+/>
+
 <!-- The CSS Normalizer -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/normalizer.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/normalizer.css"
 />
 
 <!-- The CSS Custom Properties -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/vars.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/vars.css"
 />
 
 <!-- The Common Contactlab Marketing Cloud Styles -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.4/styles/common.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/common.css"
 />
 ```
 
@@ -43,6 +49,7 @@ Put the link tags in the head of your `index.html` document:
 
 - Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
+- The `montserrat.css` stylesheet provides the official font of the Contactlab products. If you like, you can import it from the Google Font CDN.
 - The `common.css` stylesheet provides useful defaults to plain HTML documents.
 - The `vars.css` stylesheet dispatches the Contactlab Marketing Cloud's [CSS Custom Properties (aka CSS variables)][custom-properties-url]. The SCSS, LESS and JavaScript version are provided.
 - The `custom-media.css` stylesheet injects the Contactlab Marketing Cloud's [CSS Custom Media Queries][custom-mq-url]. The SCSS, LESS and JavaScript version are provided.
@@ -60,6 +67,9 @@ npm install @contactlab/ds-tokens --save
 Import the Design Tokens in CSS:
 
 ```css
+/* The Montserrat Font (optional, you can import it from the Google Font CDN) */
+@import '~@contactlab/ds-tokens/styles/montserrat.css';
+
 /* The CSS Normalizer */
 @import '~@contactlab/ds-tokens/styles/normalizer.css';
 
@@ -73,6 +83,9 @@ Import the Design Tokens in CSS:
 Import the Design Tokens in JavaScript:
 
 ```js
+// The Montserrat Font (optional, you can import it from the Google Font CDN)
+import '@contactlab/ds-tokens/styles/montserrat.css';
+
 // The CSS Normalizer
 import '@contactlab/ds-tokens/styles/normalizer.css';
 
