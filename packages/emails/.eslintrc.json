@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "plugins": ["react"],
+  "extends": [
+    "contactlab/typescript"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "{}": false
+        },
+        "extendDefaults": true
+      }
+    ],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}

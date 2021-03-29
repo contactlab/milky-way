@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+
+    <title>Contactlab Marketing Cloud logo - The Web Component</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.6.0/styles/normalizer.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.6.0/styles/vars.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1.6.0/styles/common.css"
+    />
+
+    <style>
+      body {
+        background-color: var(--color-base900);
+      }
+
+      .showcase {
+        overflow-y: hidden;
+        padding: 3.2rem;
+      }
+
+      .showcase > ul {
+        display: grid;
+        margin: 0 auto;
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+        grid-gap: 1.6rem;
+        list-style: none;
+      }
+
+      @media only screen and (min-width: 100em) {
+        .showcase > ul {
+          max-width: 80vw;
+        }
+      }
+
+      .showcase > ul > li {
+        display: flex;
+        height: 16rem;
+        border-radius: 1.6rem;
+        padding: 1.6rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .showcase--light {
+        background-color: var(--color-base100);
+      }
+
+      .showcase--accent {
+        background-color: var(--color-accent500);
+      }
+
+      .showcase--base {
+        background-color: var(--color-base900);
+      }
+    </style>
+
+    <script type="module" src="/build/clab-logo.esm.js"></script>
+    <script nomodule src="/build/clab-logo.js"></script>
+  </head>
+  <body>
+    <section class="showcase showcase--light">
+      <ul>
+        <li>
+          <clab-logo size="300px"></clab-logo>
+        </li>
+        <li>
+          <clab-logo size="200px" compact></clab-logo>
+        </li>
+        <li>
+          <clab-logo size="150px" type="explore"></clab-logo>
+        </li>
+        <li>
+          <clab-logo size="180px" type="developer"></clab-logo>
+        </li>
+      </ul>
+    </section>
+
+    <section class="showcase showcase--accent">
+      <ul>
+        <li>
+          <clab-logo
+            size="300px"
+            fill-style="mono"
+            fill-color="light"
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="200px"
+            fill-style="mono"
+            fill-color="light"
+            compact
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="150px"
+            type="explore"
+            fill-style="mono"
+            fill-color="light"
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="180px"
+            type="developer"
+            fill-style="mono"
+            fill-color="light"
+          ></clab-logo>
+        </li>
+      </ul>
+    </section>
+
+    <section class="showcase showcase--base">
+      <ul>
+        <li>
+          <clab-logo size="300px" fill-style="negative"></clab-logo>
+        </li>
+        <li>
+          <clab-logo size="200px" fill-style="negative" compact></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="150px"
+            fill-style="negative"
+            type="explore"
+          ></clab-logo>
+        </li>
+        <li>
+          <clab-logo
+            size="180px"
+            fill-style="negative"
+            type="developer"
+          ></clab-logo>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

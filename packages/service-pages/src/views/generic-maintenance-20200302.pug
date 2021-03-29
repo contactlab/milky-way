@@ -1,0 +1,30 @@
+//- TIPS:
+//- 1. Artworks's path should be relative to "src" folder;
+//- 2. Alternative SVG Artworks are available here:
+       https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/artworks
+//- 3. Use <p> html tag for split sentences;
+//- 4. Use <article> html tag for split paragraphs;
+//----------------------------------------------------------------
+
+//--- artworks
+- const IMG_SRC = "https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@1/artworks/under-construction.svg"
+
+//--- titles
+- const EN_TITLE= "We are calibrating and polishing our systems. We will be back soon!"
+- const IT_TITLE= "Stiamo calibrando e lucidando i nostri sistemi. Torneremo a breve!"
+
+//--- EN content
+mixin EN_BODY()
+  article
+    p We are in scheduled maintenance mode.
+
+  article
+    p For any kind of support, please contact the #[a(href="https://contactlab.com/en/contact-us" title="Customer Care") Customer Care].
+
+//--- IT content
+mixin IT_BODY()
+  article
+    p Siamo in modalità manutenzione programmata.
+
+  article
+    p Per chiarimenti o esigenze specifiche, contattare il #[a(href="https://contactlab.com/it/contact-us" title="Servizio Clienti") Servizio Clienti].

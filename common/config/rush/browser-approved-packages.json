@@ -1,0 +1,146 @@
+// DO NOT ADD COMMENTS IN THIS FILE.  They will be lost when the Rush tool resaves it.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/approved-packages.schema.json",
+  "packages": [
+    {
+      "name": "@babel/cli",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/core",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/plugin-transform-react-jsx",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/plugin-transform-typescript",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/preset-env",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/preset-react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@babel/preset-typescript",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@contactlab/ds-tokens",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@giotramu/stylelint-config",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@stencil/core",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "consola",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "eslint",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "eslint-config-contactlab",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "eslint-config-prettier",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "eslint-plugin-react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "express",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "jest",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "jest-cli",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "mjml",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "mjml-react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "netlify-cli",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "node-polyglot",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "nodemon",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "npm-run-all",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "parcel",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "pug",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "puppeteer",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "react",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "react-dom",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "rimraf",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "sass",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "serve",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "stylelint",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "stylelint-scss",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "typescript",
+      "allowedCategories": [ "libraries" ]
+    }
+  ]
+}
