@@ -1,0 +1,65 @@
+{
+  "private": true,
+  "name": "@contactlab/emails",
+  "version": "1.0.0",
+  "description": "The Contactlab Marketing Cloud transactional emails.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com"
+  },
+  "homepage": "https://github.com/contactlab/milky-way#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/emails"
+  },
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
+    "lint": "run-p -cln lint:**",
+    "prebuild": "rimraf ./build",
+    "build": "babel ./src --out-dir ./build --extensions .ts,.tsx",
+    "watch": "npm run build -- --watch --source-maps inline",
+    "preserve": "npm run build",
+    "serve": "nodemon ./build/server.js",
+    "dev": "run-p -cln watch serve",
+    "pregenerate": "rimraf ./dist && npm run build",
+    "generate": "node ./build/generate.js",
+    "predeploy": "npm run generate",
+    "deploy": "netlify deploy --dir ./dist --prod"
+  },
+  "dependencies": {
+    "consola": "2.15.3",
+    "express": "4.17.1",
+    "mjml": "4.9.0",
+    "mjml-react": "1.2.0",
+    "node-polyglot": "2.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.13.14",
+    "@babel/core": "7.13.14",
+    "@babel/plugin-transform-react-jsx": "7.13.12",
+    "@babel/plugin-transform-typescript": "7.13.0",
+    "@babel/preset-env": "7.13.12",
+    "@babel/preset-react": "7.13.13",
+    "@babel/preset-typescript": "7.13.0",
+    "@types/express": "4.17.11",
+    "@types/mjml-react": "1.0.6",
+    "@types/node": "14.14.37",
+    "@types/node-polyglot": "2.4.1",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.3",
+    "eslint": "7.23.0",
+    "eslint-config-contactlab": "6.1.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-react": "7.23.1",
+    "netlify-cli": "3.13.10",
+    "nodemon": "2.0.7",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "typescript": "4.2.3"
+  }
+}

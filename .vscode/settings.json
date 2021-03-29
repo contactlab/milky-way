@@ -1,0 +1,32 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "css.validate": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": [{"mode": "auto"}],
+  "eslint.options": {
+    "useEslintrc": true,
+    "configFile": "./.eslintrc.json"
+  },
+  "typescript.validate.enable": true,
+  "typescript.reportStyleChecksAsWarnings": false,
+  "files.associations": {
+    "**/*.json": "jsonc",
+    "**/package.json": "json"
+  },
+  "search.exclude": {
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/temp": true,
+    "**/test/**/temp": false
+  }
+}

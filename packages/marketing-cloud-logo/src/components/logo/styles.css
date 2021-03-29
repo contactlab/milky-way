@@ -1,0 +1,34 @@
+.logo {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.logo .sign {
+  width: 15%;
+  margin-right: 5%;
+}
+
+.logo .typo {
+  width: 80%;
+}
+
+.logo--mc:not(.logo--compact) .sign {
+  width: 10%;
+  margin-right: 2.5%;
+}
+
+.logo--mc:not(.logo--compact) .typo {
+  width: 87.5%;
+}
+
+.logo--explore .sign {
+  width: 20%;
+  margin-right: 5%;
+}
+
+.logo--explore .typo {
+  width: 75%;
+}

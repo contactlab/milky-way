@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.36.2",
+  "pnpmVersion": "5.14.3",
+  "pnpmOptions": {
+    "preventManualShrinkwrapChanges": true,
+    "useWorkspaces": true
+  },
+  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "repository": {
+    "url": "https://github.com/contactlab/milky-way",
+    "defaultBranch": "stable"
+  },
+  "ensureConsistentVersions": true,
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 2,
+  "approvedPackagesPolicy": {
+    "reviewCategories": ["tools", "libraries"],
+    "ignoredNpmScopes": ["@types"]
+  },
+  "projects": [
+    {
+      "packageName": "@contactlab/ds-tokens",
+      "projectFolder": "packages/design-tokens",
+      "reviewCategory": "libraries",
+      "shouldPublish": true,
+      "versionPolicyName": "independentPackage"
+    },
+    {
+      "packageName": "@contactlab/emails",
+      "projectFolder": "packages/emails",
+      "reviewCategory": "tools",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@contactlab/marketing-cloud-logo",
+      "projectFolder": "packages/marketing-cloud-logo",
+      "reviewCategory": "libraries",
+      "shouldPublish": true,
+      "versionPolicyName": "independentPackage"
+    },
+    {
+      "packageName": "@contactlab/service-pages",
+      "projectFolder": "packages/service-pages",
+      "reviewCategory": "libraries",
+      "shouldPublish": true,
+      "versionPolicyName": "independentPackage"
+    }
+  ]
+}

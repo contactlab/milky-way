@@ -1,0 +1,396 @@
+/**
+**************
+* Sanitazier *
+**************
+*/
+
+/**
+ * Use a more readable tab size.
+ */
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+ * 1. Use a better box model.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  box-sizing: border-box; /* 1 */
+  line-height: 1.15; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+/**
+ * Inherit a better box model.
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * 1. Remove the margin in all browsers.
+ * 2. Improve consistency of default fonts in all browsers.
+ */
+body {
+  margin: 0; /* 1 */
+  font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
+}
+
+img {
+  max-width: 100%;
+}
+
+/**
+ * Add the correct height in Firefox.
+ */
+hr {
+  height: 0;
+}
+
+/**
+ * Add the correct text decoration in Chrome, Edge, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Edge and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Improve consistency of default fonts in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+ */
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Change the font styles in all browsers.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; /* 1 */
+  font-family: inherit; /* 2 */
+  font-size: 100%; /* 2 */
+  line-height: 1.15; /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * Remove the padding so developers are not caught out
+ * when they zero out `fieldset` elements in all browsers.
+ */
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome and Firefox.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Add the correct display in Chrome and Safari.
+ */
+summary {
+  display: list-item;
+}
+
+/**
+ **************************
+ * Common Document Styles *
+ **************************
+ */
+
+/**
+ * The base font-size is set at 62.5% for having the convenience
+ * of sizing rems in a way that is similar to using px: 1.6rem = 16px
+ */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+*::selection {
+  color: @colors[white];
+  background: rgba(3, 145, 236, 0.8);
+}
+
+[tabindex='-1'] {
+  outline: none;
+}
+
+body {
+  color: @colors[base900];
+  background-color: @colors[base100];
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/**
+ * Typography rules
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-text {
+  margin-top: 0;
+  color: @colors[base800];
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero-text {
+  margin-bottom: 2.6rem;
+  font-size: 4rem;
+}
+
+h1 {
+  margin-bottom: 2.4rem;
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 2.2rem;
+  font-size: 2.8rem;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+}
+
+h4 {
+  margin-bottom: 1.8rem;
+  font-size: 2.4rem;
+}
+
+h5 {
+  margin-bottom: 1.6rem;
+  font-size: 2.2rem;
+}
+
+h6 {
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+
+.subheading-1,
+.subheading-2,
+.subheading-3 {
+  display: block;
+  color: @colors[base700];
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  line-height: 1.3em;
+}
+
+.subheading-1 {
+  margin-bottom: 1.6rem;
+  font-size: 2.2rem;
+}
+
+.subheading-2 {
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+
+.subheading-3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+/**
+ * Basic HTML Elements
+ */
+a:link,
+a:visited {
+  color: @colors[accent500];
+  text-decoration: none;
+  transition: color 100ms linear;
+}
+
+a:hover {
+  color: @colors[accent400];
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.15rem;
+
+  code {
+    display: inline-block;
+    margin: 2px 0;
+    border-radius: 2px;
+    padding: 0 4px;
+    background-color: @colors[base200];
+  }
+}
+
+address {
+  font-style: normal;
+  line-height: inherit;
+}
+
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: 1rem;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: @colors[base200];
+}
+
+mark {
+  color: @colors[white];
+  background: @colors[accent500];
+  box-shadow: 0 0 0 2px @colors[accent500];
+}
+
+small {
+  color: @colors[base600];
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}

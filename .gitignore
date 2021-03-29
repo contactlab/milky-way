@@ -1,0 +1,19 @@
+# Rush
+**/.rush/
+common/autoinstallers/*/.npmrc
+common/deploy/
+common/temp/
+
+# TypeScript
+*.tsbuildinfo
+
+# ESlint
+.eslintcache
+
+# Misc
+.cache
+.DS_Store
+.env*
+*log
+node_modules/
+Thumbs.db

@@ -1,0 +1,41 @@
+# Marketing Cloud Logo
+.stencil/
+loader/
+www/
+
+# Build outputs
+build/
+dist/
+
+# Tests
+coverage/
+
+# Netlify
+.netlify/
+
+# Prettier reformats code blocks inside Markdown, which affects rendered output
+*.md
+
+# Rush files
+**/.rush/temp/
+common/autoinstallers/*/.npmrc
+common/changes/
+common/config/
+common/deploy/
+common/scripts/
+common/temp/
+
+# TypeScript
+*.d.ts
+*.tsbuildinfo
+
+# ESlint
+.eslintcache
+
+# Misc
+.cache
+.DS_Store
+.env*
+*log
+node_modules/
+Thumbs.db

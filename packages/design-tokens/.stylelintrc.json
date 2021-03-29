@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@giotramu/stylelint-config",
+    "@giotramu/stylelint-config/scss",
+    "@giotramu/stylelint-config/prettier"
+  ],
+  "rules": {
+    "no-duplicate-selectors": null,
+    "property-no-unknown": null,
+    "scss/operator-no-unspaced": null
+  }
+}

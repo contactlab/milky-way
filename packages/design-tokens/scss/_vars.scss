@@ -1,0 +1,86 @@
+// The Contactlab Marketing Cloud color palette
+$colors: (
+  'accent100': #bae1f9,
+  'accent200': #8ccdf6,
+  'accent300': #5eb9f2,
+  'accent400': #30a5ef,
+  'accent500': #0391ec,
+  'accent600': #0072bc,
+  'accent700': #025d97,
+  'accent800': #02426c,
+  'accent900': #012841,
+  'base100': #f7fcff,
+  'base200': #deebf4,
+  'base300': #c3d4e0,
+  'base400': #9cb0bf,
+  'base500': #7e96a8,
+  'base600': #5b768c,
+  'base700': #36546d,
+  'base800': #1d3344,
+  'base900': #001420,
+  'info': #0391ec,
+  'success': #53c518,
+  'warning': #ffb200,
+  'error': #fc192f,
+  'white': #fff,
+  'black': #000,
+  'fluo-base300': #e9e8ff,
+  'fluo-base600': #b4afff,
+  'fluo-base900': #7168ff,
+  'fluo-accent300': #e1f9ef,
+  'fluo-accent600': #9bebd0,
+  'fluo-accent900': #00c9bd
+);
+
+@function colors($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  } @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$colors}`. ' + 'Please make sure it is defined in the `$colors` map.';
+
+    @return null;
+  }
+}
+
+// The Contactlab Marketing Cloud elevations
+$z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12);
+$z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04), 0 3px 6px 0 rgba(0, 20, 32, 0.12);
+$z3: 0 6px 6px 0 rgba(0, 20, 32, 0.09), 0 10px 20px 0 rgba(0, 20, 32, 0.13);
+$z4: 0 10px 10px 0 rgba(0, 20, 32, 0.05), 0 14px 28px 0 rgba(0, 20, 32, 0.16);
+$z5: 0 19px 38px 0 rgba(0, 20, 32, 0.16), 0 15px 12px 0 rgba(0, 20, 32, 0.12);
+$accent-z1: 0 1px 3px 0 rgba(3, 145, 236, 0.12);
+$accent-z2: 0 3px 6px 0 rgba(3, 145, 236, 0.04),
+  0 3px 6px 0 rgba(3, 145, 236, 0.12);
+$accent-z3: 0 6px 6px 0 rgba(3, 145, 236, 0.09),
+  0 10px 20px 0 rgba(3, 145, 236, 0.13);
+$accent-z4: 0 10px 10px 0 rgba(3, 145, 236, 0.05),
+  0 14px 28px 0 rgba(3, 145, 236, 0.16);
+$accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
+  0 15px 12px 0 rgba(3, 145, 236, 0.12);
+
+$elevations: (
+  'z1': $z1,
+  'z2': $z2,
+  'z3': $z3,
+  'z4': $z4,
+  'z5': $z5,
+  'accent-z1': $accent-z1,
+  'accent-z2': $accent-z2,
+  'accent-z3': $accent-z3,
+  'accent-z4': $accent-z4,
+  'accent-z5': $accent-z5
+);
+
+@function elevations($key) {
+  @if map-has-key($elevations, $key) {
+    @return map-get($elevations, $key);
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$elevations}`. "
+       + "Please make sure it is defined in the `$elevations` map.";
+
+    @return null;
+  }
+}
+
+// The Contactlab Marketing Cloud transitions
+$elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);

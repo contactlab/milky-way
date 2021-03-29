@@ -1,0 +1,90 @@
+/* prettier-ignore */
+
+:root {
+  /* 1. The Contactlab Marketing Cloud color palette */
+  --color-accent100: #bae1f9;
+  --color-accent200: #8ccdf6;
+  --color-accent300: #5eb9f2;
+  --color-accent400: #30a5ef;
+  --color-accent500: #0391ec;
+  --color-accent600: #0072bc;
+  --color-accent700: #025d97;
+  --color-accent800: #02426c;
+  --color-accent900: #012841;
+  --color-base100: #f7fcff;
+  --color-base200: #deebf4;
+  --color-base300: #c3d4e0;
+  --color-base400: #9cb0bf;
+  --color-base500: #7e96a8;
+  --color-base600: #5b768c;
+  --color-base700: #36546d;
+  --color-base800: #1d3344;
+  --color-base900: #001420;
+  --color-info: #0391ec;
+  --color-success: #53c518;
+  --color-warning: #ffb200;
+  --color-error: #fc192f;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-fluo-base300: #e9e8ff;
+  --color-fluo-base600: #b4afff;
+  --color-fluo-base900: #7168ff;
+  --color-fluo-accent300: #e1f9ef;
+  --color-fluo-accent600: #9bebd0;
+  --color-fluo-accent900: #00c9bd;
+
+  /* 2. The Contactlab Marketing Cloud elevations */
+  --elevation-z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12);
+  --elevation-z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04),
+                  0 3px 6px 0 rgba(0, 20, 32, 0.12);
+  --elevation-z3: 0 6px 6px 0 rgba(0, 20, 32, 0.09),
+                  0 10px 20px 0 rgba(0, 20, 32, 0.13);
+  --elevation-z4: 0 10px 10px 0 rgba(0, 20, 32, 0.05),
+                  0 14px 28px 0 rgba(0, 20, 32, 0.16);
+  --elevation-z5: 0 19px 38px 0 rgba(0, 20, 32, 0.16),
+                  0 15px 12px 0 rgba(0, 20, 32, 0.12);
+  --elevation-accent-z1: 0 1px 3px 0 rgba(3, 145, 236, 0.12);
+  --elevation-accent-z2: 0 3px 6px 0 rgba(3, 145, 236, 0.04),
+                         0 3px 6px 0 rgba(3, 145, 236, 0.12);
+  --elevation-accent-z3: 0 6px 6px 0 rgba(3, 145, 236, 0.09),
+                         0 10px 20px 0 rgba(3, 145, 236, 0.13);
+  --elevation-accent-z4: 0 10px 10px 0 rgba(3, 145, 236, 0.05),
+                         0 14px 28px 0 rgba(3, 145, 236, 0.16);
+  --elevation-accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
+                         0 15px 12px 0 rgba(3, 145, 236, 0.12);
+
+  /* 3. The Contactlab Marketing Cloud transitions */
+  --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* 4. Document styles */
+  --mc-body-foreground: var(--color-base900);
+  --mc-body-background: var(--color-base100);
+  --mc-scroll-padding: 100px;
+  --mc-scroll-behavior: smooth;
+
+  /* 5. a11y */
+  --mc-selection-foreground: var(--color-white);
+  --mc-selection-background: rgba(3, 145, 236, 0.8);
+
+  /* 6. Headings */
+  --mc-heading-foreground: var(--color-base800);
+  --mc-subheading-foreground: var(--color-base700);
+
+  /* 7. Links */
+  --mc-link-foreground: var(--color-accent500);
+  --mc-link-active-foreground: var(--color-accent600);
+
+  /* 8. <code> */
+  --mc-code-border-radius: 2px;
+  --mc-code-background: var(--color-base200);
+
+  /* 9. <hr> */
+  --mc-hr-background: var(--color-base200);
+
+  /* 10. <mark> */
+  --mc-mark-foreground: var(--color-white);
+  --mc-mark-background: var(--color-accent500);
+
+  /* 11. <small> */
+  --mc-small-foreground: var(--color-base600);
+}

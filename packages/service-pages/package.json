@@ -1,0 +1,49 @@
+{
+  "private": true,
+  "name": "@contactlab/service-pages",
+  "version": "0.1.0",
+  "description": "The Contactlab Marketing Cloud service pages.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com"
+  },
+  "homepage": "https://github.com/contactlab/milky-way#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/service-pages"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/*.html"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint:css": "stylelint ./src/assets/**/*.scss --ignore-path .gitignore",
+    "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
+    "lint": "run-p -cln lint:**",
+    "dev": "parcel serve ./src/*.pug --port=3333 --target=browser --cache-dir=.cache/parcel",
+    "prebuild": "rimraf ./dist",
+    "build": "parcel build ./src/*.pug --target=browser --no-cache --no-source-maps",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@giotramu/stylelint-config": "7.0.1",
+    "cssnano": "4.1.10",
+    "eslint": "7.23.0",
+    "eslint-config-contactlab": "6.1.0",
+    "eslint-config-prettier": "8.1.0",
+    "npm-run-all": "4.1.5",
+    "parcel": "1.12.3",
+    "parcel-plugin-inliner": "1.0.16",
+    "pug": "3.0.2",
+    "rimraf": "3.0.2",
+    "sass": "1.32.8",
+    "stylelint": "13.12.0",
+    "stylelint-scss": "3.19.0",
+    "typescript": "4.2.3"
+  }
+}
