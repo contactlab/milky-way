@@ -15,10 +15,7 @@
   "projectFolderMinDepth": 2,
   "projectFolderMaxDepth": 2,
   "approvedPackagesPolicy": {
-    "reviewCategories": [
-      "tools",
-      "libraries"
-    ],
+    "reviewCategories": ["tools", "libraries"],
     "ignoredNpmScopes": ["@types"]
   },
   "projects": [

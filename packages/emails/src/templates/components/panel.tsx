@@ -17,8 +17,7 @@ export function Panel(props: PanelProps): JSX.Element {
     <MjmlSection
       {...panelPadding}
       backgroundColor={bgColor}
-      borderLeft={panelBorderLeft}
-    >
+      borderLeft={panelBorderLeft}>
       <MjmlColumn>
         <Text type="caption" padding={0}>
           {source.key}

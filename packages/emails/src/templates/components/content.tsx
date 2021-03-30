@@ -45,8 +45,7 @@ export function Content(props: ContentProps): JSX.Element {
     <MjmlSection
       borderRadius={borderRadius}
       {...sectionPadding}
-      backgroundColor={cardBgColor}
-    >
+      backgroundColor={cardBgColor}>
       <MjmlColumn>
         {getContent(type, data, i18n)}
         <Text type="paragraph">{i18n.t('signature')}</Text>

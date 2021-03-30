@@ -18,7 +18,6 @@ coverage/
 
 # Rush files
 **/.rush/temp/
-CHANGELOG.*
 common/autoinstallers/*/.npmrc
 common/changes/
 common/config/

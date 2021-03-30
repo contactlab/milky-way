@@ -55,8 +55,7 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={fontWeight}
           fontSize="12px"
           lineHeight="16px"
-          color={captionColor}
-        >
+          color={captionColor}>
           {children}
         </MjmlText>
       );
@@ -68,8 +67,7 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={fontWeight}
           fontSize="14px"
           lineHeight="21px"
-          color={labelColor}
-        >
+          color={labelColor}>
           {children}
         </MjmlText>
       );
@@ -81,8 +79,7 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={700}
           fontSize="30px"
           lineHeight="36px"
-          color={titleColor}
-        >
+          color={titleColor}>
           {children}
         </MjmlText>
       );
@@ -95,8 +92,7 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={fontWeight}
           fontSize="14px"
           lineHeight="21px"
-          color={textColor}
-        >
+          color={textColor}>
           {children}
         </MjmlText>
       );

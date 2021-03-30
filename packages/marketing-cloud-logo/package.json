@@ -7,10 +7,6 @@
     "email": "uxd@contactlab.com",
     "homepage": "https://ux.contactlab.com"
   },
-  "contributors": [
-    "Carlo Audino <carlo.audino@contactlab.com>",
-    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
-  ],
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": {
     "type": "git",

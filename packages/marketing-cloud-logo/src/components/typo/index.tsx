@@ -35,8 +35,7 @@ export class Typo {
           }}
           viewBox={`0 0 ${viewboxWidth} 45`}
           preserveAspectRatio="xMidYMin slice"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           {this.getSvgContent(this.type, this.compact)}
         </svg>
       </div>

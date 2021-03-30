@@ -29,8 +29,7 @@ export function Button(props: ButtonProps): JSX.Element {
       fontSize="14px"
       lineHeight="21px"
       color={whiteColor}
-      cssClass={cssClass}
-    >
+      cssClass={cssClass}>
       {children}
     </MjmlButton>
   );

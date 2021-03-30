@@ -11,7 +11,7 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.workingDirectories": [{"mode": "auto"}],
   "eslint.options": {
     "useEslintrc": true,
     "configFile": "./.eslintrc.json"

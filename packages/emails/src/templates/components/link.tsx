@@ -30,8 +30,7 @@ export function Link(props: LinkProps): JSX.Element {
             ...commonProps,
             fontSize: '12px',
             lineHeight: '16px'
-          }}
-        >
+          }}>
           {children}
         </a>
       );
@@ -46,8 +45,7 @@ export function Link(props: LinkProps): JSX.Element {
             ...commonProps,
             fontSize: '14px',
             lineHeight: '21px'
-          }}
-        >
+          }}>
           {children}
         </a>
       );

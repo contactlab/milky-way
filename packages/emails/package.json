@@ -8,10 +8,6 @@
     "email": "uxd@contactlab.com",
     "homepage": "https://ux.contactlab.com"
   },
-  "contributors": [
-    "Carlo Audino <carlo.audino@contactlab.com>",
-    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
-  ],
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": {
     "type": "git",
@@ -23,7 +19,7 @@
     "npm": ">=6.x"
   },
   "scripts": {
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "lint": "run-p -cln lint:**",
     "prebuild": "rimraf ./build",
