@@ -30,7 +30,7 @@
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {
-    "@contactlab/ds-tokens": "^1.8.0"
+    "@contactlab/ds-tokens": "workspace:*"
   },
   "devDependencies": {
     "@giotramu/stylelint-config": "7.0.1",
