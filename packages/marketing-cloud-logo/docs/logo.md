@@ -12,13 +12,13 @@ Put the following scripts tag in the head of your document:
 <!-- for browsers where JavaScript Modules run natively  -->
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/giotramu-logo/giotramu-logo.esm.js"
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/giotramu-logo/giotramu-logo.esm.js"
 ></script>
 
 <!-- for the legacy browsers -->
 <script
   nomodule
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.4/dist/giotramu-logo/giotramu-logo.js"
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/giotramu-logo/giotramu-logo.js"
 ></script>
 ```
 

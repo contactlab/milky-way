@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@contactlab/emails",
-  "version": "1.8.0",
+  "version": "1.0.0",
   "description": "The Contactlab Marketing Cloud transactional emails.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -30,7 +30,7 @@
     "dev": "run-p -cln watch serve",
     "pregenerate": "rimraf ./dist && npm run build",
     "generate": "node ./build/generate.js",
-    "predeploy": "run-s lint generate",
+    "predeploy": "npm run generate",
     "deploy": "netlify deploy --dir ./dist --prod"
   },
   "dependencies": {

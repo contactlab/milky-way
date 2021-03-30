@@ -4,31 +4,31 @@
   "packages": [
     {
       "name": "@babel/cli",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/core",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/plugin-transform-react-jsx",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/plugin-transform-typescript",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/preset-env",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/preset-react",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@babel/preset-typescript",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "@contactlab/ds-tokens",
@@ -44,27 +44,31 @@
     },
     {
       "name": "consola",
+      "allowedCategories": [ "libraries", "tools" ]
+    },
+    {
+      "name": "cssnano",
       "allowedCategories": [ "libraries" ]
     },
     {
       "name": "eslint",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "eslint-config-contactlab",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "eslint-config-prettier",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "eslint-plugin-react",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "express",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "jest",
@@ -76,30 +80,34 @@
     },
     {
       "name": "mjml",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "mjml-react",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "netlify-cli",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "node-polyglot",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "nodemon",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "npm-run-all",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "parcel",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "parcel-plugin-inliner",
       "allowedCategories": [ "libraries" ]
     },
     {
@@ -112,15 +120,15 @@
     },
     {
       "name": "react",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "react-dom",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "rimraf",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     },
     {
       "name": "sass",
@@ -140,7 +148,7 @@
     },
     {
       "name": "typescript",
-      "allowedCategories": [ "libraries" ]
+      "allowedCategories": [ "libraries", "tools" ]
     }
   ]
 }

@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit",
     "lint:css": "stylelint ./src/components/**/*.css --ignore-path .gitignore",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
-    "lint": "run-p -clns lint:**",
+    "lint": "run-p -cln lint:**",
     "test": "stencil test --spec --e2e --coverage",
     "dev": "stencil build --dev --watch --serve",
     "build": "stencil build",

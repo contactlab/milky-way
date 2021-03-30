@@ -6,23 +6,26 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Contactlab Marketing Cloud
 
-    //--- favicon
+    //--- Favicon
     link(rel="apple-touch-icon", sizes="180x180", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/apple-touch-icon.png")
     link(rel="icon", type="image/png", sizes="32x32", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/favicon-32.png")
     link(rel="icon", type="image/png", sizes="16x16", href="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/favicon/favicon-16.png")
 
-    //--- contactlab marketing cloud logo
-    script(type="module", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.5/dist/clab-logo/clab-logo.esm.js")
-    script(nomodule="", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@1.5/dist/clab-logo/clab-logo.js")
+    //--- Contactlab Marketing Cloud Logo
+    script(type="module", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/clab-logo/clab-logo.esm.js")
+    script(nomodule="", src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/clab-logo/clab-logo.js")
 
-    //--- color the status bar on mobile devices
+    //--- Color the status bar on mobile devices
     meta(name="theme-color", content="#001420")
 
-    //--- styles
-    link(rel="stylesheet", href="./styles/main.scss")
+    //--- Styles
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/css/vars.css")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/css/common.css")
+    link(rel="stylesheet", href="./assets/styles/main.scss")
 
   body
-    include views/current.pug
+    block content
 
     template#tmpl-it
       .fade-in-left
@@ -37,21 +40,21 @@ html(lang="en")
         +EN_BODY
 
     .landing
-      //--- the contactlab marketing cloud logo
+      //--- The Contactlab Marketing Cloud logo
       a(href="http://explore.contactlab.com/" title="Contactlab Marketing Cloud")
         clab-logo.logo
 
-      //--- artwork
+      //--- Artwork
       if IMG_SRC
         .artwork
           img(src= IMG_SRC, alt="Artworks")
 
-      //--- content
+      //--- Content
       #locale.content
 
-      //--- language triggers
+      //--- Language triggers
       .languages
         a#it.btn-lang.active(href="#", role="button") IT
         a#en.btn-lang(href="#", role="button") EN
 
-    script(src="./main.ts")
+    script(src="./assets/scripts/main.ts")
