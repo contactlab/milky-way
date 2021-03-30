@@ -1,5 +1,5 @@
 # Rush
-**/.rush/temp/
+**/.rush/
 common/autoinstallers/*/.npmrc
 common/deploy/
 common/temp/
