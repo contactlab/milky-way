@@ -14,7 +14,7 @@
     {
       "commandKind": "bulk",
       "name": "lint",
-      "summary": "Check the source code with the ESLint code-linters.",
+      "summary": "Check the source code with the ESLint and Stylelint code-linters.",
       "incremental": true,
       "enableParallelism": true,
       "safeForSimultaneousRushProcesses": true,

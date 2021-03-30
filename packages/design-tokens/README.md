@@ -7,13 +7,13 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 ### Table of Contents
 
 - [Design Tokens](#design-tokens)
-  - [Table of Contents](#table-of-contents)
-  - [CDN Usage](#cdn-usage)
-    - [What does it do?](#what-does-it-do)
-  - [Install](#install)
-  - [Webpack usage](#webpack-usage)
-    - [Custom Media Queries](#custom-media-queries)
-  - [Browsers support](#browsers-support)
+    - [Table of Contents](#table-of-contents)
+    - [CDN Usage](#cdn-usage)
+      - [What does it do?](#what-does-it-do)
+    - [Install](#install)
+    - [Webpack usage](#webpack-usage)
+      - [Custom Media Queries](#custom-media-queries)
+    - [Browsers support](#browsers-support)
 
 ### CDN Usage
 
@@ -23,31 +23,24 @@ Put the link tags in the head of your `index.html` document:
 <!-- The Montserrat Font (optional, you can import it from the Google Font CDN) -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/montserrat.css"
-/>
-
-<!-- The CSS Normalizer -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/normalizer.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/css/montserrat.css"
 />
 
 <!-- The CSS Custom Properties -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/vars.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/css/vars.css"
 />
 
 <!-- The Common Contactlab Marketing Cloud Styles -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/styles/common.css"
+  href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/css/common.css"
 />
 ```
 
 #### What does it do?
 
-- Normalizes styles for a wide range of elements (like `normalize.css`, but smaller).
 - Corrects bugs and common browser inconsistencies.
 - The `montserrat.css` stylesheet provides the official font of the Contactlab products. If you like, you can import it from the Google Font CDN.
 - The `common.css` stylesheet provides useful defaults to plain HTML documents.
@@ -68,32 +61,26 @@ Import the Design Tokens in CSS:
 
 ```css
 /* The Montserrat Font (optional, you can import it from the Google Font CDN) */
-@import '~@contactlab/ds-tokens/styles/montserrat.css';
-
-/* The CSS Normalizer */
-@import '~@contactlab/ds-tokens/styles/normalizer.css';
+@import '~@contactlab/ds-tokens/css/montserrat.css';
 
 /* The CSS Custom Properties */
-@import '~@contactlab/ds-tokens/styles/vars.css';
+@import '~@contactlab/ds-tokens/css/vars.css';
 
 /* The Common Contactlab Marketing Cloud Styles */
-@import '~@contactlab/ds-tokens/styles/common.css';
+@import '~@contactlab/ds-tokens/css/common.css';
 ```
 
 Import the Design Tokens in JavaScript:
 
 ```js
 // The Montserrat Font (optional, you can import it from the Google Font CDN)
-import '@contactlab/ds-tokens/styles/montserrat.css';
-
-// The CSS Normalizer
-import '@contactlab/ds-tokens/styles/normalizer.css';
+import '@contactlab/ds-tokens/css/montserrat.css';
 
 // The CSS Custom Properties
-import '@contactlab/ds-tokens/styles/vars.css';
+import '@contactlab/ds-tokens/css/vars.css';
 
 // The Common Contactlab Marketing Cloud Styles
-import '@contactlab/ds-tokens/styles/common.css';
+import '@contactlab/ds-tokens/css/common.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders:
@@ -124,14 +111,14 @@ Import Custom Media Queries in CSS:
 
 ```css
 /* The Custom Media Queries */
-@import '~@contactlab/ds-tokens/styles/custom-media.css';
+@import '~@contactlab/ds-tokens/css/custom-media.css';
 ```
 
 Import Custom Media Queries in JavaScript:
 
 ```js
 // The Custom Media Queries
-import '@contactlab/ds-tokens/styles/custom-media.css';
+import '@contactlab/ds-tokens/css/custom-media.css';
 ```
 
 In `webpack.config.js`, be sure to use the appropriate loaders and the [postcss-custom-media][postcss-custom-media-url] plugin:
