@@ -23,8 +23,7 @@
       "packageName": "@contactlab/ds-tokens",
       "projectFolder": "packages/design-tokens",
       "reviewCategory": "libraries",
-      "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "shouldPublish": true
     },
     {
       "packageName": "@contactlab/emails",
@@ -36,15 +35,13 @@
       "packageName": "@contactlab/marketing-cloud-logo",
       "projectFolder": "packages/marketing-cloud-logo",
       "reviewCategory": "libraries",
-      "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "shouldPublish": true
     },
     {
       "packageName": "@contactlab/service-pages",
       "projectFolder": "packages/service-pages",
       "reviewCategory": "libraries",
-      "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "shouldPublish": true
     }
   ]
 }

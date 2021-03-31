@@ -1,7 +1,0 @@
-[
-  {
-    "policyName": "independentPackage",
-    "definitionName": "individualVersion",
-    "lockedMajor": 2
-  }
-]
