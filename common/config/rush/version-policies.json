@@ -2,7 +2,6 @@
   {
     "policyName": "independentPackage",
     "definitionName": "individualVersion",
-    "lockedMajor": 2,
-    "exemptFromRushChange": true
+    "lockedMajor": 2
   }
 ]
