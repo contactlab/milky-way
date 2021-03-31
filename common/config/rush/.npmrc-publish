@@ -20,3 +20,6 @@
 #
 registry=https://registry.npmjs.org/
 always-auth=true
+
+git-tag-version=false
+tag-version-prefix=
