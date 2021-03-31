@@ -13,10 +13,6 @@
     "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/marketing-cloud-logo"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=10.x",
-    "npm": ">=6.x"
-  },
   "publishConfig": {
     "access": "public"
   },

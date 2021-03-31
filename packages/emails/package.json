@@ -14,10 +14,6 @@
     "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/emails"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=10.x",
-    "npm": ">=6.x"
-  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",

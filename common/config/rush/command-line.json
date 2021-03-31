@@ -4,7 +4,7 @@
     {
       "commandKind": "bulk",
       "name": "typecheck",
-      "summary": "Check the TypeScript source code with the TSC compiler without emitting.",
+      "summary": "Checks the TypeScript source code of all packages with the TSC compiler without emitting",
       "incremental": true,
       "enableParallelism": true,
       "safeForSimultaneousRushProcesses": true,
@@ -14,7 +14,17 @@
     {
       "commandKind": "bulk",
       "name": "lint",
-      "summary": "Check the source code with the ESLint and Stylelint code-linters.",
+      "summary": "Checks the source code of all packages with ESLint and Stylelint.",
+      "incremental": true,
+      "enableParallelism": true,
+      "safeForSimultaneousRushProcesses": true,
+      "ignoreMissingScript": true,
+      "ignoreDependencyOrder": true
+    },
+    {
+      "commandKind": "bulk",
+      "name": "test",
+      "summary": "Runs the complete test suite when is available in the packages.",
       "incremental": true,
       "enableParallelism": true,
       "safeForSimultaneousRushProcesses": true,
@@ -32,7 +42,7 @@
   ],
   "parameters": [
     {
-      "longName": "--production",
+      "longName": "--prod",
       "parameterKind": "flag",
       "description": "Perform a production build, including optimization and minification steps.",
       "associatedCommands": [

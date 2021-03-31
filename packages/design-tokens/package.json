@@ -7,20 +7,12 @@
     "email": "uxd@contactlab.com",
     "homepage": "https://ux.contactlab.com"
   },
-  "contributors": [
-    "Carlo Audino <carlo.audino@contactlab.com>",
-    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
-  ],
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contactlab/milky-way/tree/master/packages/design-tokens"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=10.x",
-    "npm": ">=6.x"
-  },
   "publishConfig": {
     "access": "public"
   },

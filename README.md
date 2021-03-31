@@ -20,7 +20,7 @@ The Contactlab Design System. A tool for building consistent products and experi
 
 ## Packages:
 
-#### [Marketing Cloud Logo][marketing-cloud-logo-url]
+### [Marketing Cloud Logo][marketing-cloud-logo-url]
 
 The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore][mc-explore-url] & [Developer][mc-developer-url] websites logo.
 
@@ -28,7 +28,7 @@ The Web Components and resources related to the Contactlab Marketing Cloud logo.
 
 ---
 
-#### [Design Tokens][design-tokens-url]
+### [Design Tokens][design-tokens-url]
 
 Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.
 
@@ -36,19 +36,25 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 
 ---
 
-#### [Emails][emails-url]
+### [Emails][emails-url]
 
 The Contactlab Marketing Cloud transactional emails.
 
 ---
 
-#### [Service Pages][service-pages-url]
+### [Service Pages][service-pages-url]
 
 The Contactlab Marketing Cloud service pages.
 
 ---
 
-#### License
+### [Contributing Guide][contributing-guide-url]
+
+Read our [contributing guide][contributing-guide-url] to learn about our development process, and how to build and test your changes.
+
+---
+
+### License
 
 Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 
@@ -64,6 +70,7 @@ Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 -->
 
 [contactlab-url]: https://contactlab.com
+[contributing-guide-url]: ./CONTRIBUTING.md
 [design-specs-url]: https://www.notion.so/584957192e6e4e43bffc094b68925bd3?v=dfb32ec9f13042829d2d94ae6962b142
 [design-tokens-url]: ./packages/design-tokens
 [emails-url]: ./packages/emails
