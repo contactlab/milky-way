@@ -14,6 +14,7 @@ The Contactlab Design System. A tool for building consistent products and experi
   - [Design Tokens][design-tokens-url]
   - [Emails][emails-url]
   - [Service Pages][service-pages-url]
+- [Contributing Guide][contributing-guide-url]
 - [License](#license)
 
 ## [Design Specifications ✎][design-specs-url]
@@ -48,13 +49,11 @@ The Contactlab Marketing Cloud service pages.
 
 ---
 
-### [Contributing Guide][contributing-guide-url]
+## [Contributing Guide][contributing-guide-url]
 
 Read our [contributing guide][contributing-guide-url] to learn about our development process, and how to build and test your changes.
 
----
-
-### License
+## License
 
 Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 
