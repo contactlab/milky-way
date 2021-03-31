@@ -14,8 +14,8 @@ After cloning the project, install the [@microsoft/rush][rush-url] package globa
 - `rush lint` check the source code of all packages with ESLint and Stylelint.
 - `rush test` runs the complete test suite when is available in the packages.
 - `rush prettier` for automatic code formatter.
-- `rush rebuild --prod` performs a full clean build. Rush invokes this script to build each project that is registered in `./rush.json`.
-- `rush build --prod` command is similar to `rush rebuild`, except that `rush build` performs an incremental build.
+- `rush rebuild` performs a full clean build. Rush invokes this script to build each project that is registered in `./rush.json`.
+- `rush build` command is similar to `rush rebuild`, except that `rush build` performs an incremental build.
 - `rush purge` command is used to delete temporary files created by Rush.
 - `rush version --bump` command will increase package versions based on their associated version policies.
 - `rush publish --include-all` command will publish all the public packages that have version increased.

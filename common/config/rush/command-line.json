@@ -39,16 +39,5 @@
       "autoinstallerName": "prettier",
       "shellCommand": "pretty-quick --staged"
     }
-  ],
-  "parameters": [
-    {
-      "longName": "--prod",
-      "parameterKind": "flag",
-      "description": "Perform a production build, including optimization and minification steps.",
-      "associatedCommands": [
-        "build",
-        "rebuild"
-      ]
-    }
   ]
 }
