@@ -30,7 +30,6 @@ npm run generate
 <!--
   L I N K S
 -->
-
 [netlify-url]: https://clab-emails.netlify.app
 [mjml-url]: https://mjml.io
 [mjml-react-url]: https://github.com/wix-incubator/mjml-react

@@ -29,14 +29,12 @@ Web Components that run natively or near-natively in all widely used desktop and
 <!--
   I M A G E S
 -->
-
 [bundlephobia-img]: https://img.shields.io/bundlephobia/min/@contactlab/marketing-cloud-logo?label=bundle%20size&style=flat-square&colorA=001420&colorB=0391ec
 [npm-img]: https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec
 
 <!--
   L I N K S
 -->
-
 [bundlephobia-url]: https://bundlephobia.com/result?p=@contactlab/marketing-cloud-logo
 [codepen-url]: https://codepen.io/giotramu/full/zYvYgdd
 [mc-developer-url]: http://developer.contactlab.com

@@ -10,7 +10,7 @@ export const PUBLIC_DIR = resolve(ROOT_DIR, 'public');
 
 // --- Resources
 export const LOGO_SRC =
-  'https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/png/logo-mc-full-positive-593x60.png';
+  'https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/resources/png/logo-mc-full-positive-593x60.png';
 
 // --- Links
 export const LOGO_HREF = 'http://mc.contactlab.it';

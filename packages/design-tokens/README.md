@@ -162,14 +162,12 @@ Alternatively, you can use the following [postcss-config][postcss-config-url] in
 <!--
   I M A G E S
 -->
-
 [cssdb-img]: https://cssdb.org/badge/custom-media-queries.svg
 [npm-img]: https://img.shields.io/npm/v/@contactlab/ds-tokens?style=flat-square&colorA=001420&colorB=0391ec
 
 <!--
   L I N K S
 -->
-
 [cssdb-url]: https://cssdb.org/#custom-media-queries
 [custom-mq-url]: ./styles/custom-media.css
 [custom-mq-specification-url]: http://drafts.csswg.org/mediaqueries-5/#custom-mq

@@ -1,0 +1,23 @@
+{
+  "name": "@contactlab/ds-tokens",
+  "entries": [
+    {
+      "version": "2.0.1",
+      "tag": "@contactlab/ds-tokens_v2.0.1",
+      "date": "Wed, 31 Mar 2021 15:08:14 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Export constants as CommonJS module"
+          }
+        ]
+      }
+    },
+    {
+      "version": "2.0.0",
+      "tag": "@contactlab/ds-tokens_v2.0.0",
+      "date": "Wed, 31 Mar 2021 10:19:23 GMT",
+      "comments": {}
+    }
+  ]
+}

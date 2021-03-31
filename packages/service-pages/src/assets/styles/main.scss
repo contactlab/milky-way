@@ -40,7 +40,7 @@ html {
     margin-bottom: 2.8rem;
 
     &:last-of-type p {
-      color: var('--color-base600');
+      color: var(--color-base600);
     }
   }
 }
@@ -51,7 +51,7 @@ html {
   > a {
     padding: 0 0.4rem;
     position: relative;
-    color: inherit;
+    color: var(--color-accent);
 
     &::after {
       content: '';
@@ -62,7 +62,7 @@ html {
       bottom: -0.32rem;
       left: 0;
       transform: scaleX(0);
-      background-color: var('--color-accent500');
+      background-color: var(--color-accent500);
       transition: transform 0.24s ease-in;
     }
 
@@ -71,7 +71,7 @@ html {
     }
 
     &.active {
-      color: var('--color-accent500');
+      color: var(--color-accent500);
 
       &::after {
         transform: scaleX(100%);

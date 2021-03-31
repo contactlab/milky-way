@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "@contactlab/service-pages",
-  "version": "0.1.0",
+  "version": "2.0.2",
   "description": "The Contactlab Marketing Cloud service pages.",
   "author": {
     "name": "Contactlab UXD Team",

@@ -47,6 +47,8 @@ The Contactlab Marketing Cloud transactional emails.
 
 The Contactlab Marketing Cloud service pages.
 
+[![Service Pages Package][npm-service-pages-img]][npm-service-pages-url]
+
 ---
 
 ## [Contributing Guide][contributing-guide-url]
@@ -60,14 +62,13 @@ Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 <!--
   I M A G E S
 -->
-
 [npm-design-tokens-img]: https://img.shields.io/npm/v/@contactlab/ds-tokens?style=flat-square&colorA=001420&colorB=0391ec
 [npm-mc-logo-img]: https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec
+[npm-service-pages-img]: https://img.shields.io/npm/v/@contactlab/service-pages?style=flat-square&colorA=001420&colorB=0391ec
 
 <!--
   L I N K S
 -->
-
 [contactlab-url]: https://contactlab.com
 [contributing-guide-url]: ./CONTRIBUTING.md
 [design-specs-url]: https://www.notion.so/584957192e6e4e43bffc094b68925bd3?v=dfb32ec9f13042829d2d94ae6962b142
@@ -78,4 +79,5 @@ Milky-Way is [MIT licensed](./LICENSE) [@Contactlab S.p.A][contactlab-url].
 [mc-explore-url]: http://explore.contactlab.com
 [npm-design-tokens-url]: https://www.npmjs.com/package/@contactlab/ds-tokens
 [npm-mc-logo-url]: https://www.npmjs.com/package/@contactlab/marketing-cloud-logo
+[npm-service-pages-url]: https://www.npmjs.com/package/@contactlab/service-pages
 [service-pages-url]: ./packages/service-pages
