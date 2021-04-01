@@ -1,5 +1,5 @@
-//--- the contactlab design tokens
-@import '~@contactlab/ds-tokens/styles/scss/core';
+@import '~@contactlab/ds-tokens/scss/_custom-media';
+@import '~@contactlab/ds-tokens/scss/_vars';
 
 @import './landing';
 @import './logo';
