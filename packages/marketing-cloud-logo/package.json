@@ -35,7 +35,7 @@
     "lint:src": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "lint": "run-p -cln lint:**",
     "test": "stencil test --spec --coverage",
-    "test:e2e": "stencil test --e2e --coverage",
+    "test:e2e": "stencil test --e2e",
     "dev": "stencil build --dev --watch --serve",
     "build": "stencil build",
     "prepare": "npm run build"
