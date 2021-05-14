@@ -36,11 +36,11 @@ describe('clab-sign', () => {
     const component = await page.find('clab-sign');
     const wrapper = await page.find('clab-sign >>> .wrapper');
 
-    expect(wrapper.getAttribute('e2e-width')).toBe('100%');
+    expect(wrapper.getAttribute('data-e2e-width')).toBe('100%');
 
     component.setProperty('size', '348px');
     await page.waitForChanges();
 
-    expect(wrapper.getAttribute('e2e-width')).toBe('348px');
+    expect(wrapper.getAttribute('data-e2e-width')).toBe('348px');
   });
 });

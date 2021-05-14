@@ -14,7 +14,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--extended"
             style="width: 100%;"
-            e2e-width="100%"
+            data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
             <clab-typo
@@ -40,7 +40,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--extended"
             style="width: 100%;"
-            e2e-width="100%"
+            data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
             <clab-typo
@@ -66,7 +66,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--extended"
             style="width: 100%;"
-            e2e-width="100%"
+            data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
             <clab-typo
@@ -92,7 +92,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--extended"
             style="width: 100%;"
-            e2e-width="100%"
+            data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="tomato"></clab-sign>
             <clab-typo
@@ -118,7 +118,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--compact"
             style="width: 100%;"
-            e2e-width="100%"
+            data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
             <clab-typo
@@ -145,7 +145,7 @@ describe('clab-logo', () => {
           <div
             class="logo logo--mc logo--compact"
             style="width: 320px;"
-            e2e-width="320px"
+            data-e2e-width="320px"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
             <clab-typo

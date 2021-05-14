@@ -20,7 +20,7 @@ export class Sign {
     });
 
     return (
-      <div class="wrapper" style={{width}} e2e-width={width}>
+      <div class="wrapper" style={{width}} data-e2e-width={width}>
         <svg
           class="vector"
           fill={fill}

@@ -23,7 +23,7 @@ export class Logo {
           this.compact ? 'compact' : 'extended'
         }`}
         style={{width}}
-        e2e-width={width}>
+        data-e2e-width={width}>
         <clab-sign class="sign" fill-color={signColor} />
         <clab-typo
           class="typo"

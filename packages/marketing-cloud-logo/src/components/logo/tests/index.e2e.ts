@@ -78,11 +78,11 @@ describe('clab-logo', () => {
 
     const component = await page.find('clab-logo');
     const element = await page.find('clab-logo >>> .logo');
-    expect(element.getAttribute('e2e-width')).toBe('100%');
+    expect(element.getAttribute('data-e2e-width')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(element.getAttribute('e2e-width')).toBe('480px');
+    expect(element.getAttribute('data-e2e-width')).toBe('480px');
   });
 });

@@ -11,7 +11,7 @@ describe('clab-sign', () => {
     expect(root).toEqualHtml(`
       <clab-sign>
         <mock:shadow-root>
-          <div class="wrapper" style="width: 100%;" e2e-width="100%">
+          <div class="wrapper" style="width: 100%;" data-e2e-width="100%">
           <svg
             class="vector"
             fill="#0391ec"
@@ -50,7 +50,7 @@ describe('clab-sign', () => {
     expect(root).toEqualHtml(`
       <clab-sign size="160px" fill-color="base">
         <mock:shadow-root>
-          <div class="wrapper" style="width: 160px;" e2e-width="160px">
+          <div class="wrapper" style="width: 160px;" data-e2e-width="160px">
           <svg
             class="vector"
             fill="#1d3344"

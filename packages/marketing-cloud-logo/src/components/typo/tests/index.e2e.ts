@@ -19,7 +19,7 @@ describe('clab-typo', () => {
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe(
+    expect(svgContent.getAttribute('data-e2e-key')).toBe(
       'contactlab-marketing-cloud'
     );
 
@@ -27,19 +27,19 @@ describe('clab-typo', () => {
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 236 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe('mc-explore');
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('mc-explore');
 
     component.setProperty('type', 'developer');
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 295 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe('mc-developer');
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('mc-developer');
 
     component.setProperty('type', 'unknown');
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe(
+    expect(svgContent.getAttribute('data-e2e-key')).toBe(
       'contactlab-marketing-cloud'
     );
   });
@@ -73,7 +73,7 @@ describe('clab-typo', () => {
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe(
+    expect(svgContent.getAttribute('data-e2e-key')).toBe(
       'contactlab-marketing-cloud'
     );
 
@@ -81,7 +81,7 @@ describe('clab-typo', () => {
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 346 45');
-    expect(svgContent.getAttribute('e2e-key')).toBe('marketing-cloud');
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('marketing-cloud');
   });
 
   it('renders size attribute changes', async () => {
@@ -91,11 +91,11 @@ describe('clab-typo', () => {
     const component = await page.find('clab-typo');
     const wrapper = await page.find('clab-typo >>> .wrapper');
 
-    expect(wrapper.getAttribute('e2e-width')).toBe('100%');
+    expect(wrapper.getAttribute('data-e2e-width')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(wrapper.getAttribute('e2e-width')).toBe('480px');
+    expect(wrapper.getAttribute('data-e2e-width')).toBe('480px');
   });
 });
