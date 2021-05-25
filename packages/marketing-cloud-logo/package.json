@@ -21,7 +21,7 @@
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/custom-elements/index.d.ts",
-  "unpkg": "dist/giotramu-logo/giotramu-logo.js",
+  "unpkg": "dist/clab-logo/clab-logo.js",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [
