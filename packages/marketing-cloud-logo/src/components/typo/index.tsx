@@ -1,6 +1,6 @@
 import {Component, Prop, h, JSX} from '@stencil/core';
-import {Type, FillColor, Size} from '../../typings/props';
-import {calcPercentage, handleColor} from '../../utils/helpers';
+import {Type, FillColor, Size} from '../../types/commonProps';
+import {calcSvgPadding, handleColor} from '../../utils/helpers';
 import {DeveloperShape} from './developer';
 import {ExploreShape} from './explore';
 import {McShape} from './marketing-cloud';
@@ -20,7 +20,7 @@ export class Typo {
     const fill = this.getFillColor();
     const width = this.size;
     const viewboxWidth = this.getViewboxWidth(this.type, this.compact);
-    const paddingBottom = calcPercentage({
+    const paddingBottom = calcSvgPadding({
       width: viewboxWidth, // Viewbox width
       height: 45 // Viewbox height
     });

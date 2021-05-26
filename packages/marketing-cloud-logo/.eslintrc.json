@@ -1,7 +1,7 @@
 {
   "root": true,
   "plugins": ["react"],
-  "extends": ["contactlab/typescript"],
+  "extends": ["plugin:react/recommended", "contactlab/typescript", "prettier"],
   "env": {
     "jest": true
   },
@@ -11,6 +11,7 @@
     }
   },
   "rules": {
+    // --- TypeScript
     "@typescript-eslint/ban-types": [
       "error",
       {
@@ -20,11 +21,25 @@
         "extendDefaults": true
       }
     ],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
-  },
 
+    // --- Fix shadowing issues with TypeScript enums (More info: https://stackoverflow.com/a/65768375)
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+
+    // --- React
+    "react/display-name": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": ["class"]
+      }
+    ],
+    "react/prop-types": "off"
+  },
   "overrides": [
+    // --- Disable TypeScript rules for tests files
     {
       "files": ["*.spec.ts*", "*.e2e.ts*"],
       "rules": {

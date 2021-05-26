@@ -17,11 +17,7 @@ describe('clab-logo', () => {
             data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              fill-color="base"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" fill-color="base"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>
@@ -43,11 +39,7 @@ describe('clab-logo', () => {
             data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              fill-color="base"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" fill-color="base"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>
@@ -69,11 +61,7 @@ describe('clab-logo', () => {
             data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              fill-color="light"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" fill-color="light"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>
@@ -95,11 +83,7 @@ describe('clab-logo', () => {
             data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="tomato"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              fill-color="tomato"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" fill-color="tomato"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>
@@ -121,12 +105,7 @@ describe('clab-logo', () => {
             data-e2e-width="100%"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              compact
-              fill-color="base"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" compact fill-color="base"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>
@@ -148,12 +127,7 @@ describe('clab-logo', () => {
             data-e2e-width="320px"
           >
             <clab-sign class="sign" fill-color="accent"></clab-sign>
-            <clab-typo
-              class="typo"
-              type="mc"
-              compact
-              fill-color="base"
-            /></clab-typo>
+            <clab-typo class="typo" type="mc" compact fill-color="base"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-logo>

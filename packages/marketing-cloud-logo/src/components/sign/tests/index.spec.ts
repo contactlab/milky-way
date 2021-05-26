@@ -16,8 +16,9 @@ describe('clab-sign', () => {
             class="vector"
             fill="#0391ec"
             preserveAspectRatio="xMidYMin slice"
-            viewBox="0 0 65 68" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 65 68"
             style="padding-bottom: 105%;"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               clip-rule="evenodd"
@@ -55,8 +56,9 @@ describe('clab-sign', () => {
             class="vector"
             fill="#1d3344"
             preserveAspectRatio="xMidYMin slice"
-            viewBox="0 0 65 68" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 65 68"
             style="padding-bottom: 105%;"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
               clip-rule="evenodd"

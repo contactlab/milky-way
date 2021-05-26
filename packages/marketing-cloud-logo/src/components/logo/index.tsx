@@ -1,5 +1,5 @@
 import {Component, Prop, h} from '@stencil/core';
-import {Type, FillColor, FillStyle, Size} from '../../typings/props';
+import {Type, FillColor, FillStyle, Size} from '../../types/commonProps';
 
 @Component({
   shadow: true,

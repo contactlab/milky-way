@@ -1,6 +1,6 @@
 import {Component, Prop, h} from '@stencil/core';
-import {FillColor, Size} from '../../typings/props';
-import {calcPercentage, handleColor} from '../../utils/helpers';
+import {FillColor, Size} from '../../types/commonProps';
+import {calcSvgPadding, handleColor} from '../../utils/helpers';
 
 @Component({
   shadow: true,
@@ -14,7 +14,7 @@ export class Sign {
   render(): SVGElement {
     const fill = this.getFillColor();
     const width = this.size;
-    const paddingBottom = calcPercentage({
+    const paddingBottom = calcSvgPadding({
       width: 65, // Viewbox width
       height: 68 // Viewbox height
     });
