@@ -1,6 +1,6 @@
 import {Component, Prop, h, JSX} from '@stencil/core';
 import {Type, FillColor, Size} from '../../types/commonProps';
-import {calcSvgPadding, handleColor} from '../../utils/helpers';
+import {calcSvgPadding, handleColor} from '../../utils';
 import {DeveloperShape} from './developer';
 import {ExploreShape} from './explore';
 import {McShape} from './marketing-cloud';
