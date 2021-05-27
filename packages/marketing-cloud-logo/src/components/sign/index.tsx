@@ -1,5 +1,5 @@
 import {Component, Prop, h} from '@stencil/core';
-import {FillColor, Size} from '../../types/commonProps';
+import type {FillColor, Size} from '../../types/commonProps';
 import {calcSvgPadding, handleColor} from '../../utils';
 
 @Component({

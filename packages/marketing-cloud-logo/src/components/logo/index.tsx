@@ -1,5 +1,10 @@
 import {Component, Prop, h} from '@stencil/core';
-import {Type, FillColor, FillStyle, Size} from '../../types/commonProps';
+import type {
+  FillColor,
+  FillStyle,
+  LogoType,
+  Size
+} from '../../types/commonProps';
 
 @Component({
   shadow: true,
@@ -11,7 +16,7 @@ export class Logo {
   @Prop() fillStyle: FillStyle = 'positive';
   @Prop() fillColor: FillColor = 'black';
   @Prop() size: Size = '100%';
-  @Prop() type: Type = 'mc';
+  @Prop() type: LogoType = 'mc';
 
   render(): Element {
     const width = this.size;

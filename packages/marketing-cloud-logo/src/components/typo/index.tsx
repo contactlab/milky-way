@@ -1,5 +1,5 @@
 import {Component, Prop, h, JSX} from '@stencil/core';
-import {Type, FillColor, Size} from '../../types/commonProps';
+import type {FillColor, LogoType, Size} from '../../types/commonProps';
 import {calcSvgPadding, handleColor} from '../../utils';
 import {DeveloperShape} from './developer';
 import {ExploreShape} from './explore';
@@ -11,7 +11,7 @@ import {McShape} from './marketing-cloud';
   styleUrl: './styles.css'
 })
 export class Typo {
-  @Prop() type: Type = 'mc';
+  @Prop() type: LogoType = 'mc';
   @Prop() fillColor: FillColor = 'base';
   @Prop() compact = false;
   @Prop() size: Size = '100%';
@@ -46,7 +46,7 @@ export class Typo {
     return handleColor(this.fillColor);
   }
 
-  private getViewboxWidth(type: Type, compact: boolean): number {
+  private getViewboxWidth(type: LogoType, compact: boolean): number {
     switch (type) {
       case 'explore':
         return 236;
@@ -60,7 +60,7 @@ export class Typo {
     }
   }
 
-  private getSvgContent(type: Type, compact: boolean): JSX.Element {
+  private getSvgContent(type: LogoType, compact: boolean): JSX.Element {
     switch (type) {
       case 'explore':
         return <ExploreShape />;
