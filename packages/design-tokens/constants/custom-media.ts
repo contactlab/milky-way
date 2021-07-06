@@ -10,7 +10,7 @@ export const fromLarge = '(min-width: 75em)'; // 1200px
 export const fromXLarge = '(min-width: 100em)'; // 1600px
 
 // --- Desktop first
-export const toXSmall = '(max-width: 36em)'; // 480px
+export const toXSmall = '(max-width: 36em)'; // 576px
 export const toSmall = '(max-width: 48em)'; // 768px
 export const toMedium = '(max-width: 62em)'; // 992px
 export const toLarge = '(max-width: 75em)'; // 1200px
