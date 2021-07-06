@@ -5,14 +5,14 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { FillColor, FillStyle, Size, Type } from "./types/commonProps";
+import { FillColor, FillStyle, LogoType, Size } from "./types";
 export namespace Components {
     interface ClabLogo {
         "compact": boolean;
         "fillColor": FillColor;
         "fillStyle": FillStyle;
         "size": Size;
-        "type": Type;
+        "type": LogoType;
     }
     interface ClabSign {
         "fillColor": FillColor;
@@ -22,7 +22,7 @@ export namespace Components {
         "compact": boolean;
         "fillColor": FillColor;
         "size": Size;
-        "type": Type;
+        "type": LogoType;
     }
 }
 declare global {
@@ -56,7 +56,7 @@ declare namespace LocalJSX {
         "fillColor"?: FillColor;
         "fillStyle"?: FillStyle;
         "size"?: Size;
-        "type"?: Type;
+        "type"?: LogoType;
     }
     interface ClabSign {
         "fillColor"?: FillColor;
@@ -66,7 +66,7 @@ declare namespace LocalJSX {
         "compact"?: boolean;
         "fillColor"?: FillColor;
         "size"?: Size;
-        "type"?: Type;
+        "type"?: LogoType;
     }
     interface IntrinsicElements {
         "clab-logo": ClabLogo;
