@@ -240,7 +240,7 @@ html {
 
 *::selection {
   color: var(--mc-selection-foreground, #fff);
-  background: var(--mc-selection-background, rgba(3, 145, 236, 0.8));
+  background: var(--mc-selection-background, rgba(24, 144, 255, 0.8));
 }
 
 [tabindex='-1'] {
@@ -248,8 +248,8 @@ html {
 }
 
 body {
-  color: var(--mc-body-foreground, #001420);
-  background-color: var(--mc-body-background, #f7fcff);
+  color: var(--mc-body-foreground, #141414);
+  background-color: var(--mc-body-background, #fafafa);
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.5;
@@ -266,7 +266,7 @@ h5,
 h6,
 .hero-text {
   margin-top: 0;
-  color: var(--mc-heading-foreground, #1d3344);
+  color: var(--mc-heading-foreground, #141414);
   font-weight: 700;
   line-height: 1.15;
 }
@@ -310,7 +310,7 @@ h6 {
 .subheading-2,
 .subheading-3 {
   display: block;
-  color: var(--mc-subheading-foreground, #36546d);
+  color: var(--mc-subheading-foreground, #434343);
   font-weight: 400;
   text-rendering: optimizeLegibility;
   line-height: 1.3em;
@@ -336,13 +336,13 @@ h6 {
  */
 a:link,
 a:visited {
-  color: var(--mc-link-foreground, #0391ec);
+  color: var(--mc-link-foreground, #1890ff);
   text-decoration: none;
   transition: color 100ms linear;
 }
 
 a:hover {
-  color: var(--mc-link-active-foreground, #30a5ef);
+  color: var(--mc-link-active-foreground, #69c0ff);
 }
 
 p {
@@ -355,7 +355,7 @@ p code {
   margin: 2px 0;
   border-radius: var(--mc-code-border-radius, 2px);
   padding: 0 4px;
-  background-color: var(--mc-code-background, #deebf4);
+  background-color: var(--mc-code-background, #f0f0f0);
 }
 
 address {
@@ -380,17 +380,17 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
-  background-color: var(--mc-hr-background, #deebf4);
+  background-color: var(--mc-hr-background, #f0f0f0);
 }
 
 mark {
   color: var(--mc-mark-foreground, #fff);
-  background: var(--mc-mark-background, #0391ec);
-  box-shadow: 0 0 0 2px var(--mc-mark-background, #0391ec);
+  background: var(--mc-mark-background, #1890ff);
+  box-shadow: 0 0 0 2px var(--mc-mark-background, #1890ff);
 }
 
 small {
-  color: var(--mc-small-foreground, #5b768c);
+  color: var(--mc-small-foreground, #595959);
   font-size: 1.2rem;
   line-height: 1.4em;
 }

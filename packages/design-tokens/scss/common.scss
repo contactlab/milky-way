@@ -1,6 +1,6 @@
 /**
 **************
-* Normalizer *
+* Sanitazier *
 **************
 */
 
@@ -240,7 +240,7 @@ html {
 
 *::selection {
   color: colors('white');
-  background: rgba(3, 145, 236, 0.8);
+  background: rgba(24, 144, 255, 0.8);
 }
 
 [tabindex='-1'] {
@@ -248,7 +248,7 @@ html {
 }
 
 body {
-  color: colors('base900');
+  color: colors('base');
   background-color: colors('base100');
   font-size: 1.4rem;
   font-weight: 400;
@@ -266,7 +266,7 @@ h5,
 h6,
 .hero-text {
   margin-top: 0;
-  color: colors('base800');
+  color: colors('base');
   font-weight: 700;
   line-height: 1.15;
 }
@@ -310,7 +310,7 @@ h6 {
 .subheading-2,
 .subheading-3 {
   display: block;
-  color: colors('base700');
+  color: colors('base800');
   font-weight: 400;
   text-rendering: optimizeLegibility;
   line-height: 1.3em;
@@ -336,7 +336,7 @@ h6 {
  */
 a:link,
 a:visited {
-  color: colors('accent500');
+  color: colors('accent');
   text-decoration: none;
   transition: color 100ms linear;
 }
@@ -354,7 +354,7 @@ p {
     margin: 2px 0;
     border-radius: 2px;
     padding: 0 4px;
-    background-color: colors('base200');
+    background-color: colors('base300');
   }
 }
 
@@ -380,13 +380,13 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
-  background-color: colors('base200');
+  background-color: colors('base300');
 }
 
 mark {
   color: colors('white');
-  background: colors('accent500');
-  box-shadow: 0 0 0 2px colors('accent500');
+  background: colors('accent');
+  box-shadow: 0 0 0 2px colors('accent');
 }
 
 small {
