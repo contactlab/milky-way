@@ -94,7 +94,7 @@ Drop this lines into your HTML document:
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
       <td><code>'base'</code></td>
-      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#1d3344</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
+      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#141414</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

@@ -10,11 +10,11 @@ import {HexColorCode, FillColor} from '../types/commonProps';
 export function handleColor(color: FillColor): HexColorCode {
   switch (color) {
     case 'accent':
-      return '#0391ec';
+      return '#1890ff';
     case 'base':
-      return '#1d3344';
+      return '#141414';
     case 'light':
-      return '#f7fcff';
+      return '#fafafa';
     case 'white':
       return '#fff';
     case 'black':

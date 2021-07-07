@@ -2,9 +2,9 @@ import {handleColor} from '../handleColor';
 
 describe('handleColor', () => {
   it(`returns a specific hex color for the "accent", "base" and "light" keywords`, () => {
-    expect(handleColor('accent')).toBe('#0391ec');
-    expect(handleColor('base')).toBe('#1d3344');
-    expect(handleColor('light')).toBe('#f7fcff');
+    expect(handleColor('accent')).toBe('#1890ff');
+    expect(handleColor('base')).toBe('#141414');
+    expect(handleColor('light')).toBe('#fafafa');
     expect(handleColor('white')).toBe('#fff');
   });
 

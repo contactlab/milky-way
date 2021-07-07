@@ -65,7 +65,7 @@ Drop this lines into your HTML document:
       <td>fill-color</td>
       <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
       <td><code>'accent'</code></td>
-      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#0391ec</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
+      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#1890ff</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
     </tr>
   </tbody>
 </table>

@@ -14,7 +14,7 @@ describe('clab-sign', () => {
           <div class="wrapper" style="width: 100%;" data-e2e-width="100%">
           <svg
             class="vector"
-            fill="#0391ec"
+            fill="#1890ff"
             preserveAspectRatio="xMidYMin slice"
             viewBox="0 0 65 68"
             style="padding-bottom: 105%;"
@@ -54,7 +54,7 @@ describe('clab-sign', () => {
           <div class="wrapper" style="width: 160px;" data-e2e-width="160px">
           <svg
             class="vector"
-            fill="#1d3344"
+            fill="#141414"
             preserveAspectRatio="xMidYMin slice"
             viewBox="0 0 65 68"
             style="padding-bottom: 105%;"

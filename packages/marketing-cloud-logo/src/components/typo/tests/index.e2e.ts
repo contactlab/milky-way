@@ -51,12 +51,12 @@ describe('clab-typo', () => {
     const component = await page.find('clab-typo');
     const svg = await page.find('clab-typo >>> .vector');
 
-    expect(svg.getAttribute('fill')).toBe('#1d3344');
+    expect(svg.getAttribute('fill')).toBe('#141414');
 
     component.setProperty('fillColor', 'accent');
     await page.waitForChanges();
 
-    expect(svg.getAttribute('fill')).toBe('#0391ec');
+    expect(svg.getAttribute('fill')).toBe('#1890ff');
 
     component.setProperty('fillColor', 'unknown');
     await page.waitForChanges();
