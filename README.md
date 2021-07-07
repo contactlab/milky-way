@@ -2,10 +2,6 @@
 
 The Contactlab Design System. A tool for building consistent products and experiences.
 
-> 🚧 In the development stage.
-
----
-
 ## Table of Contents
 
 - [Design Specifications][design-specs-url]
