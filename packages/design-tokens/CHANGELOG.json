@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "2.3.0",
+      "tag": "@contactlab/ds-tokens_v2.3.0",
+      "date": "Tue, 13 Jul 2021 11:10:33 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "\"Add Montserrat font to @contactlab/ds-tokens\" package\""
+          }
+        ]
+      }
+    },
+    {
       "version": "2.2.0",
       "tag": "@contactlab/ds-tokens_v2.2.0",
       "date": "Wed, 07 Jul 2021 10:33:47 GMT",
