@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "2.3.1",
+      "tag": "@contactlab/ds-tokens_v2.3.1",
+      "date": "Tue, 13 Jul 2021 12:55:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "\"Fix web-font paths\""
+          }
+        ]
+      }
+    },
+    {
       "version": "2.3.0",
       "tag": "@contactlab/ds-tokens_v2.3.0",
       "date": "Tue, 13 Jul 2021 11:10:33 GMT",

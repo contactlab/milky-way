@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Tue, 13 Jul 2021 11:10:33 GMT and should not be manually modified.
+This log was last generated on Tue, 13 Jul 2021 12:55:13 GMT and should not be manually modified.
+
+## 2.3.1
+Tue, 13 Jul 2021 12:55:13 GMT
+
+### Patches
+
+- "Fix web-font paths"
 
 ## 2.3.0
 Tue, 13 Jul 2021 11:10:33 GMT
