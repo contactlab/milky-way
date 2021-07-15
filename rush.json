@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.36.2",
-  "pnpmVersion": "5.18.9",
+  "rushVersion": "5.49.2",
+  "pnpmVersion": "6.10.0",
   "pnpmOptions": {
     "preventManualShrinkwrapChanges": true,
     "useWorkspaces": true
   },
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "nodeSupportedVersionRange": ">=14.16.0 <16.5.0",
   "repository": {
     "url": "https://github.com/contactlab/milky-way",
     "defaultBranch": "stable"

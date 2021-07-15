@@ -2,6 +2,18 @@
   "name": "@contactlab/service-pages",
   "entries": [
     {
+      "version": "2.1.0",
+      "tag": "@contactlab/service-pages_v2.1.0",
+      "date": "Thu, 15 Jul 2021 10:49:10 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Create new service pages: generic-error and no-content\""
+          }
+        ]
+      }
+    },
+    {
       "version": "2.0.2",
       "tag": "@contactlab/service-pages_v2.0.2",
       "date": "Wed, 31 Mar 2021 11:22:40 GMT",

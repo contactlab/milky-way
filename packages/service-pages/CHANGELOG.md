@@ -1,6 +1,13 @@
 # Change Log - @contactlab/service-pages
 
-This log was last generated on Wed, 31 Mar 2021 11:22:40 GMT and should not be manually modified.
+This log was last generated on Thu, 15 Jul 2021 10:49:10 GMT and should not be manually modified.
+
+## 2.1.0
+Thu, 15 Jul 2021 10:49:10 GMT
+
+### Minor changes
+
+- Create new service pages: generic-error and no-content"
 
 ## 2.0.2
 Wed, 31 Mar 2021 11:22:40 GMT

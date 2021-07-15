@@ -2,7 +2,7 @@
 
 ## Contribution Prerequisites
 
-- You have Node installed at v12.13.0+ and NPM at v6.0.0+.
+- You have Node installed at v14.16.0+ and NPM at v6.0.0+.
 - You have gcc installed or are comfortable installing a compiler if needed. Some of our dependencies may require a compilation step. On OS X, the XCode Command Line Tools will cover this. On Ubuntu, `apt-get install build-essential` will install the required packages. Similar commands should work on other Linux distros. Windows will require some additional steps.
 - You are familiar with Git.
 
