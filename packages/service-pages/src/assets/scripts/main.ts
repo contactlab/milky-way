@@ -1,54 +1,65 @@
 type langType = 'it' | 'en';
-type ButtonsType = HTMLButtonElement[];
 
-interface DomProps {
+interface HTMLElements {
   wrapper: HTMLDivElement;
-  buttons: ButtonsType;
+  buttons: HTMLButtonElement[];
 }
 
 document.addEventListener('DOMContentLoaded', run);
 
 function run(): void {
-  const defaultLang = grabDefaultLang();
-  const dom = {
-    wrapper: document.querySelector('#locale') as HTMLDivElement,
-    buttons: Array.from(document.querySelectorAll('.btn-lang')) as ButtonsType
-  };
+  const browserLocale = getBrowserLocale();
+  const wrapper = document.querySelector('#locale') as HTMLDivElement;
+  const buttons = Array.from<HTMLButtonElement>(
+    document.querySelectorAll('.button-lang')
+  );
 
-  loadingContent(defaultLang, dom);
+  loadLocaleContent(browserLocale, {wrapper, buttons});
 
-  if (dom.buttons.length >= 1) {
-    dom.buttons.forEach(
+  if (buttons.length >= 1) {
+    buttons.forEach(
       button =>
         (button.onclick = evt => {
           evt.preventDefault();
-          setLang(evt.target as HTMLElement, dom);
+          setLocaleContent(evt.target as HTMLElement, {wrapper, buttons});
         })
     );
   }
 }
 
-function grabDefaultLang(): langType {
+function getBrowserLocale(): langType {
   const [lang] = window.navigator.language.split('-');
-  return lang === 'it' || lang === 'en' ? lang : 'en';
+  return lang === 'it' ? lang : 'en';
 }
 
-function loadingContent(lang: langType, collection: DomProps): void {
-  const {wrapper} = collection;
-  const it = new Template('#tmpl-it').clone();
-  const en = new Template('#tmpl-en').clone();
+function loadLocaleContent(lang: langType, htmlElements: HTMLElements): void {
+  const {wrapper, buttons} = htmlElements;
+
+  const button = buttons.find(button => button.id === lang);
+  button?.classList.add('active');
 
   wrapper.innerHTML = '';
-  wrapper.appendChild(lang === 'en' ? en : it);
+  wrapper.appendChild(
+    lang === 'it'
+      ? getLocalizedTemplate('#tmpl-it')
+      : getLocalizedTemplate('#tmpl-en')
+  );
 }
 
-function setLang(trigger: HTMLElement, collection: DomProps): void {
-  const {buttons} = collection;
+function setLocaleContent(
+  trigger: HTMLElement,
+  htmlElements: HTMLElements
+): void {
+  const {buttons} = htmlElements;
 
   buttons.forEach(button => button.classList.remove('active'));
   trigger.classList.add('active');
 
-  loadingContent(trigger.id as langType, collection);
+  loadLocaleContent(trigger.id as langType, htmlElements);
+}
+
+function getLocalizedTemplate(id: string): DocumentFragment {
+  return new Template(id).clone();
 }
 
 class Template {

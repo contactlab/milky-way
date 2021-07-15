@@ -1,0 +1,34 @@
+extends ./layouts/marketing-cloud.pug
+
+//- TIPS:
+//- 1. Artworks's path should be relative to "src" folder;
+//- 2. Alternative SVG Artworks are available here:
+       https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/artworks/
+//- 3. Use <p> html tag for split sentences;
+//- 4. Use <article> html tag for split paragraphs;
+//----------------------------------------------------------------
+
+block content
+
+  //--- Artworks
+  - const IMG_SRC = `${CLAB_DS_TOKENS}/artworks/astroboy-warning.svg`
+
+  //--- Titles
+  - const EN_TITLE= "The application has encountered an unknown error"
+  - const IT_TITLE= "L'applicazione ha riscontrato un errore sconosciuto"
+
+  //--- EN Content
+  mixin EN_BODY()
+    article
+      p It doesn't appear to have affected your data, but our technical staff have been automatically notified and will be looking into this with the utmost urgency.
+
+    article
+      p Help us improve your experience by #[a(href="https://contactlab.com/en/contact-us" title="Customer Care") sending an error report].
+
+  //--- IT Content
+  mixin IT_BODY()
+    article
+      p Non sembra aver influito sui tuoi dati, ma il nostro personale tecnico è stato informato automaticamente e lo esaminerà con la massima urgenza.
+
+    article
+      p Aiutaci a migliorare la tua esperienza #[a(href="https://contactlab.com/it/contact-us" title="Servizio Clienti") inviando una segnalazione di errore].

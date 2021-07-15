@@ -3,7 +3,7 @@ extends ./layouts/marketing-cloud.pug
 //- TIPS:
 //- 1. Artworks's path should be relative to "src" folder;
 //- 2. Alternative SVG Artworks are available here:
-       https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/artworks
+       https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/artworks/
 //- 3. Use <p> html tag for split sentences;
 //- 4. Use <article> html tag for split paragraphs;
 //----------------------------------------------------------------
@@ -11,7 +11,7 @@ extends ./layouts/marketing-cloud.pug
 block content
 
   //--- Artworks
-  - const IMG_SRC = "https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@2/artworks/under-construction.svg"
+  - const IMG_SRC = `${CLAB_DS_TOKENS}/artworks/under-construction.svg`
 
   //--- Titles
   - const EN_TITLE= "We are calibrating and polishing our systems. We will be back soon!"

@@ -8,6 +8,7 @@ html {
   display: flex;
   max-width: 68rem;
   margin: 0 auto;
+  font-size: 1.6rem;
   padding: 4.8rem 3.2rem;
   flex-direction: column;
   align-items: center;
@@ -16,15 +17,22 @@ html {
 .logo {
   display: inline-block;
   width: 32rem;
-  height: 3.46rem;
   margin-bottom: 4rem;
+
+  @media (max-width: 48em) {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .artwork {
   margin-bottom: 3.2rem;
 
+  @media (max-width: 48em) {
+    margin-bottom: 1.6rem;
+  }
+
   img {
-    height: 28rem;
+    height: 26rem;
 
     @media (max-width: 48em) {
       height: 24rem;
@@ -36,11 +44,19 @@ html {
   margin-bottom: 4.8rem;
   text-align: center;
 
+  @media (max-width: 48em) {
+    margin-bottom: 3.2rem;
+  }
+
   article {
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.4rem;
+
+    @media (max-width: 48em) {
+      margin-bottom: 1.6rem;
+    }
 
     &:last-of-type p {
-      color: var(--color-base600);
+      color: var(--color-base700);
     }
   }
 }
@@ -48,10 +64,13 @@ html {
 .languages {
   display: flex;
 
-  > a {
-    padding: 0 0.4rem;
+  > button {
+    border: 0;
+    background-color: transparent;
+    padding: 0.4rem;
     position: relative;
     color: var(--color-accent);
+    cursor: pointer;
 
     &::after {
       content: '';
@@ -62,17 +81,15 @@ html {
       bottom: -0.32rem;
       left: 0;
       transform: scaleX(0);
-      background-color: var(--color-accent500);
+      background-color: var(--color-accent);
       transition: transform 0.24s ease-in;
     }
 
     &:not(:last-of-type) {
-      margin-right: 0.8rem;
+      margin-right: 1rem;
     }
 
     &.active {
-      color: var(--color-accent500);
-
       &::after {
         transform: scaleX(100%);
       }
@@ -93,7 +110,6 @@ html {
     transform: translateX(-50px);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -105,7 +121,6 @@ html {
     transform: translateX(50px);
     opacity: 0;
   }
-
   100% {
     transform: translateX(0);
     opacity: 1;
