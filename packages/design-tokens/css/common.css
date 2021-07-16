@@ -342,7 +342,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--mc-link-active-foreground, #69c0ff);
+  color: var(--mc-link-active-foreground, #40a9ff);
 }
 
 p {
