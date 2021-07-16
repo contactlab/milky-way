@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Tue, 13 Jul 2021 12:55:13 GMT and should not be manually modified.
+This log was last generated on Fri, 16 Jul 2021 08:59:38 GMT and should not be manually modified.
+
+## 2.3.2
+Fri, 16 Jul 2021 08:59:38 GMT
+
+### Patches
+
+- Update links hover color
 
 ## 2.3.1
 Tue, 13 Jul 2021 12:55:13 GMT
