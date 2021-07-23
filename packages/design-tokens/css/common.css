@@ -334,14 +334,14 @@ h6 {
 /**
  * Basic HTML Elements
  */
-a:link,
-a:visited {
+a:not(.ant-btn):link,
+a:not(.ant-btn):visited {
   color: var(--mc-link-foreground, #1890ff);
   text-decoration: none;
   transition: color 100ms linear;
 }
 
-a:hover {
+a:not(.ant-btn):hover {
   color: var(--mc-link-active-foreground, #40a9ff);
 }
 
