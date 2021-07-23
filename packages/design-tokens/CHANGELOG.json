@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "2.3.3",
+      "tag": "@contactlab/ds-tokens_v2.3.3",
+      "date": "Fri, 23 Jul 2021 07:26:41 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Ignore link styles when the element is an antd-button"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.3.2",
       "tag": "@contactlab/ds-tokens_v2.3.2",
       "date": "Fri, 16 Jul 2021 08:59:38 GMT",

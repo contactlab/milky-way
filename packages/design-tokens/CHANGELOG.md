@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Fri, 16 Jul 2021 08:59:38 GMT and should not be manually modified.
+This log was last generated on Fri, 23 Jul 2021 07:26:41 GMT and should not be manually modified.
+
+## 2.3.3
+Fri, 23 Jul 2021 07:26:41 GMT
+
+### Patches
+
+- Ignore link styles when the element is an antd-button
 
 ## 2.3.2
 Fri, 16 Jul 2021 08:59:38 GMT
