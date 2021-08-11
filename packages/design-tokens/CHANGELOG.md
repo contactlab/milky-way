@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Fri, 23 Jul 2021 07:26:41 GMT and should not be manually modified.
+This log was last generated on Wed, 11 Aug 2021 15:50:51 GMT and should not be manually modified.
+
+## 2.4.0
+Wed, 11 Aug 2021 15:50:51 GMT
+
+### Minor changes
+
+- Remove single quotes around media-queries constants
 
 ## 2.3.3
 Fri, 23 Jul 2021 07:26:41 GMT

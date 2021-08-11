@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "2.4.0",
+      "tag": "@contactlab/ds-tokens_v2.4.0",
+      "date": "Wed, 11 Aug 2021 15:50:51 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Remove single quotes around media-queries constants"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.3.3",
       "tag": "@contactlab/ds-tokens_v2.3.3",
       "date": "Fri, 23 Jul 2021 07:26:41 GMT",
