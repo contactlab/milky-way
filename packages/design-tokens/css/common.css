@@ -342,7 +342,7 @@ a:not(.ant-btn):visited {
 }
 
 a:not(.ant-btn):hover {
-  color: var(--mc-link-active-foreground, #40a9ff);
+  color: var(--mc-link-active-foreground, #096dd9);
 }
 
 p {
