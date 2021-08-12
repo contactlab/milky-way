@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "2.4.1",
+      "tag": "@contactlab/ds-tokens_v2.4.1",
+      "date": "Thu, 12 Aug 2021 10:09:39 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix link-active-foreground custom property"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.4.0",
       "tag": "@contactlab/ds-tokens_v2.4.0",
       "date": "Wed, 11 Aug 2021 15:50:51 GMT",

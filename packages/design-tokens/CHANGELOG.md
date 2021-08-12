@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Wed, 11 Aug 2021 15:50:51 GMT and should not be manually modified.
+This log was last generated on Thu, 12 Aug 2021 10:09:39 GMT and should not be manually modified.
+
+## 2.4.1
+Thu, 12 Aug 2021 10:09:39 GMT
+
+### Patches
+
+- Fix link-active-foreground custom property
 
 ## 2.4.0
 Wed, 11 Aug 2021 15:50:51 GMT
