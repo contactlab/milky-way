@@ -74,7 +74,7 @@
 
   /* 7. Links */
   --mc-link-foreground: var(--color-accent);
-  --mc-link-active-foreground: var(--color-accent400);
+  --mc-link-active-foreground: var(--color-accent500);
 
   /* 8. <code> */
   --mc-code-border-radius: 2px;
