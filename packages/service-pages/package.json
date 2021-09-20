@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/service-pages",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "The Contactlab Marketing Cloud service pages.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -25,24 +25,24 @@
     "lint:src": "eslint . --ext .js,.ts --ignore-path .gitignore",
     "lint": "run-p -cln lint:**",
     "dev": "parcel serve ./src/*.pug --port=3333 --target=browser --cache-dir=.cache/parcel",
-    "prebuild": "rimraf ./dist",
+    "prebuild": "del-cli ./dist",
     "build": "parcel build ./src/*.pug --target=browser --no-cache --no-source-maps",
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "7.0.2",
+    "@giotramu/stylelint-config": "8.0.0",
     "cssnano": "4.1.10",
-    "eslint": "7.30.0",
-    "eslint-config-contactlab": "6.3.1",
+    "del-cli": "4.0.1",
+    "eslint": "7.32.0",
+    "eslint-config-contactlab": "7.0.0",
     "eslint-config-prettier": "8.3.0",
     "npm-run-all": "4.1.5",
-    "parcel": "1.12.3",
     "parcel-plugin-inliner": "1.0.16",
+    "parcel": "1.12.3",
     "pug": "3.0.2",
-    "rimraf": "3.0.2",
-    "sass": "1.35.2",
+    "sass": "1.42.0",
     "stylelint": "13.13.1",
-    "stylelint-scss": "3.19.0",
-    "typescript": "4.3.5"
+    "stylelint-scss": "3.21.0",
+    "typescript": "4.4.3"
   }
 }

@@ -1,6 +1,13 @@
 # Change Log - @contactlab/service-pages
 
-This log was last generated on Thu, 15 Jul 2021 10:49:10 GMT and should not be manually modified.
+This log was last generated on Mon, 20 Sep 2021 09:33:19 GMT and should not be manually modified.
+
+## 2.1.1
+Mon, 20 Sep 2021 09:33:19 GMT
+
+### Patches
+
+- Update dependencies
 
 ## 2.1.0
 Thu, 15 Jul 2021 10:49:10 GMT

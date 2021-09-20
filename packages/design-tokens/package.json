@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/ds-tokens",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -34,14 +34,14 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@giotramu/stylelint-config": "7.0.2",
-    "eslint": "7.30.0",
-    "eslint-config-contactlab": "6.3.1",
+    "@giotramu/stylelint-config": "8.0.0",
+    "eslint": "7.32.0",
+    "eslint-config-contactlab": "7.0.0",
     "eslint-config-prettier": "8.3.0",
     "npm-run-all": "4.1.5",
     "serve": "11.3.2",
     "stylelint": "13.13.1",
-    "stylelint-scss": "3.19.0",
-    "typescript": "4.3.5"
+    "stylelint-scss": "3.21.0",
+    "typescript": "4.4.3"
   }
 }

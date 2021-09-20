@@ -21,6 +21,14 @@
   "supportLink": "https://support.contactlab.com/hc/it",
   "tempPassword": "Password temporanea:",
   "username": "Nome utente:",
+  "newsletterSubscription": {
+    "title": "Conferma la tua iscrizione!",
+    "greetingMessage": "Grazie per aver scelto il nostro servizio.",
+    "confirmSubscription": "Per confermare la tua richiesta di iscrizione, clicca qui in basso:",
+    "activateSubscription": "Attiva l'iscrizione",
+    "wrongMessage": "Se invece hai ricevuto questo messaggio senza aver fatto richiesta, ti invitiamo ad ignorare le istruzioni in esso contenute.",
+    "confirmationLink": "https://clientsection.contactlab.it/service/activate/wfc/16010001186178/d/ZT1yb3NzaS5sb3JpQGlvbC5pdCZpPTEyJmc9MTAwMDExOA%3D%3D/k/1f46f97577f9d53a2fea8746c6bf06b3/lang/it/"
+  },
   "passwordChanged": {
     "isChanged": "è stata modificata con successo. 👍",
     "opening": "la password dell'utenza",

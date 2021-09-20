@@ -1,6 +1,13 @@
 # Change Log - @contactlab/marketing-cloud-logo
 
-This log was last generated on Wed, 07 Jul 2021 15:34:29 GMT and should not be manually modified.
+This log was last generated on Mon, 20 Sep 2021 09:33:19 GMT and should not be manually modified.
+
+## 2.1.1
+Mon, 20 Sep 2021 09:33:19 GMT
+
+### Patches
+
+- Update dependencies
 
 ## 2.1.0
 Wed, 07 Jul 2021 15:34:29 GMT

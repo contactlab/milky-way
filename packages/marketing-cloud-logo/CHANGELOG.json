@@ -2,6 +2,18 @@
   "name": "@contactlab/marketing-cloud-logo",
   "entries": [
     {
+      "version": "2.1.1",
+      "tag": "@contactlab/marketing-cloud-logo_v2.1.1",
+      "date": "Mon, 20 Sep 2021 09:33:19 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update dependencies"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.0",
       "tag": "@contactlab/marketing-cloud-logo_v2.1.0",
       "date": "Wed, 07 Jul 2021 15:34:29 GMT",

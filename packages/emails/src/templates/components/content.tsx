@@ -2,6 +2,7 @@ import {MjmlColumn, MjmlSection} from 'mjml-react';
 import * as React from 'react';
 import {i18nType} from '../../i18n/helpers';
 import {cardBgColor, sectionPadding, borderRadius} from '../commons/attributes';
+import {NewsletterSubscription} from '../contents/newsletter-subscription';
 import {PasswordChanged} from '../contents/password-changed';
 import {PasswordExpired} from '../contents/password-expired';
 import {PasswordExpiring} from '../contents/password-expiring';
@@ -12,6 +13,7 @@ import {Welcome} from '../contents/welcome';
 import {Text} from './text';
 
 export const ContentSuite = [
+  'newsletter-subscription',
   'password-changed',
   'password-expired',
   'password-expiring',
@@ -75,6 +77,9 @@ function getContent(
     typeof data.firstName === 'undefined' ? '' : data.firstName;
 
   switch (type) {
+    case 'newsletter-subscription':
+      return <NewsletterSubscription i18n={i18n} />;
+
     case 'password-changed':
       return (
         <PasswordChanged

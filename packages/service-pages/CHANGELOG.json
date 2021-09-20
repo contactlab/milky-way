@@ -2,6 +2,18 @@
   "name": "@contactlab/service-pages",
   "entries": [
     {
+      "version": "2.1.1",
+      "tag": "@contactlab/service-pages_v2.1.1",
+      "date": "Mon, 20 Sep 2021 09:33:19 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update dependencies"
+          }
+        ]
+      }
+    },
+    {
       "version": "2.1.0",
       "tag": "@contactlab/service-pages_v2.1.0",
       "date": "Thu, 15 Jul 2021 10:49:10 GMT",

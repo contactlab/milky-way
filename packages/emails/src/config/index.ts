@@ -19,7 +19,6 @@ export const PROFILE_PAGE_HREF = 'https://mc.contactlab.it/#/ac/profile';
 
 // --- MJML
 export const MJML_OPTIONS: Mjml2HtmlOptions = {
-  beautify: true,
   minify: false,
   validationLevel: 'soft'
 };

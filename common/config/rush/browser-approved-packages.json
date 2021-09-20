@@ -51,6 +51,10 @@
       "allowedCategories": [ "libraries" ]
     },
     {
+      "name": "del-cli",
+      "allowedCategories": [ "libraries", "tools" ]
+    },
+    {
       "name": "eslint",
       "allowedCategories": [ "libraries", "tools" ]
     },
