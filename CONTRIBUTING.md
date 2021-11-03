@@ -19,7 +19,7 @@ After cloning the project, install the [@microsoft/rush][rush-url] package globa
 - `rush purge` command is used to delete temporary files created by Rush.
 
 ## NPM Publish Workflow
-- Commit your changes with git but don't push it on the `stable` branch before running the `rush change` command.
+- Commit your changes with Git but don't push it on the `stable` branch before running the `rush change` command.
 - `rush change` command asks a series of questions and then generates a `<branchname>-<timestamp>.json` file in the common folder. The `rush version --bump` command will consume these files and perform the proper version bumps.
 - `rush version --bump` command will increase package versions based on their associated version policies.
 - `rush publish -p -n [NPM_AUTH_TOKEN] --include-all` command will publish all the public packages that have version increased.
