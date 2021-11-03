@@ -14,18 +14,10 @@ export const config: Config = {
     },
     {
       /**
-       * The `dist-custom-elements-bundle` output target
-       * is used to generate custom elements as a single bundle.
+       * The dist-custom-elements-bundle output target is used to generate custom elements as a single bundle.
+       * Even though the output ends up as a "single" bundle, it's generated to ensure components are tree-shakable.
        */
       type: 'dist-custom-elements-bundle'
-    },
-    {
-      /**
-       * The www output target type is oriented for webapps and websites,
-       * hosted from an http server for demo purposes.
-       */
-      type: 'www',
-      serviceWorker: null // Disable service workers
     }
   ]
 };

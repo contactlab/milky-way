@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/marketing-cloud-logo",
-  "version": "2.1.1",
+  "version": "3.0.1",
   "description": "Web Components and resources related to the Contactlab Marketing Cloud logo.",
   "author": {
     "name": "Contactlab UXD Team",
@@ -16,12 +16,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/custom-elements/index.js",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
-  "types": "dist/custom-elements/index.d.ts",
-  "unpkg": "dist/clab-logo/clab-logo.js",
+  "main": "dist/cjs/clab-logo.cjs.js",
+  "module": "dist/esm/clab-logo.js",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [

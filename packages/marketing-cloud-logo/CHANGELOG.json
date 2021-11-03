@@ -2,6 +2,24 @@
   "name": "@contactlab/marketing-cloud-logo",
   "entries": [
     {
+      "version": "3.0.1",
+      "tag": "@contactlab/marketing-cloud-logo_v3.0.1",
+      "date": "Thu, 04 Nov 2021 10:17:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Upgrade stencil core"
+          }
+        ]
+      }
+    },
+    {
+      "version": "3.0.0",
+      "tag": "@contactlab/marketing-cloud-logo_v3.0.0",
+      "date": "Wed, 03 Nov 2021 15:26:25 GMT",
+      "comments": {}
+    },
+    {
       "version": "2.1.1",
       "tag": "@contactlab/marketing-cloud-logo_v2.1.1",
       "date": "Mon, 20 Sep 2021 09:33:19 GMT",

@@ -1,5 +1,5 @@
-- const CLAB_LOGO_CDN = "https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2.1.0";
-- const CLAB_DS_TOKENS = "https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@2.3.1";
+- const CLAB_LOGO_CDN = "https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@3.0.1";
+- const CLAB_DS_TOKENS = "https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@3.1.0";
 
 doctype html
 html(lang="en")
@@ -17,9 +17,6 @@ html(lang="en")
     link(rel="icon", type="image/png", sizes="32x32", href=`${CLAB_LOGO_CDN}/resources/favicon/favicon-32.png`)
     link(rel="icon", type="image/png", sizes="16x16", href=`${CLAB_LOGO_CDN}/resources/favicon/favicon-16.png`)
 
-    //--- Contactlab Marketing Cloud Logo
-    script(type="module", src=`${CLAB_LOGO_CDN}/dist/esm/clab-logo.js`)
-
     //--- Color the status bar on mobile devices
     meta(name="theme-color", content="#141414")
 
@@ -27,7 +24,6 @@ html(lang="en")
     link(rel="stylesheet", href=`${CLAB_DS_TOKENS}/css/montserrat.css`)
     link(rel="stylesheet", href=`${CLAB_DS_TOKENS}/css/vars.css`)
     link(rel="stylesheet", href=`${CLAB_DS_TOKENS}/css/common.css`)
-    link(rel="stylesheet", href="./assets/styles/main.scss")
 
   body
     block content
@@ -47,7 +43,7 @@ html(lang="en")
     .landing
       //--- The Contactlab Marketing Cloud logo
       a(href="http://explore.contactlab.com/", title="Contactlab Marketing Cloud", target="_blank")
-        clab-logo.logo
+        img(src=`${CLAB_LOGO_CDN}/resources/svg/logo-mc-full.svg`, class="logo")
 
       //--- Artwork
       if IMG_SRC
@@ -62,4 +58,7 @@ html(lang="en")
         button#it.button-lang IT
         button#en.button-lang EN
 
-    script(src="./assets/scripts/main.ts")
+    script(type="module").
+      import './assets/scripts/main.ts';
+      import styles from 'bundle-text:./assets/styles/main.scss';
+      document.body.insertAdjacentHTML('beforeend', `<style>${styles}</style>`);

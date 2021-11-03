@@ -39,6 +39,26 @@
       "allowedCategories": [ "libraries" ]
     },
     {
+      "name": "@parcel/config-default",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@parcel/transformer-inline-string",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@parcel/transformer-pug",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@parcel/transformer-sass",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@parcel/transformer-typescript-tsc",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
       "name": "@stencil/core",
       "allowedCategories": [ "libraries" ]
     },

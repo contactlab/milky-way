@@ -16,7 +16,7 @@ html {
 
 .logo {
   display: inline-block;
-  width: 32rem;
+  height: 3.2rem;
   margin-bottom: 4rem;
 
   @media (max-width: 48em) {
@@ -32,7 +32,7 @@ html {
   }
 
   img {
-    height: 26rem;
+    height: 32rem;
 
     @media (max-width: 48em) {
       height: 24rem;
