@@ -24,7 +24,7 @@
       "projectFolder": "packages/design-tokens",
       "reviewCategory": "libraries",
       "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "versionPolicyName": "MilkyWayVersionPolicy"
     },
     {
       "packageName": "@contactlab/emails",
@@ -37,14 +37,14 @@
       "projectFolder": "packages/marketing-cloud-logo",
       "reviewCategory": "libraries",
       "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "versionPolicyName": "MilkyWayVersionPolicy"
     },
     {
       "packageName": "@contactlab/service-pages",
       "projectFolder": "packages/service-pages",
       "reviewCategory": "libraries",
       "shouldPublish": true,
-      "versionPolicyName": "independentPackage"
+      "versionPolicyName": "MilkyWayVersionPolicy"
     }
   ]
 }
