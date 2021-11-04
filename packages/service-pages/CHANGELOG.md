@@ -7,7 +7,7 @@ Thu, 04 Nov 2021 10:17:52 GMT
 
 ### Patches
 
-- Update the pages artworks
+- Change the pages artworks
 
 ## 3.0.0
 Wed, 03 Nov 2021 15:26:25 GMT
