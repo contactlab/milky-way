@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Thu, 04 Nov 2021 14:26:28 GMT and should not be manually modified.
+This log was last generated on Thu, 04 Nov 2021 16:30:40 GMT and should not be manually modified.
+
+## 3.1.0
+Thu, 04 Nov 2021 16:30:40 GMT
+
+### Minor changes
+
+- Clean and fix artworks issues"
 
 ## 3.0.2
 Thu, 04 Nov 2021 14:26:28 GMT
