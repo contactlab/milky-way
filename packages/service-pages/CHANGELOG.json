@@ -2,6 +2,18 @@
   "name": "@contactlab/service-pages",
   "entries": [
     {
+      "version": "3.1.0",
+      "tag": "@contactlab/service-pages_v3.1.0",
+      "date": "Thu, 04 Nov 2021 16:41:46 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "\"Fix pages artworks\""
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.1",
       "tag": "@contactlab/service-pages_v3.0.1",
       "date": "Thu, 04 Nov 2021 10:17:52 GMT",

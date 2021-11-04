@@ -1,6 +1,13 @@
 # Change Log - @contactlab/service-pages
 
-This log was last generated on Thu, 04 Nov 2021 10:17:52 GMT and should not be manually modified.
+This log was last generated on Thu, 04 Nov 2021 16:41:46 GMT and should not be manually modified.
+
+## 3.1.0
+Thu, 04 Nov 2021 16:41:46 GMT
+
+### Minor changes
+
+- "Fix pages artworks"
 
 ## 3.0.1
 Thu, 04 Nov 2021 10:17:52 GMT
