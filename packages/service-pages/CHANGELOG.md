@@ -1,6 +1,13 @@
 # Change Log - @contactlab/service-pages
 
-This log was last generated on Thu, 04 Nov 2021 16:41:46 GMT and should not be manually modified.
+This log was last generated on Fri, 05 Nov 2021 08:26:40 GMT and should not be manually modified.
+
+## 3.1.1
+Fri, 05 Nov 2021 08:26:40 GMT
+
+### Patches
+
+- Bump design tokens
 
 ## 3.1.0
 Thu, 04 Nov 2021 16:41:46 GMT

@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "3.1.1",
+      "tag": "@contactlab/ds-tokens_v3.1.1",
+      "date": "Fri, 05 Nov 2021 08:26:40 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix artworks type"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.0",
       "tag": "@contactlab/ds-tokens_v3.1.0",
       "date": "Thu, 04 Nov 2021 16:30:40 GMT",
