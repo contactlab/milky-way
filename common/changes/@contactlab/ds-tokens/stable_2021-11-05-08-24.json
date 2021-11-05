@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@contactlab/ds-tokens",
+      "comment": "Fix artworks type",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@contactlab/ds-tokens"
+}
