@@ -7,11 +7,11 @@ export type ArtworkType =
   | 'no-data'
   | 'no-image-boxed'
   | 'no-image'
-  | 'settings-animated'
-  | 'settings'
   | 'warn-api'
   | 'warn-auth'
   | 'warn-generic'
   | 'warn-server'
   | 'warn-sync'
-  | 'warn-ui';
+  | 'warn-ui'
+  | 'working-animated'
+  | 'working';
