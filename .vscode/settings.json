@@ -5,7 +5,7 @@
     "source.fixAll.stylelint": true
   },
   "css.validate": false,
-  "stylelint.validate": ["css", "less", "scss"],
+  "stylelint.validate": ["css", "scss"],
   "eslint.validate": [
     "javascript",
     "javascriptreact",

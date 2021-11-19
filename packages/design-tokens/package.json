@@ -18,10 +18,10 @@
   },
   "files": [
     "artworks/",
+    "icons/",
+    "fonts/",
     "constants/",
     "css/",
-    "fonts/",
-    "less/",
     "scss/"
   ],
   "scripts": {
