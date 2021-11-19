@@ -17,10 +17,11 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "skipLibCheck": true,
     "strict": true,
-    "target": "es6",
+    "target": "ES2017",
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src"],
+  "include": ["./src/**/*"],
   "exclude": ["node_modules"]
 }

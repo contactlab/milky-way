@@ -1,7 +1,7 @@
 {
   "extends": [
     "@giotramu/stylelint-config",
-    "@giotramu/stylelint-config/scss",
+    "@giotramu/stylelint-config/sass",
     "@giotramu/stylelint-config/prettier"
   ]
 }

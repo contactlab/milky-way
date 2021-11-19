@@ -10,7 +10,7 @@
 }
 
 .vector {
-  overflow: visible;
   width: 100%;
   height: 1px;
+  overflow: visible;
 }

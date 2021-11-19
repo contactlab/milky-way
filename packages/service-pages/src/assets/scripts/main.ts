@@ -18,8 +18,8 @@ function run(): void {
 
   if (buttons.length >= 1) {
     buttons.forEach(
-      button =>
-        (button.onclick = evt => {
+      btn =>
+        (btn.onclick = evt => {
           evt.preventDefault();
           setLocaleContent(evt.target as HTMLElement, {wrapper, buttons});
         })
@@ -35,7 +35,7 @@ function getBrowserLocale(): langType {
 function loadLocaleContent(lang: langType, htmlElements: HTMLElements): void {
   const {wrapper, buttons} = htmlElements;
 
-  const button = buttons.find(button => button.id === lang);
+  const button = buttons.find(btn => btn.id === lang);
   button?.classList.add('active');
 
   wrapper.innerHTML = '';
@@ -52,7 +52,7 @@ function setLocaleContent(
 ): void {
   const {buttons} = htmlElements;
 
-  buttons.forEach(button => button.classList.remove('active'));
+  buttons.forEach(btn => btn.classList.remove('active'));
   trigger.classList.add('active');
 
   loadLocaleContent(trigger.id as langType, htmlElements);

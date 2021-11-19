@@ -4,7 +4,6 @@ import {Button} from '../components/button';
 import {Text} from '../components/text';
 
 interface NewsletterSubscription {
-  confirmationLink: string;
   i18n: i18nType;
 }
 
