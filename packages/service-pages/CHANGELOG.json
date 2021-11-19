@@ -20,7 +20,7 @@
       "comments": {
         "minor": [
           {
-            "comment": "\"Fix pages artworks\""
+            "comment": "Fix pages artworks"
           }
         ]
       }
@@ -62,7 +62,7 @@
       "comments": {
         "minor": [
           {
-            "comment": "Create new service pages: generic-error and no-content\""
+            "comment": "Create new service pages: generic-error and no-content"
           }
         ]
       }

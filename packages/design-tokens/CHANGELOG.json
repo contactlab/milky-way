@@ -2,6 +2,18 @@
   "name": "@contactlab/ds-tokens",
   "entries": [
     {
+      "version": "3.2.0",
+      "tag": "@contactlab/ds-tokens_v3.2.0",
+      "date": "Fri, 19 Nov 2021 12:01:56 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add Base64 and SVG icons"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.1",
       "tag": "@contactlab/ds-tokens_v3.1.1",
       "date": "Fri, 05 Nov 2021 08:26:40 GMT",
@@ -20,7 +32,7 @@
       "comments": {
         "minor": [
           {
-            "comment": "Clean and fix artworks issues\""
+            "comment": "Clean and fix artworks issues"
           }
         ]
       }
@@ -122,7 +134,7 @@
       "comments": {
         "patch": [
           {
-            "comment": "\"Fix web-font paths\""
+            "comment": "Fix web-font paths"
           }
         ]
       }
@@ -134,7 +146,7 @@
       "comments": {
         "minor": [
           {
-            "comment": "\"Add Montserrat font to @contactlab/ds-tokens\" package\""
+            "comment": "Add Montserrat font to @contactlab/ds-tokens package"
           }
         ]
       }
@@ -146,7 +158,7 @@
       "comments": {
         "minor": [
           {
-            "comment": "\"Integrate the Ant Design color palette\""
+            "comment": "Integrate the Ant Design color palette"
           }
         ]
       }

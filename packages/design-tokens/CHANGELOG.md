@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Fri, 05 Nov 2021 08:26:40 GMT and should not be manually modified.
+This log was last generated on Fri, 19 Nov 2021 12:01:56 GMT and should not be manually modified.
+
+## 3.2.0
+Fri, 19 Nov 2021 12:01:56 GMT
+
+### Minor changes
+
+- Add Base64 and SVG icons"
 
 ## 3.1.1
 Fri, 05 Nov 2021 08:26:40 GMT
