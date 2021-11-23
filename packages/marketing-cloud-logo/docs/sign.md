@@ -9,16 +9,9 @@ You can use the Web Component in your HTML template, JSX, Pug etc. [Check the br
 Put the following scripts tag in the head of your document:
 
 ```html
-<!-- for browsers where JavaScript Modules run natively  -->
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/giotramu-logo/giotramu-logo.esm.js"
-></script>
-
-<!-- for the legacy browsers -->
-<script
-  nomodule
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@2/dist/giotramu-logo/giotramu-logo.js"
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@3.0.1/dist/esm/clab-logo.js"
 ></script>
 ```
 
