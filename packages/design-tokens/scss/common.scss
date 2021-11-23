@@ -264,51 +264,51 @@ h3,
 h4,
 h5,
 h6,
-.hero-text {
+.mc-hero-text {
   margin-top: 0;
   color: colors('base');
   font-weight: 700;
   line-height: 1.15;
 }
 
-.hero-text {
+.mc-hero-text {
   margin-bottom: 2.6rem;
   font-size: 4rem;
 }
 
 h1 {
   margin-bottom: 2.4rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 h2 {
   margin-bottom: 2.2rem;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 h3 {
   margin-bottom: 2rem;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 
 h4 {
   margin-bottom: 1.8rem;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 h5 {
   margin-bottom: 1.6rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 h6 {
   margin-bottom: 1.4rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.subheading-1,
-.subheading-2,
-.subheading-3 {
+.mc-subheading-1,
+.mc-subheading-2,
+.mc-subheading-3 {
   display: block;
   color: colors('base800');
   font-weight: 400;
@@ -316,32 +316,32 @@ h6 {
   line-height: 1.3em;
 }
 
-.subheading-1 {
+.mc-subheading-1 {
   margin-bottom: 1.6rem;
-  font-size: 2.2rem;
-}
-
-.subheading-2 {
-  margin-bottom: 1.4rem;
   font-size: 2rem;
 }
 
-.subheading-3 {
-  margin-bottom: 1.2rem;
+.mc-subheading-2 {
+  margin-bottom: 1.4rem;
   font-size: 1.8rem;
+}
+
+.mc-subheading-3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
 }
 
 /**
  * Basic HTML Elements
  */
-a:link,
-a:visited {
+a.mc-link:link,
+a.mc-link:visited {
   color: colors('accent');
   text-decoration: none;
   transition: color 100ms linear;
 }
 
-a:hover {
+a.mc-link:hover {
   color: colors('accent500');
 }
 
