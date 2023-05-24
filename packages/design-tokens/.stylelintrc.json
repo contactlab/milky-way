@@ -1,8 +1,7 @@
 {
   "extends": [
-    "@giotramu/stylelint-config",
-    "@giotramu/stylelint-config/sass",
-    "@giotramu/stylelint-config/prettier"
+    "@contactlab/stylelint-config",
+    "@detra-lab/stylelint-config/sass"
   ],
   "rules": {
     "no-duplicate-selectors": null,

@@ -5,7 +5,7 @@
 */
 @font-face {
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   font-style: normal;
   src: local('Montserrat Regular'),
     url('https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/fonts/montserrat-regular.woff2')
@@ -23,7 +23,7 @@
 */
 @font-face {
   font-weight: 700;
-  font-family: 'Montserrat';
+  font-family: Montserrat;
   font-style: normal;
   src: local('Montserrat Bold'),
     url('https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@latest/fonts/montserrat-bold.woff2')

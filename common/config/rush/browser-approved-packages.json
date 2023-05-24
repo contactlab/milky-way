@@ -35,6 +35,14 @@
       "allowedCategories": [ "libraries" ]
     },
     {
+      "name": "@contactlab/stylelint-config",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
+      "name": "@detra-lab/stylelint-config",
+      "allowedCategories": [ "libraries" ]
+    },
+    {
       "name": "@giotramu/stylelint-config",
       "allowedCategories": [ "libraries" ]
     },

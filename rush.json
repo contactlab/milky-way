@@ -6,7 +6,7 @@
     "preventManualShrinkwrapChanges": true,
     "useWorkspaces": true
   },
-  "nodeSupportedVersionRange": ">=14.17 <16.13",
+  "nodeSupportedVersionRange": ">=14.17 <17",
   "repository": {
     "url": "https://github.com/contactlab/milky-way",
     "defaultBranch": "stable"
