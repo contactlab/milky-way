@@ -1,4 +1,4 @@
-import type {HexColorCode, FillColor} from './types/commonProps';
+import type {HexColorCode, FillColor} from './types';
 
 interface CalcSvgPaddingProps {
   base?: number;
