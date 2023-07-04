@@ -2,7 +2,7 @@ import {newSpecPage} from '@stencil/core/testing';
 import {Logo} from '../index';
 
 describe('clab-logo', () => {
-  it('renders "Contactlab Marketing Cloud" logo with standard color palette', async () => {
+  it('renders "MailUp CDP" logo with standard color palette', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo></clab-logo>'
@@ -24,7 +24,7 @@ describe('clab-logo', () => {
     `);
   });
 
-  it('renders "Contactlab Marketing Cloud" logo with positive color palette', async () => {
+  it('renders "MailUp CDP" logo with positive color palette', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo fill-style="positive"></clab-logo>'
@@ -46,7 +46,7 @@ describe('clab-logo', () => {
     `);
   });
 
-  it('renders "Contactlab Marketing Cloud" with negative color palette', async () => {
+  it('renders "MailUp CDP" with negative color palette', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo fill-style="negative"></clab-logo>'
@@ -68,7 +68,7 @@ describe('clab-logo', () => {
     `);
   });
 
-  it('renders "Contactlab Marketing Cloud" with custom color palette', async () => {
+  it('renders "MailUp CDP" with custom color palette', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo fill-style="mono" fill-color="tomato"></clab-logo>'
@@ -90,7 +90,7 @@ describe('clab-logo', () => {
     `);
   });
 
-  it('renders "Marketing Cloud" with standard color palette', async () => {
+  it('renders "MailUp CDP" with standard color palette', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo compact></clab-logo>'
@@ -112,7 +112,7 @@ describe('clab-logo', () => {
     `);
   });
 
-  it('renders "Marketing Cloud" with a custom size', async () => {
+  it('renders "MailUp CDP" with a custom size', async () => {
     const {root} = await newSpecPage({
       components: [Logo],
       html: '<clab-logo size="320px" compact></clab-logo>'
