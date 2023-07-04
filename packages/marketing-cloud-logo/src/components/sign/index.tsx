@@ -1,6 +1,6 @@
 import {Component, Prop, h} from '@stencil/core';
 import type {FillColor, Size} from '../../types';
-import {handleColor} from '../../utils';
+import {toHexColor} from '../../utils';
 
 @Component({
   shadow: true,
@@ -9,7 +9,7 @@ import {handleColor} from '../../utils';
 })
 export class Sign {
   render(): SVGElement {
-    const fill = handleColor(this.fillColor);
+    const fill = toHexColor(this.fillColor);
     const width = this.size;
 
     return (

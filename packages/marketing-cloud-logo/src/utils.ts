@@ -1,40 +1,28 @@
-import type {HexColorCode, FillColor} from './types';
+import type {FillColor} from './types';
 
-interface CalcSvgPaddingProps {
-  base?: number;
+interface WidthAndHight {
   width: number;
   height: number;
 }
 
 /**
+ * Returns padding bottom in percentage unit.
+ *
  * Scaling the SVG by using the padding-bottom hack.
  * More info on the CSS-Tricks blog: https://css-tricks.com/scale-svg/#option-5-use-the-padding-bottom-hack-on-an-inline-svg-element
- *
- * @private
- * @param options - SVG properties
- * @param options.base - Scaling percentange (optional)
- * @param options.width - SVG viewbox width
- * @param options.height - SVG viewbox height
- * @returns Padding bottom in percentage unit, related to `options.base`
  */
-export const calcSvgPadding = ({
-  base = 100,
-  width,
-  height
-}: CalcSvgPaddingProps): string => {
-  const percentage = Math.round((base * height) / width);
+export const svgPadding = ({width, height}: WidthAndHight): string => {
+  const percentage = Math.round((100 * height) / width);
 
   return isNaN(percentage) ? 'none' : `${percentage}%`;
 };
 
+type HexColor = '#1890ff' | '#141414' | '#fafafa' | '#fff' | '#000';
+
 /**
- * Map a specific input to color in Hex code format.
- *
- * @private
- * @param color - One of the following types: 'accent', 'base', 'light', 'white', 'black'
- * @returns Hex color code
+ * Maps a specific input to color in Hex code format.
  */
-export const handleColor = (color: FillColor): HexColorCode => {
+export const toHexColor = (color: FillColor): HexColor => {
   switch (color) {
     case 'accent':
       return '#1890ff';
