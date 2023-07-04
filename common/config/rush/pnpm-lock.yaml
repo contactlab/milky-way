@@ -97,7 +97,6 @@ importers:
   ../../packages/marketing-cloud-logo:
     specifiers:
       '@contactlab/stylelint-config': 1.0.0
-      '@detra-lab/stylelint-config': 0.1.0
       '@stencil/core': 2.10.0
       '@types/jest': 26.0.24
       '@types/puppeteer': 5.4.4
@@ -107,14 +106,11 @@ importers:
       eslint-plugin-react: 7.25.3
       jest: 26.6.3
       jest-cli: 26.6.3
-      npm-run-all: 4.1.5
-      postcss-scss: 4.0.2
       puppeteer: 11.0.0
       stylelint: 15.6.2
       typescript: 4.4.4
     devDependencies:
       '@contactlab/stylelint-config': 1.0.0_1e19b17eb3bbf1b9000ba0ac422c2ee0
-      '@detra-lab/stylelint-config': 0.1.0_71ffe236c8de9f7a447951c9c8c70fa8
       '@stencil/core': 2.10.0
       '@types/jest': 26.0.24
       '@types/puppeteer': 5.4.4
@@ -124,8 +120,6 @@ importers:
       eslint-plugin-react: 7.25.3_eslint@7.32.0
       jest: 26.6.3
       jest-cli: 26.6.3
-      npm-run-all: 4.1.5
-      postcss-scss: 4.0.2
       puppeteer: 11.0.0
       stylelint: 15.6.2
       typescript: 4.4.4
@@ -2108,31 +2102,6 @@ packages:
       stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.6.2
       stylelint-order: 6.0.3_stylelint@15.6.2
       stylelint-scss: 5.0.0_stylelint@15.6.2
-    transitivePeerDependencies:
-      - postcss
-    dev: true
-
-  /@detra-lab/stylelint-config/0.1.0_71ffe236c8de9f7a447951c9c8c70fa8:
-    resolution: {integrity: sha512-A5ZdmH7krYTm+W3dkqZYDFEMcGnK8d+y962f8zgnwJbrpvrBHV8GXBrtOMFFnLTSkrF+vO4HOaGyaJbrdiuUcA==}
-    engines: {node: 16.x || 18.x, npm: 8.x || 9.x}
-    peerDependencies:
-      postcss-scss: ^4.0.0
-      postcss-styled-syntax: ^0.4.0
-      stylelint: ^15.6.0
-      stylelint-scss: ^5.0.0
-    peerDependenciesMeta:
-      postcss-scss:
-        optional: true
-      postcss-styled-syntax:
-        optional: true
-      stylelint-scss:
-        optional: true
-    dependencies:
-      postcss-scss: 4.0.2
-      postcss-syntax: 0.36.2
-      stylelint: 15.6.2
-      stylelint-declaration-block-no-ignored-properties: 2.7.0_stylelint@15.6.2
-      stylelint-order: 6.0.3_stylelint@15.6.2
     transitivePeerDependencies:
       - postcss
     dev: true
