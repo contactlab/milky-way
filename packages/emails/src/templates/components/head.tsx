@@ -20,7 +20,7 @@ export function Head(props: HeadProps): JSX.Element {
 
   return (
     <MjmlHead>
-      <MjmlTitle>Contactlab Marketing Cloud</MjmlTitle>
+      <MjmlTitle>MailUp CDP</MjmlTitle>
       <MjmlPreview>{i18n.t('previewText')}</MjmlPreview>
       <MjmlFont
         name="Montserrat"

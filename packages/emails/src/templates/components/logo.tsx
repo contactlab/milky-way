@@ -9,8 +9,8 @@ export function Logo(): JSX.Element {
       <MjmlColumn>
         <MjmlImage
           align="center"
-          alt="Contactlab Marketing Cloud logo"
-          title="Contactlab Marketing Cloud"
+          alt="MailUp CDP logo"
+          title="MailUp CDP"
           width={logoSize}
           href={LOGO_HREF}
           src={LOGO_SRC}

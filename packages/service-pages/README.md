@@ -1,6 +1,6 @@
 # Service Pages
 
-The Contactlab Marketing Cloud service pages.
+The MailUp CDP service pages.
 
 [![NPM Package][npm-img]][npm-url]
 
@@ -31,9 +31,11 @@ $ npm run lint
 <!--
   I M A G E S
 -->
+
 [npm-img]: https://img.shields.io/npm/v/@contactlab/service-pages?style=flat-square&colorA=001420&colorB=0391ec
 
 <!--
   L I N K S
 -->
+
 [npm-url]: https://www.npmjs.com/package/@contactlab/service-pages

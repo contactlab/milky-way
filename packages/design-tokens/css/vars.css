@@ -1,7 +1,7 @@
 /* prettier-ignore */
 
 :root {
-  /* 1. The Contactlab Marketing Cloud color palette */
+  /* 1. The Contactlab color palette */
   --color-accent: #1890ff;
   --color-accent100: #e6f7ff;
   --color-accent200: #bae7ff;
@@ -35,7 +35,7 @@
   --color-fluo-accent600: #9bebd0;
   --color-fluo-accent900: #00c9bd;
 
-  /* 2. The Contactlab Marketing Cloud elevations */
+  /* 2. The Contactlab elevations */
   --elevation-z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12);
   --elevation-z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04),
                   0 3px 6px 0 rgba(0, 20, 32, 0.12);
@@ -55,7 +55,7 @@
   --elevation-accent-z5: 0 19px 38px 0 rgba(3, 145, 236, 0.16),
                          0 15px 12px 0 rgba(3, 145, 236, 0.12);
 
-  /* 3. The Contactlab Marketing Cloud transitions */
+  /* 3. The Contactlab transitions */
   --elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* 4. Document styles */

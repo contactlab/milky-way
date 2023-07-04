@@ -1,22 +1,22 @@
 {
-  "address": "Via Natale Battaglia, 12 - 20127 Milano",
+  "address": "Via Pola, 9 - 20124 Milano",
   "btnChangePassword": "Cambia password",
   "btnLogin": "Effettua l'accesso",
   "contactUs": "Contattaci.",
-  "contactlab": "Contactlab",
-  "contactlabLink": "https://contactlab.com/it",
+  "contactlab": "MailUp",
+  "contactlabLink": "https://mailup.com/",
   "doc": "In alternativa, consulta",
   "explore": "la documentazione della piattaforma.",
   "exploreLink": "https://explore.contactlab.com",
   "questions": "Qualche dubbio o domanda?",
-  "footnote": "Contactlab Marketing Cloud è un prodotto",
+  "footnote": "MailUp CDP è un prodotto",
   "hello": "Ciao,",
   "helloUser": "Ciao %{firstName},",
   "noReply": "Questa mail è generata automaticamente, si prega di non rispondere.",
-  "previewText": "Mail automatica generata dalla piattaforma Contactlab Marketing Cloud. Si prega di non rispondere.",
+  "previewText": "Mail automatica generata dalla piattaforma MailUp CDP. Si prega di non rispondere.",
   "redemptionPeriod": "Ricorda: hai %{days} giorni per cambiarla.",
   "securityAdvice": "Per motivi di sicurezza, ti invitiamo a modificare la password temporanea e a custodire quella nuova.",
-  "signature": "Grazie, il team Contactlab.",
+  "signature": "Grazie, il team MailUp.",
   "support": "Contatta il nostro supporto",
   "supportLink": "https://support.contactlab.com/hc/it",
   "tempPassword": "Password temporanea:",
@@ -75,7 +75,7 @@
     "title": "Il tuo PIN"
   },
   "welcome": {
-    "opening": "abbiamo creato l'utenza che ti consente di accedere alla piattaforma Contactlab Marketing Cloud! 🎉",
+    "opening": "abbiamo creato l'utenza che ti consente di accedere alla piattaforma MailUp CDP! 🎉",
     "suggestions": "In basso, trovi le tue credenziali."
   }
 }

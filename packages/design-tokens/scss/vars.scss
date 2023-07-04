@@ -1,4 +1,4 @@
-// The Contactlab Marketing Cloud color palette
+// The Contactlab color palette
 $colors: (
   'accent': #1890ff,
   'accent100': #e6f7ff,
@@ -44,7 +44,7 @@ $colors: (
   }
 }
 
-// The Contactlab Marketing Cloud elevations
+// The Contactlab elevations
 $z1: 0 1px 3px 0 rgba(0, 20, 32, 0.12);
 $z2: 0 3px 6px 0 rgba(0, 20, 32, 0.04), 0 3px 6px 0 rgba(0, 20, 32, 0.12);
 $z3: 0 6px 6px 0 rgba(0, 20, 32, 0.09), 0 10px 20px 0 rgba(0, 20, 32, 0.13);
@@ -84,5 +84,5 @@ $elevations: (
   }
 }
 
-// The Contactlab Marketing Cloud transitions
+// The Contactlab transitions
 $elevation-transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
