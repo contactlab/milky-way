@@ -39,26 +39,7 @@ Drop this lines into your HTML document:
 
 ## Attributes
 
-<table>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Type</th>
-      <th>Default</th>
-      <th>Description</th>
-    </tr>
-  <tbody>
-    <tr>
-      <td>size</td>
-      <td><code>string</code></td>
-      <td><code>'100%'</code></td>
-      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
-    </tr>
-    <tr>
-      <td>fill-color</td>
-      <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
-      <td><code>'accent'</code></td>
-      <td>The color of the sign. The default is <code>'accent'</code>, equal to <code>#1890ff</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
-    </tr>
-  </tbody>
-</table>
+| Attribute  | Type                                                  | Default    | Description                                                                                                        |
+| ---------- | ----------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| size       | `string`                                              | `'100%'`   | The width of the component. Use a length in `px`, `rem`, `em`, `%` unit.                                           |
+| fill-color | `'accent' \| 'base' \| 'light' \| 'white' \| 'black'` | `'accent'` | The color of the sign. The default is `'accent'`, equal to `#1890ff`. [Check the color schema](./color-schema.md). |

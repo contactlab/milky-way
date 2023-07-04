@@ -55,39 +55,9 @@ Drop this lines into your HTML document:
 
 ## Attributes
 
-<table>
-  <thead>
-    <tr>
-      <th>Attribute</th>
-      <th>Type</th>
-      <th>Default</th>
-      <th>Description</th>
-    </tr>
-  <tbody>
-    <tr>
-      <td>size</td>
-      <td><code>string</code></td>
-      <td><code>'100%'</code></td>
-      <td>The width of the component. Use a length in <code>px</code>, <code>rem</code>, <code>em</code>, <code>%</code> unit.</td>
-    </tr>
-    <tr>
-      <td>type</td>
-      <td><code>'mc' | 'explore' | 'developer'</code></td>
-      <td><code>'mc'</code></td>
-      <td>Change the logo content. Choose between <code>Contactactlab Marketing Cloud</code>, <code>MC Explore</code> and <code>MC Developer</code>.
-      </td>
-    </tr>
-    <tr>
-      <td>compact</td>
-      <td><code>boolean</code></td>
-      <td><code>false</code></td>
-      <td>Use the compact version of the Contactlab Marketing Cloud logo. <u>This attribute has effect only if you set the <code>type</code> attribute to <code>'mc'</code> (the default)</u>.</td>
-    </tr>
-    <tr>
-      <td>fill-color</td>
-      <td><code>'accent' | 'base' | 'light' | 'white' | 'black'</code></td>
-      <td><code>'base'</code></td>
-      <td>The color of the typography. The default is <code>'base'</code>, equal to <code>#141414</code>. <a href="./color-schema.md" title="Color schema">Check the color schema</a>.</td>
-    </tr>
-  </tbody>
-</table>
+| Attribute  | Type                                                  | Default  | Description                                                                                                                                                    |
+| ---------- | ----------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| size       | `string`                                              | `'100%'` | The width of the component. Use a length in `px`, `rem`, `em`, `%` unit.                                                                                       |
+| type       | `'mc' \| 'explore' \| 'developer'`                    | `'mc'`   | Change the logo content. Choose between `Contactactlab Marketing Cloud`, `MC Explore` and `MC Developer`.                                                      |
+| compact    | `boolean`                                             | `false`  | Use the compact version of the Contactlab Marketing Cloud logo. <u>This attribute has effect only if you set the `type` attribute to `'mc'` (the default)</u>. |
+| fill-color | `'accent' \| 'base' \| 'light' \| 'white' \| 'black'` | `'base'` | The color of the typography. The default is `'base'`, equal to `#141414`. [Check the color schema](./color-schema.md).                                         |
