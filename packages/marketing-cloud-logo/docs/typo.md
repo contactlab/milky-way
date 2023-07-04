@@ -11,7 +11,7 @@ Put the following scripts tag in the head of your document:
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo@3.0.1/dist/esm/clab-logo.js"
+  src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/dist/esm/clab-logo.js"
 ></script>
 ```
 
