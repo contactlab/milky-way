@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/ds-tokens",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.",
   "author": "Contactlab",
   "homepage": "https://github.com/contactlab/milky-way#readme",

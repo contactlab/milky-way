@@ -1,0 +1,12 @@
+{
+  "changes": [
+    {
+      "changeType": 0,
+      "newVersion": "4.0.0",
+      "packageName": "@contactlab/service-pages",
+      "comment": ""
+    }
+  ],
+  "packageName": "@contactlab/service-pages",
+  "email": "1291271+StefanoMagrassi@users.noreply.github.com"
+}
