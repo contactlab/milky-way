@@ -1,15 +1,6 @@
 import {newE2EPage} from '@stencil/core/testing';
 
 describe('clab-typo', () => {
-  it('renders', async () => {
-    const page = await newE2EPage();
-    await page.setContent('<clab-typo></clab-typo>');
-
-    const element = await page.find('clab-typo');
-
-    expect(element).toHaveClass('hydrated');
-  });
-
   it('renders type attribute changes', async () => {
     const page = await newE2EPage();
     await page.setContent('<clab-typo></clab-typo>');
@@ -91,11 +82,11 @@ describe('clab-typo', () => {
     const component = await page.find('clab-typo');
     const wrapper = await page.find('clab-typo >>> .wrapper');
 
-    expect(wrapper.getAttribute('data-e2e-width')).toBe('100%');
+    expect(wrapper.getAttribute('data-e2e-size')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(wrapper.getAttribute('data-e2e-width')).toBe('480px');
+    expect(wrapper.getAttribute('data-e2e-size')).toBe('480px');
   });
 });

@@ -20,14 +20,12 @@ export class Typo {
     const paddingBottom = svgPadding({width: viewboxWidth, height: VB_HEIGHT});
 
     return (
-      <div class="wrapper" style={{width}} data-e2e-width={width}>
+      <div class="wrapper" style={{width}} data-e2e-size={this.size}>
         <svg
           class="vector"
           fill={fill}
-          style={{
-            paddingBottom
-          }}
-          viewBox={`0 0 ${viewboxWidth} 45`}
+          style={{paddingBottom}}
+          viewBox={`0 0 ${viewboxWidth} ${VB_HEIGHT}`}
           preserveAspectRatio="xMidYMin slice"
           xmlns="http://www.w3.org/2000/svg"
         >
