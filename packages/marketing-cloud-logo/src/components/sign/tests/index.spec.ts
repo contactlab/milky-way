@@ -11,13 +11,12 @@ describe('clab-sign', () => {
     expect(root).toEqualHtml(`
       <clab-sign>
         <mock:shadow-root>
-          <div class="wrapper" style="width: 100%;" data-e2e-width="100%">
+          <div class="wrapper" style="width: 100%; height: 100%" data-e2e-size="100%">
           <svg
             class="vector"
             fill="#464646"
             preserveAspectRatio="xMidYMin slice"
-            viewBox="0 0 65 68"
-            style="padding-bottom: 150%; margin-left: -27%;"
+            viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g data-name="clab-sign-base">
@@ -62,13 +61,12 @@ describe('clab-sign', () => {
     expect(root).toEqualHtml(`
       <clab-sign size="160px" fill-color="light">
         <mock:shadow-root>
-          <div class="wrapper" style="width: 160px;" data-e2e-width="160px">
+          <div class="wrapper" style="width: 160px; height: 160px" data-e2e-size="160px">
           <svg
             class="vector"
             fill="#fff"
             preserveAspectRatio="xMidYMin slice"
-            viewBox="0 0 65 68"
-            style="padding-bottom: 150%; margin-left: -27%;"
+            viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g data-name="clab-sign-base">

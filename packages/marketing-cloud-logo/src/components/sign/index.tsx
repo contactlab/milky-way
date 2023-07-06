@@ -11,17 +11,14 @@ export class Sign {
   render(): SVGElement {
     const fill = toHexColor(this.fillColor);
     const width = this.size;
+    const height = this.size;
 
     return (
-      <div class="wrapper" style={{width}} data-e2e-width={width}>
+      <div class="wrapper" style={{width, height}} data-e2e-size={this.size}>
         <svg
           class="vector"
           fill={fill}
-          style={{
-            paddingBottom: '150%',
-            marginLeft: '-27%'
-          }}
-          viewBox="0 0 65 68"
+          viewBox="0 0 100 100"
           preserveAspectRatio="xMidYMin slice"
           xmlns="http://www.w3.org/2000/svg"
         >
