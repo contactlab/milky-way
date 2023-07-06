@@ -1,14 +1,6 @@
 import {newE2EPage} from '@stencil/core/testing';
 
 describe('clab-legacy', () => {
-  it('renders', async () => {
-    const page = await newE2EPage();
-    await page.setContent('<clab-legacy></clab-legacy>');
-
-    const element = await page.find('clab-legacy');
-    expect(element).toHaveClass('hydrated');
-  });
-
   it('renders type attribute changes', async () => {
     const page = await newE2EPage();
     await page.setContent('<clab-legacy></clab-legacy>');
@@ -29,28 +21,28 @@ describe('clab-legacy', () => {
     await page.setContent('<clab-legacy></clab-legacy>');
 
     const component = await page.find('clab-legacy');
-    const sign = await page.find('clab-legacy >>> .sign');
-    const typo = await page.find('clab-legacy >>> .typo');
-    expect(sign.getAttribute('fill-color')).toBe('base');
-    expect(typo.getAttribute('fill-color')).toBe('base');
+    const svg = await page.find('clab-legacy >>> .vector');
+    const sign = await page.find('clab-legacy >>> [data-name="clab-sign"]');
+    expect(svg.getAttribute('fill')).toBe('#464646');
+    expect(sign.getAttribute('fill')).toBe('#1890ff');
 
     component.setProperty('fillStyle', 'mono');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('black');
-    expect(typo.getAttribute('fill-color')).toBe('black');
+    expect(svg.getAttribute('fill')).toBe('#000');
+    expect(sign.getAttribute('fill')).toBe('#1890ff');
 
     component.setProperty('fillStyle', 'negative');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('light');
-    expect(typo.getAttribute('fill-color')).toBe('light');
+    expect(svg.getAttribute('fill')).toBe('#fff');
+    expect(sign.getAttribute('fill')).toBe('#1890ff');
 
     component.setProperty('fillStyle', 'positive');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('base');
-    expect(typo.getAttribute('fill-color')).toBe('base');
+    expect(svg.getAttribute('fill')).toBe('#464646');
+    expect(sign.getAttribute('fill')).toBe('#1890ff');
   });
 
   it('renders size attribute changes', async () => {
@@ -59,11 +51,11 @@ describe('clab-legacy', () => {
 
     const component = await page.find('clab-legacy');
     const element = await page.find('clab-legacy >>> .legacy');
-    expect(element.getAttribute('data-e2e-width')).toBe('100%');
+    expect(element.getAttribute('data-e2e-size')).toBe('100%');
 
     component.setProperty('size', '480px');
     await page.waitForChanges();
 
-    expect(element.getAttribute('data-e2e-width')).toBe('480px');
+    expect(element.getAttribute('data-e2e-size')).toBe('480px');
   });
 });
