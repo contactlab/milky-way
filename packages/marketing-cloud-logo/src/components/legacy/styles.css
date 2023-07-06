@@ -1,0 +1,25 @@
+.legacy {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0;
+  line-height: 0;
+}
+
+.legacy .sign {
+  width: 15%;
+  margin-right: 5%;
+}
+
+.legacy .typo {
+  width: 80%;
+}
+
+.legacy--explore .sign {
+  width: 20%;
+  margin-right: 5%;
+}
+
+.legacy--explore .typo {
+  width: 75%;
+}

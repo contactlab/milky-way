@@ -12,9 +12,9 @@ describe('svgPadding', () => {
 
 describe('toHexColor', () => {
   it(`returns a specific hex color for the "accent", "base" and "light" keywords`, () => {
-    expect(toHexColor('accent')).toBe('#1890ff');
-    expect(toHexColor('base')).toBe('#141414');
-    expect(toHexColor('light')).toBe('#fafafa');
+    expect(toHexColor('accent')).toBe('#464646');
+    expect(toHexColor('base')).toBe('#464646');
+    expect(toHexColor('light')).toBe('#fff');
     expect(toHexColor('white')).toBe('#fff');
   });
 

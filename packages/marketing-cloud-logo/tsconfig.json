@@ -19,6 +19,7 @@
     "skipLibCheck": true,
     "strict": true,
     "stripInternal": true,
+    "sourceMap": true,
     "target": "ES2017",
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },

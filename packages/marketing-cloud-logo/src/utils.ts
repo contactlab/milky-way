@@ -17,23 +17,18 @@ export const svgPadding = ({width, height}: WidthAndHight): string => {
   return isNaN(percentage) ? 'none' : `${percentage}%`;
 };
 
-type HexColor = '#1890ff' | '#141414' | '#fafafa' | '#fff' | '#000';
+const HEX_COLOR = {
+  accent: '#464646',
+  base: '#464646',
+  light: '#fff',
+  white: '#fff',
+  black: '#000'
+} as const;
+
+type HexColor = (typeof HEX_COLOR)[keyof typeof HEX_COLOR];
 
 /**
  * Maps a specific input to color in Hex code format.
  */
-export const toHexColor = (color: FillColor): HexColor => {
-  switch (color) {
-    case 'accent':
-      return '#1890ff';
-    case 'base':
-      return '#141414';
-    case 'light':
-      return '#fafafa';
-    case 'white':
-      return '#fff';
-    case 'black':
-    default:
-      return '#000';
-  }
-};
+export const toHexColor = (color: FillColor): HexColor =>
+  HEX_COLOR[color] ?? HEX_COLOR.black;

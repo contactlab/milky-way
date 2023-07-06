@@ -7,6 +7,13 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { FillColor, FillStyle, LogoType, Size } from "./types";
 export namespace Components {
+    interface ClabLegacy {
+        "compact": boolean;
+        "fillColor": FillColor;
+        "fillStyle": FillStyle;
+        "size": Size;
+        "type": Exclude<LogoType, 'mc'>;
+    }
     interface ClabLogo {
         "compact": boolean;
         "fillColor": FillColor;
@@ -26,6 +33,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLClabLegacyElement extends Components.ClabLegacy, HTMLStencilElement {
+    }
+    var HTMLClabLegacyElement: {
+        prototype: HTMLClabLegacyElement;
+        new (): HTMLClabLegacyElement;
+    };
     interface HTMLClabLogoElement extends Components.ClabLogo, HTMLStencilElement {
     }
     var HTMLClabLogoElement: {
@@ -45,12 +58,20 @@ declare global {
         new (): HTMLClabTypoElement;
     };
     interface HTMLElementTagNameMap {
+        "clab-legacy": HTMLClabLegacyElement;
         "clab-logo": HTMLClabLogoElement;
         "clab-sign": HTMLClabSignElement;
         "clab-typo": HTMLClabTypoElement;
     }
 }
 declare namespace LocalJSX {
+    interface ClabLegacy {
+        "compact"?: boolean;
+        "fillColor"?: FillColor;
+        "fillStyle"?: FillStyle;
+        "size"?: Size;
+        "type"?: Exclude<LogoType, 'mc'>;
+    }
     interface ClabLogo {
         "compact"?: boolean;
         "fillColor"?: FillColor;
@@ -69,6 +90,7 @@ declare namespace LocalJSX {
         "type"?: LogoType;
     }
     interface IntrinsicElements {
+        "clab-legacy": ClabLegacy;
         "clab-logo": ClabLogo;
         "clab-sign": ClabSign;
         "clab-typo": ClabTypo;
@@ -78,6 +100,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "clab-legacy": LocalJSX.ClabLegacy & JSXBase.HTMLAttributes<HTMLClabLegacyElement>;
             "clab-logo": LocalJSX.ClabLogo & JSXBase.HTMLAttributes<HTMLClabLogoElement>;
             "clab-sign": LocalJSX.ClabSign & JSXBase.HTMLAttributes<HTMLClabSignElement>;
             "clab-typo": LocalJSX.ClabTypo & JSXBase.HTMLAttributes<HTMLClabTypoElement>;
