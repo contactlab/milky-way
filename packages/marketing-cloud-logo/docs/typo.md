@@ -60,4 +60,4 @@ Drop this lines into your HTML document:
 | size       | `string`                                              | `'100%'` | The width of the component. Use a length in `px`, `rem`, `em`, `%` unit.                                                                       |
 | type       | `'mc' \| 'explore' \| 'developer'`                    | `'mc'`   | Change the logo content. Choose between `MailUp CDP`, `Explore` and `Developer`.                                                               |
 | compact    | `boolean`                                             | `false`  | Use the compact version of the MailUp CDP logo. <u>This attribute has effect only if you set the `type` attribute to `'mc'` (the default)</u>. |
-| fill-color | `'accent' \| 'base' \| 'light' \| 'white' \| 'black'` | `'base'` | The color of the typography. The default is `'base'`, equal to `#141414`. [Check the color schema](./color-schema.md).                         |
+| fill-color | `'accent' \| 'base' \| 'light' \| 'white' \| 'black'` | `'base'` | The color of the typography. The default is `'base'`, equal to `#464646`. [Check the color schema](./color-schema.md).                         |

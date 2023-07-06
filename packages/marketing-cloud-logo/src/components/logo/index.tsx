@@ -23,7 +23,6 @@ export class Logo {
       </div>
     ) : (
       <clab-legacy
-        compact={this.compact}
         fillStyle={this.fillStyle}
         fillColor={this.fillColor}
         size={this.size}

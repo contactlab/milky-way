@@ -9,28 +9,20 @@ import type {FillColor, FillStyle, LogoType, Size} from '../../types';
 export class Legacy {
   render(): Element {
     const width = this.size;
-    const [signColor, typoColor] = colors(this.fillStyle, this.fillColor);
+    const fill = color(this.fillStyle, this.fillColor);
 
     return (
       <div
-        class={`legacy legacy--${this.type} legacy--${
-          this.compact ? 'compact' : 'extended'
-        }`}
+        class={`legacy legacy--${this.type}`}
         style={{width}}
         data-e2e-width={width}
       >
-        <clab-sign class="sign" fill-color={signColor} />
-        <clab-typo
-          class="typo"
-          type={this.type}
-          compact={this.compact}
-          fill-color={typoColor}
-        />
+        <clab-sign class="sign" fill-color={fill} />
+        <clab-typo class="typo" type={this.type} fill-color={fill} />
       </div>
     );
   }
 
-  @Prop() compact = false;
   @Prop() fillStyle: FillStyle = 'positive';
   @Prop() fillColor: FillColor = 'black';
   @Prop() size: Size = '100%';
@@ -38,19 +30,16 @@ export class Legacy {
 }
 
 // --- Helpers
-const colors = (
-  style: FillStyle,
-  fillColor: FillColor
-): [FillColor, FillColor] => {
+const color = (style: FillStyle, fillColor: FillColor): FillColor => {
   switch (style) {
     case 'mono':
-      return [fillColor, fillColor];
+      return fillColor;
 
     case 'negative':
-      return ['light', 'light'];
+      return 'light';
 
     case 'positive':
     default:
-      return ['base', 'base'];
+      return 'base';
   }
 };

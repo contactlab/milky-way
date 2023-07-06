@@ -12,7 +12,7 @@ describe('clab-legacy', () => {
       <clab-legacy>
         <mock:shadow-root>
           <div
-            class="legacy legacy--developer legacy--extended"
+            class="legacy legacy--developer"
             style="width: 100%;"
             data-e2e-width="100%"
           >
@@ -34,7 +34,7 @@ describe('clab-legacy', () => {
       <clab-legacy type="explore">
         <mock:shadow-root>
           <div
-            class="legacy legacy--explore legacy--extended"
+            class="legacy legacy--explore"
             style="width: 100%;"
             data-e2e-width="100%"
           >
@@ -56,7 +56,7 @@ describe('clab-legacy', () => {
       <clab-legacy fill-style="positive">
         <mock:shadow-root>
           <div
-            class="legacy legacy--developer legacy--extended"
+            class="legacy legacy--developer"
             style="width: 100%;"
             data-e2e-width="100%"
           >
@@ -78,7 +78,7 @@ describe('clab-legacy', () => {
       <clab-legacy fill-style="negative">
         <mock:shadow-root>
           <div
-            class="legacy legacy--developer legacy--extended"
+            class="legacy legacy--developer"
             style="width: 100%;"
             data-e2e-width="100%"
           >
@@ -90,7 +90,7 @@ describe('clab-legacy', () => {
     `);
   });
 
-  it('renders "developer" with custom color palette', async () => {
+  it('renders "Developer" with custom color palette', async () => {
     const {root} = await newSpecPage({
       components: [Legacy],
       html: '<clab-legacy fill-style="mono" fill-color="tomato"></clab-legacy>'
@@ -100,7 +100,7 @@ describe('clab-legacy', () => {
       <clab-legacy fill-style="mono" fill-color="tomato">
         <mock:shadow-root>
           <div
-            class="legacy legacy--developer legacy--extended"
+            class="legacy legacy--developer"
             style="width: 100%;"
             data-e2e-width="100%"
           >
@@ -112,44 +112,22 @@ describe('clab-legacy', () => {
     `);
   });
 
-  it('renders "developer" with standard color palette', async () => {
-    const {root} = await newSpecPage({
-      components: [Legacy],
-      html: '<clab-legacy compact></clab-legacy>'
-    });
-
-    expect(root).toEqualHtml(`
-      <clab-legacy compact>
-        <mock:shadow-root>
-          <div
-            class="legacy legacy--developer legacy--compact"
-            style="width: 100%;"
-            data-e2e-width="100%"
-          >
-            <clab-sign class="sign" fill-color="base"></clab-sign>
-            <clab-typo class="typo" type="developer" compact fill-color="base"></clab-typo>
-          </div>
-        </mock:shadow-root>
-      </clab-legacy>
-    `);
-  });
-
   it('renders "developer" with a custom size', async () => {
     const {root} = await newSpecPage({
       components: [Legacy],
-      html: '<clab-legacy size="320px" compact></clab-legacy>'
+      html: '<clab-legacy size="320px"></clab-legacy>'
     });
 
     expect(root).toEqualHtml(`
-      <clab-legacy size="320px" compact>
+      <clab-legacy size="320px">
         <mock:shadow-root>
           <div
-            class="legacy legacy--developer legacy--compact"
+            class="legacy legacy--developer"
             style="width: 320px;"
             data-e2e-width="320px"
           >
             <clab-sign class="sign" fill-color="base"></clab-sign>
-            <clab-typo class="typo" type="developer" compact fill-color="base"></clab-typo>
+            <clab-typo class="typo" type="developer" fill-color="base"></clab-typo>
           </div>
         </mock:shadow-root>
       </clab-legacy>

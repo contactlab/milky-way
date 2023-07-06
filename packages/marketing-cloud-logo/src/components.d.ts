@@ -8,7 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { FillColor, FillStyle, LogoType, Size } from "./types";
 export namespace Components {
     interface ClabLegacy {
-        "compact": boolean;
         "fillColor": FillColor;
         "fillStyle": FillStyle;
         "size": Size;
@@ -66,7 +65,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface ClabLegacy {
-        "compact"?: boolean;
         "fillColor"?: FillColor;
         "fillStyle"?: FillStyle;
         "size"?: Size;

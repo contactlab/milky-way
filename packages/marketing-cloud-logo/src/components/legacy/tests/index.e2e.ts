@@ -53,20 +53,6 @@ describe('clab-legacy', () => {
     expect(typo.getAttribute('fill-color')).toBe('base');
   });
 
-  it('renders compact attribute changes', async () => {
-    const page = await newE2EPage();
-    await page.setContent('<clab-legacy></clab-legacy>');
-
-    const component = await page.find('clab-legacy');
-    const wrapper = await page.find('clab-legacy >>> .legacy');
-    expect(wrapper).toHaveClass('legacy--extended');
-
-    component.setProperty('compact', true);
-    await page.waitForChanges();
-
-    expect(wrapper).toHaveClass('legacy--compact');
-  });
-
   it('renders size attribute changes', async () => {
     const page = await newE2EPage();
     await page.setContent('<clab-legacy></clab-legacy>');
