@@ -22,12 +22,11 @@
   "tempPassword": "Temporary password:",
   "username": "Username:",
   "newsletterSubscription": {
-    "title": "Conferma la tua iscrizione!",
-    "greetingMessage": "Grazie per aver scelto il nostro servizio.",
-    "confirmSubscription": "Per confermare la tua richiesta di iscrizione, clicca qui in basso:",
-    "activateSubscription": "Attiva l'iscrizione",
-    "wrongMessage": "Se invece hai ricevuto questo messaggio senza aver fatto richiesta, ti invitiamo ad ignorare le istruzioni in esso contenute.",
-    "confirmationLink": "https://clientsection.contactlab.it/service/activate/wfc/16010001186178/d/ZT1yb3NzaS5sb3JpQGlvbC5pdCZpPTEyJmc9MTAwMDExOA%3D%3D/k/1f46f97577f9d53a2fea8746c6bf06b3/lang/it/"
+    "title": "Confirm your subscription!",
+    "greetingMessage": "Thank you for choosing our service.",
+    "confirmSubscription": "Click below to confirm your subscription request:",
+    "activateSubscription": "Activate your subscription",
+    "wrongMessage": "If, on the other hand, you received this message without having applied, please disregard the instructions in it."
   },
   "passwordChanged": {
     "isChanged": "account has been successfully modified. 👍",
