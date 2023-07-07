@@ -1,15 +1,15 @@
 import {newE2EPage} from '@stencil/core/testing';
 
 describe('clab-logo', () => {
-  it('renders', async () => {
+  it('renders MC logo', async () => {
     const page = await newE2EPage();
     await page.setContent('<clab-logo></clab-logo>');
 
-    const element = await page.find('clab-logo');
-    expect(element).toHaveClass('hydrated');
+    const element = await page.find('clab-logo >>> .logo');
+    expect(element).toHaveClass('logo--mc');
   });
 
-  it('renders type attribute changes', async () => {
+  it('renders legacy component', async () => {
     const page = await newE2EPage();
     await page.setContent('<clab-logo></clab-logo>');
 
@@ -21,12 +21,9 @@ describe('clab-logo', () => {
     component.setProperty('type', 'developer');
     await page.waitForChanges();
 
-    expect(element).toHaveClass('logo--developer');
+    const element2 = await page.find('clab-logo >>> clab-legacy >>> .legacy');
 
-    component.setProperty('type', 'explore');
-    await page.waitForChanges();
-
-    expect(element).toHaveClass('logo--explore');
+    expect(element2).toBeDefined();
   });
 
   it('renders fill-style attribute changes', async () => {
@@ -34,28 +31,24 @@ describe('clab-logo', () => {
     await page.setContent('<clab-logo></clab-logo>');
 
     const component = await page.find('clab-logo');
-    const sign = await page.find('clab-logo >>> .sign');
-    const typo = await page.find('clab-logo >>> .typo');
-    expect(sign.getAttribute('fill-color')).toBe('accent');
-    expect(typo.getAttribute('fill-color')).toBe('base');
+    const sign = await page.find('clab-logo >>> svg');
+
+    expect(sign.getAttribute('fill')).toBe('#464646');
 
     component.setProperty('fillStyle', 'mono');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('black');
-    expect(typo.getAttribute('fill-color')).toBe('black');
+    expect(sign.getAttribute('fill')).toBe('#000');
 
     component.setProperty('fillStyle', 'negative');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('accent');
-    expect(typo.getAttribute('fill-color')).toBe('light');
+    expect(sign.getAttribute('fill')).toBe('#fff');
 
     component.setProperty('fillStyle', 'positive');
     await page.waitForChanges();
 
-    expect(sign.getAttribute('fill-color')).toBe('accent');
-    expect(typo.getAttribute('fill-color')).toBe('base');
+    expect(sign.getAttribute('fill')).toBe('#464646');
   });
 
   it('renders compact attribute changes', async () => {

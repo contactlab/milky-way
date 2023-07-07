@@ -1,7 +1,6 @@
-# Marketing Cloud Logo
+# Logo
 .stencil/
 loader/
-www/
 
 # Build outputs
 build/
@@ -9,12 +8,6 @@ dist/
 
 # Tests
 coverage/
-
-# Netlify
-.netlify/
-
-# Prettier reformats code blocks inside Markdown, which affects rendered output
-*.md
 
 # Rush files
 **/.rush/temp/

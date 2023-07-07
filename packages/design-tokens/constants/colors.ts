@@ -1,5 +1,5 @@
 /**
- * The Contactlab Marketing Cloud color palette.
+ * The Contactlab color palette.
  */
 export const accent = '#1890ff';
 export const accent100 = '#e6f7ff';

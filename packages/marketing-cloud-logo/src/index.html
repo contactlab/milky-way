@@ -7,37 +7,40 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
 
-    <title>Contactlab Marketing Cloud logo - The Web Component</title>
+    <title>MailUp CDP logo - The Web Component</title>
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@3.2.0/css/montserrat.css"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/css/montserrat.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@3.2.0/css/vars.css"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/css/vars.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens@3.2.0/css/common.css"
+      href="https://cdn.jsdelivr.net/npm/@contactlab/ds-tokens/css/common.css"
     />
 
     <style>
-      body {
-        background-color: var(--color-base900);
+      hr {
+        margin: 1.6rem 0;
       }
 
       .showcase {
         overflow-y: hidden;
-        padding: 3.2rem;
+        padding: 1.6rem;
+        height: 33.2vh;
+      }
+
+      .showcase:last-of-type {
+        height: 33.6vh;
       }
 
       .showcase > ul {
         display: grid;
-        margin: 0 auto;
         padding: 0;
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-        grid-gap: 1.6rem;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
         list-style: none;
       }
 
@@ -49,9 +52,9 @@
 
       .showcase > ul > li {
         display: flex;
-        height: 16rem;
-        border-radius: 1.6rem;
-        padding: 1.6rem;
+        height: 8rem;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
         align-items: center;
         justify-content: center;
       }
@@ -61,19 +64,23 @@
       }
 
       .showcase--accent {
-        background-color: var(--color-accent);
+        background-color: var(--color-base300);
       }
 
       .showcase--base {
         background-color: var(--color-base);
       }
+      .showcase--base * {
+        color: var(--color-white);
+      }
     </style>
 
-    <script type="module" src="/build/clab-logo.esm.js"></script>
-    <script nomodule src="/build/clab-logo.js"></script>
+    <script type="module" src="/dist/clab-logo/clab-logo.esm.js"></script>
   </head>
+
   <body>
     <section class="showcase showcase--light">
+      <h6>Positive</h6>
       <ul>
         <li>
           <clab-logo size="300px"></clab-logo>
@@ -88,22 +95,44 @@
           <clab-logo type="developer" size="180px"></clab-logo>
         </li>
       </ul>
+      <ul>
+        <li>
+          <clab-sign size="40px" fill-color="base"></clab-sign>
+        </li>
+        <li>
+          <clab-typo size="300px" fill-color="base"></clab-typo>
+        </li>
+        <li>
+          <clab-typo size="200px" fill-color="base" compact></clab-typo>
+        </li>
+        <li>
+          <clab-typo type="explore" size="150px" fill-color="base"></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            type="developer"
+            size="180px"
+            fill-color="base"
+          ></clab-typo>
+        </li>
+      </ul>
     </section>
 
     <section class="showcase showcase--accent">
+      <h6>Mono (accent)</h6>
       <ul>
         <li>
           <clab-logo
             size="300px"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
           ></clab-logo>
         </li>
         <li>
           <clab-logo
             size="200px"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
             compact
           ></clab-logo>
         </li>
@@ -112,7 +141,7 @@
             type="explore"
             size="150px"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
           ></clab-logo>
         </li>
         <li>
@@ -120,13 +149,39 @@
             type="developer"
             size="180px"
             fill-style="mono"
-            fill-color="light"
+            fill-color="accent"
           ></clab-logo>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <clab-sign size="40px" fill-color="accent"></clab-sign>
+        </li>
+        <li>
+          <clab-typo size="300px" fill-color="accent"></clab-typo>
+        </li>
+        <li>
+          <clab-typo size="200px" fill-color="accent" compact></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            type="explore"
+            size="150px"
+            fill-color="accent"
+          ></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            type="developer"
+            size="180px"
+            fill-color="accent"
+          ></clab-typo>
         </li>
       </ul>
     </section>
 
     <section class="showcase showcase--base">
+      <h6>Negative</h6>
       <ul>
         <li>
           <clab-logo size="300px" fill-style="negative"></clab-logo>
@@ -147,6 +202,27 @@
             size="180px"
             fill-style="negative"
           ></clab-logo>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <clab-sign size="40px" fill-color="light"></clab-sign>
+        </li>
+        <li>
+          <clab-typo size="300px" fill-color="light"></clab-typo>
+        </li>
+        <li>
+          <clab-typo size="200px" fill-color="light" compact></clab-typo>
+        </li>
+        <li>
+          <clab-typo type="explore" size="150px" fill-color="light"></clab-typo>
+        </li>
+        <li>
+          <clab-typo
+            type="developer"
+            size="180px"
+            fill-color="light"
+          ></clab-typo>
         </li>
       </ul>
     </section>

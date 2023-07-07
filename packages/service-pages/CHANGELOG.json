@@ -2,6 +2,18 @@
   "name": "@contactlab/service-pages",
   "entries": [
     {
+      "version": "3.2.0",
+      "tag": "@contactlab/service-pages_v3.2.0",
+      "date": "Fri, 07 Jul 2023 07:55:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Replace Marketing Cloud with MailUp CDP"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.1.1",
       "tag": "@contactlab/service-pages_v3.1.1",
       "date": "Fri, 05 Nov 2021 08:26:40 GMT",

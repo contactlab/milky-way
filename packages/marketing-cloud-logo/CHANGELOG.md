@@ -1,6 +1,13 @@
 # Change Log - @contactlab/marketing-cloud-logo
 
-This log was last generated on Thu, 04 Nov 2021 10:17:52 GMT and should not be manually modified.
+This log was last generated on Fri, 07 Jul 2023 09:10:33 GMT and should not be manually modified.
+
+## 4.0.0
+Fri, 07 Jul 2023 07:55:26 GMT
+
+### Breaking changes
+
+- Replace Marketing Cloud logo with MailUp CDP logo
 
 ## 3.0.1
 Thu, 04 Nov 2021 10:17:52 GMT

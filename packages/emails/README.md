@@ -1,8 +1,8 @@
 # Email Templates
 
-The Contactlab Marketing Cloud transactional emails.
+The MailUp CDP transactional emails.
 
-## [Preview][netlify-url]
+## [Preview](https://clab-emails.netlify.app)
 
 #### Run development environment
 
@@ -24,12 +24,5 @@ npm run generate
 
 #### Thanks
 
-- [mjml][mjml-url]
-- [mjml-react][mjml-react-url]
-
-<!--
-  L I N K S
--->
-[netlify-url]: https://clab-emails.netlify.app
-[mjml-url]: https://mjml.io
-[mjml-react-url]: https://github.com/wix-incubator/mjml-react
+- [mjml](https://mjml.io)
+- [mjml-react](https://github.com/wix-incubator/mjml-react)

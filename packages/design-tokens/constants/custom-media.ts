@@ -1,5 +1,5 @@
 /**
- * The Contactlab Marketing Cloud custom media queries
+ * The Contactlab custom media queries
  */
 
 // --- Mobile first
