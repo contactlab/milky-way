@@ -1,7 +1,6 @@
 [
   {
     "policyName": "MilkyWayVersionPolicy",
-    "definitionName": "individualVersion",
-    "lockedMajor": 4
+    "definitionName": "individualVersion"
   }
 ]
