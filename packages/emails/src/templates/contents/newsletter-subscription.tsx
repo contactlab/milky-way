@@ -4,6 +4,7 @@ import {Button} from '../components/button';
 import {Text} from '../components/text';
 
 interface NewsletterSubscription {
+  confirmationLink: string;
   i18n: i18nType;
 }
 
@@ -24,7 +25,7 @@ export function NewsletterSubscription(
         {i18n.t('newsletterSubscription.confirmSubscription')}
       </Text>
 
-      <Button href={i18n.t('newsletterSubscription.confirmationLink')}>
+      <Button href={props.confirmationLink}>
         {i18n.t('newsletterSubscription.activateSubscription')}
       </Button>
 

@@ -33,6 +33,7 @@ export interface ContentData {
   firstName?: string;
   pin?: string | number;
   recoveryLink?: string;
+  confirmationLink?: string;
 }
 
 export interface ContentProps {
@@ -47,7 +48,8 @@ export function Content(props: ContentProps): JSX.Element {
     <MjmlSection
       borderRadius={borderRadius}
       {...sectionPadding}
-      backgroundColor={cardBgColor}>
+      backgroundColor={cardBgColor}
+    >
       <MjmlColumn>
         {getContent(type, data, i18n)}
         <Text type="paragraph">{i18n.t('signature')}</Text>
@@ -78,7 +80,12 @@ function getContent(
 
   switch (type) {
     case 'newsletter-subscription':
-      return <NewsletterSubscription i18n={i18n} />;
+      return (
+        <NewsletterSubscription
+          i18n={i18n}
+          confirmationLink={data.confirmationLink ?? ''}
+        />
+      );
 
     case 'password-changed':
       return (

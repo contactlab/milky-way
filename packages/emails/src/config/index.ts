@@ -15,7 +15,7 @@ export const LOGO_SRC =
 // --- Links
 export const LOGO_HREF = 'http://mc.contactlab.it';
 export const LOGIN_HREF = 'https://login.contactlab.it';
-export const PROFILE_PAGE_HREF = 'https://mc.contactlab.it/#/ac/profile';
+export const PROFILE_PAGE_HREF = 'https://mc.contactlab.it/#/profile';
 
 // --- MJML
 export const MJML_OPTIONS: Mjml2HtmlOptions = {
