@@ -2,6 +2,18 @@
   "name": "@contactlab/marketing-cloud-logo",
   "entries": [
     {
+      "version": "4.0.0",
+      "tag": "@contactlab/marketing-cloud-logo_v4.0.0",
+      "date": "Fri, 07 Jul 2023 07:55:26 GMT",
+      "comments": {
+        "major": [
+          {
+            "comment": "Replace Marketing Cloud logo with MailUp CDP logo"
+          }
+        ]
+      }
+    },
+    {
       "version": "3.0.1",
       "tag": "@contactlab/marketing-cloud-logo_v3.0.1",
       "date": "Thu, 04 Nov 2021 10:17:52 GMT",

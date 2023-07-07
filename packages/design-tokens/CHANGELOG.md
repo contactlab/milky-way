@@ -1,6 +1,13 @@
 # Change Log - @contactlab/ds-tokens
 
-This log was last generated on Tue, 23 Nov 2021 15:59:58 GMT and should not be manually modified.
+This log was last generated on Fri, 07 Jul 2023 07:55:26 GMT and should not be manually modified.
+
+## 3.4.0
+Fri, 07 Jul 2023 07:55:26 GMT
+
+### Minor changes
+
+- Replace Marketing Cloud with MailUp CDP
 
 ## 3.2.1
 Tue, 23 Nov 2021 15:59:58 GMT
