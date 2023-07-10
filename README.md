@@ -53,7 +53,7 @@ Read our [contributing guide][contributing-guide-url] to learn about our develop
 
 ## License
 
-Milky-Way is [MIT licensed](./LICENSE) [@Contactlab](https://contactlab.com).
+Milky-Way is [MIT licensed](./LICENSE) [@MailUp](https://mailup.com).
 
 <!--
   L I N K S
