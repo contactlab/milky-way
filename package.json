@@ -1,0 +1,12 @@
+{
+  "name": "milky-way",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "check": "npm run check -ws",
+    "lint": "npm run lint -ws",
+    "test": "npm test -ws",
+    "build": "npm run build -ws"
+  }
+}

@@ -14,15 +14,15 @@
   ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build",
+    "check": "tsc --noEmit",
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:css": "stylelint ./src/assets/**/*.scss --ignore-path .gitignore",
     "lint:ts": "eslint . --ext .js,.ts --ignore-path .gitignore",
-    "test": "npm run typecheck && npm run lint",
+    "test": "npm run check && npm run lint",
     "dev": "parcel serve ./src/*.pug --port=3333 --cache-dir=.cache/parcel",
     "prebuild": "del-cli ./dist",
-    "build": "parcel build ./src/*.pug --cache-dir=.cache/parcel --no-source-maps",
-    "prepare": "npm run build"
+    "build": "parcel build ./src/*.pug --cache-dir=.cache/parcel --no-source-maps"
   },
   "devDependencies": {
     "@contactlab/stylelint-config": "1.0.0",
@@ -38,8 +38,8 @@
     "eslint-config-prettier": "8.3.0",
     "parcel": "2.0.1",
     "postcss-scss": "4.0.2",
-    "stylelint-scss": "5.0.0",
-    "stylelint": "15.6.2",
+    "stylelint": "15.10.2",
+    "stylelint-scss": "5.1.0",
     "typescript": "4.4.4"
   }
 }

@@ -63,6 +63,9 @@ function getLocalizedTemplate(id: string): DocumentFragment {
 }
 
 class Template {
+  id: string;
+  templateElement: HTMLTemplateElement;
+
   constructor(id: string) {
     this.id = id;
     this.templateElement = document.querySelector(
@@ -73,7 +76,4 @@ class Template {
   public clone(): DocumentFragment {
     return document.importNode(this.templateElement.content, true);
   }
-
-  id: string;
-  templateElement: HTMLTemplateElement;
 }

@@ -7,6 +7,12 @@ import {toHexColor} from '../../utils';
   tag: 'clab-logo'
 })
 export class Logo {
+  @Prop() compact = false;
+  @Prop() fillStyle: FillStyle = 'positive';
+  @Prop() fillColor: FillColor = 'black';
+  @Prop() size: Size = '100%';
+  @Prop() type: LogoType = 'mc';
+
   render(): Element {
     const width = this.size;
     const fill = toHexColor(color(this.fillStyle, this.fillColor));
@@ -30,12 +36,6 @@ export class Logo {
       />
     );
   }
-
-  @Prop() compact = false;
-  @Prop() fillStyle: FillStyle = 'positive';
-  @Prop() fillColor: FillColor = 'black';
-  @Prop() size: Size = '100%';
-  @Prop() type: LogoType = 'mc';
 }
 
 // --- Helpers

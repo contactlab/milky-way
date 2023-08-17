@@ -12,6 +12,11 @@ const VB_HEIGHT = 45;
   styleUrl: './styles.css'
 })
 export class Typo {
+  @Prop() type: LogoType = 'mc';
+  @Prop() fillColor: FillColor = 'base';
+  @Prop() compact = false;
+  @Prop() size: Size = '100%';
+
   render(): SVGElement {
     const [viewboxWidth, content] = typography(this.type, this.compact);
 
@@ -34,11 +39,6 @@ export class Typo {
       </div>
     );
   }
-
-  @Prop() type: LogoType = 'mc';
-  @Prop() fillColor: FillColor = 'base';
-  @Prop() compact = false;
-  @Prop() size: Size = '100%';
 }
 
 // --- Helpers

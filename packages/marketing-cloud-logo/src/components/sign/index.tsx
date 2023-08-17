@@ -8,6 +8,9 @@ import {toHexColor} from '../../utils';
   styleUrl: './styles.css'
 })
 export class Sign {
+  @Prop() size: Size = '100%';
+  @Prop() fillColor: FillColor = 'accent';
+
   render(): SVGElement {
     const fill = toHexColor(this.fillColor);
     const width = this.size;
@@ -52,7 +55,4 @@ export class Sign {
       </div>
     );
   }
-
-  @Prop() size: Size = '100%';
-  @Prop() fillColor: FillColor = 'accent';
 }

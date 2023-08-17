@@ -8,6 +8,11 @@ import {toHexColor} from '../../utils';
   styleUrl: './styles.css'
 })
 export class Legacy {
+  @Prop() fillStyle: FillStyle = 'positive';
+  @Prop() fillColor: FillColor = 'black';
+  @Prop() size: Size = '100%';
+  @Prop() type: Exclude<LogoType, 'mc'> = 'developer';
+
   render(): Element {
     const fill = toHexColor(color(this.fillStyle, this.fillColor));
     const width = this.size;
@@ -26,11 +31,6 @@ export class Legacy {
       </div>
     );
   }
-
-  @Prop() fillStyle: FillStyle = 'positive';
-  @Prop() fillColor: FillColor = 'black';
-  @Prop() size: Size = '100%';
-  @Prop() type: Exclude<LogoType, 'mc'> = 'developer';
 }
 
 // --- Helpers
