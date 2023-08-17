@@ -1,12 +1,26 @@
 {
+  "private": true,
   "name": "milky-way",
+  "engines": {
+    "node": ">= 16.0",
+    "npm": ">= 8.0"
+  },
   "workspaces": [
     "./packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "check": "npm run check -ws",
     "lint": "npm run lint -ws",
     "test": "npm test -ws",
     "build": "npm run build -ws"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": "14.0.0",
+    "prettier": "3.0.2"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
   }
 }
