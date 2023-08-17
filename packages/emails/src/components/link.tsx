@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {primaryColor} from '../commons/attributes';
+import {PRIMARY_COLOR} from '../shared';
 
 type Categories = 'caption' | 'paragraph';
 
@@ -11,12 +11,16 @@ interface LinkProps {
   type: Categories;
 }
 
-export function Link(props: LinkProps): JSX.Element {
-  const {children, cssClass, fontWeight = 400, href, type} = props;
-
+export const Link: React.FC<LinkProps> = ({
+  children,
+  cssClass,
+  fontWeight = 400,
+  href,
+  type
+}) => {
   const commonProps = {
     fontWeight,
-    color: primaryColor,
+    color: PRIMARY_COLOR,
     textDecoration: 'none'
   };
 
@@ -30,13 +34,13 @@ export function Link(props: LinkProps): JSX.Element {
             ...commonProps,
             fontSize: '12px',
             lineHeight: '16px'
-          }}>
+          }}
+        >
           {children}
         </a>
       );
 
     case 'paragraph':
-    default:
       return (
         <a
           href={href}
@@ -45,9 +49,10 @@ export function Link(props: LinkProps): JSX.Element {
             ...commonProps,
             fontSize: '14px',
             lineHeight: '21px'
-          }}>
+          }}
+        >
           {children}
         </a>
       );
   }
-}
+};

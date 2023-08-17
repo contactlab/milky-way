@@ -1,11 +1,5 @@
 import {MjmlText} from 'mjml-react';
 import * as React from 'react';
-import {
-  captionColor,
-  labelColor,
-  titleColor,
-  textColor
-} from '../commons/attributes';
 
 type Categories = 'caption' | 'label' | 'paragraph' | 'title';
 type Padding = string | number;
@@ -23,20 +17,18 @@ interface TextProps {
   paddingLeft?: Padding;
 }
 
-export function Text(props: TextProps): JSX.Element {
-  const {
-    align,
-    children,
-    cssClass,
-    fontWeight = 400,
-    padding,
-    paddingTop,
-    paddingRight,
-    paddingBottom,
-    paddingLeft,
-    type
-  } = props;
-
+export const Text: React.FC<TextProps> = ({
+  align,
+  children,
+  cssClass,
+  fontWeight = 400,
+  padding,
+  paddingTop,
+  paddingRight,
+  paddingBottom,
+  paddingLeft,
+  type
+}) => {
   const commonProps = {
     align,
     cssClass,
@@ -55,7 +47,8 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={fontWeight}
           fontSize="12px"
           lineHeight="16px"
-          color={captionColor}>
+          color="#5B768C"
+        >
           {children}
         </MjmlText>
       );
@@ -67,7 +60,8 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={fontWeight}
           fontSize="14px"
           lineHeight="21px"
-          color={labelColor}>
+          color="#5B768C"
+        >
           {children}
         </MjmlText>
       );
@@ -79,22 +73,23 @@ export function Text(props: TextProps): JSX.Element {
           fontWeight={700}
           fontSize="30px"
           lineHeight="36px"
-          color={titleColor}>
+          color="#1D3344"
+        >
           {children}
         </MjmlText>
       );
 
     case 'paragraph':
-    default:
       return (
         <MjmlText
           {...commonProps}
           fontWeight={fontWeight}
           fontSize="14px"
           lineHeight="21px"
-          color={textColor}>
+          color="#001420"
+        >
           {children}
         </MjmlText>
       );
   }
-}
+};

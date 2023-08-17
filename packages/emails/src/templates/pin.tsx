@@ -1,22 +1,22 @@
 import * as React from 'react';
-import {i18nType} from '../../i18n/helpers';
 import {Link} from '../components/link';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
+import {I18n} from '../i18n';
 
-interface DispatchPinProps {
+interface PinProps {
   firstName: string;
   pin: string | number;
   username: string;
-  i18n: i18nType;
+  i18n: I18n;
 }
 
-export function Pin(props: DispatchPinProps): JSX.Element {
-  const {firstName, pin, username, i18n} = props;
-  const PIN = typeof pin === 'number' ? pin.toString() : pin;
+export const Pin: React.FC<PinProps> = ({firstName, pin, username, i18n}) => {
+  const key = i18n.t('pin.pin');
+  const value = String(pin);
 
   return (
-    <React.Fragment>
+    <>
       <Text type="title">{i18n.t('pin.title')}</Text>
 
       <Text type="paragraph">
@@ -29,29 +29,15 @@ export function Pin(props: DispatchPinProps): JSX.Element {
 
       <Text type="paragraph">{i18n.t('pin.advice')}</Text>
 
-      <InfoPanel collection={new Map([[i18n.t('pin.pin'), PIN]])} />
+      <Panel key={key} source={{key, value}} />
 
       <Text type="paragraph">
         {`${i18n.t('pin.guidelines')} `}
+
         <Link href={i18n.t('pin.docLink')} type="paragraph">
           {i18n.t('pin.doc')}
         </Link>
       </Text>
-    </React.Fragment>
+    </>
   );
-}
-
-interface InfoPanelProps {
-  collection: Map<string, string>;
-}
-
-function InfoPanel(props: InfoPanelProps): JSX.Element {
-  const {collection} = props;
-
-  const items = Array.from(collection).map((item: string[]) => {
-    const [key, value] = item;
-    return <Panel key={key} source={{key, value}} />;
-  });
-
-  return <React.Fragment>{items}</React.Fragment>;
-}
+};

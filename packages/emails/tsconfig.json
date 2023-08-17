@@ -3,7 +3,6 @@
   "compilerOptions": {
     "jsx": "preserve",
     "noEmit": true,
-    "outDir": "./dist",
     "resolveJsonModule": true,
     "sourceMap": false,
     "target": "ESNext",

@@ -1,8 +1,0 @@
-{
-  "firstName": "${firstName}",
-  "username": "${username}",
-  "password": "${password}",
-  "pin": "${pin}",
-  "recoveryLink": "${changePasswordUrl}",
-  "confirmationLink": "${confirmationLink}"
-}

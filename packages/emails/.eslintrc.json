@@ -1,7 +1,10 @@
 {
   "root": true,
+
   "plugins": ["react"],
-  "extends": ["contactlab/typescript"],
+
+  "extends": ["contactlab/typescript", "prettier"],
+
   "rules": {
     "@typescript-eslint/ban-types": [
       "error",
