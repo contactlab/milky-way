@@ -1,17 +1,17 @@
-import * as React from 'react';
+import type {ReactNode, FC} from 'react';
 import {PRIMARY_COLOR} from '../shared';
 
 type Categories = 'caption' | 'paragraph';
 
 interface LinkProps {
-  children: React.ReactNode;
+  children: ReactNode;
   cssClass?: string;
   fontWeight?: 400 | 700;
   href: string;
   type: Categories;
 }
 
-export const Link: React.FC<LinkProps> = ({
+export const Link: FC<LinkProps> = ({
   children,
   cssClass,
   fontWeight = 400,

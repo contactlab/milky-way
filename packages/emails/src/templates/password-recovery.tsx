@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 
 interface PasswordRecoveryProps {
   firstName: string;
@@ -10,7 +10,7 @@ interface PasswordRecoveryProps {
   i18n: I18n;
 }
 
-export const PasswordRecovery: React.FC<PasswordRecoveryProps> = ({
+export const PasswordRecovery: FC<PasswordRecoveryProps> = ({
   firstName,
   recoveryLink,
   i18n

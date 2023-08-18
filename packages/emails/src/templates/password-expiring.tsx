@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 
 interface PasswordExpiringProps {
   firstName: string;
@@ -10,7 +10,7 @@ interface PasswordExpiringProps {
   i18n: I18n;
 }
 
-export const PasswordExpiring: React.FC<PasswordExpiringProps> = ({
+export const PasswordExpiring: FC<PasswordExpiringProps> = ({
   firstName,
   username,
   i18n
@@ -40,7 +40,7 @@ interface UpdatePasswordProps {
   i18n: I18n;
 }
 
-const UpdatePassword: React.FC<UpdatePasswordProps> = ({i18n}) => (
+const UpdatePassword: FC<UpdatePasswordProps> = ({i18n}) => (
   <Text type="paragraph">
     {`${i18n.t('passwordExpiring.updatePassword')} `}
     {`${i18n.t('passwordExpiring.userProfile')} `}

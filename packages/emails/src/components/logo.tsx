@@ -1,8 +1,8 @@
-import {MjmlSection, MjmlColumn, MjmlImage} from 'mjml-react';
-import * as React from 'react';
+import {MjmlSection, MjmlColumn, MjmlImage} from '@faire/mjml-react';
+import type {FC} from 'react';
 import {BG_COLOR} from '../shared';
 
-export const Logo: React.FC = () => (
+export const Logo: FC = () => (
   <MjmlSection
     paddingTop={0}
     paddingRight={10}

@@ -1,10 +1,16 @@
-import {Mjml, MjmlBody, MjmlColumn, MjmlSection, MjmlWrapper} from 'mjml-react';
-import * as React from 'react';
+import {
+  Mjml,
+  MjmlBody,
+  MjmlColumn,
+  MjmlSection,
+  MjmlWrapper
+} from '@faire/mjml-react';
+import type {FC} from 'react';
 import {Footer} from '../components/footer';
 import {Head} from '../components/head';
 import {Logo} from '../components/logo';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 import {BG_COLOR, BORDER_RADIUS, SECTION_PADDING, WHITE} from '../shared';
 import {NewsletterSubscription} from './newsletter-subscription';
 import {PasswordChanged} from './password-changed';
@@ -46,8 +52,8 @@ interface MailProps {
   i18n: I18n;
 }
 
-export const Mail: React.FC<MailProps> = (props: MailProps) => {
-  const {type, data, i18n} = props;
+export const Mail: FC<MailProps> = (props: MailProps) => {
+  const {i18n} = props;
 
   return (
     <Mjml>
@@ -59,8 +65,6 @@ export const Mail: React.FC<MailProps> = (props: MailProps) => {
         </MjmlWrapper>
 
         <MjmlWrapper padding={0} cssClass="body-section">
-          <Content type={type} data={data} i18n={i18n} />
-
           <MjmlSection
             borderRadius={BORDER_RADIUS}
             {...SECTION_PADDING}
@@ -84,7 +88,7 @@ export const Mail: React.FC<MailProps> = (props: MailProps) => {
 
 interface ContentProps extends MailProps {}
 
-const Content: React.FC<ContentProps> = ({type, data, i18n}) => {
+const Content: FC<ContentProps> = ({type, data, i18n}) => {
   const username = data.username ?? ND;
   const password: string = data.password ?? ND;
   const firstName: string = data.firstName ?? '';

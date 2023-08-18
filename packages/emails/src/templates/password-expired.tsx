@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Link} from '../components/link';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 import {LOGIN_HREF} from '../shared';
 
 interface PasswordExpiredProps {
@@ -11,7 +11,7 @@ interface PasswordExpiredProps {
   i18n: I18n;
 }
 
-export const PasswordExpired: React.FC<PasswordExpiredProps> = ({
+export const PasswordExpired: FC<PasswordExpiredProps> = ({
   firstName,
   username,
   i18n
@@ -35,7 +35,7 @@ export const PasswordExpired: React.FC<PasswordExpiredProps> = ({
 
     <Button href={LOGIN_HREF}>{i18n.t('btnLogin')}</Button>
 
-    <Text type="paragraph" fontWeight={700}>
+    <Text type="paragraph" fontWeight="700">
       {i18n.t('redemptionPeriod', {days: 30})}
     </Text>
 

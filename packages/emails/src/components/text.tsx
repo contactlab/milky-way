@@ -1,14 +1,14 @@
-import {MjmlText} from 'mjml-react';
-import * as React from 'react';
+import {MjmlText} from '@faire/mjml-react';
+import type {ReactNode, FC} from 'react';
 
 type Categories = 'caption' | 'label' | 'paragraph' | 'title';
 type Padding = string | number;
 
 interface TextProps {
   align?: 'right' | 'center' | 'left';
-  children: React.ReactNode;
+  children: ReactNode;
   cssClass?: string;
-  fontWeight?: 400 | 700;
+  fontWeight?: '400' | '700';
   type: Categories;
   padding?: Padding;
   paddingTop?: Padding;
@@ -17,11 +17,11 @@ interface TextProps {
   paddingLeft?: Padding;
 }
 
-export const Text: React.FC<TextProps> = ({
+export const Text: FC<TextProps> = ({
   align,
   children,
   cssClass,
-  fontWeight = 400,
+  fontWeight = '400',
   padding,
   paddingTop,
   paddingRight,
@@ -70,7 +70,7 @@ export const Text: React.FC<TextProps> = ({
       return (
         <MjmlText
           {...commonProps}
-          fontWeight={700}
+          fontWeight="700"
           fontSize="30px"
           lineHeight="36px"
           color="#1D3344"

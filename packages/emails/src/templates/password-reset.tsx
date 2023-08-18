@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 import {LOGIN_HREF} from '../shared';
 
 interface PasswordResetProps {
@@ -12,7 +12,7 @@ interface PasswordResetProps {
   i18n: I18n;
 }
 
-export const PasswordReset: React.FC<PasswordResetProps> = ({
+export const PasswordReset: FC<PasswordResetProps> = ({
   firstName,
   username,
   password,

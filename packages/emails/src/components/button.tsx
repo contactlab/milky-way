@@ -1,20 +1,20 @@
-import {MjmlButton} from 'mjml-react';
-import * as React from 'react';
+import {MjmlButton} from '@faire/mjml-react';
+import type {ReactNode, FC} from 'react';
 import {BORDER_RADIUS, PRIMARY_COLOR, WHITE} from '../shared';
 
 interface ButtonProps {
   align?: 'right' | 'center' | 'left';
-  children: React.ReactNode;
+  children: ReactNode;
   cssClass?: string;
-  fontWeight?: 400 | 700;
+  fontWeight?: '400' | '700';
   href: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   align = 'center',
   children,
   cssClass,
-  fontWeight = 400,
+  fontWeight = '400',
   href
 }) => (
   <MjmlButton

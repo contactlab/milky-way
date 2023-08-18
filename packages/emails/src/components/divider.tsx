@@ -1,6 +1,6 @@
-import {MjmlDivider} from 'mjml-react';
-import * as React from 'react';
+import {MjmlDivider} from '@faire/mjml-react';
+import type {FC} from 'react';
 
-export const Divider: React.FC = () => (
+export const Divider: FC = () => (
   <MjmlDivider borderWidth="1px" borderColor="#DEEBF4" />
 );

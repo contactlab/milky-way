@@ -1,14 +1,14 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 
 interface NewsletterSubscriptionProps {
   confirmationLink: string;
   i18n: I18n;
 }
 
-export const NewsletterSubscription: React.FC<NewsletterSubscriptionProps> = ({
+export const NewsletterSubscription: FC<NewsletterSubscriptionProps> = ({
   confirmationLink,
   i18n
 }) => (

@@ -7,15 +7,15 @@ import {
   MjmlStyle,
   MjmlAll,
   MjmlBreakpoint
-} from 'mjml-react';
-import * as React from 'react';
-import {I18n} from '../i18n';
+} from '@faire/mjml-react';
+import type {FC} from 'react';
+import type {I18n} from '../i18n';
 
 interface HeadProps {
   i18n: I18n;
 }
 
-export const Head: React.FC<HeadProps> = ({i18n}) => (
+export const Head: FC<HeadProps> = ({i18n}) => (
   <MjmlHead>
     <MjmlTitle>MailUp CDP</MjmlTitle>
     <MjmlPreview>{i18n.t('previewText')}</MjmlPreview>
@@ -27,7 +27,7 @@ export const Head: React.FC<HeadProps> = ({i18n}) => (
       <MjmlAll font-family="Montserrat, Helvetica, Arial, sans-serif" />
     </MjmlAttributes>
 
-    <MjmlBreakpoint width={400} />
+    <MjmlBreakpoint width="400" />
 
     <MjmlStyle inline>{`
         .body-section {

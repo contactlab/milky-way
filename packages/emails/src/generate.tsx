@@ -2,10 +2,10 @@
 
 import {writeFileSync} from 'fs';
 import {join} from 'path';
-import {render} from 'mjml-react';
-import * as React from 'react';
-import {i18n, Lang} from './i18n';
-import {Mail, Suite, Type} from './templates';
+import {renderToMjml} from '@faire/mjml-react/utils/renderToMjml';
+import mjml2html from 'mjml';
+import {type Lang, i18n} from './i18n';
+import {type Type, Mail, Suite} from './templates';
 
 const run = (templates: Suite): void => {
   for (const template of templates) {
@@ -20,19 +20,21 @@ const run = (templates: Suite): void => {
 const writeHtml = (template: Type, lang: Lang): void => {
   const file = join('public', 'emails', `${template}-${lang}.html`);
 
-  const {html} = render(
-    <Mail
-      type={template}
-      data={{
-        firstName: '${firstName}',
-        username: '${username}',
-        password: '${password}',
-        pin: '${pin}',
-        recoveryLink: '${changePasswordUrl}',
-        confirmationLink: '${confirmationLink}'
-      }}
-      i18n={i18n(lang)}
-    />,
+  const {html} = mjml2html(
+    renderToMjml(
+      <Mail
+        type={template}
+        data={{
+          firstName: '${firstName}',
+          username: '${username}',
+          password: '${password}',
+          pin: '${pin}',
+          recoveryLink: '${changePasswordUrl}',
+          confirmationLink: '${confirmationLink}'
+        }}
+        i18n={i18n(lang)}
+      />
+    ),
     {
       minify: false,
       validationLevel: 'soft'

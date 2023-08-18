@@ -9,13 +9,19 @@
     "@typescript-eslint/ban-types": [
       "error",
       {
-        "types": {
-          "{}": false
-        },
+        "types": {"{}": false},
         "extendDefaults": true
       }
     ],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "off",
+    "react/display-name": "off"
+  },
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

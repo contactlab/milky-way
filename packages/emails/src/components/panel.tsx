@@ -1,5 +1,5 @@
-import {MjmlColumn, MjmlSection} from 'mjml-react';
-import * as React from 'react';
+import {MjmlColumn, MjmlSection} from '@faire/mjml-react';
+import type {FC} from 'react';
 import {BG_COLOR, PRIMARY_COLOR} from '../shared';
 import {Text} from './text';
 
@@ -10,7 +10,7 @@ interface PanelProps {
   };
 }
 
-export const Panel: React.FC<PanelProps> = ({source}) => (
+export const Panel: FC<PanelProps> = ({source}) => (
   <MjmlSection
     paddingTop={10}
     paddingRight={25}
@@ -24,7 +24,7 @@ export const Panel: React.FC<PanelProps> = ({source}) => (
         {source.key}
       </Text>
 
-      <Text type="paragraph" padding={0} fontWeight={700}>
+      <Text type="paragraph" padding={0} fontWeight="700">
         {source.value}
       </Text>
     </MjmlColumn>

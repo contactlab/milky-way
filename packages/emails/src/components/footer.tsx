@@ -1,6 +1,6 @@
-import {MjmlSection, MjmlColumn} from 'mjml-react';
-import * as React from 'react';
-import {I18n} from '../i18n';
+import {MjmlSection, MjmlColumn} from '@faire/mjml-react';
+import type {FC} from 'react';
+import type {I18n} from '../i18n';
 import {BG_COLOR, SECTION_PADDING} from '../shared';
 import {Link} from './link';
 import {Text} from './text';
@@ -9,7 +9,7 @@ interface FooterProps {
   i18n: I18n;
 }
 
-export const Footer: React.FC<FooterProps> = ({i18n}) => (
+export const Footer: FC<FooterProps> = ({i18n}) => (
   <MjmlSection {...SECTION_PADDING} backgroundColor={BG_COLOR}>
     <MjmlColumn>
       <Text type="caption" paddingTop={0} align="center">{`${i18n.t(

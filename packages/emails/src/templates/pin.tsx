@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Link} from '../components/link';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 
 interface PinProps {
   firstName: string;
@@ -11,7 +11,7 @@ interface PinProps {
   i18n: I18n;
 }
 
-export const Pin: React.FC<PinProps> = ({firstName, pin, username, i18n}) => {
+export const Pin: FC<PinProps> = ({firstName, pin, username, i18n}) => {
   const key = i18n.t('pin.pin');
   const value = String(pin);
 

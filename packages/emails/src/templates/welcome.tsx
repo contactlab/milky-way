@@ -1,8 +1,8 @@
-import * as React from 'react';
+import type {FC} from 'react';
 import {Button} from '../components/button';
 import {Panel} from '../components/panel';
 import {Text} from '../components/text';
-import {I18n} from '../i18n';
+import type {I18n} from '../i18n';
 import {LOGIN_HREF} from '../shared';
 
 export interface WelcomeProps {
@@ -12,7 +12,7 @@ export interface WelcomeProps {
   i18n: I18n;
 }
 
-export const Welcome: React.FC<WelcomeProps> = ({
+export const Welcome: FC<WelcomeProps> = ({
   firstName,
   username,
   password,

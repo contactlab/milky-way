@@ -16,6 +16,6 @@
         "useBuiltIns": "entry"
       }
     ],
-    "@babel/react"
+    ["@babel/preset-react", {"runtime": "automatic"}]
   ]
 }
