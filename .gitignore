@@ -1,9 +1,3 @@
-# Rush
-**/.rush/
-common/autoinstallers/*/.npmrc
-common/deploy/
-common/temp/
-
 # TypeScript
 *.tsbuildinfo
 

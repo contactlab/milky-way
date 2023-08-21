@@ -8,10 +8,16 @@ import {toHexColor} from '../../utils';
   styleUrl: './styles.css'
 })
 export class Legacy {
-  render(): Element {
+  @Prop() fillStyle: FillStyle = 'positive';
+  @Prop() fillColor: FillColor = 'black';
+  @Prop() size: Size = '100%';
+  @Prop() type: Exclude<LogoType, 'mc'> = 'developer';
+
+  render(): JSX.Element {
     const fill = toHexColor(color(this.fillStyle, this.fillColor));
     const width = this.size;
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return (
       <div
         class={`legacy legacy--${this.type}`}
@@ -26,11 +32,6 @@ export class Legacy {
       </div>
     );
   }
-
-  @Prop() fillStyle: FillStyle = 'positive';
-  @Prop() fillColor: FillColor = 'black';
-  @Prop() size: Size = '100%';
-  @Prop() type: Exclude<LogoType, 'mc'> = 'developer';
 }
 
 // --- Helpers
@@ -56,6 +57,7 @@ interface WithFill {
  * ref. resources/svg/logo-developer.svg
  */
 const Developer = ({fill}: WithFill): JSX.Element => (
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   <svg
     class="vector"
     fill={fill}
@@ -81,6 +83,7 @@ const Developer = ({fill}: WithFill): JSX.Element => (
  * ref. resources/svg/logo-explore.svg
  */
 const Explore = ({fill}: WithFill): JSX.Element => (
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   <svg
     class="vector"
     fill={fill}

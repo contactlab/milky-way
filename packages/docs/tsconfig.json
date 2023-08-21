@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "importHelpers": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "stripInternal": true
+  },
+  "include": ["./src"]
+}

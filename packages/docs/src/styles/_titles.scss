@@ -1,0 +1,13 @@
+.titles {
+  --mc-subheading-foreground: #{colors('base100')};
+  --mc-heading-foreground: #{colors('base100')};
+
+  .hero-text {
+    font-size: 6rem;
+    white-space: nowrap;
+
+    @media #{$to-xsmall} {
+      width: 5.4rem;
+    }
+  }
+}

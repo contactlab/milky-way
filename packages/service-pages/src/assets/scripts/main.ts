@@ -1,79 +1,37 @@
-type langType = 'it' | 'en';
+document.addEventListener('DOMContentLoaded', (): void => {
+  const [lang] = window.navigator.language.split('-');
+  const locale = lang === 'it' ? lang : 'en';
 
-interface HTMLElements {
-  wrapper: HTMLDivElement;
-  buttons: HTMLButtonElement[];
-}
-
-document.addEventListener('DOMContentLoaded', run);
-
-function run(): void {
-  const browserLocale = getBrowserLocale();
-  const wrapper = document.querySelector('#locale') as HTMLDivElement;
-  const buttons = Array.from<HTMLButtonElement>(
-    document.querySelectorAll('.button-lang')
+  const btns = Array.from(
+    document.querySelectorAll<HTMLButtonElement>('.button-lang')
   );
 
-  loadLocaleContent(browserLocale, {wrapper, buttons});
+  btns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      showTemplate(this);
+    });
+  });
 
-  if (buttons.length >= 1) {
-    buttons.forEach(
-      btn =>
-        (btn.onclick = evt => {
-          evt.preventDefault();
-          setLocaleContent(evt.target as HTMLElement, {wrapper, buttons});
-        })
-    );
+  btns.find(btn => btn.dataset.lang === locale)?.click();
+});
+
+const ACTIVE = 'active';
+
+const showTemplate = (btn: HTMLButtonElement): void => {
+  const lang = btn.dataset.lang;
+  const alt = document.querySelector(`.button-lang:not([data-lang="${lang}"])`);
+
+  // Toggle
+  btn.classList.add(ACTIVE);
+  alt?.classList.remove(ACTIVE);
+
+  const wrapper = document.querySelector('#locale');
+  const tpl = document.querySelector<HTMLTemplateElement>(`#tmpl-${lang}`);
+
+  if (!wrapper || !tpl) {
+    return;
   }
-}
-
-function getBrowserLocale(): langType {
-  const [lang] = window.navigator.language.split('-');
-  return lang === 'it' ? lang : 'en';
-}
-
-function loadLocaleContent(lang: langType, htmlElements: HTMLElements): void {
-  const {wrapper, buttons} = htmlElements;
-
-  const button = buttons.find(btn => btn.id === lang);
-  button?.classList.add('active');
 
   wrapper.innerHTML = '';
-  wrapper.appendChild(
-    lang === 'it'
-      ? getLocalizedTemplate('#tmpl-it')
-      : getLocalizedTemplate('#tmpl-en')
-  );
-}
-
-function setLocaleContent(
-  trigger: HTMLElement,
-  htmlElements: HTMLElements
-): void {
-  const {buttons} = htmlElements;
-
-  buttons.forEach(btn => btn.classList.remove('active'));
-  trigger.classList.add('active');
-
-  loadLocaleContent(trigger.id as langType, htmlElements);
-}
-
-function getLocalizedTemplate(id: string): DocumentFragment {
-  return new Template(id).clone();
-}
-
-class Template {
-  constructor(id: string) {
-    this.id = id;
-    this.templateElement = document.querySelector(
-      this.id
-    ) as HTMLTemplateElement;
-  }
-
-  public clone(): DocumentFragment {
-    return document.importNode(this.templateElement.content, true);
-  }
-
-  id: string;
-  templateElement: HTMLTemplateElement;
-}
+  wrapper.appendChild(document.importNode(tpl.content, true));
+};

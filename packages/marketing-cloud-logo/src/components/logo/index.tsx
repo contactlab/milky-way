@@ -7,10 +7,17 @@ import {toHexColor} from '../../utils';
   tag: 'clab-logo'
 })
 export class Logo {
+  @Prop() compact = false;
+  @Prop() fillStyle: FillStyle = 'positive';
+  @Prop() fillColor: FillColor = 'black';
+  @Prop() size: Size = '100%';
+  @Prop() type: LogoType = 'mc';
+
   render(): Element {
     const width = this.size;
     const fill = toHexColor(color(this.fillStyle, this.fillColor));
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return this.type === 'mc' ? (
       <div
         class={`logo logo--${this.type} logo--${
@@ -30,12 +37,6 @@ export class Logo {
       />
     );
   }
-
-  @Prop() compact = false;
-  @Prop() fillStyle: FillStyle = 'positive';
-  @Prop() fillColor: FillColor = 'black';
-  @Prop() size: Size = '100%';
-  @Prop() type: LogoType = 'mc';
 }
 
 // --- Helpers
@@ -61,6 +62,7 @@ interface WithFill {
  * ref. resources/svg/logo-mc-full.svg
  */
 const McExtended = ({fill}: WithFill): JSX.Element => (
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   <svg
     class="vector"
     fill={fill}
@@ -116,6 +118,7 @@ const McExtended = ({fill}: WithFill): JSX.Element => (
  * ref. resources/svg/logo-mc-compact.svg
  */
 const McCompact = ({fill}: WithFill): JSX.Element => (
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   <svg
     class="vector"
     fill={fill}

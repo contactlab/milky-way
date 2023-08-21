@@ -19,24 +19,25 @@
   ],
   "scripts": {
     "prepare": "npm run build",
-    "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit",
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:css": "stylelint ./**/*.{css,scss} --ignore-path .gitignore",
     "lint:ts": "eslint . --ext .js,.ts --ignore-path .gitignore",
-    "test": "npm run typecheck && npm run lint",
+    "test": "npm run check && npm run lint",
     "start": "serve -l 3333",
     "build": "tsc"
   },
   "devDependencies": {
     "@contactlab/stylelint-config": "1.0.0",
     "@detra-lab/stylelint-config": "0.1.0",
-    "eslint": "7.32.0",
-    "eslint-config-contactlab": "7.0.0",
-    "eslint-config-prettier": "8.3.0",
-    "postcss-scss": "4.0.2",
-    "serve": "13.0.2",
-    "stylelint": "15.6.2",
-    "stylelint-scss": "5.0.0",
-    "typescript": "4.4.4"
+    "eslint": "8.47.0",
+    "eslint-config-contactlab": "11.2.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-react": "7.33.2",
+    "postcss-scss": "4.0.7",
+    "serve": "14.2.0",
+    "stylelint": "15.10.2",
+    "stylelint-scss": "5.1.0",
+    "typescript": "5.1.6"
   }
 }
