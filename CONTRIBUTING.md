@@ -7,7 +7,7 @@
 
 ## Development Workflow
 
-After cloning the project, run `npm ci` to install dependencies: Milky-Way is a mono-repo and uses [NPM's `workspaces`](https://docs.npmjs.com/cli/v9/using-npm/workspaces) features. Then, run `rush update` to fetch the project dependencies.
+After cloning the project, run `npm ci` to install dependencies: Milky-Way is a mono-repo and uses [NPM's `workspaces`](https://docs.npmjs.com/cli/v9/using-npm/workspaces) features.
 
 After that, you can execute NPM commands with the `-ws` argument to run them on all workspaces or `-w PACKAGE_NAME` to run them only in specific packages.
 
@@ -35,7 +35,7 @@ runs the test suite when is available in the packages.
 $ npm run build
 ```
 
-builds the package.
+builds the packages.
 
 Other commands only available in some packages can be [ran on all workspaces with the flag `--if-present`](https://docs.npmjs.com/cli/v9/using-npm/workspaces#ignoring-missing-scripts):
 
