@@ -33,6 +33,7 @@
     "eslint": "8.47.0",
     "eslint-config-contactlab": "11.2.0",
     "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-react": "7.33.2",
     "postcss-scss": "4.0.7",
     "serve": "14.2.0",
     "stylelint": "15.10.2",
