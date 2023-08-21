@@ -1,4 +1,4 @@
-import {Component, Prop, h} from '@stencil/core';
+import {Component, Prop, h, JSX} from '@stencil/core';
 import type {FillColor, Size} from '../../types';
 import {toHexColor} from '../../utils';
 
@@ -11,11 +11,12 @@ export class Sign {
   @Prop() size: Size = '100%';
   @Prop() fillColor: FillColor = 'accent';
 
-  render(): SVGElement {
+  render(): JSX.Element {
     const fill = toHexColor(this.fillColor);
     const width = this.size;
     const height = this.size;
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return (
       <div class="wrapper" style={{width, height}} data-e2e-size={this.size}>
         <svg

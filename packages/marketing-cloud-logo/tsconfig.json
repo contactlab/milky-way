@@ -9,5 +9,5 @@
     "stripInternal": true,
     "sourceMap": true
   },
-  "include": ["./src"]
+  "include": ["./src", "./stencil.config.ts"]
 }
