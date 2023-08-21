@@ -1,0 +1,47 @@
+{
+  "customSyntax": "postcss-scss",
+
+  "extends": ["@contactlab/stylelint-config"],
+
+  "plugins": ["stylelint-scss"],
+
+  "rules": {
+    "annotation-no-unknown": [
+      true,
+      {"ignoreAnnotations": ["/^default/", "/^global/"]}
+    ],
+    "at-rule-no-unknown": null,
+    "color-function-notation": "legacy",
+    "font-weight-notation": null,
+    "function-name-case": null,
+    "function-no-unknown": null,
+    "import-notation": "string",
+    "no-invalid-double-slash-comments": null,
+
+    "scss/at-extend-no-missing-placeholder": true,
+    "scss/at-if-no-null": true,
+    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/at-import-partial-extension-blacklist": ["sass", "scss"],
+    "scss/at-mixin-argumentless-call-parentheses": "never",
+    "scss/at-rule-conditional-no-parentheses": true,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-no-missing-interpolation": true,
+    "scss/comment-no-empty": true,
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/declaration-nested-properties": "never",
+    "scss/declaration-nested-properties-no-divided-groups": true,
+    "scss/dimension-no-non-numeric-values": true,
+    "scss/function-quote-no-quoted-strings-inside": true,
+    "scss/function-unquote-no-unquoted-strings-inside": true,
+    "scss/map-keys-quotes": "always",
+    "scss/operator-no-unspaced": true,
+    "scss/partial-no-import": true,
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/no-global-function-names": true,
+    "scss/no-duplicate-dollar-variables": [
+      true,
+      {"ignoreInside": ["at-rule", "nested-at-rule"], "ignoreDefaults": true}
+    ],
+    "scss/no-duplicate-mixins": true
+  }
+}

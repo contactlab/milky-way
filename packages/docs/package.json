@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "author": "Contactlab",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "check": "tsc --noEmit",
+    "lint:css": "stylelint ./src/**/*.scss",
+    "lint:ts": "eslint . --ext .js,.ts",
+    "lint": "npm run lint:css && npm run lint:ts",
+    "test": "npm run check && npm run lint",
+    "dev": "parcel serve ./src/index.pug --port 3333 --cache-dir .cache/parcel",
+    "prebuild": "npm test && npm run clean",
+    "build": "parcel build ./src/index.pug --public-url ./ --dist-dir ./dist --cache-dir .cache/parcel --no-source-maps"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "@contactlab/ds-tokens": "file:packages/design-tokens"
+  },
+  "devDependencies": {
+    "@contactlab/stylelint-config": "1.0.0",
+    "@parcel/transformer-pug": "2.9.3",
+    "@parcel/transformer-sass": "2.9.3",
+    "eslint": "8.47.0",
+    "eslint-config-contactlab": "11.2.0",
+    "eslint-config-prettier": "9.0.0",
+    "parcel": "2.9.3",
+    "postcss-scss": "4.0.6",
+    "stylelint": "15.10.3",
+    "stylelint-scss": "5.1.0",
+    "typescript": "5.1.6"
+  }
+}

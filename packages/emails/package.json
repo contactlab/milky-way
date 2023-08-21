@@ -1,12 +1,7 @@
 {
   "private": true,
-  "name": "@contactlab/emails",
-  "version": "1.0.0",
   "description": "The MailUp CDP transactional emails.",
   "author": "Contactlab",
-  "homepage": "https://github.com/contactlab/milky-way#readme",
-  "repository": "contactlab/milky-way",
-  "license": "MIT",
   "scripts": {
     "check": "tsc",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",

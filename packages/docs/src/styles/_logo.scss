@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  width: 40rem;
+  margin: 0 0 1em -7em;
+
+  @media #{$to-small} {
+    width: 38rem;
+  }
+
+  @media #{$to-xsmall} {
+    width: 34rem;
+  }
+
+  > img {
+    display: block;
+    filter: brightness(0) invert(1);
+  }
+}

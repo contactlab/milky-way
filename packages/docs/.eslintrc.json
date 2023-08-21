@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": ["contactlab/typescript", "prettier"],
+  "rules": {
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {"{}": false},
+        "extendDefaults": true
+      }
+    ]
+  }
+}
