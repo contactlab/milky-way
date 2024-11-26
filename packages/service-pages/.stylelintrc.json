@@ -1,6 +1,8 @@
 {
-  "extends": [
-    "@contactlab/stylelint-config",
-    "@detra-lab/stylelint-config/sass"
+  "extends": ["@contactlab/stylelint-config"],
+  "customSyntax": "postcss-scss",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-block-no-ignored-properties"
   ]
 }

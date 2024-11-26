@@ -1,6 +1,6 @@
 {
   "name": "@contactlab/ds-tokens",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "Named entities that store visual-design info, in order to maintain a scalable, consistent system for user interface development.",
   "author": "Contactlab",
   "homepage": "https://github.com/contactlab/milky-way#readme",
@@ -29,14 +29,16 @@
   },
   "devDependencies": {
     "@contactlab/stylelint-config": "1.0.0",
-    "@detra-lab/stylelint-config": "0.1.0",
     "eslint": "8.47.0",
     "eslint-config-contactlab": "11.2.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-react": "7.33.2",
     "postcss-scss": "4.0.7",
+    "postcss-styled-syntax": "0.4.0",
+    "postcss-syntax": "0.36.2",
     "serve": "14.2.0",
     "stylelint": "15.10.2",
+    "stylelint-declaration-block-no-ignored-properties": "2.7.0",
     "stylelint-scss": "5.1.0",
     "typescript": "5.1.6"
   }

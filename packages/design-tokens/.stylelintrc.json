@@ -1,11 +1,18 @@
 {
-  "extends": [
-    "@contactlab/stylelint-config",
-    "@detra-lab/stylelint-config/sass"
+  "extends": ["@contactlab/stylelint-config"],
+  "customSyntax": "postcss-scss",
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-block-no-ignored-properties"
   ],
   "rules": {
+    "color-function-notation": "legacy",
+    "font-weight-notation": ["numeric", {"ignore": ["relative"]}],
+    "function-no-unknown": null,
     "no-duplicate-selectors": null,
+    "plugin/declaration-block-no-ignored-properties": true,
     "property-no-unknown": null,
+    "scss/function-no-unknown": [true, {"ignoreFunctions": ["colors"]}],
     "scss/operator-no-unspaced": null
   }
 }
