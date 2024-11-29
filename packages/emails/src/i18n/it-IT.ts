@@ -3,23 +3,23 @@ export const IT = {
   btnChangePassword: 'Cambia password',
   btnLogin: "Effettua l'accesso",
   contactUs: 'Contattaci.',
-  contactlab: 'MailUp',
-  contactlabLink: 'https://mailup.com/',
+  contactlab: 'Contactlab',
+  contactlabLink: 'https://contactlab.com/',
   doc: 'In alternativa, consulta',
   explore: 'la documentazione della piattaforma.',
-  exploreLink: 'https://explore.contactlab.com',
+  exploreLink: 'https://docs.contactlab.com/docs/category/guides',
   questions: 'Qualche dubbio o domanda?',
-  footnote: 'MailUp CDP è un prodotto',
+  footnote: 'Contactlab Marketing Cloud è un prodotto',
   hello: 'Ciao,',
   helloUser: 'Ciao %{firstName},',
   noReply:
     'Questa mail è generata automaticamente, si prega di non rispondere.',
   previewText:
-    'Mail automatica generata dalla piattaforma MailUp CDP. Si prega di non rispondere.',
+    'Mail automatica generata dalla piattaforma Contactlab Marketing Cloud. Si prega di non rispondere.',
   redemptionPeriod: 'Ricorda: hai %{days} giorni per cambiarla.',
   securityAdvice:
     'Per motivi di sicurezza, ti invitiamo a modificare la password temporanea e a custodire quella nuova.',
-  signature: 'Grazie, il team MailUp.',
+  signature: 'Grazie, il team Contactlab.',
   support: 'Contatta il nostro supporto',
   supportLink: 'https://support.contactlab.com/hc/it',
   tempPassword: 'Password temporanea:',
@@ -54,7 +54,8 @@ export const IT = {
     isExpiring: 'è in scadenza.',
     opening: "la password dell'utenza",
     passwordDoc: 'linee guida.',
-    passwordDocLink: 'https://explore.contactlab.com/cambio-password',
+    passwordDocLink:
+      'https://docs.contactlab.com/it/docs/guides/account/change-password',
     title: 'Password in scadenza',
     updatePassword: "Per aggiornare la password, effettua l'accesso,",
     userProfile: 'vai alla pagina Profilo'
@@ -79,7 +80,7 @@ export const IT = {
     advice:
       'Ti consigliamo di custodire il PIN in un luogo sicuro. Il sistema potrebbe richiedertelo in caso di accessi inusuali o azioni ad alto rischio.',
     doc: 'consulta la guida dedicata.',
-    docLink: 'https://explore.contactlab.com/guida-send/#pin',
+    docLink: 'https://docs.contactlab.com/it/docs/guides/account/pin-otp',
     guidelines: "Per ulteriori informazioni riguardo l'utilizzo del PIN,",
     opening:
       "di seguito è riportato il tuo PIN personale di 8 cifre associato all'utenza",
@@ -88,7 +89,7 @@ export const IT = {
   },
   welcome: {
     opening:
-      "abbiamo creato l'utenza che ti consente di accedere alla piattaforma MailUp CDP! 🎉",
+      "abbiamo creato l'utenza che ti consente di accedere alla piattaforma Contactlab Marketing Cloud! 🎉",
     suggestions: 'In basso, trovi le tue credenziali.'
   }
 };

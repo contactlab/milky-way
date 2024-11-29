@@ -1,6 +1,6 @@
 # Service Pages
 
-The MailUp CDP service pages.
+The Contactlab Marketing Cloud service pages.
 
 [![NPM Package][npm-img]][npm-url]
 

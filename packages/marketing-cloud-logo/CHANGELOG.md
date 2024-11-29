@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.0
+
+- Restore Marketing Cloud logo replacing MailUp CDP logo
+
 ## 4.0.0
 
 - Replace Marketing Cloud logo with MailUp CDP logo

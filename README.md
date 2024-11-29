@@ -8,11 +8,11 @@ You can find the design specification on which the design system is build [here]
 
 ## Packages:
 
-### [MailUp CDP Logo](./packages/marketing-cloud-logo)
+### [Marketing Cloud Logo](./packages/marketing-cloud-logo)
 
-The Web Components and resources related to the MailUp CDP logo. The package also include the [Explore](http://explore.contactlab.com) & [Developer](http://developer.contactlab.com) websites logo.
+The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore](https://docs.contactlab.com/docs/category/guides) & [Developer](https://docs.contactlab.com/docs/category/development) websites logo.
 
-[![MailUp CDP Logo Package](https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/marketing-cloud-logo)
+[![Marketing Cloud Logo Package](https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/marketing-cloud-logo)
 
 ### [Design Tokens](./packages/design-tokens)
 
@@ -22,11 +22,11 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 
 ### [Emails](./packages/emails)
 
-The MailUp CDP transactional emails.
+The Contactlab Marketing Cloud transactional emails.
 
 ### [Service Pages](./packages/service-pages)
 
-The MailUp CDP service pages.
+The Contactlab Marketing Cloud service pages.
 
 [![Service Pages Package](https://img.shields.io/npm/v/@contactlab/service-pages?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/service-pages)
 
@@ -36,4 +36,4 @@ Read our [contributing guide](./CONTRIBUTING.md) to learn about our development 
 
 ## License
 
-Milky-Way is [MIT licensed](./LICENSE) [@MailUp](https://mailup.com).
+Milky-Way is [MIT licensed](./LICENSE) [@Contactlab](https://contactlab.com/).

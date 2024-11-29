@@ -13,8 +13,8 @@ export const Logo: FC = () => (
     <MjmlColumn>
       <MjmlImage
         align="center"
-        alt="MailUp CDP logo"
-        title="MailUp CDP"
+        alt="Contactlab Marketing Cloud logo"
+        title="Contactlab Marketing Cloud"
         width={300}
         href="http://mc.contactlab.it"
         src="https://cdn.jsdelivr.net/npm/@contactlab/marketing-cloud-logo/resources/png/logo-mc-full-positive-593x60.png"

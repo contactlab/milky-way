@@ -3,22 +3,22 @@ export const EN = {
   btnChangePassword: 'Change Password',
   btnLogin: 'Sign In',
   contactUs: 'Contact us.',
-  contactlab: 'MailUp',
-  contactlabLink: 'https://mailup.com/',
+  contactlab: 'Contactlab',
+  contactlabLink: 'https://contactlab.com/',
   doc: 'Otherwise, consult',
   explore: 'the platform documentation.',
-  exploreLink: 'https://explore.contactlab.com',
+  exploreLink: 'https://docs.contactlab.com/docs/category/guides',
   questions: 'Any doubts or questions?',
-  footnote: 'MailUp CDP is a product of',
+  footnote: 'Contactlab Marketing Cloud is a product of',
   hello: 'Hi,',
   helloUser: 'Hi %{firstName},',
   noReply: "The email is auto generated. Please, don't reply.",
   previewText:
-    "Automatic email sent by the MailUp CDP platform. Please, don't reply.",
+    "Automatic email sent by the Contactlab Marketing Cloud platform. Please, don't reply.",
   redemptionPeriod: 'Remember: you have %{days} days to change it.',
   securityAdvice:
     'For security reasons, please change the temporary password and keep the new one.',
-  signature: 'Thank you, the MailUp team.',
+  signature: 'Thank you, the Contactlab team.',
   support: 'Contact our support',
   supportLink: 'https://support.contactlab.com/hc/en-us',
   tempPassword: 'Temporary password:',
@@ -53,7 +53,7 @@ export const EN = {
     opening: 'the password of the',
     passwordDoc: 'guidelines.',
     passwordDocLink:
-      'https://explore.contactlab.com/the-change-password-page/?lang=en',
+      'https://docs.contactlab.com/docs/guides/account/change-password',
     title: 'Password expiring',
     updatePassword: 'To update your password, sign in,',
     userProfile: 'go to the Profile page'
@@ -74,7 +74,7 @@ export const EN = {
     advice:
       'We recommend to keep your PIN safe. The system may ask you in case of suspicious actions.',
     doc: 'consult the dedicated guide.',
-    docLink: 'https://explore.contactlab.com/send-guide/?lang=en',
+    docLink: 'https://docs.contactlab.com/docs/guides/account/pin-otp',
     guidelines: 'For further information regarding the use of the PIN,',
     opening:
       'below you can find your personal 8-digit PIN associated with the user',
@@ -82,7 +82,7 @@ export const EN = {
     title: 'Personal PIN'
   },
   welcome: {
-    opening: 'your MailUp CDP account has been created! 🎉',
+    opening: 'your Contactlab Marketing Cloud account has been created! 🎉',
     suggestions: 'Find below your credentials.'
   }
 };
