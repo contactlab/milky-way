@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.0
+
+- Restore Marketing Cloud replacing MailUp CDP
+
 ## 3.2.1
 
 - Fixed stylelint configuration
