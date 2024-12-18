@@ -2,7 +2,7 @@
 
 ## 5.0.1
 
-- Fixed Marketing Cloud logo components still using MaiuUp CDP logo
+- Fixed Marketing Cloud logo components still using MailUp CDP logo
 
 ## 5.0.0
 
