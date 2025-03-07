@@ -17,7 +17,7 @@ interface HeadProps {
 
 export const Head: FC<HeadProps> = ({i18n}) => (
   <MjmlHead>
-    <MjmlTitle>Contactlab Marketing Cloud</MjmlTitle>
+    <MjmlTitle>Contactlab CDP</MjmlTitle>
     <MjmlPreview>{i18n.t('previewText')}</MjmlPreview>
     <MjmlFont
       name="Montserrat"

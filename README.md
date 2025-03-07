@@ -10,7 +10,7 @@ You can find the design specification on which the design system is build [here]
 
 ### [Marketing Cloud Logo](./packages/marketing-cloud-logo)
 
-The Web Components and resources related to the Contactlab Marketing Cloud logo. The package also include the [Explore](https://docs.contactlab.com/docs/category/guides) & [Developer](https://docs.contactlab.com/docs/category/development) websites logo.
+The Web Components and resources related to the Contactlab CDP logo. The package also include the [Explore](https://docs.contactlab.com/docs/category/guides) & [Developer](https://docs.contactlab.com/docs/category/development) websites logo.
 
 [![Marketing Cloud Logo Package](https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/marketing-cloud-logo)
 
@@ -22,11 +22,11 @@ Named entities that store visual-design info, in order to maintain a scalable, c
 
 ### [Emails](./packages/emails)
 
-The Contactlab Marketing Cloud transactional emails.
+The Contactlab CDP transactional emails.
 
 ### [Service Pages](./packages/service-pages)
 
-The Contactlab Marketing Cloud service pages.
+The Contactlab CDP service pages.
 
 [![Service Pages Package](https://img.shields.io/npm/v/@contactlab/service-pages?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/service-pages)
 

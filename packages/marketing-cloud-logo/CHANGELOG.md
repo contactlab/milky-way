@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0
+
+- Replace Marketing Cloud logo with Contactlab CDP logo
+
 ## 5.0.1
 
 - Fixed Marketing Cloud logo components still using MailUp CDP logo

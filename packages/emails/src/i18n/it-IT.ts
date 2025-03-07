@@ -9,13 +9,13 @@ export const IT = {
   explore: 'la documentazione della piattaforma.',
   exploreLink: 'https://docs.contactlab.com/docs/category/guides',
   questions: 'Qualche dubbio o domanda?',
-  footnote: 'Contactlab Marketing Cloud è un prodotto',
+  footnote: 'Contactlab CDP è un prodotto',
   hello: 'Ciao,',
   helloUser: 'Ciao %{firstName},',
   noReply:
     'Questa mail è generata automaticamente, si prega di non rispondere.',
   previewText:
-    'Mail automatica generata dalla piattaforma Contactlab Marketing Cloud. Si prega di non rispondere.',
+    'Mail automatica generata dalla piattaforma Contactlab CDP. Si prega di non rispondere.',
   redemptionPeriod: 'Ricorda: hai %{days} giorni per cambiarla.',
   securityAdvice:
     'Per motivi di sicurezza, ti invitiamo a modificare la password temporanea e a custodire quella nuova.',
@@ -89,7 +89,7 @@ export const IT = {
   },
   welcome: {
     opening:
-      "abbiamo creato l'utenza che ti consente di accedere alla piattaforma Contactlab Marketing Cloud! 🎉",
+      "abbiamo creato l'utenza che ti consente di accedere alla piattaforma Contactlab CDP! 🎉",
     suggestions: 'In basso, trovi le tue credenziali.'
   }
 };

@@ -10,9 +10,7 @@ describe('clab-typo', () => {
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('data-e2e-key')).toBe(
-      'contactlab-marketing-cloud'
-    );
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('contactlab-cdp');
 
     component.setProperty('type', 'explore');
     await page.waitForChanges();
@@ -30,9 +28,7 @@ describe('clab-typo', () => {
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('data-e2e-key')).toBe(
-      'contactlab-marketing-cloud'
-    );
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('contactlab-cdp');
   });
 
   it('renders fill-color attribute changes', async () => {
@@ -64,15 +60,13 @@ describe('clab-typo', () => {
     const svgContent = await svg.find('g');
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 590 45');
-    expect(svgContent.getAttribute('data-e2e-key')).toBe(
-      'contactlab-marketing-cloud'
-    );
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('contactlab-cdp');
 
     component.setProperty('compact', true);
     await page.waitForChanges();
 
     expect(svg.getAttribute('viewBox')).toBe('0 0 346 45');
-    expect(svgContent.getAttribute('data-e2e-key')).toBe('marketing-cloud');
+    expect(svgContent.getAttribute('data-e2e-key')).toBe('clab-cdp');
   });
 
   it('renders size attribute changes', async () => {
