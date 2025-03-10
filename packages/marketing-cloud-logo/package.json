@@ -43,7 +43,7 @@
     "eslint-plugin-react": "7.33.2",
     "jest": "26.6.3",
     "jest-cli": "26.6.3",
-    "puppeteer": "19.11.1",
+    "puppeteer": "20.9.0",
     "stylelint": "15.10.3",
     "typescript": "5.1.6"
   }
