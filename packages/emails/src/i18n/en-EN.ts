@@ -9,12 +9,12 @@ export const EN = {
   explore: 'the platform documentation.',
   exploreLink: 'https://docs.contactlab.com/docs/category/guides',
   questions: 'Any doubts or questions?',
-  footnote: 'Contactlab Marketing Cloud is a product of',
+  footnote: 'Contactlab CDP is a product of',
   hello: 'Hi,',
   helloUser: 'Hi %{firstName},',
   noReply: "The email is auto generated. Please, don't reply.",
   previewText:
-    "Automatic email sent by the Contactlab Marketing Cloud platform. Please, don't reply.",
+    "Automatic email sent by the Contactlab CDP platform. Please, don't reply.",
   redemptionPeriod: 'Remember: you have %{days} days to change it.',
   securityAdvice:
     'For security reasons, please change the temporary password and keep the new one.',
@@ -82,7 +82,7 @@ export const EN = {
     title: 'Personal PIN'
   },
   welcome: {
-    opening: 'your Contactlab Marketing Cloud account has been created! 🎉',
+    opening: 'your Contactlab CDP account has been created! 🎉',
     suggestions: 'Find below your credentials.'
   }
 };

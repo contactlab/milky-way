@@ -1,6 +1,6 @@
 # Service Pages
 
-The Contactlab Marketing Cloud service pages.
+The Contactlab CDP service pages.
 
 [![NPM Package][npm-img]][npm-url]
 

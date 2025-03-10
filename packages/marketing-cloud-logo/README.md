@@ -1,6 +1,6 @@
 # Marketing Cloud Logo
 
-The Web Components and resources related to the Marketing Cloud logo. The package also include the [Explore](https://docs.contactlab.com/docs/category/guides) & [Developer](https://docs.contactlab.com/docs/category/development) websites logo.
+The Web Components and resources related to the CDP logo. The package also include the [Explore](https://docs.contactlab.com/docs/category/guides) & [Developer](https://docs.contactlab.com/docs/category/development) websites logo.
 
 [![NPM Package](https://img.shields.io/npm/v/@contactlab/marketing-cloud-logo?style=flat-square&colorA=001420&colorB=0391ec)](https://www.npmjs.com/package/@contactlab/marketing-cloud-logo)
 [![Bundlephobia](https://img.shields.io/bundlephobia/min/@contactlab/marketing-cloud-logo?label=bundle%20size&style=flat-square&colorA=001420&colorB=0391ec)](https://bundlephobia.com/result?p=@contactlab/marketing-cloud-logo)

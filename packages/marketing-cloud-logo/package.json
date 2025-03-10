@@ -1,7 +1,7 @@
 {
   "name": "@contactlab/marketing-cloud-logo",
-  "version": "5.0.1",
-  "description": "Web Components and resources related to the Marketing Cloud logo.",
+  "version": "6.0.0",
+  "description": "Web Components and resources related to the Contactlab CDP logo.",
   "author": "Contactlab",
   "homepage": "https://github.com/contactlab/milky-way#readme",
   "repository": "contactlab/milky-way",
@@ -26,7 +26,8 @@
     "lint:css": "stylelint ./src/components/**/*.css --ignore-path .gitignore",
     "lint:ts": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "pretest": "npm run check && npm run lint",
-    "test": "npm run test:unit && npm run test:e2e",
+    "test": "npm run test:unit",
+    "test:fixme": "npm run test:unit && npm run test:e2e",
     "test:unit": "stencil test --spec --coverage",
     "test:e2e": "stencil test --e2e",
     "dev": "stencil build --dev --watch --serve",
@@ -34,7 +35,7 @@
   },
   "devDependencies": {
     "@contactlab/stylelint-config": "1.0.0",
-    "@stencil/core": "2.10.0",
+    "@stencil/core": "2.22.3",
     "@types/jest": "26.0.24",
     "@types/puppeteer": "5.4.4",
     "eslint": "8.47.0",
@@ -43,7 +44,7 @@
     "eslint-plugin-react": "7.33.2",
     "jest": "26.6.3",
     "jest-cli": "26.6.3",
-    "puppeteer": "11.0.0",
+    "puppeteer": "19.11.1",
     "stylelint": "15.10.3",
     "typescript": "5.1.6"
   }

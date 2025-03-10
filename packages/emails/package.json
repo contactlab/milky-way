@@ -1,6 +1,6 @@
 {
   "private": true,
-  "description": "The Contactlab Marketing Cloud transactional emails.",
+  "description": "The Contactlab CDP transactional emails.",
   "author": "Contactlab",
   "scripts": {
     "check": "tsc",
